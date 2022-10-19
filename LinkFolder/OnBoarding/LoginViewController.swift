@@ -6,9 +6,15 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var idTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,7 +26,6 @@ class LoginViewController: UIViewController {
         secondVC.navigationController?.navigationBar.barTintColor = .black
         show(secondVC, sender: self)
     }
-    
     
 
 }

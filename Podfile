@@ -6,6 +6,8 @@ target 'LinkFolder' do
   use_frameworks!
 
   # Pods for LinkFolder
+    pod 'RxSwift', '6.5.0'
+    pod 'RxCocoa', '6.5.0'
 
   target 'LinkFolderTests' do
     inherit! :search_paths
