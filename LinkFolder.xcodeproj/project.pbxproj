@@ -22,8 +22,8 @@
 		105B96FE28FE567200E95B53 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B96FD28FE567200E95B53 /* FriendsViewController.swift */; };
 		105B970028FE56E500E95B53 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 105B96FF28FE56E500E95B53 /* Login.storyboard */; };
 		105B970228FE56F600E95B53 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B970128FE56F600E95B53 /* LoginViewController.swift */; };
-		105B970428FE570400E95B53 /* Signin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 105B970328FE570400E95B53 /* Signin.storyboard */; };
-		105B970628FE572400E95B53 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B970528FE572400E95B53 /* SigninViewController.swift */; };
+		105B970428FE570400E95B53 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 105B970328FE570400E95B53 /* Signup.storyboard */; };
+		105B970628FE572400E95B53 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B970528FE572400E95B53 /* SignupViewController.swift */; };
 		105B970828FE577B00E95B53 /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B970728FE577B00E95B53 /* NoticeViewController.swift */; };
 		105B970A28FE578700E95B53 /* Notice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 105B970928FE578700E95B53 /* Notice.storyboard */; };
 		105B971128FE61D900E95B53 /* TextFieldComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B971028FE61D900E95B53 /* TextFieldComponent.swift */; };
@@ -78,8 +78,8 @@
 		105B96FD28FE567200E95B53 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		105B96FF28FE56E500E95B53 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		105B970128FE56F600E95B53 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		105B970328FE570400E95B53 /* Signin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signin.storyboard; sourceTree = "<group>"; };
-		105B970528FE572400E95B53 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
+		105B970328FE570400E95B53 /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
+		105B970528FE572400E95B53 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		105B970728FE577B00E95B53 /* NoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
 		105B970928FE578700E95B53 /* Notice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notice.storyboard; sourceTree = "<group>"; };
 		105B971028FE61D900E95B53 /* TextFieldComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldComponent.swift; sourceTree = "<group>"; };
@@ -202,8 +202,8 @@
 			children = (
 				105B96FF28FE56E500E95B53 /* Login.storyboard */,
 				105B970128FE56F600E95B53 /* LoginViewController.swift */,
-				105B970328FE570400E95B53 /* Signin.storyboard */,
-				105B970528FE572400E95B53 /* SigninViewController.swift */,
+				105B970328FE570400E95B53 /* Signup.storyboard */,
+				105B970528FE572400E95B53 /* SignupViewController.swift */,
 			);
 			path = OnBoarding;
 			sourceTree = "<group>";
@@ -354,7 +354,7 @@
 				105B96CC28FE547600E95B53 /* LaunchScreen.storyboard in Resources */,
 				105B96FC28FE565D00E95B53 /* Friends.storyboard in Resources */,
 				105B970A28FE578700E95B53 /* Notice.storyboard in Resources */,
-				105B970428FE570400E95B53 /* Signin.storyboard in Resources */,
+				105B970428FE570400E95B53 /* Signup.storyboard in Resources */,
 				105B973628FE9DC300E95B53 /* Pretendard-Regular.otf in Resources */,
 				105B970028FE56E500E95B53 /* Login.storyboard in Resources */,
 				105B971528FE62DE00E95B53 /* TextFieldComponent.xib in Resources */,
@@ -391,7 +391,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				105B970628FE572400E95B53 /* SigninViewController.swift in Sources */,
+				105B970628FE572400E95B53 /* SignupViewController.swift in Sources */,
 				105B971A28FE7BCD00E95B53 /* ButtonComponent.swift in Sources */,
 				105B970228FE56F600E95B53 /* LoginViewController.swift in Sources */,
 				105B96C428FE547500E95B53 /* ViewController.swift in Sources */,
