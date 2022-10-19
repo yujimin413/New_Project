@@ -88,6 +88,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="u7t-IZ-IdM"/>
+                    <connections>
+                        <outlet property="idTextField" destination="uKu-ZC-PaS" id="j0N-4k-Tsb"/>
+                        <outlet property="passwordTextField" destination="IYK-eo-pDW" id="aUM-Wz-O0h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class SignupViewController: UIViewController {
 
     @IBOutlet weak var signupButton: ButtonComponent!
