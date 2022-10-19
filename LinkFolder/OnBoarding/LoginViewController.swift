@@ -13,7 +13,8 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var idTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    
+    @IBOutlet weak var loginButton: ButtonComponent!
+    @IBOutlet weak var SignupButton: ButtonComponent!
     
     override func viewDidLoad() {
         super.viewDidLoad()

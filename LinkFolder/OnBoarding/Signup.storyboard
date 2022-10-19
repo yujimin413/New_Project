@@ -126,6 +126,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="idTextField" destination="usu-UO-bgP" id="PzB-PM-vXo"/>
+                        <outlet property="nicknameTextField" destination="bLh-62-op8" id="hPd-V4-pfN"/>
+                        <outlet property="passwordConfirmTextField" destination="sSa-zw-Fm6" id="aOw-42-vBb"/>
+                        <outlet property="passwordTextField" destination="O4B-w7-v60" id="tPE-qx-KXt"/>
+                        <outlet property="profileImageButton" destination="0uV-P3-Wut" id="g5e-zm-bgf"/>
                         <outlet property="signupButton" destination="GNv-9r-cbe" id="aKF-rA-Yo0"/>
                     </connections>
                 </viewController>
