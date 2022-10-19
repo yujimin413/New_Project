@@ -6,12 +6,18 @@
 //
 
 import UIKit
-
+import RxSwift
+import RxCocoa
 
 class SignupViewController: UIViewController {
 
+    @IBOutlet weak var profileImageButton: UIButton!
+    @IBOutlet weak var idTextField: UITextField!
+    @IBOutlet weak var nicknameTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var passwordConfirmTextField: UITextField!
     @IBOutlet weak var signupButton: ButtonComponent!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setNavigationBar()
