@@ -1,15 +1,17 @@
 {
   "images" : [
     {
+      "filename" : "addFolderPopUp.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "스플래시.png",
+      "filename" : "addFolderPopUp 1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "addFolderPopUp 2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

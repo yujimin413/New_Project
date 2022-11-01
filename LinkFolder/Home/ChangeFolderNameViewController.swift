@@ -1,13 +1,13 @@
 //
-//  HomeViewController.swift
+//  ChangeFolderNameViewController.swift
 //  LinkFolder
 //
-//  Created by 임영준 on 2022/10/18.
+//  Created by 유지민 on 2022/11/01.
 //
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class ChangeFolderNameViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
