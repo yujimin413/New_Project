@@ -26,6 +26,8 @@
 		105B971A28FE7BCD00E95B53 /* ButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B971928FE7BCD00E95B53 /* ButtonComponent.swift */; };
 		105B971C28FE7BDD00E95B53 /* ButtonComponent.xib in Resources */ = {isa = PBXBuildFile; fileRef = 105B971B28FE7BDD00E95B53 /* ButtonComponent.xib */; };
 		291097632910E1FE00FAA8AB /* AddFolderPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291097622910E1FE00FAA8AB /* AddFolderPopUpViewController.swift */; };
+		291CC3382911275C004592E4 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 291CC3362911275C004592E4 /* Home.storyboard */; };
+		291CC3392911275C004592E4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291CC3372911275C004592E4 /* HomeViewController.swift */; };
 		29658D1F2910A07700DFA491 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 29658D162910A07700DFA491 /* Pretendard-Regular.otf */; };
 		29658D202910A07700DFA491 /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 29658D172910A07700DFA491 /* Pretendard-Black.otf */; };
 		29658D212910A07700DFA491 /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 29658D182910A07700DFA491 /* Pretendard-Medium.otf */; };
@@ -42,9 +44,7 @@
 		29658D342910A20700DFA491 /* LinkListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29658D2D2910A20700DFA491 /* LinkListTableViewCell.xib */; };
 		29658D352910A20700DFA491 /* LinkListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29658D2E2910A20700DFA491 /* LinkListTableViewCell.swift */; };
 		29658D362910A20700DFA491 /* FolderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29658D2F2910A20700DFA491 /* FolderCollectionViewCell.swift */; };
-		29658D3E2910A21B00DFA491 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29658D372910A21900DFA491 /* Home.storyboard */; };
 		29658D3F2910A21B00DFA491 /* AddLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29658D382910A21A00DFA491 /* AddLinkViewController.swift */; };
-		29658D402910A21B00DFA491 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29658D392910A21A00DFA491 /* HomeViewController.swift */; };
 		29658D412910A21B00DFA491 /* EditLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29658D3A2910A21A00DFA491 /* EditLinkViewController.swift */; };
 		29658D422910A21B00DFA491 /* ShareFolderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29658D3B2910A21A00DFA491 /* ShareFolderViewController.swift */; };
 		298E42C52910ED25002EA69B /* ShareFolderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298E42C32910ED25002EA69B /* ShareFolderTableViewCell.swift */; };
@@ -80,6 +80,8 @@
 		105B971B28FE7BDD00E95B53 /* ButtonComponent.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonComponent.xib; sourceTree = "<group>"; };
 		1D2B43758504AC387214F311 /* Pods-LinkFolder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkFolder.release.xcconfig"; path = "Target Support Files/Pods-LinkFolder/Pods-LinkFolder.release.xcconfig"; sourceTree = "<group>"; };
 		291097622910E1FE00FAA8AB /* AddFolderPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFolderPopUpViewController.swift; sourceTree = "<group>"; };
+		291CC3362911275C004592E4 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		291CC3372911275C004592E4 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		29658D162910A07700DFA491 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
 		29658D172910A07700DFA491 /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
 		29658D182910A07700DFA491 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
@@ -96,9 +98,7 @@
 		29658D2D2910A20700DFA491 /* LinkListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LinkListTableViewCell.xib; sourceTree = "<group>"; };
 		29658D2E2910A20700DFA491 /* LinkListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkListTableViewCell.swift; sourceTree = "<group>"; };
 		29658D2F2910A20700DFA491 /* FolderCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolderCollectionViewCell.swift; sourceTree = "<group>"; };
-		29658D372910A21900DFA491 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = ../../../../Desktop/LinkFolderHome/LinkFolderHome/Home.storyboard; sourceTree = "<group>"; };
 		29658D382910A21A00DFA491 /* AddLinkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddLinkViewController.swift; sourceTree = "<group>"; };
-		29658D392910A21A00DFA491 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../../../../Desktop/LinkFolderHome/LinkFolderHome/HomeViewController.swift; sourceTree = "<group>"; };
 		29658D3A2910A21A00DFA491 /* EditLinkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditLinkViewController.swift; sourceTree = "<group>"; };
 		29658D3B2910A21A00DFA491 /* ShareFolderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareFolderViewController.swift; sourceTree = "<group>"; };
 		298E42C32910ED25002EA69B /* ShareFolderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareFolderTableViewCell.swift; sourceTree = "<group>"; };
@@ -173,8 +173,8 @@
 				29658D382910A21A00DFA491 /* AddLinkViewController.swift */,
 				29658D3A2910A21A00DFA491 /* EditLinkViewController.swift */,
 				298E42CE2910F68F002EA69B /* ChangeFolderNameViewController.swift */,
-				29658D372910A21900DFA491 /* Home.storyboard */,
-				29658D392910A21A00DFA491 /* HomeViewController.swift */,
+				291CC3362911275C004592E4 /* Home.storyboard */,
+				291CC3372911275C004592E4 /* HomeViewController.swift */,
 				29C306B42910F7EC00EB4DBA /* ShowLinkMoreViewController.swift */,
 				291097622910E1FE00FAA8AB /* AddFolderPopUpViewController.swift */,
 				298E42C72910F27B002EA69B /* LinkListViewController.swift */,
@@ -360,7 +360,7 @@
 				29658D202910A07700DFA491 /* Pretendard-Black.otf in Resources */,
 				29658D252910A07700DFA491 /* Pretendard-Thin.otf in Resources */,
 				298E42C62910ED25002EA69B /* ShareFolderTableViewCell.xib in Resources */,
-				29658D3E2910A21B00DFA491 /* Home.storyboard in Resources */,
+				291CC3382911275C004592E4 /* Home.storyboard in Resources */,
 				29658D212910A07700DFA491 /* Pretendard-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +420,7 @@
 				105B971A28FE7BCD00E95B53 /* ButtonComponent.swift in Sources */,
 				105B970228FE56F600E95B53 /* LoginViewController.swift in Sources */,
 				29658D312910A20700DFA491 /* ProfileCollectionViewCell.swift in Sources */,
+				291CC3392911275C004592E4 /* HomeViewController.swift in Sources */,
 				298E42C82910F27B002EA69B /* LinkListViewController.swift in Sources */,
 				105B96C428FE547500E95B53 /* ViewController.swift in Sources */,
 				298E42CF2910F68F002EA69B /* ChangeFolderNameViewController.swift in Sources */,
@@ -433,7 +434,6 @@
 				29658D332910A20700DFA491 /* CustomCollectionViewFlowLayout.swift in Sources */,
 				105B96C228FE547500E95B53 /* SceneDelegate.swift in Sources */,
 				298E42C52910ED25002EA69B /* ShareFolderTableViewCell.swift in Sources */,
-				29658D402910A21B00DFA491 /* HomeViewController.swift in Sources */,
 				29658D362910A20700DFA491 /* FolderCollectionViewCell.swift in Sources */,
 				105B970828FE577B00E95B53 /* NoticeViewController.swift in Sources */,
 				105B971128FE61D900E95B53 /* TextFieldComponent.swift in Sources */,

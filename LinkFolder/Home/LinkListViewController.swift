@@ -17,9 +17,6 @@ class LinkListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
-
-
-
     }
     
     // MARK: - Helpers
@@ -32,11 +29,7 @@ class LinkListViewController: UIViewController {
         linkListTableView.register(UINib(nibName: "LinkListTableViewCell",
                                    bundle: nil),
     forCellReuseIdentifier: LinkListTableViewCell.identifier)
-        
-        
-        
     }
-    
 }
 
 extension LinkListViewController: UITableViewDelegate, UITableViewDataSource {
@@ -48,7 +41,6 @@ extension LinkListViewController: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: LinkListTableViewCell.identifier, for: indexPath) as? LinkListTableViewCell else {
             return UITableViewCell()
         }
-//        cell.backgroundColor = .gray
         return cell
     }
 }

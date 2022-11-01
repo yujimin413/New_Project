@@ -11,11 +11,5 @@ class EditLinkViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
     }
-    
-
-
-
 }

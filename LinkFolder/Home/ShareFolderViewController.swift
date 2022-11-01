@@ -17,7 +17,6 @@ class ShareFolderViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
-
     }
     
     // MARK: - Helpers
@@ -30,11 +29,7 @@ class ShareFolderViewController: UIViewController {
         shareFolderTableView.register(UINib(nibName: "ShareFolderTableViewCell",
                                    bundle: nil),
     forCellReuseIdentifier: ShareFolderTableViewCell.identifier)
-        
-        
-        
     }
-    
 }
 
 extension ShareFolderViewController: UITableViewDelegate, UITableViewDataSource {
@@ -46,7 +41,6 @@ extension ShareFolderViewController: UITableViewDelegate, UITableViewDataSource 
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ShareFolderTableViewCell.identifier, for: indexPath) as? ShareFolderTableViewCell else {
             return UITableViewCell()
         }
-//        cell.backgroundColor = .gray
         return cell
     }
 }

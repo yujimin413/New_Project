@@ -31,8 +31,4 @@ class AddFolderPopUpViewController: UIViewController {
     @IBAction func addButtonTapped(_ sender: Any) {
         // 폴더 추가
     }
-    
-
-
-
 }
