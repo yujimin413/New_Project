@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Pretendard-Regular.otf">
+            <string>Pretendard-Regular</string>
+        </array>
+        <array key="Pretendard-SemiBold.otf">
+            <string>Pretendard-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ShareFolderTableViewCell" customModule="LinkFolder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="1hG-xQ-f8l">
+                        <rect key="frame" x="16" y="2" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="NPi-S8-nvl"/>
+                            <constraint firstAttribute="width" constant="40" id="nLE-ik-VEA"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="닉네임최대글자글자" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57Z-8a-mMp">
+                        <rect key="frame" x="65" y="11" width="78" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="qIC-BF-3u4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nicknamelength10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1W-yW-jjP">
+                        <rect key="frame" x="65" y="24" width="65" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="xnO-ER-rqb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="8"/>
+                        <color key="textColor" name="GrayText"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4V4-aS-7Z5">
+                        <rect key="frame" x="306" y="5" width="84" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="S9W-yw-QOE"/>
+                            <constraint firstAttribute="width" constant="84" id="yog-Dn-xtf"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="ShareBtn"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="n1W-yW-jjP" firstAttribute="leading" secondItem="1hG-xQ-f8l" secondAttribute="trailing" constant="9" id="0pr-Xr-cxK"/>
+                    <constraint firstItem="n1W-yW-jjP" firstAttribute="top" secondItem="57Z-8a-mMp" secondAttribute="bottom" constant="1" id="4bB-6t-ezG"/>
+                    <constraint firstItem="4V4-aS-7Z5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="4uP-sb-5Pa"/>
+                    <constraint firstItem="57Z-8a-mMp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="Gmm-eA-x4U"/>
+                    <constraint firstAttribute="bottom" secondItem="n1W-yW-jjP" secondAttribute="bottom" constant="11" id="NJX-nC-AhK"/>
+                    <constraint firstAttribute="bottom" secondItem="1hG-xQ-f8l" secondAttribute="bottom" constant="3" id="NKZ-04-cQX"/>
+                    <constraint firstAttribute="trailing" secondItem="4V4-aS-7Z5" secondAttribute="trailing" id="Vi4-et-us6"/>
+                    <constraint firstItem="1hG-xQ-f8l" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="XRt-3X-TVt"/>
+                    <constraint firstAttribute="bottom" secondItem="4V4-aS-7Z5" secondAttribute="bottom" constant="4" id="YaQ-Cu-Vqd"/>
+                    <constraint firstItem="1hG-xQ-f8l" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="tkr-kO-si0"/>
+                    <constraint firstItem="57Z-8a-mMp" firstAttribute="leading" secondItem="1hG-xQ-f8l" secondAttribute="trailing" constant="9" id="urO-gq-hML"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="button" destination="4V4-aS-7Z5" id="azd-P0-nEA"/>
+                <outlet property="idTextField" destination="n1W-yW-jjP" id="v6t-gX-iQg"/>
+                <outlet property="nicknameTextField" destination="57Z-8a-mMp" id="egH-67-eAG"/>
+                <outlet property="profileImageView" destination="1hG-xQ-f8l" id="5O6-Hs-HRr"/>
+            </connections>
+            <point key="canvasLocation" x="21" y="21"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Image" width="30" height="30"/>
+        <image name="ShareBtn" width="60" height="22"/>
+        <namedColor name="GrayText">
+            <color red="0.4823529411764706" green="0.4823529411764706" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

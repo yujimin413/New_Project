@@ -3,23 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00D7596F780F46880258B4CE /* Pods_LinkFolderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A624F824F79FF8951F8B816C /* Pods_LinkFolderTests.framework */; };
-		0BB5A04DE465612853A7AC61 /* Pods_LinkFolder_LinkFolderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A7DA9320ACA1AD904764689 /* Pods_LinkFolder_LinkFolderUITests.framework */; };
 		105B96C028FE547500E95B53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B96BF28FE547500E95B53 /* AppDelegate.swift */; };
 		105B96C228FE547500E95B53 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B96C128FE547500E95B53 /* SceneDelegate.swift */; };
 		105B96C428FE547500E95B53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B96C328FE547500E95B53 /* ViewController.swift */; };
 		105B96C728FE547500E95B53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 105B96C528FE547500E95B53 /* Main.storyboard */; };
 		105B96C928FE547600E95B53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 105B96C828FE547600E95B53 /* Assets.xcassets */; };
 		105B96CC28FE547600E95B53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 105B96CA28FE547600E95B53 /* LaunchScreen.storyboard */; };
-		105B96D728FE547600E95B53 /* LinkFolderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B96D628FE547600E95B53 /* LinkFolderTests.swift */; };
-		105B96E128FE547600E95B53 /* LinkFolderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B96E028FE547600E95B53 /* LinkFolderUITests.swift */; };
-		105B96E328FE547600E95B53 /* LinkFolderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B96E228FE547600E95B53 /* LinkFolderUITestsLaunchTests.swift */; };
-		105B96F828FE564700E95B53 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B96F728FE564700E95B53 /* HomeViewController.swift */; };
-		105B96FA28FE565100E95B53 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 105B96F928FE565100E95B53 /* Home.storyboard */; };
 		105B96FC28FE565D00E95B53 /* Friends.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 105B96FB28FE565D00E95B53 /* Friends.storyboard */; };
 		105B96FE28FE567200E95B53 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B96FD28FE567200E95B53 /* FriendsViewController.swift */; };
 		105B970028FE56E500E95B53 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 105B96FF28FE56E500E95B53 /* Login.storyboard */; };
@@ -32,34 +25,36 @@
 		105B971528FE62DE00E95B53 /* TextFieldComponent.xib in Resources */ = {isa = PBXBuildFile; fileRef = 105B971428FE62DE00E95B53 /* TextFieldComponent.xib */; };
 		105B971A28FE7BCD00E95B53 /* ButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B971928FE7BCD00E95B53 /* ButtonComponent.swift */; };
 		105B971C28FE7BDD00E95B53 /* ButtonComponent.xib in Resources */ = {isa = PBXBuildFile; fileRef = 105B971B28FE7BDD00E95B53 /* ButtonComponent.xib */; };
-		105B973128FE9DC300E95B53 /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 105B972828FE9DC100E95B53 /* Pretendard-Thin.otf */; };
-		105B973228FE9DC300E95B53 /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 105B972928FE9DC100E95B53 /* Pretendard-Medium.otf */; };
-		105B973328FE9DC300E95B53 /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 105B972A28FE9DC100E95B53 /* Pretendard-ExtraBold.otf */; };
-		105B973428FE9DC300E95B53 /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 105B972B28FE9DC100E95B53 /* Pretendard-ExtraLight.otf */; };
-		105B973528FE9DC300E95B53 /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 105B972C28FE9DC100E95B53 /* Pretendard-Light.otf */; };
-		105B973628FE9DC300E95B53 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 105B972D28FE9DC200E95B53 /* Pretendard-Regular.otf */; };
-		105B973728FE9DC300E95B53 /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 105B972E28FE9DC200E95B53 /* Pretendard-Black.otf */; };
-		105B973828FE9DC300E95B53 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 105B972F28FE9DC200E95B53 /* Pretendard-SemiBold.otf */; };
-		105B973928FE9DC300E95B53 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 105B973028FE9DC200E95B53 /* Pretendard-Bold.otf */; };
+		291097632910E1FE00FAA8AB /* AddFolderPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291097622910E1FE00FAA8AB /* AddFolderPopUpViewController.swift */; };
+		291CC3382911275C004592E4 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 291CC3362911275C004592E4 /* Home.storyboard */; };
+		291CC3392911275C004592E4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291CC3372911275C004592E4 /* HomeViewController.swift */; };
+		29658D1F2910A07700DFA491 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 29658D162910A07700DFA491 /* Pretendard-Regular.otf */; };
+		29658D202910A07700DFA491 /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 29658D172910A07700DFA491 /* Pretendard-Black.otf */; };
+		29658D212910A07700DFA491 /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 29658D182910A07700DFA491 /* Pretendard-Medium.otf */; };
+		29658D222910A07700DFA491 /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 29658D192910A07700DFA491 /* Pretendard-Light.otf */; };
+		29658D232910A07700DFA491 /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 29658D1A2910A07700DFA491 /* Pretendard-ExtraBold.otf */; };
+		29658D242910A07700DFA491 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 29658D1B2910A07700DFA491 /* Pretendard-Bold.otf */; };
+		29658D252910A07700DFA491 /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 29658D1C2910A07700DFA491 /* Pretendard-Thin.otf */; };
+		29658D262910A07700DFA491 /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 29658D1D2910A07700DFA491 /* Pretendard-ExtraLight.otf */; };
+		29658D272910A07700DFA491 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 29658D1E2910A07700DFA491 /* Pretendard-SemiBold.otf */; };
+		29658D302910A20700DFA491 /* ProfileCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29658D292910A20700DFA491 /* ProfileCollectionViewCell.xib */; };
+		29658D312910A20700DFA491 /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29658D2A2910A20700DFA491 /* ProfileCollectionViewCell.swift */; };
+		29658D322910A20700DFA491 /* FolderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29658D2B2910A20700DFA491 /* FolderCollectionViewCell.xib */; };
+		29658D332910A20700DFA491 /* CustomCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29658D2C2910A20700DFA491 /* CustomCollectionViewFlowLayout.swift */; };
+		29658D342910A20700DFA491 /* LinkListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29658D2D2910A20700DFA491 /* LinkListTableViewCell.xib */; };
+		29658D352910A20700DFA491 /* LinkListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29658D2E2910A20700DFA491 /* LinkListTableViewCell.swift */; };
+		29658D362910A20700DFA491 /* FolderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29658D2F2910A20700DFA491 /* FolderCollectionViewCell.swift */; };
+		29658D3F2910A21B00DFA491 /* AddLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29658D382910A21A00DFA491 /* AddLinkViewController.swift */; };
+		29658D412910A21B00DFA491 /* EditLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29658D3A2910A21A00DFA491 /* EditLinkViewController.swift */; };
+		29658D422910A21B00DFA491 /* ShareFolderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29658D3B2910A21A00DFA491 /* ShareFolderViewController.swift */; };
+		298E42C52910ED25002EA69B /* ShareFolderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298E42C32910ED25002EA69B /* ShareFolderTableViewCell.swift */; };
+		298E42C62910ED25002EA69B /* ShareFolderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298E42C42910ED25002EA69B /* ShareFolderTableViewCell.xib */; };
+		298E42C82910F27B002EA69B /* LinkListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298E42C72910F27B002EA69B /* LinkListViewController.swift */; };
+		298E42CD2910F62B002EA69B /* ShowFolderMorePopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298E42CC2910F62B002EA69B /* ShowFolderMorePopUpViewController.swift */; };
+		298E42CF2910F68F002EA69B /* ChangeFolderNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298E42CE2910F68F002EA69B /* ChangeFolderNameViewController.swift */; };
+		29CBFCBB291166DC003B0D3F /* ShowLinkMorePopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CBFCBA291166DC003B0D3F /* ShowLinkMorePopUpViewController.swift */; };
 		CD42DFE210AA47613B2510A1 /* Pods_LinkFolder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C675BD803A677F9DD770C2E /* Pods_LinkFolder.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		105B96D328FE547600E95B53 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 105B96B428FE547500E95B53 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 105B96BB28FE547500E95B53;
-			remoteInfo = LinkFolder;
-		};
-		105B96DD28FE547600E95B53 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 105B96B428FE547500E95B53 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 105B96BB28FE547500E95B53;
-			remoteInfo = LinkFolder;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0C675BD803A677F9DD770C2E /* Pods_LinkFolder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinkFolder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,13 +66,6 @@
 		105B96C828FE547600E95B53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		105B96CB28FE547600E95B53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		105B96CD28FE547600E95B53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		105B96D228FE547600E95B53 /* LinkFolderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinkFolderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		105B96D628FE547600E95B53 /* LinkFolderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkFolderTests.swift; sourceTree = "<group>"; };
-		105B96DC28FE547600E95B53 /* LinkFolderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinkFolderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		105B96E028FE547600E95B53 /* LinkFolderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkFolderUITests.swift; sourceTree = "<group>"; };
-		105B96E228FE547600E95B53 /* LinkFolderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkFolderUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		105B96F728FE564700E95B53 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		105B96F928FE565100E95B53 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		105B96FB28FE565D00E95B53 /* Friends.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Friends.storyboard; sourceTree = "<group>"; };
 		105B96FD28FE567200E95B53 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		105B96FF28FE56E500E95B53 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
@@ -90,16 +78,35 @@
 		105B971428FE62DE00E95B53 /* TextFieldComponent.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldComponent.xib; sourceTree = "<group>"; };
 		105B971928FE7BCD00E95B53 /* ButtonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonComponent.swift; sourceTree = "<group>"; };
 		105B971B28FE7BDD00E95B53 /* ButtonComponent.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonComponent.xib; sourceTree = "<group>"; };
-		105B972828FE9DC100E95B53 /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Thin.otf"; path = "../../../../../Downloads/Pretendard-1.3.3/public/static/Pretendard-Thin.otf"; sourceTree = "<group>"; };
-		105B972928FE9DC100E95B53 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Medium.otf"; path = "../../../../../Downloads/Pretendard-1.3.3/public/static/Pretendard-Medium.otf"; sourceTree = "<group>"; };
-		105B972A28FE9DC100E95B53 /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-ExtraBold.otf"; path = "../../../../../Downloads/Pretendard-1.3.3/public/static/Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
-		105B972B28FE9DC100E95B53 /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-ExtraLight.otf"; path = "../../../../../Downloads/Pretendard-1.3.3/public/static/Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
-		105B972C28FE9DC100E95B53 /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Light.otf"; path = "../../../../../Downloads/Pretendard-1.3.3/public/static/Pretendard-Light.otf"; sourceTree = "<group>"; };
-		105B972D28FE9DC200E95B53 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Regular.otf"; path = "../../../../../Downloads/Pretendard-1.3.3/public/static/Pretendard-Regular.otf"; sourceTree = "<group>"; };
-		105B972E28FE9DC200E95B53 /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Black.otf"; path = "../../../../../Downloads/Pretendard-1.3.3/public/static/Pretendard-Black.otf"; sourceTree = "<group>"; };
-		105B972F28FE9DC200E95B53 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-SemiBold.otf"; path = "../../../../../Downloads/Pretendard-1.3.3/public/static/Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
-		105B973028FE9DC200E95B53 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Bold.otf"; path = "../../../../../Downloads/Pretendard-1.3.3/public/static/Pretendard-Bold.otf"; sourceTree = "<group>"; };
 		1D2B43758504AC387214F311 /* Pods-LinkFolder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkFolder.release.xcconfig"; path = "Target Support Files/Pods-LinkFolder/Pods-LinkFolder.release.xcconfig"; sourceTree = "<group>"; };
+		291097622910E1FE00FAA8AB /* AddFolderPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFolderPopUpViewController.swift; sourceTree = "<group>"; };
+		291CC3362911275C004592E4 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		291CC3372911275C004592E4 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		29658D162910A07700DFA491 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		29658D172910A07700DFA491 /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
+		29658D182910A07700DFA491 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
+		29658D192910A07700DFA491 /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.otf"; sourceTree = "<group>"; };
+		29658D1A2910A07700DFA491 /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
+		29658D1B2910A07700DFA491 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		29658D1C2910A07700DFA491 /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
+		29658D1D2910A07700DFA491 /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
+		29658D1E2910A07700DFA491 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		29658D292910A20700DFA491 /* ProfileCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileCollectionViewCell.xib; sourceTree = "<group>"; };
+		29658D2A2910A20700DFA491 /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
+		29658D2B2910A20700DFA491 /* FolderCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FolderCollectionViewCell.xib; sourceTree = "<group>"; };
+		29658D2C2910A20700DFA491 /* CustomCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		29658D2D2910A20700DFA491 /* LinkListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LinkListTableViewCell.xib; sourceTree = "<group>"; };
+		29658D2E2910A20700DFA491 /* LinkListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkListTableViewCell.swift; sourceTree = "<group>"; };
+		29658D2F2910A20700DFA491 /* FolderCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolderCollectionViewCell.swift; sourceTree = "<group>"; };
+		29658D382910A21A00DFA491 /* AddLinkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddLinkViewController.swift; sourceTree = "<group>"; };
+		29658D3A2910A21A00DFA491 /* EditLinkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditLinkViewController.swift; sourceTree = "<group>"; };
+		29658D3B2910A21A00DFA491 /* ShareFolderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareFolderViewController.swift; sourceTree = "<group>"; };
+		298E42C32910ED25002EA69B /* ShareFolderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareFolderTableViewCell.swift; sourceTree = "<group>"; };
+		298E42C42910ED25002EA69B /* ShareFolderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShareFolderTableViewCell.xib; sourceTree = "<group>"; };
+		298E42C72910F27B002EA69B /* LinkListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkListViewController.swift; sourceTree = "<group>"; };
+		298E42CC2910F62B002EA69B /* ShowFolderMorePopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowFolderMorePopUpViewController.swift; sourceTree = "<group>"; };
+		298E42CE2910F68F002EA69B /* ChangeFolderNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeFolderNameViewController.swift; sourceTree = "<group>"; };
+		29CBFCBA291166DC003B0D3F /* ShowLinkMorePopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowLinkMorePopUpViewController.swift; sourceTree = "<group>"; };
 		5A7DA9320ACA1AD904764689 /* Pods_LinkFolder_LinkFolderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinkFolder_LinkFolderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AC481525C8AD0FD9F6F64FA /* Pods-LinkFolder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkFolder.debug.xcconfig"; path = "Target Support Files/Pods-LinkFolder/Pods-LinkFolder.debug.xcconfig"; sourceTree = "<group>"; };
 		6FF5065AEBC335D5F6EF91C7 /* Pods-LinkFolder-LinkFolderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkFolder-LinkFolderUITests.debug.xcconfig"; path = "Target Support Files/Pods-LinkFolder-LinkFolderUITests/Pods-LinkFolder-LinkFolderUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -118,33 +125,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		105B96CF28FE547600E95B53 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				00D7596F780F46880258B4CE /* Pods_LinkFolderTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		105B96D928FE547600E95B53 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0BB5A04DE465612853A7AC61 /* Pods_LinkFolder_LinkFolderUITests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		105B96B328FE547500E95B53 = {
 			isa = PBXGroup;
 			children = (
-				105B972728FE9DB200E95B53 /* Fonts */,
+				29658D152910A07700DFA491 /* Fonts */,
 				105B970D28FE5ECF00E95B53 /* Components */,
 				105B96BE28FE547500E95B53 /* LinkFolder */,
-				105B96D528FE547600E95B53 /* LinkFolderTests */,
-				105B96DF28FE547600E95B53 /* LinkFolderUITests */,
 				105B96BD28FE547500E95B53 /* Products */,
 				2CDB23B06B33250966777F83 /* Pods */,
 				3CE8C84A226844BCE9ED2A3D /* Frameworks */,
@@ -155,8 +144,6 @@
 			isa = PBXGroup;
 			children = (
 				105B96BC28FE547500E95B53 /* LinkFolder.app */,
-				105B96D228FE547600E95B53 /* LinkFolderTests.xctest */,
-				105B96DC28FE547600E95B53 /* LinkFolderUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -179,28 +166,20 @@
 			path = LinkFolder;
 			sourceTree = "<group>";
 		};
-		105B96D528FE547600E95B53 /* LinkFolderTests */ = {
-			isa = PBXGroup;
-			children = (
-				105B96D628FE547600E95B53 /* LinkFolderTests.swift */,
-			);
-			path = LinkFolderTests;
-			sourceTree = "<group>";
-		};
-		105B96DF28FE547600E95B53 /* LinkFolderUITests */ = {
-			isa = PBXGroup;
-			children = (
-				105B96E028FE547600E95B53 /* LinkFolderUITests.swift */,
-				105B96E228FE547600E95B53 /* LinkFolderUITestsLaunchTests.swift */,
-			);
-			path = LinkFolderUITests;
-			sourceTree = "<group>";
-		};
 		105B96EF28FE54A200E95B53 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				105B96F928FE565100E95B53 /* Home.storyboard */,
-				105B96F728FE564700E95B53 /* HomeViewController.swift */,
+				29658D282910A20700DFA491 /* Cells */,
+				29658D382910A21A00DFA491 /* AddLinkViewController.swift */,
+				29658D3A2910A21A00DFA491 /* EditLinkViewController.swift */,
+				298E42CE2910F68F002EA69B /* ChangeFolderNameViewController.swift */,
+				291CC3362911275C004592E4 /* Home.storyboard */,
+				29CBFCBA291166DC003B0D3F /* ShowLinkMorePopUpViewController.swift */,
+				291CC3372911275C004592E4 /* HomeViewController.swift */,
+				291097622910E1FE00FAA8AB /* AddFolderPopUpViewController.swift */,
+				298E42C72910F27B002EA69B /* LinkListViewController.swift */,
+				29658D3B2910A21A00DFA491 /* ShareFolderViewController.swift */,
+				298E42CC2910F62B002EA69B /* ShowFolderMorePopUpViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -245,20 +224,36 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		105B972728FE9DB200E95B53 /* Fonts */ = {
+		29658D152910A07700DFA491 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				105B972E28FE9DC200E95B53 /* Pretendard-Black.otf */,
-				105B973028FE9DC200E95B53 /* Pretendard-Bold.otf */,
-				105B972A28FE9DC100E95B53 /* Pretendard-ExtraBold.otf */,
-				105B972B28FE9DC100E95B53 /* Pretendard-ExtraLight.otf */,
-				105B972C28FE9DC100E95B53 /* Pretendard-Light.otf */,
-				105B972928FE9DC100E95B53 /* Pretendard-Medium.otf */,
-				105B972D28FE9DC200E95B53 /* Pretendard-Regular.otf */,
-				105B972F28FE9DC200E95B53 /* Pretendard-SemiBold.otf */,
-				105B972828FE9DC100E95B53 /* Pretendard-Thin.otf */,
+				29658D162910A07700DFA491 /* Pretendard-Regular.otf */,
+				29658D172910A07700DFA491 /* Pretendard-Black.otf */,
+				29658D182910A07700DFA491 /* Pretendard-Medium.otf */,
+				29658D192910A07700DFA491 /* Pretendard-Light.otf */,
+				29658D1A2910A07700DFA491 /* Pretendard-ExtraBold.otf */,
+				29658D1B2910A07700DFA491 /* Pretendard-Bold.otf */,
+				29658D1C2910A07700DFA491 /* Pretendard-Thin.otf */,
+				29658D1D2910A07700DFA491 /* Pretendard-ExtraLight.otf */,
+				29658D1E2910A07700DFA491 /* Pretendard-SemiBold.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		29658D282910A20700DFA491 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				29658D292910A20700DFA491 /* ProfileCollectionViewCell.xib */,
+				29658D2A2910A20700DFA491 /* ProfileCollectionViewCell.swift */,
+				29658D2B2910A20700DFA491 /* FolderCollectionViewCell.xib */,
+				29658D2C2910A20700DFA491 /* CustomCollectionViewFlowLayout.swift */,
+				29658D2D2910A20700DFA491 /* LinkListTableViewCell.xib */,
+				29658D2E2910A20700DFA491 /* LinkListTableViewCell.swift */,
+				29658D2F2910A20700DFA491 /* FolderCollectionViewCell.swift */,
+				298E42C32910ED25002EA69B /* ShareFolderTableViewCell.swift */,
+				298E42C42910ED25002EA69B /* ShareFolderTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		2CDB23B06B33250966777F83 /* Pods */ = {
@@ -271,7 +266,6 @@
 				B60D5C50067E3CFE46DA8ED5 /* Pods-LinkFolderTests.debug.xcconfig */,
 				E7246C937E60169086A3A9AB /* Pods-LinkFolderTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -307,45 +301,6 @@
 			productReference = 105B96BC28FE547500E95B53 /* LinkFolder.app */;
 			productType = "com.apple.product-type.application";
 		};
-		105B96D128FE547600E95B53 /* LinkFolderTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 105B96E928FE547600E95B53 /* Build configuration list for PBXNativeTarget "LinkFolderTests" */;
-			buildPhases = (
-				B2D047E7598CC04A7D08531C /* [CP] Check Pods Manifest.lock */,
-				105B96CE28FE547600E95B53 /* Sources */,
-				105B96CF28FE547600E95B53 /* Frameworks */,
-				105B96D028FE547600E95B53 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				105B96D428FE547600E95B53 /* PBXTargetDependency */,
-			);
-			name = LinkFolderTests;
-			productName = LinkFolderTests;
-			productReference = 105B96D228FE547600E95B53 /* LinkFolderTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		105B96DB28FE547600E95B53 /* LinkFolderUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 105B96EC28FE547600E95B53 /* Build configuration list for PBXNativeTarget "LinkFolderUITests" */;
-			buildPhases = (
-				719CD88F47E6B6232037382B /* [CP] Check Pods Manifest.lock */,
-				105B96D828FE547600E95B53 /* Sources */,
-				105B96D928FE547600E95B53 /* Frameworks */,
-				105B96DA28FE547600E95B53 /* Resources */,
-				5DB62798EE25B6960932360C /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				105B96DE28FE547600E95B53 /* PBXTargetDependency */,
-			);
-			name = LinkFolderUITests;
-			productName = LinkFolderUITests;
-			productReference = 105B96DC28FE547600E95B53 /* LinkFolderUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -359,18 +314,10 @@
 					105B96BB28FE547500E95B53 = {
 						CreatedOnToolsVersion = 14.0;
 					};
-					105B96D128FE547600E95B53 = {
-						CreatedOnToolsVersion = 14.0;
-						TestTargetID = 105B96BB28FE547500E95B53;
-					};
-					105B96DB28FE547600E95B53 = {
-						CreatedOnToolsVersion = 14.0;
-						TestTargetID = 105B96BB28FE547500E95B53;
-					};
 				};
 			};
 			buildConfigurationList = 105B96B728FE547500E95B53 /* Build configuration list for PBXProject "LinkFolder" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -383,8 +330,6 @@
 			projectRoot = "";
 			targets = (
 				105B96BB28FE547500E95B53 /* LinkFolder */,
-				105B96D128FE547600E95B53 /* LinkFolderTests */,
-				105B96DB28FE547600E95B53 /* LinkFolderUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -394,84 +339,35 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				105B973928FE9DC300E95B53 /* Pretendard-Bold.otf in Resources */,
-				105B973428FE9DC300E95B53 /* Pretendard-ExtraLight.otf in Resources */,
-				105B973728FE9DC300E95B53 /* Pretendard-Black.otf in Resources */,
+				29658D262910A07700DFA491 /* Pretendard-ExtraLight.otf in Resources */,
+				29658D232910A07700DFA491 /* Pretendard-ExtraBold.otf in Resources */,
+				29658D222910A07700DFA491 /* Pretendard-Light.otf in Resources */,
+				29658D342910A20700DFA491 /* LinkListTableViewCell.xib in Resources */,
 				105B96CC28FE547600E95B53 /* LaunchScreen.storyboard in Resources */,
+				29658D242910A07700DFA491 /* Pretendard-Bold.otf in Resources */,
 				105B96FC28FE565D00E95B53 /* Friends.storyboard in Resources */,
 				105B970A28FE578700E95B53 /* Notice.storyboard in Resources */,
 				105B970428FE570400E95B53 /* Signup.storyboard in Resources */,
-				105B973628FE9DC300E95B53 /* Pretendard-Regular.otf in Resources */,
 				105B970028FE56E500E95B53 /* Login.storyboard in Resources */,
 				105B971528FE62DE00E95B53 /* TextFieldComponent.xib in Resources */,
 				105B96C928FE547600E95B53 /* Assets.xcassets in Resources */,
-				105B973528FE9DC300E95B53 /* Pretendard-Light.otf in Resources */,
 				105B971C28FE7BDD00E95B53 /* ButtonComponent.xib in Resources */,
 				105B96C728FE547500E95B53 /* Main.storyboard in Resources */,
-				105B973328FE9DC300E95B53 /* Pretendard-ExtraBold.otf in Resources */,
-				105B973128FE9DC300E95B53 /* Pretendard-Thin.otf in Resources */,
-				105B973828FE9DC300E95B53 /* Pretendard-SemiBold.otf in Resources */,
-				105B96FA28FE565100E95B53 /* Home.storyboard in Resources */,
-				105B973228FE9DC300E95B53 /* Pretendard-Medium.otf in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		105B96D028FE547600E95B53 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		105B96DA28FE547600E95B53 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				29658D1F2910A07700DFA491 /* Pretendard-Regular.otf in Resources */,
+				29658D302910A20700DFA491 /* ProfileCollectionViewCell.xib in Resources */,
+				29658D322910A20700DFA491 /* FolderCollectionViewCell.xib in Resources */,
+				29658D272910A07700DFA491 /* Pretendard-SemiBold.otf in Resources */,
+				29658D202910A07700DFA491 /* Pretendard-Black.otf in Resources */,
+				29658D252910A07700DFA491 /* Pretendard-Thin.otf in Resources */,
+				298E42C62910ED25002EA69B /* ShareFolderTableViewCell.xib in Resources */,
+				291CC3382911275C004592E4 /* Home.storyboard in Resources */,
+				29658D212910A07700DFA491 /* Pretendard-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5DB62798EE25B6960932360C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LinkFolder-LinkFolderUITests/Pods-LinkFolder-LinkFolderUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LinkFolder-LinkFolderUITests/Pods-LinkFolder-LinkFolderUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LinkFolder-LinkFolderUITests/Pods-LinkFolder-LinkFolderUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		719CD88F47E6B6232037382B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LinkFolder-LinkFolderUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		9F5B3AA0BE5A488058623BDA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -488,28 +384,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-LinkFolder-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B2D047E7598CC04A7D08531C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LinkFolderTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -540,50 +414,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				291097632910E1FE00FAA8AB /* AddFolderPopUpViewController.swift in Sources */,
 				105B970628FE572400E95B53 /* SignupViewController.swift in Sources */,
 				105B971A28FE7BCD00E95B53 /* ButtonComponent.swift in Sources */,
 				105B970228FE56F600E95B53 /* LoginViewController.swift in Sources */,
+				29658D312910A20700DFA491 /* ProfileCollectionViewCell.swift in Sources */,
+				291CC3392911275C004592E4 /* HomeViewController.swift in Sources */,
+				298E42C82910F27B002EA69B /* LinkListViewController.swift in Sources */,
 				105B96C428FE547500E95B53 /* ViewController.swift in Sources */,
+				298E42CF2910F68F002EA69B /* ChangeFolderNameViewController.swift in Sources */,
+				29658D352910A20700DFA491 /* LinkListTableViewCell.swift in Sources */,
+				29658D422910A21B00DFA491 /* ShareFolderViewController.swift in Sources */,
+				298E42CD2910F62B002EA69B /* ShowFolderMorePopUpViewController.swift in Sources */,
+				29658D3F2910A21B00DFA491 /* AddLinkViewController.swift in Sources */,
 				105B96FE28FE567200E95B53 /* FriendsViewController.swift in Sources */,
+				29658D412910A21B00DFA491 /* EditLinkViewController.swift in Sources */,
 				105B96C028FE547500E95B53 /* AppDelegate.swift in Sources */,
+				29658D332910A20700DFA491 /* CustomCollectionViewFlowLayout.swift in Sources */,
 				105B96C228FE547500E95B53 /* SceneDelegate.swift in Sources */,
+				298E42C52910ED25002EA69B /* ShareFolderTableViewCell.swift in Sources */,
+				29658D362910A20700DFA491 /* FolderCollectionViewCell.swift in Sources */,
 				105B970828FE577B00E95B53 /* NoticeViewController.swift in Sources */,
 				105B971128FE61D900E95B53 /* TextFieldComponent.swift in Sources */,
-				105B96F828FE564700E95B53 /* HomeViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		105B96CE28FE547600E95B53 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				105B96D728FE547600E95B53 /* LinkFolderTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		105B96D828FE547600E95B53 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				105B96E328FE547600E95B53 /* LinkFolderUITestsLaunchTests.swift in Sources */,
-				105B96E128FE547600E95B53 /* LinkFolderUITests.swift in Sources */,
+				29CBFCBB291166DC003B0D3F /* ShowLinkMorePopUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		105B96D428FE547600E95B53 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 105B96BB28FE547500E95B53 /* LinkFolder */;
-			targetProxy = 105B96D328FE547600E95B53 /* PBXContainerItemProxy */;
-		};
-		105B96DE28FE547600E95B53 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 105B96BB28FE547500E95B53 /* LinkFolder */;
-			targetProxy = 105B96DD28FE547600E95B53 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		105B96C528FE547500E95B53 /* Main.storyboard */ = {
@@ -727,6 +584,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FL466Y6686;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LinkFolder/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -755,6 +613,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FL466Y6686;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LinkFolder/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -775,82 +634,6 @@
 			};
 			name = Release;
 		};
-		105B96EA28FE547600E95B53 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B60D5C50067E3CFE46DA8ED5 /* Pods-LinkFolderTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = linkfolder.LinkFolderTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LinkFolder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LinkFolder";
-			};
-			name = Debug;
-		};
-		105B96EB28FE547600E95B53 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7246C937E60169086A3A9AB /* Pods-LinkFolderTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = linkfolder.LinkFolderTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LinkFolder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LinkFolder";
-			};
-			name = Release;
-		};
-		105B96ED28FE547600E95B53 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6FF5065AEBC335D5F6EF91C7 /* Pods-LinkFolder-LinkFolderUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = linkfolder.LinkFolderUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = LinkFolder;
-			};
-			name = Debug;
-		};
-		105B96EE28FE547600E95B53 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D42753133FE7E40F91E59B60 /* Pods-LinkFolder-LinkFolderUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = linkfolder.LinkFolderUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = LinkFolder;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -868,24 +651,6 @@
 			buildConfigurations = (
 				105B96E728FE547600E95B53 /* Debug */,
 				105B96E828FE547600E95B53 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		105B96E928FE547600E95B53 /* Build configuration list for PBXNativeTarget "LinkFolderTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				105B96EA28FE547600E95B53 /* Debug */,
-				105B96EB28FE547600E95B53 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		105B96EC28FE547600E95B53 /* Build configuration list for PBXNativeTarget "LinkFolderUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				105B96ED28FE547600E95B53 /* Debug */,
-				105B96EE28FE547600E95B53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
