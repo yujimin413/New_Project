@@ -75,6 +75,12 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="button" destination="4V4-aS-7Z5" id="azd-P0-nEA"/>
+                <outlet property="idTextField" destination="n1W-yW-jjP" id="v6t-gX-iQg"/>
+                <outlet property="nicknameTextField" destination="57Z-8a-mMp" id="egH-67-eAG"/>
+                <outlet property="profileImageView" destination="1hG-xQ-f8l" id="5O6-Hs-HRr"/>
+            </connections>
             <point key="canvasLocation" x="21" y="21"/>
         </tableViewCell>
     </objects>

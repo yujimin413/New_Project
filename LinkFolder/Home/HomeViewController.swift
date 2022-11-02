@@ -9,7 +9,6 @@ import UIKit
 
 class HomeViewController: UIViewController {
     // MARK: - Properties
-    
     @IBOutlet weak var homeCollectionView: UICollectionView!
     @IBOutlet weak var addFolderButton: UIButton!
     
@@ -20,12 +19,6 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         setupCollectionView()
         setFlowLayout()
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "AddFolderPopUpViewController" {
-            guard let profilePhotoEditVC: AddFolderPopUpViewController = segue.destination as? AddFolderPopUpViewController else { return }
-        }
     }
     
     // MARK: - Actions
@@ -77,7 +70,6 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     // 셀 생성
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-
         let section = indexPath.section
         switch section {
         case 0:
@@ -120,7 +112,6 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
                 height: collectionView.frame.height * 150 / 673)
         }
     }
-
     // 열 간격
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
@@ -132,7 +123,6 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
             return CGFloat(0)
         }
     }
-
     // 행 간격
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
@@ -144,7 +134,6 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
             return CGFloat(10)
         }
     }
-
     // contentInset 상하좌우
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,

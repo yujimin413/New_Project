@@ -12,6 +12,11 @@ class ShareFolderTableViewCell: UITableViewCell {
     //MARK: - Properties
     static let identifier = "ShareFolderTableViewCell"
     
+    @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var idTextField: UILabel!
+    @IBOutlet weak var nicknameTextField: UILabel!
+    @IBOutlet weak var button: UIButton!
+    
     //MARK: - LifeCycles
     override func awakeFromNib() {
         super.awakeFromNib()

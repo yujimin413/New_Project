@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kAJ-Yv-6dX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hlh-YT-7Hs">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -67,7 +67,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NnW-JB-5dn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-929" y="-2"/>
+            <point key="canvasLocation" x="-1668" y="-675"/>
         </scene>
         <!--홈화면기본-+버튼팝업-->
         <scene sceneID="Ixw-Qn-kfR">
@@ -154,12 +154,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="905-AI-E9S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-92.307692307692307" y="-2.1327014218009479"/>
+            <point key="canvasLocation" x="-831" y="-675"/>
         </scene>
         <!--홈화면-폴더내부-->
         <scene sceneID="jUs-gU-pRU">
             <objects>
-                <viewController title="홈화면-폴더내부" id="oqj-LC-rak" customClass="LinkListViewController" sceneMemberID="viewController">
+                <viewController title="홈화면-폴더내부" id="oqj-LC-rak" customClass="LinkListViewController" customModule="LinkFolder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o03-4r-BAH">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -195,7 +195,7 @@
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="addLinkButton" destination="vmv-Th-PH6" id="Clz-qO-grG"/>
+                        <outlet property="addLinkButton" destination="vmv-Th-PH6" id="VWl-pg-NPb"/>
                         <outlet property="linkListTableView" destination="AIP-R9-PDT" id="qw6-dG-6Ew"/>
                     </connections>
                 </viewController>
@@ -224,7 +224,7 @@
         <!--홈화면-링크수정-->
         <scene sceneID="DVK-bw-29h">
             <objects>
-                <viewController title="홈화면-링크수정" id="mRy-eU-Es1" customClass="LinkListViewController" sceneMemberID="viewController">
+                <viewController title="홈화면-링크수정" id="mRy-eU-Es1" customClass="EditLinkViewController" customModule="LinkFolder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nsO-OK-UGG">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -295,6 +295,11 @@
                     <navigationItem key="navigationItem" title="오픈소스" id="uQd-QQ-nNI">
                         <barButtonItem key="leftBarButtonItem" image="BackBtn" id="3xL-yC-0BU"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="editButton" destination="0Up-Cf-xsV" id="as7-Rx-8jf"/>
+                        <outlet property="linkAddressTextField" destination="TFR-QB-6w9" id="Z6Y-b4-1J2"/>
+                        <outlet property="linkNameTextField" destination="Lpm-fL-qYm" id="xz3-L6-EhT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D1e-A4-vOC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -303,7 +308,7 @@
         <!--홈화면-링크추가-->
         <scene sceneID="n48-Eh-kwX">
             <objects>
-                <viewController title="홈화면-링크추가" id="iXe-YI-ffN" customClass="LinkListViewController" sceneMemberID="viewController">
+                <viewController title="홈화면-링크추가" id="iXe-YI-ffN" customClass="AddLinkViewController" customModule="LinkFolder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2bf-M3-wUC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -374,6 +379,11 @@
                     <navigationItem key="navigationItem" title="오픈소스" id="2Lp-RC-Pyc">
                         <barButtonItem key="leftBarButtonItem" image="BackBtn" id="aJg-W5-QIq"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="linkAddressTextField" destination="aff-eH-EQ3" id="GcI-Br-LR5"/>
+                        <outlet property="linkNameTextField" destination="op0-Xk-y4s" id="k1L-YB-jv2"/>
+                        <outlet property="saveButton" destination="3gb-Ad-RjE" id="kj6-Cx-BSL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hNt-Tz-9Dn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -392,6 +402,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SearchBar" translatesAutoresizingMaskIntoConstraints="NO" id="BzU-Cd-252">
+                                <rect key="frame" x="13" y="85" width="364" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lfF-4X-8ov"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -404,7 +418,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jCz-Ar-9Gi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1840" y="-675"/>
+            <point key="canvasLocation" x="1840" y="-675.35545023696682"/>
         </scene>
         <!--홈화면기본-더보기팝업-->
         <scene sceneID="xs9-tN-R0p">
@@ -429,28 +443,13 @@
                                     <constraint firstAttribute="height" constant="160" id="uwe-Ri-IeB"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aix-bl-zgu">
-                                <rect key="frame" x="155" y="448" width="87" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemRedColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="폴더 삭제">
-                                    <fontDescription key="titleFontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="cancelButtonTapped:" destination="kSP-yf-ter" eventType="touchUpInside" id="vVg-md-eGw"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3a-b1-tkY">
-                                <rect key="frame" x="155" y="362" width="87" height="35"/>
+                                <rect key="frame" x="133" y="357" width="124" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="폴더 공유">
                                     <fontDescription key="titleFontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
                                 </buttonConfiguration>
-                                <connections>
-                                    <action selector="addButtonTapped:" destination="kSP-yf-ter" eventType="touchUpInside" id="r2F-7h-pHZ"/>
-                                </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v1T-sR-Nhp">
                                 <rect key="frame" x="75" y="400" width="240" height="1"/>
@@ -464,15 +463,21 @@
                                 <color key="backgroundColor" name="Gray4"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdM-G0-eIf">
-                                <rect key="frame" x="148" y="405" width="102" height="35"/>
+                                <rect key="frame" x="116" y="405" width="158" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="폴더명 변경">
                                     <fontDescription key="titleFontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
                                 </buttonConfiguration>
-                                <connections>
-                                    <action selector="addButtonTapped:" destination="kSP-yf-ter" eventType="touchUpInside" id="6FE-s5-g7Y"/>
-                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aix-bl-zgu">
+                                <rect key="frame" x="116" y="453" width="160" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="폴더 삭제">
+                                    <fontDescription key="titleFontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
+                                </buttonConfiguration>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9GG-wQ-Yko"/>
@@ -487,14 +492,15 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="addButton" destination="C3a-b1-tkY" id="0xF-Ah-AgC"/>
                         <outlet property="backButton" destination="bby-HQ-2Ud" id="lHg-hK-WFX"/>
-                        <outlet property="cancelButton" destination="Aix-bl-zgu" id="3QJ-Eb-GYd"/>
+                        <outlet property="changeFolderNameButton" destination="gdM-G0-eIf" id="y80-ch-5zh"/>
+                        <outlet property="deleteFolderButton" destination="Aix-bl-zgu" id="PPQ-Bi-Fmp"/>
+                        <outlet property="shareFolderbutton" destination="C3a-b1-tkY" id="FkG-L3-tli"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JSd-gf-baX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-92" y="-675"/>
+            <point key="canvasLocation" x="-12.307692307692307" y="-675.35545023696682"/>
         </scene>
         <!--홈화면기본-+버튼팝업-->
         <scene sceneID="u25-Ye-XqO">
@@ -543,9 +549,6 @@
                                 <buttonConfiguration key="configuration" style="plain" title="취소">
                                     <fontDescription key="titleFontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
                                 </buttonConfiguration>
-                                <connections>
-                                    <action selector="cancelButtonTapped:" destination="rqe-tu-760" eventType="touchUpInside" id="MbP-gb-SYM"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIz-5K-JAm">
                                 <rect key="frame" x="227" y="449" width="54" height="35"/>
@@ -554,9 +557,6 @@
                                 <buttonConfiguration key="configuration" style="plain" title="완료">
                                     <fontDescription key="titleFontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
                                 </buttonConfiguration>
-                                <connections>
-                                    <action selector="addButtonTapped:" destination="rqe-tu-760" eventType="touchUpInside" id="5VG-pS-17M"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jko-da-ssH"/>
@@ -573,20 +573,20 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="addButton" destination="sIz-5K-JAm" id="vdZ-U6-eZX"/>
                         <outlet property="backButton" destination="isb-nc-DZ8" id="ylZ-d4-dkl"/>
-                        <outlet property="cancelButton" destination="g1x-cJ-gn5" id="ucc-SC-Miq"/>
-                        <outlet property="folderNameTextField" destination="6F9-92-iBL" id="0EF-wS-XRc"/>
+                        <outlet property="cancelButton" destination="g1x-cJ-gn5" id="DSw-WP-Z84"/>
+                        <outlet property="doneButton" destination="sIz-5K-JAm" id="Os6-Mz-vAn"/>
+                        <outlet property="folderNameTextField" destination="6F9-92-iBL" id="2jx-H0-GM2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mZJ-Db-NcQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="911" y="-675"/>
+            <point key="canvasLocation" x="749" y="-675"/>
         </scene>
         <!--홈화면-폴더내부-링크더보기팝업-->
         <scene sceneID="Pkg-Dn-6vS">
             <objects>
-                <viewController title="홈화면-폴더내부-링크더보기팝업" modalPresentationStyle="overFullScreen" id="a8W-uT-1oP" customClass="ShowLinkMorePopUpViewController" sceneMemberID="viewController">
+                <viewController title="홈화면-폴더내부-링크더보기팝업" modalPresentationStyle="overFullScreen" id="a8W-uT-1oP" customClass="ShowLinkMorePopUpViewController" customModule="LinkFolder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V7K-Gc-gSC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -595,9 +595,6 @@
                                 <rect key="frame" x="0.0" y="47" width="390" height="763"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
-                                <connections>
-                                    <action selector="backButtonTapped:" destination="a8W-uT-1oP" eventType="touchUpInside" id="VSG-kU-Wd8"/>
-                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AddFolderPopUp" translatesAutoresizingMaskIntoConstraints="NO" id="Per-Ra-Vq5">
                                 <rect key="frame" x="58.666666666666657" y="342" width="273" height="160"/>
@@ -606,28 +603,13 @@
                                     <constraint firstAttribute="height" constant="160" id="x0B-fn-ls7"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIZ-6m-PLh">
-                                <rect key="frame" x="155" y="448" width="87" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemRedColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="링크 삭제">
-                                    <fontDescription key="titleFontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="cancelButtonTapped:" destination="a8W-uT-1oP" eventType="touchUpInside" id="FDh-Qb-Xh5"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tX-nV-3lo">
-                                <rect key="frame" x="155" y="362" width="87" height="35"/>
+                                <rect key="frame" x="131" y="357" width="129" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="링크 수정">
                                     <fontDescription key="titleFontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
                                 </buttonConfiguration>
-                                <connections>
-                                    <action selector="addButtonTapped:" destination="a8W-uT-1oP" eventType="touchUpInside" id="XcM-Tc-crP"/>
-                                </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I5W-gM-e0W">
                                 <rect key="frame" x="75" y="400" width="240" height="1"/>
@@ -641,15 +623,21 @@
                                 <color key="backgroundColor" name="Gray4"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAx-6M-nDF">
-                                <rect key="frame" x="156" y="405" width="87" height="35"/>
+                                <rect key="frame" x="128" y="405" width="135" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="링크 공유">
                                     <fontDescription key="titleFontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
                                 </buttonConfiguration>
-                                <connections>
-                                    <action selector="addButtonTapped:" destination="a8W-uT-1oP" eventType="touchUpInside" id="ips-bo-l4v"/>
-                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIZ-6m-PLh">
+                                <rect key="frame" x="120" y="453" width="150" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="링크 삭제">
+                                    <fontDescription key="titleFontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
+                                </buttonConfiguration>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6lO-c1-cGO"/>
@@ -664,14 +652,14 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="addButton" destination="7tX-nV-3lo" id="FrU-YM-iVT"/>
-                        <outlet property="backButton" destination="wVU-qW-vgR" id="zrW-76-vSJ"/>
-                        <outlet property="cancelButton" destination="SIZ-6m-PLh" id="4hp-Rs-hBE"/>
+                        <outlet property="deleteLinkButton" destination="SIZ-6m-PLh" id="Ne7-jx-SJQ"/>
+                        <outlet property="editLinkButton" destination="7tX-nV-3lo" id="7JT-7H-eta"/>
+                        <outlet property="shareLinkButton" destination="nAx-6M-nDF" id="sZB-LW-ZUE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CVz-6c-1hF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2818" y="-2"/>
+            <point key="canvasLocation" x="2816.9230769230767" y="-2.1327014218009479"/>
         </scene>
     </scenes>
     <designables>
@@ -688,6 +676,7 @@
         <image name="AddFolderPopUp" width="273" height="160"/>
         <image name="BackBtn" width="20" height="20"/>
         <image name="EditDoneBtn" width="290" height="44"/>
+        <image name="SearchBar" width="364" height="25"/>
         <namedColor name="Gray4">
             <color red="0.65490196078431373" green="0.66274509803921566" blue="0.6705882352941176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

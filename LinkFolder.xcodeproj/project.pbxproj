@@ -52,7 +52,7 @@
 		298E42C82910F27B002EA69B /* LinkListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298E42C72910F27B002EA69B /* LinkListViewController.swift */; };
 		298E42CD2910F62B002EA69B /* ShowFolderMorePopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298E42CC2910F62B002EA69B /* ShowFolderMorePopUpViewController.swift */; };
 		298E42CF2910F68F002EA69B /* ChangeFolderNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298E42CE2910F68F002EA69B /* ChangeFolderNameViewController.swift */; };
-		29C306B52910F7EC00EB4DBA /* ShowLinkMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C306B42910F7EC00EB4DBA /* ShowLinkMoreViewController.swift */; };
+		29CBFCBB291166DC003B0D3F /* ShowLinkMorePopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CBFCBA291166DC003B0D3F /* ShowLinkMorePopUpViewController.swift */; };
 		CD42DFE210AA47613B2510A1 /* Pods_LinkFolder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C675BD803A677F9DD770C2E /* Pods_LinkFolder.framework */; };
 /* End PBXBuildFile section */
 
@@ -106,7 +106,7 @@
 		298E42C72910F27B002EA69B /* LinkListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkListViewController.swift; sourceTree = "<group>"; };
 		298E42CC2910F62B002EA69B /* ShowFolderMorePopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowFolderMorePopUpViewController.swift; sourceTree = "<group>"; };
 		298E42CE2910F68F002EA69B /* ChangeFolderNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeFolderNameViewController.swift; sourceTree = "<group>"; };
-		29C306B42910F7EC00EB4DBA /* ShowLinkMoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowLinkMoreViewController.swift; sourceTree = "<group>"; };
+		29CBFCBA291166DC003B0D3F /* ShowLinkMorePopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowLinkMorePopUpViewController.swift; sourceTree = "<group>"; };
 		5A7DA9320ACA1AD904764689 /* Pods_LinkFolder_LinkFolderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinkFolder_LinkFolderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AC481525C8AD0FD9F6F64FA /* Pods-LinkFolder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkFolder.debug.xcconfig"; path = "Target Support Files/Pods-LinkFolder/Pods-LinkFolder.debug.xcconfig"; sourceTree = "<group>"; };
 		6FF5065AEBC335D5F6EF91C7 /* Pods-LinkFolder-LinkFolderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkFolder-LinkFolderUITests.debug.xcconfig"; path = "Target Support Files/Pods-LinkFolder-LinkFolderUITests/Pods-LinkFolder-LinkFolderUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -169,13 +169,13 @@
 		105B96EF28FE54A200E95B53 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				29658D282910A20700DFA491 /* Cell */,
+				29658D282910A20700DFA491 /* Cells */,
 				29658D382910A21A00DFA491 /* AddLinkViewController.swift */,
 				29658D3A2910A21A00DFA491 /* EditLinkViewController.swift */,
 				298E42CE2910F68F002EA69B /* ChangeFolderNameViewController.swift */,
 				291CC3362911275C004592E4 /* Home.storyboard */,
+				29CBFCBA291166DC003B0D3F /* ShowLinkMorePopUpViewController.swift */,
 				291CC3372911275C004592E4 /* HomeViewController.swift */,
-				29C306B42910F7EC00EB4DBA /* ShowLinkMoreViewController.swift */,
 				291097622910E1FE00FAA8AB /* AddFolderPopUpViewController.swift */,
 				298E42C72910F27B002EA69B /* LinkListViewController.swift */,
 				29658D3B2910A21A00DFA491 /* ShareFolderViewController.swift */,
@@ -240,7 +240,7 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		29658D282910A20700DFA491 /* Cell */ = {
+		29658D282910A20700DFA491 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 				29658D292910A20700DFA491 /* ProfileCollectionViewCell.xib */,
@@ -253,7 +253,7 @@
 				298E42C32910ED25002EA69B /* ShareFolderTableViewCell.swift */,
 				298E42C42910ED25002EA69B /* ShareFolderTableViewCell.xib */,
 			);
-			path = Cell;
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		2CDB23B06B33250966777F83 /* Pods */ = {
@@ -414,7 +414,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29C306B52910F7EC00EB4DBA /* ShowLinkMoreViewController.swift in Sources */,
 				291097632910E1FE00FAA8AB /* AddFolderPopUpViewController.swift in Sources */,
 				105B970628FE572400E95B53 /* SignupViewController.swift in Sources */,
 				105B971A28FE7BCD00E95B53 /* ButtonComponent.swift in Sources */,
@@ -437,6 +436,7 @@
 				29658D362910A20700DFA491 /* FolderCollectionViewCell.swift in Sources */,
 				105B970828FE577B00E95B53 /* NoticeViewController.swift in Sources */,
 				105B971128FE61D900E95B53 /* TextFieldComponent.swift in Sources */,
+				29CBFCBB291166DC003B0D3F /* ShowLinkMorePopUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

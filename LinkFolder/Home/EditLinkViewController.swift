@@ -8,7 +8,12 @@
 import UIKit
 
 class EditLinkViewController: UIViewController {
-
+    // MARK: - Properties
+    @IBOutlet weak var linkNameTextField: UITextField!
+    @IBOutlet weak var linkAddressTextField: UITextField!
+    @IBOutlet weak var editButton: UIButton!
+    
+    // MARK: - LifeCycles
     override func viewDidLoad() {
         super.viewDidLoad()
     }
