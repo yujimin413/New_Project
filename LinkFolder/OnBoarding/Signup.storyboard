@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNv-9r-cbe" customClass="ButtonComponent" customModule="LinkFolder" customModuleProvider="target">
-                                <rect key="frame" x="50" y="586.33333333333337" width="275" height="44"/>
+                                <rect key="frame" x="50" y="585" width="275" height="44"/>
                                 <color key="backgroundColor" name="Gray4"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="thV-Er-Qu3"/>
@@ -43,18 +43,18 @@
                                 <buttonConfiguration key="configuration" style="plain" image="ProfileImageEdit"/>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="gkX-wk-Suq">
-                                <rect key="frame" x="50" y="250.99999999999997" width="275" height="265.33333333333326"/>
+                                <rect key="frame" x="50" y="251" width="275" height="264"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Lcn-vc-9kG">
-                                        <rect key="frame" x="0.0" y="0.0" width="275" height="54.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="54"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="아이디 입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="usu-UO-bgP">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="아이디 입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="usu-UO-bgP" customClass="TextFieldComponent" customModule="LinkFolder" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="275" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6~20자의 영문 혹은 영문과 숫자를 조합" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IEj-Rv-UdW">
-                                                <rect key="frame" x="0.0" y="40" width="275" height="14.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="40" width="275" height="14"/>
                                                 <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
                                                 <color key="textColor" name="GrayText"/>
                                                 <nil key="highlightedColor"/>
@@ -62,15 +62,15 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="fdm-YM-eK8">
-                                        <rect key="frame" x="0.0" y="70.333333333333314" width="275" height="54.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="70" width="275" height="54"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="닉네임 입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bLh-62-op8">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="닉네임 입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bLh-62-op8" customClass="TextFieldComponent" customModule="LinkFolder" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="275" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1~20자 한문, 영문, 숫자 입력 가능" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGe-f6-jQK">
-                                                <rect key="frame" x="0.0" y="40" width="275" height="14.333333333333336"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1~20자 한글, 영문, 숫자 입력 가능" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGe-f6-jQK">
+                                                <rect key="frame" x="0.0" y="40" width="275" height="14"/>
                                                 <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
                                                 <color key="textColor" name="GrayText"/>
                                                 <nil key="highlightedColor"/>
@@ -78,15 +78,15 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="dU2-WI-u0S">
-                                        <rect key="frame" x="0.0" y="140.66666666666669" width="275" height="54.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="140" width="275" height="54"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호 입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O4B-w7-v60">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호 입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O4B-w7-v60" customClass="TextFieldComponent" customModule="LinkFolder" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="275" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8~20자의 영문, 숫자, 특수문자를 조합" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FVQ-sD-xou">
-                                                <rect key="frame" x="0.0" y="40" width="275" height="14.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="40" width="275" height="14"/>
                                                 <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
                                                 <color key="textColor" name="GrayText"/>
                                                 <nil key="highlightedColor"/>
@@ -94,15 +94,15 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="2Bq-h1-w7F">
-                                        <rect key="frame" x="0.0" y="211" width="275" height="54.333333333333314"/>
+                                        <rect key="frame" x="0.0" y="210" width="275" height="54"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호 재입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sSa-zw-Fm6">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호 재입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sSa-zw-Fm6" customClass="TextFieldComponent" customModule="LinkFolder" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="275" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPO-gT-n4A">
-                                                <rect key="frame" x="0.0" y="40" width="275" height="14.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="40" width="275" height="14"/>
                                                 <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
                                                 <color key="textColor" name="GrayText"/>
                                                 <nil key="highlightedColor"/>
@@ -126,9 +126,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="idLabel" destination="IEj-Rv-UdW" id="qNK-rJ-8Al"/>
                         <outlet property="idTextField" destination="usu-UO-bgP" id="PzB-PM-vXo"/>
+                        <outlet property="nicknameLabel" destination="RGe-f6-jQK" id="Wbq-SK-Zf7"/>
                         <outlet property="nicknameTextField" destination="bLh-62-op8" id="hPd-V4-pfN"/>
+                        <outlet property="passwordConfirmLabel" destination="VPO-gT-n4A" id="r2Q-KP-A0x"/>
                         <outlet property="passwordConfirmTextField" destination="sSa-zw-Fm6" id="aOw-42-vBb"/>
+                        <outlet property="passwordLabel" destination="FVQ-sD-xou" id="ghX-az-Lg8"/>
                         <outlet property="passwordTextField" destination="O4B-w7-v60" id="tPE-qx-KXt"/>
                         <outlet property="profileImageButton" destination="0uV-P3-Wut" id="g5e-zm-bgf"/>
                         <outlet property="signupButton" destination="GNv-9r-cbe" id="aKF-rA-Yo0"/>

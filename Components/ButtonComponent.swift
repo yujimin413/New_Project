@@ -20,7 +20,7 @@ class ButtonComponent: UIButton {
     
     func unactivateButton(){
         self.isEnabled = false
-        self.backgroundColor = UIColor(named: "gray4")
+        self.backgroundColor = UIColor(named: "Gray4")
     }
     
     func activateButton(){
