@@ -33,6 +33,23 @@ class ShowFolderMorePopUpViewController: UIViewController {
     
     @IBAction func changeFolderNameButtonDidTap(_ sender: Any) {
         
+        let storyboard = UIStoryboard.init(name: "ChangeFolderNamePopUp", bundle: nil)
+        let changeFolderNamePopUpVC = storyboard.instantiateViewController(withIdentifier: "ChangeFolderNamePopUpVC")
+        changeFolderNamePopUpVC.modalPresentationStyle = .overCurrentContext
+        
+        // 현재 더보기 팝업뷰 내리고 폴더명 변경 팝업뷰 띄우기
+        guard let pvc = self.presentingViewController else { return }
+        
+        self.dismiss(animated: true) {
+          pvc.present(changeFolderNamePopUpVC, animated: true, completion: nil)
+        }
+        
+        // 폴더명 변경 팝업 띄우기
+//        let storyboard = UIStoryboard.init(name: "ChangeFolderNamePopUp", bundle: nil)
+//        let changeFolderNamePopUpVC = storyboard.instantiateViewController(withIdentifier: "ChangeFolderNamePopUpVC")
+//        changeFolderNamePopUpVC.modalPresentationStyle = .overCurrentContext
+//        self.present(changeFolderNamePopUpVC, animated: true, completion: nil)
+        
     }
     
     @IBAction func deleteFolderButtonDidTap(_ sender: Any) {

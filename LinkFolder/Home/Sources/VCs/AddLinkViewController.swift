@@ -17,4 +17,14 @@ class AddLinkViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    // MARK: - Actions
+    @IBAction func backButtonDidTap(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func saveButtonDidTap(_ sender: Any) {
+        // 링크 추가 API 호출
+        self.dismiss(animated: true, completion: nil)
+    }
 }

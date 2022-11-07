@@ -29,6 +29,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="AddBtn"/>
+                                <connections>
+                                    <action selector="addLinkButtonDidTap:" destination="oqj-LC-rak" eventType="touchUpInside" id="fFu-Nh-5wB"/>
+                                </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nXP-wG-OGn">
                                 <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -80,7 +83,7 @@
         <!--홈화면-폴더내부-링크더보기팝업-->
         <scene sceneID="Pkg-Dn-6vS">
             <objects>
-                <viewController title="홈화면-폴더내부-링크더보기팝업" modalPresentationStyle="overFullScreen" id="a8W-uT-1oP" customClass="ShowLinkMorePopUpViewController" customModule="LinkFolder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ShowLinkMorePopUpVC" title="홈화면-폴더내부-링크더보기팝업" modalPresentationStyle="overFullScreen" id="a8W-uT-1oP" customClass="ShowLinkMorePopUpViewController" customModule="LinkFolder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V7K-Gc-gSC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -89,6 +92,9 @@
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="backButtonDidTap:" destination="a8W-uT-1oP" eventType="touchUpInside" id="VFT-U8-bys"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AddFolderPopUp" translatesAutoresizingMaskIntoConstraints="NO" id="Per-Ra-Vq5">
                                 <rect key="frame" x="60" y="346" width="273" height="160"/>
@@ -104,6 +110,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="링크 수정">
                                     <fontDescription key="titleFontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="editLinkButtonDidTap:" destination="a8W-uT-1oP" eventType="touchUpInside" id="n4p-p1-wvb"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I5W-gM-e0W">
                                 <rect key="frame" x="75" y="400" width="240" height="1"/>
@@ -123,6 +132,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="링크 공유">
                                     <fontDescription key="titleFontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="shareLinkButtonDidTap:" destination="a8W-uT-1oP" eventType="touchUpInside" id="Xyd-w1-rfw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIZ-6m-PLh">
                                 <rect key="frame" x="120" y="453" width="150" height="35"/>
@@ -132,6 +144,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="링크 삭제">
                                     <fontDescription key="titleFontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="deleteLinkButtonDidTap:" destination="a8W-uT-1oP" eventType="touchUpInside" id="e71-pk-C1z"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6lO-c1-cGO"/>
@@ -146,6 +161,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="wVU-qW-vgR" id="dxu-yn-4Un"/>
                         <outlet property="deleteLinkButton" destination="SIZ-6m-PLh" id="Ne7-jx-SJQ"/>
                         <outlet property="editLinkButton" destination="7tX-nV-3lo" id="7JT-7H-eta"/>
                         <outlet property="shareLinkButton" destination="nAx-6M-nDF" id="sZB-LW-ZUE"/>
@@ -155,181 +171,11 @@
             </objects>
             <point key="canvasLocation" x="2816.9230769230767" y="-2.1327014218009479"/>
         </scene>
-        <!--홈화면-링크수정-->
-        <scene sceneID="4Ih-zw-BkD">
-            <objects>
-                <viewController title="홈화면-링크수정" id="Qb7-hB-Bfl" customClass="EditLinkViewController" customModule="LinkFolder" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="GnN-Vt-ZDq">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFp-cU-3zL">
-                                <rect key="frame" x="39.666666666666657" y="761" width="314" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="314" id="kDa-Ch-juQ"/>
-                                    <constraint firstAttribute="height" constant="44" id="kjO-Ne-gFM"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="EditDoneBtn"/>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="깃 사용법" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h4W-DI-Md2">
-                                <rect key="frame" x="51.666666666666657" y="159" width="290" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="MSx-Tu-eVl"/>
-                                    <constraint firstAttribute="width" constant="290" id="uED-YD-7aD"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="www.github.com" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CsD-aV-ajM">
-                                <rect key="frame" x="51.666666666666657" y="235" width="290" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="290" id="Bh9-4S-hvH"/>
-                                    <constraint firstAttribute="height" constant="34" id="Vu3-9d-bsr"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="링크 이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Po2-Lv-mn3">
-                                <rect key="frame" x="50" y="138" width="53" height="17"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="53" id="9Zt-tF-Qhp"/>
-                                    <constraint firstAttribute="height" constant="17" id="MqB-Od-h1P"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="링크 주소" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yt6-za-MfG">
-                                <rect key="frame" x="50" y="214" width="53" height="17"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="17" id="Qg9-H0-Hkl"/>
-                                    <constraint firstAttribute="width" constant="53" id="XhL-n9-f9X"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="2XU-Zw-f5E"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="CsD-aV-ajM" firstAttribute="centerX" secondItem="GnN-Vt-ZDq" secondAttribute="centerX" id="2IK-b0-YfR"/>
-                            <constraint firstItem="EFp-cU-3zL" firstAttribute="centerX" secondItem="GnN-Vt-ZDq" secondAttribute="centerX" id="IRn-2B-ofX"/>
-                            <constraint firstItem="Yt6-za-MfG" firstAttribute="leading" secondItem="2XU-Zw-f5E" secondAttribute="leading" constant="50" id="MbG-Pb-Czf"/>
-                            <constraint firstItem="h4W-DI-Md2" firstAttribute="centerX" secondItem="GnN-Vt-ZDq" secondAttribute="centerX" id="Q61-6N-P5R"/>
-                            <constraint firstItem="2XU-Zw-f5E" firstAttribute="bottom" secondItem="EFp-cU-3zL" secondAttribute="bottom" constant="13" id="SvB-Tt-Qf0"/>
-                            <constraint firstItem="h4W-DI-Md2" firstAttribute="top" secondItem="Po2-Lv-mn3" secondAttribute="bottom" constant="4" id="Uha-nf-Wwy"/>
-                            <constraint firstItem="Po2-Lv-mn3" firstAttribute="leading" secondItem="2XU-Zw-f5E" secondAttribute="leading" constant="50" id="de0-nL-tZc"/>
-                            <constraint firstItem="Po2-Lv-mn3" firstAttribute="top" secondItem="2XU-Zw-f5E" secondAttribute="top" constant="79" id="hC5-8H-Hfl"/>
-                            <constraint firstItem="CsD-aV-ajM" firstAttribute="top" secondItem="Yt6-za-MfG" secondAttribute="bottom" constant="4" id="hwK-9G-kjM"/>
-                            <constraint firstItem="Yt6-za-MfG" firstAttribute="top" secondItem="h4W-DI-Md2" secondAttribute="bottom" constant="21" id="vOD-QM-pFd"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="오픈소스" id="0Qz-0t-Dqr">
-                        <barButtonItem key="leftBarButtonItem" image="BackBtn" id="cev-e6-3hd"/>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="editButton" destination="EFp-cU-3zL" id="97f-zv-rsE"/>
-                        <outlet property="linkAddressTextField" destination="CsD-aV-ajM" id="CT8-1x-OU9"/>
-                        <outlet property="linkNameTextField" destination="h4W-DI-Md2" id="PSs-5j-qZY"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HjF-ZP-lZI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4326" y="-3"/>
-        </scene>
-        <!--홈화면-링크추가-->
-        <scene sceneID="Gf6-wo-P34">
-            <objects>
-                <viewController title="홈화면-링크추가" id="cXK-Da-7Km" customClass="AddLinkViewController" customModule="LinkFolder" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="TP7-Ji-ZZu">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EvO-OR-6hh">
-                                <rect key="frame" x="39.666666666666657" y="761" width="314" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="314" id="Ad1-Mj-Qpf"/>
-                                    <constraint firstAttribute="height" constant="44" id="Xb9-dV-wkS"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="AddDoneBtn"/>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="링크 이름" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fgy-Se-vsL">
-                                <rect key="frame" x="51.666666666666657" y="159" width="290" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="Ape-Fm-IgS"/>
-                                    <constraint firstAttribute="width" constant="290" id="iT2-xP-vPs"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="링크 주소" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aRh-sh-zch">
-                                <rect key="frame" x="51.666666666666657" y="235" width="290" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="290" id="6eE-qA-Epr"/>
-                                    <constraint firstAttribute="height" constant="34" id="aYf-0k-xw3"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="링크 이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6x-43-Lqh">
-                                <rect key="frame" x="50" y="138" width="53" height="17"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="17" id="Ejg-qV-ocR"/>
-                                    <constraint firstAttribute="width" constant="53" id="nMV-xy-HkE"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="링크 주소" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vpg-Ul-tLg">
-                                <rect key="frame" x="50" y="214" width="53" height="17"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="53" id="DZl-HF-eVC"/>
-                                    <constraint firstAttribute="height" constant="17" id="qrb-SI-Opz"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="87U-0F-sUH"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="aRh-sh-zch" firstAttribute="top" secondItem="Vpg-Ul-tLg" secondAttribute="bottom" constant="4" id="2S7-1e-adc"/>
-                            <constraint firstItem="EvO-OR-6hh" firstAttribute="centerX" secondItem="TP7-Ji-ZZu" secondAttribute="centerX" id="B9T-2v-Qu1"/>
-                            <constraint firstItem="fgy-Se-vsL" firstAttribute="centerX" secondItem="TP7-Ji-ZZu" secondAttribute="centerX" id="OHa-61-VJy"/>
-                            <constraint firstItem="g6x-43-Lqh" firstAttribute="top" secondItem="87U-0F-sUH" secondAttribute="top" constant="79" id="OJO-Bl-0bJ"/>
-                            <constraint firstItem="aRh-sh-zch" firstAttribute="centerX" secondItem="TP7-Ji-ZZu" secondAttribute="centerX" id="cmU-eq-zXm"/>
-                            <constraint firstItem="87U-0F-sUH" firstAttribute="bottom" secondItem="EvO-OR-6hh" secondAttribute="bottom" constant="13" id="nse-2K-JVO"/>
-                            <constraint firstItem="g6x-43-Lqh" firstAttribute="leading" secondItem="87U-0F-sUH" secondAttribute="leading" constant="50" id="pkn-bx-97z"/>
-                            <constraint firstItem="Vpg-Ul-tLg" firstAttribute="top" secondItem="fgy-Se-vsL" secondAttribute="bottom" constant="21" id="uUF-ip-Nch"/>
-                            <constraint firstItem="fgy-Se-vsL" firstAttribute="top" secondItem="g6x-43-Lqh" secondAttribute="bottom" constant="4" id="xNQ-F2-cn6"/>
-                            <constraint firstItem="Vpg-Ul-tLg" firstAttribute="leading" secondItem="87U-0F-sUH" secondAttribute="leading" constant="50" id="ymz-Sh-55G"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="오픈소스" id="kLy-WR-uWR">
-                        <barButtonItem key="leftBarButtonItem" image="BackBtn" id="Cqk-kN-sum"/>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="linkAddressTextField" destination="aRh-sh-zch" id="9ca-PM-WRp"/>
-                        <outlet property="linkNameTextField" destination="fgy-Se-vsL" id="WhM-FE-dxK"/>
-                        <outlet property="saveButton" destination="EvO-OR-6hh" id="X5B-o0-PQt"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="C3r-E5-j2m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5054" y="-3"/>
-        </scene>
     </scenes>
     <resources>
         <image name="AddBtn" width="68" height="68"/>
-        <image name="AddDoneBtn" width="290" height="44"/>
         <image name="AddFolderPopUp" width="273" height="160"/>
         <image name="BackBtn" width="20" height="20"/>
-        <image name="EditDoneBtn" width="290" height="44"/>
         <namedColor name="Gray4">
             <color red="0.65490196078431373" green="0.66274509803921566" blue="0.6705882352941176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

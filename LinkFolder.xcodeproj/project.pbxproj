@@ -26,6 +26,9 @@
 		105B971A28FE7BCD00E95B53 /* ButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B971928FE7BCD00E95B53 /* ButtonComponent.swift */; };
 		105B971C28FE7BDD00E95B53 /* ButtonComponent.xib in Resources */ = {isa = PBXBuildFile; fileRef = 105B971B28FE7BDD00E95B53 /* ButtonComponent.xib */; };
 		290E12E02918D19600823E82 /* ShowFolderMorePopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290E12DF2918D19600823E82 /* ShowFolderMorePopUp.storyboard */; };
+		290E12E22918D7FE00823E82 /* ChangeFolderNamePopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290E12E12918D7FE00823E82 /* ChangeFolderNamePopUp.storyboard */; };
+		290E12E42918DCC700823E82 /* AddLink.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290E12E32918DCC700823E82 /* AddLink.storyboard */; };
+		290E12E62918DCE200823E82 /* EditLink.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290E12E52918DCE200823E82 /* EditLink.storyboard */; };
 		291097632910E1FE00FAA8AB /* AddFolderPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291097622910E1FE00FAA8AB /* AddFolderPopUpViewController.swift */; };
 		291CC3382911275C004592E4 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 291CC3362911275C004592E4 /* Home.storyboard */; };
 		291CC3392911275C004592E4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291CC3372911275C004592E4 /* HomeViewController.swift */; };
@@ -83,6 +86,9 @@
 		105B971B28FE7BDD00E95B53 /* ButtonComponent.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonComponent.xib; sourceTree = "<group>"; };
 		1D2B43758504AC387214F311 /* Pods-LinkFolder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkFolder.release.xcconfig"; path = "Target Support Files/Pods-LinkFolder/Pods-LinkFolder.release.xcconfig"; sourceTree = "<group>"; };
 		290E12DF2918D19600823E82 /* ShowFolderMorePopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShowFolderMorePopUp.storyboard; sourceTree = "<group>"; };
+		290E12E12918D7FE00823E82 /* ChangeFolderNamePopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChangeFolderNamePopUp.storyboard; sourceTree = "<group>"; };
+		290E12E32918DCC700823E82 /* AddLink.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddLink.storyboard; sourceTree = "<group>"; };
+		290E12E52918DCE200823E82 /* EditLink.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditLink.storyboard; sourceTree = "<group>"; };
 		291097622910E1FE00FAA8AB /* AddFolderPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFolderPopUpViewController.swift; sourceTree = "<group>"; };
 		291CC3362911275C004592E4 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		291CC3372911275C004592E4 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -270,6 +276,9 @@
 				293F11DD29179EC700052456 /* LinkList.storyboard */,
 				293F11DB29179E6900052456 /* ShareFolder.storyboard */,
 				290E12DF2918D19600823E82 /* ShowFolderMorePopUp.storyboard */,
+				290E12E12918D7FE00823E82 /* ChangeFolderNamePopUp.storyboard */,
+				290E12E32918DCC700823E82 /* AddLink.storyboard */,
+				290E12E52918DCE200823E82 /* EditLink.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -396,6 +405,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				290E12E42918DCC700823E82 /* AddLink.storyboard in Resources */,
 				29658D262910A07700DFA491 /* Pretendard-ExtraLight.otf in Resources */,
 				29658D232910A07700DFA491 /* Pretendard-ExtraBold.otf in Resources */,
 				293F11DE29179EC700052456 /* LinkList.storyboard in Resources */,
@@ -406,9 +416,11 @@
 				29658D242910A07700DFA491 /* Pretendard-Bold.otf in Resources */,
 				105B96FC28FE565D00E95B53 /* Friends.storyboard in Resources */,
 				105B970A28FE578700E95B53 /* Notice.storyboard in Resources */,
+				290E12E62918DCE200823E82 /* EditLink.storyboard in Resources */,
 				105B970428FE570400E95B53 /* Signup.storyboard in Resources */,
 				105B970028FE56E500E95B53 /* Login.storyboard in Resources */,
 				105B971528FE62DE00E95B53 /* TextFieldComponent.xib in Resources */,
+				290E12E22918D7FE00823E82 /* ChangeFolderNamePopUp.storyboard in Resources */,
 				105B96C928FE547600E95B53 /* Assets.xcassets in Resources */,
 				105B971C28FE7BDD00E95B53 /* ButtonComponent.xib in Resources */,
 				105B96C728FE547500E95B53 /* Main.storyboard in Resources */,

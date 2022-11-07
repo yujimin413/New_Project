@@ -16,6 +16,8 @@ class LinkListTableViewCell: UITableViewCell {
     @IBOutlet weak var linkUrlLabel: UILabel!
     @IBOutlet weak var linkMoreButton: UIButton!
     
+    var delegate: LinkListTableViewCellDelegate?
+    
     //MARK: - LifeCycles
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -28,4 +30,8 @@ class LinkListTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    // MARK: - Actions
+    @IBAction func linkMoreButtonDidTap(_ sender: Any) {
+        self.delegate?.linkMoreButtonDidTap(name: linkNameLabel, url: linkUrlLabel, self)
+    }
 }

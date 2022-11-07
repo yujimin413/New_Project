@@ -44,6 +44,9 @@
                         </constraints>
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="plain" image="MoreBtn"/>
+                        <connections>
+                            <action selector="linkMoreButtonDidTap:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="e2m-cb-7bl"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>

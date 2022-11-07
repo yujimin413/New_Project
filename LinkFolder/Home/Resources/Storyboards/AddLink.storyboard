@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--홈화면-링크추가-->
+        <scene sceneID="t0I-XN-ZG4">
+            <objects>
+                <viewController storyboardIdentifier="AddLinkVC" title="홈화면-링크추가" id="WXj-Fz-mOi" customClass="AddLinkViewController" customModule="LinkFolder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jwN-kb-R3n">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQc-cC-h3Z">
+                                <rect key="frame" x="39.666666666666657" y="761" width="314" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="314" id="2nc-ne-E5c"/>
+                                    <constraint firstAttribute="height" constant="44" id="XnF-ZI-uLv"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="AddDoneBtn"/>
+                                <connections>
+                                    <action selector="saveButtonDidTap:" destination="WXj-Fz-mOi" eventType="touchUpInside" id="ZSa-Av-kxm"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="링크 이름" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dPE-xy-DpE">
+                                <rect key="frame" x="51.666666666666657" y="159" width="290" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="AKk-8i-hhu"/>
+                                    <constraint firstAttribute="width" constant="290" id="AZz-cY-UqM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="링크 주소" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5o1-0q-gIT">
+                                <rect key="frame" x="51.666666666666657" y="235" width="290" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="290" id="3Fw-ra-HlQ"/>
+                                    <constraint firstAttribute="height" constant="34" id="3od-oT-LCK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="링크 이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Dm-iB-WzJ">
+                                <rect key="frame" x="50" y="138" width="53" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="53" id="6iB-yl-aoK"/>
+                                    <constraint firstAttribute="height" constant="17" id="Z3R-me-Swb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="링크 주소" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tOE-dm-kVx">
+                                <rect key="frame" x="50" y="214" width="53" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="53" id="5rl-a0-4lh"/>
+                                    <constraint firstAttribute="height" constant="17" id="rcG-Nk-Yba"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MZ4-wp-6r6">
+                                <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                                <items>
+                                    <navigationItem title="새로운 링크 추가" id="MVT-KV-ypb">
+                                        <barButtonItem key="leftBarButtonItem" image="BackBtn" id="egX-O2-UWk">
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="backButtonDidTap:" destination="WXj-Fz-mOi" id="hBk-fs-hoe"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Fsx-lb-tml"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dPE-xy-DpE" firstAttribute="centerX" secondItem="jwN-kb-R3n" secondAttribute="centerX" id="1VH-Pu-M94"/>
+                            <constraint firstItem="tOE-dm-kVx" firstAttribute="top" secondItem="dPE-xy-DpE" secondAttribute="bottom" constant="21" id="3Gs-kD-Icu"/>
+                            <constraint firstItem="MZ4-wp-6r6" firstAttribute="top" secondItem="Fsx-lb-tml" secondAttribute="top" id="6Gt-1u-Qoz"/>
+                            <constraint firstItem="dPE-xy-DpE" firstAttribute="top" secondItem="4Dm-iB-WzJ" secondAttribute="bottom" constant="4" id="Jqw-cE-SnH"/>
+                            <constraint firstItem="5o1-0q-gIT" firstAttribute="centerX" secondItem="jwN-kb-R3n" secondAttribute="centerX" id="SXC-XB-whZ"/>
+                            <constraint firstItem="MZ4-wp-6r6" firstAttribute="trailing" secondItem="Fsx-lb-tml" secondAttribute="trailing" id="Zum-sD-WA2"/>
+                            <constraint firstItem="4Dm-iB-WzJ" firstAttribute="top" secondItem="Fsx-lb-tml" secondAttribute="top" constant="79" id="aAI-9V-lDV"/>
+                            <constraint firstItem="4Dm-iB-WzJ" firstAttribute="leading" secondItem="Fsx-lb-tml" secondAttribute="leading" constant="50" id="bz3-yN-jFN"/>
+                            <constraint firstItem="Fsx-lb-tml" firstAttribute="bottom" secondItem="PQc-cC-h3Z" secondAttribute="bottom" constant="13" id="cDk-FI-5B6"/>
+                            <constraint firstItem="PQc-cC-h3Z" firstAttribute="centerX" secondItem="jwN-kb-R3n" secondAttribute="centerX" id="euj-11-xci"/>
+                            <constraint firstItem="5o1-0q-gIT" firstAttribute="top" secondItem="tOE-dm-kVx" secondAttribute="bottom" constant="4" id="fFp-Pc-e5D"/>
+                            <constraint firstItem="tOE-dm-kVx" firstAttribute="leading" secondItem="Fsx-lb-tml" secondAttribute="leading" constant="50" id="rfx-TC-whl"/>
+                            <constraint firstItem="MZ4-wp-6r6" firstAttribute="leading" secondItem="Fsx-lb-tml" secondAttribute="leading" id="uZM-aD-fma"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="오픈소스" id="Hh4-LL-9eF">
+                        <barButtonItem key="leftBarButtonItem" image="BackBtn" id="WNo-GZ-Lcn"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="linkAddressTextField" destination="5o1-0q-gIT" id="Yrd-f2-N0c"/>
+                        <outlet property="linkNameTextField" destination="dPE-xy-DpE" id="rPJ-yF-H7U"/>
+                        <outlet property="saveButton" destination="PQc-cC-h3Z" id="mi4-of-oue"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rk6-Md-vnG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5054" y="-3"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AddDoneBtn" width="290" height="44"/>
+        <image name="BackBtn" width="20" height="20"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
