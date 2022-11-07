@@ -72,7 +72,7 @@ extension LinkListViewController: LinkListTableViewCellDelegate {
         let section = linkListTableView.indexPath(for: tableViewCell)
         print(section?.row, "번째 링크 더보기 버튼 클릭")
         
-        let storyboard = UIStoryboard.init(name: "LinkList", bundle: nil)
+        let storyboard = UIStoryboard.init(name: "ShowLinkMorePopUp", bundle: nil)
         let showLinkMorePopUpVC = storyboard.instantiateViewController(withIdentifier: "ShowLinkMorePopUpVC")
         showLinkMorePopUpVC.modalPresentationStyle = .overCurrentContext
         self.present(showLinkMorePopUpVC, animated: true, completion: nil)

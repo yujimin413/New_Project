@@ -3,7 +3,6 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -80,113 +79,12 @@
             </objects>
             <point key="canvasLocation" x="1840" y="-2.1327014218009479"/>
         </scene>
-        <!--홈화면-폴더내부-링크더보기팝업-->
-        <scene sceneID="Pkg-Dn-6vS">
-            <objects>
-                <viewController storyboardIdentifier="ShowLinkMorePopUpVC" title="홈화면-폴더내부-링크더보기팝업" modalPresentationStyle="overFullScreen" id="a8W-uT-1oP" customClass="ShowLinkMorePopUpViewController" customModule="LinkFolder" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="V7K-Gc-gSC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVU-qW-vgR">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain"/>
-                                <connections>
-                                    <action selector="backButtonDidTap:" destination="a8W-uT-1oP" eventType="touchUpInside" id="VFT-U8-bys"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AddFolderPopUp" translatesAutoresizingMaskIntoConstraints="NO" id="Per-Ra-Vq5">
-                                <rect key="frame" x="60" y="346" width="273" height="160"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="273" id="LSV-5m-6o8"/>
-                                    <constraint firstAttribute="height" constant="160" id="x0B-fn-ls7"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tX-nV-3lo">
-                                <rect key="frame" x="131" y="357" width="129" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="링크 수정">
-                                    <fontDescription key="titleFontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="editLinkButtonDidTap:" destination="a8W-uT-1oP" eventType="touchUpInside" id="n4p-p1-wvb"/>
-                                </connections>
-                            </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I5W-gM-e0W">
-                                <rect key="frame" x="75" y="400" width="240" height="1"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="Gray4"/>
-                            </view>
-                            <view contentMode="scaleToFill" id="9d0-8h-Om7">
-                                <rect key="frame" x="75" y="444" width="240" height="1"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <viewLayoutGuide key="safeArea" id="1Py-Ng-8NX"/>
-                                <color key="backgroundColor" name="Gray4"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAx-6M-nDF">
-                                <rect key="frame" x="128" y="405" width="135" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="링크 공유">
-                                    <fontDescription key="titleFontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="shareLinkButtonDidTap:" destination="a8W-uT-1oP" eventType="touchUpInside" id="Xyd-w1-rfw"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIZ-6m-PLh">
-                                <rect key="frame" x="120" y="453" width="150" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemRedColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="링크 삭제">
-                                    <fontDescription key="titleFontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="deleteLinkButtonDidTap:" destination="a8W-uT-1oP" eventType="touchUpInside" id="e71-pk-C1z"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="6lO-c1-cGO"/>
-                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
-                        <constraints>
-                            <constraint firstItem="Per-Ra-Vq5" firstAttribute="centerX" secondItem="V7K-Gc-gSC" secondAttribute="centerX" id="YTe-lN-WQH"/>
-                            <constraint firstItem="6lO-c1-cGO" firstAttribute="bottom" secondItem="wVU-qW-vgR" secondAttribute="bottom" id="eHV-C7-sdu"/>
-                            <constraint firstItem="wVU-qW-vgR" firstAttribute="leading" secondItem="6lO-c1-cGO" secondAttribute="leading" id="fxx-ic-cZn"/>
-                            <constraint firstItem="wVU-qW-vgR" firstAttribute="top" secondItem="6lO-c1-cGO" secondAttribute="top" id="kqw-OH-UVc"/>
-                            <constraint firstItem="wVU-qW-vgR" firstAttribute="trailing" secondItem="6lO-c1-cGO" secondAttribute="trailing" id="l9E-Wp-kLT"/>
-                            <constraint firstItem="Per-Ra-Vq5" firstAttribute="centerY" secondItem="V7K-Gc-gSC" secondAttribute="centerY" id="lUJ-nA-5jz"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="backButton" destination="wVU-qW-vgR" id="dxu-yn-4Un"/>
-                        <outlet property="deleteLinkButton" destination="SIZ-6m-PLh" id="Ne7-jx-SJQ"/>
-                        <outlet property="editLinkButton" destination="7tX-nV-3lo" id="7JT-7H-eta"/>
-                        <outlet property="shareLinkButton" destination="nAx-6M-nDF" id="sZB-LW-ZUE"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CVz-6c-1hF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2816.9230769230767" y="-2.1327014218009479"/>
-        </scene>
     </scenes>
     <resources>
         <image name="AddBtn" width="68" height="68"/>
-        <image name="AddFolderPopUp" width="273" height="160"/>
         <image name="BackBtn" width="20" height="20"/>
-        <namedColor name="Gray4">
-            <color red="0.65490196078431373" green="0.66274509803921566" blue="0.6705882352941176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <systemColor name="secondaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -26,14 +26,18 @@ class ShowLinkMorePopUpViewController: UIViewController {
     }
     
     @IBAction func editLinkButtonDidTap(_ sender: Any) {
+        let storyboard = UIStoryboard.init(name: "EditLink", bundle: nil)
+        let editLinkVC = storyboard.instantiateViewController(withIdentifier: "EditLinkVC")
+//        shareFolderVC.modalPresentationStyle = .overFullScreen
+        self.present(editLinkVC, animated: true, completion: nil)
         
     }
     
     @IBAction func shareLinkButtonDidTap(_ sender: Any) {
-//        let storyboard = UIStoryboard.init(name: "ShareLink", bundle: nil)
-//        let shareLinkVC = storyboard.instantiateViewController(withIdentifier: "ShareLinkVC")
-//        shareLinkVC.modalPresentationStyle = .overFullScreen
-//        self.present(shareLinkVC, animated: true, completion: nil)
+        let storyboard = UIStoryboard.init(name: "ShareLink", bundle: nil)
+        let shareLinkVC = storyboard.instantiateViewController(withIdentifier: "ShareLinkVC")
+        shareLinkVC.modalPresentationStyle = .overFullScreen
+        self.present(shareLinkVC, animated: true, completion: nil)
         
     }
     

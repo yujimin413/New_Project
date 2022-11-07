@@ -28,6 +28,11 @@ class HomeViewController: UIViewController {
     
     // MARK: - Actions
     @IBAction func addFolderButtonTapped(_ sender: Any) {
+        // 링크 폴더 추가 팝업뷰
+        let storyboard = UIStoryboard.init(name: "AddLinkFolder", bundle: nil)
+        let addFolderPopUpVC = storyboard.instantiateViewController(withIdentifier: "AddFolderPopUpVC")
+        addFolderPopUpVC.modalPresentationStyle = .overCurrentContext
+        self.present(addFolderPopUpVC, animated: true, completion: nil)
         
     }
     

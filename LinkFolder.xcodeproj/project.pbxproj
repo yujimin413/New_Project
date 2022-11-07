@@ -34,6 +34,10 @@
 		291CC3392911275C004592E4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291CC3372911275C004592E4 /* HomeViewController.swift */; };
 		293F11DC29179E6900052456 /* ShareFolder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 293F11DB29179E6900052456 /* ShareFolder.storyboard */; };
 		293F11DE29179EC700052456 /* LinkList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 293F11DD29179EC700052456 /* LinkList.storyboard */; };
+		2964F6192918E66B0088D867 /* ShowLinkMorePopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2964F6182918E66B0088D867 /* ShowLinkMorePopUp.storyboard */; };
+		2964F61B2918E6F00088D867 /* ShareLink.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2964F61A2918E6F00088D867 /* ShareLink.storyboard */; };
+		2964F61F2918EA560088D867 /* ShareLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2964F61E2918EA560088D867 /* ShareLinkViewController.swift */; };
+		2964F6212918EC500088D867 /* AddLinkFolder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2964F6202918EC500088D867 /* AddLinkFolder.storyboard */; };
 		29658D1F2910A07700DFA491 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 29658D162910A07700DFA491 /* Pretendard-Regular.otf */; };
 		29658D202910A07700DFA491 /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 29658D172910A07700DFA491 /* Pretendard-Black.otf */; };
 		29658D212910A07700DFA491 /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 29658D182910A07700DFA491 /* Pretendard-Medium.otf */; };
@@ -94,6 +98,10 @@
 		291CC3372911275C004592E4 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		293F11DB29179E6900052456 /* ShareFolder.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShareFolder.storyboard; sourceTree = "<group>"; };
 		293F11DD29179EC700052456 /* LinkList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LinkList.storyboard; sourceTree = "<group>"; };
+		2964F6182918E66B0088D867 /* ShowLinkMorePopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShowLinkMorePopUp.storyboard; sourceTree = "<group>"; };
+		2964F61A2918E6F00088D867 /* ShareLink.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShareLink.storyboard; sourceTree = "<group>"; };
+		2964F61E2918EA560088D867 /* ShareLinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareLinkViewController.swift; sourceTree = "<group>"; };
+		2964F6202918EC500088D867 /* AddLinkFolder.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddLinkFolder.storyboard; sourceTree = "<group>"; };
 		29658D162910A07700DFA491 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
 		29658D172910A07700DFA491 /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
 		29658D182910A07700DFA491 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
@@ -252,6 +260,7 @@
 				29658D382910A21A00DFA491 /* AddLinkViewController.swift */,
 				29658D3A2910A21A00DFA491 /* EditLinkViewController.swift */,
 				298E42CE2910F68F002EA69B /* ChangeFolderNameViewController.swift */,
+				2964F61E2918EA560088D867 /* ShareLinkViewController.swift */,
 				29CBFCBA291166DC003B0D3F /* ShowLinkMorePopUpViewController.swift */,
 				291CC3372911275C004592E4 /* HomeViewController.swift */,
 				291097622910E1FE00FAA8AB /* AddFolderPopUpViewController.swift */,
@@ -279,6 +288,9 @@
 				290E12E12918D7FE00823E82 /* ChangeFolderNamePopUp.storyboard */,
 				290E12E32918DCC700823E82 /* AddLink.storyboard */,
 				290E12E52918DCE200823E82 /* EditLink.storyboard */,
+				2964F6182918E66B0088D867 /* ShowLinkMorePopUp.storyboard */,
+				2964F61A2918E6F00088D867 /* ShareLink.storyboard */,
+				2964F6202918EC500088D867 /* AddLinkFolder.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -407,6 +419,7 @@
 			files = (
 				290E12E42918DCC700823E82 /* AddLink.storyboard in Resources */,
 				29658D262910A07700DFA491 /* Pretendard-ExtraLight.otf in Resources */,
+				2964F6212918EC500088D867 /* AddLinkFolder.storyboard in Resources */,
 				29658D232910A07700DFA491 /* Pretendard-ExtraBold.otf in Resources */,
 				293F11DE29179EC700052456 /* LinkList.storyboard in Resources */,
 				29658D222910A07700DFA491 /* Pretendard-Light.otf in Resources */,
@@ -428,6 +441,8 @@
 				290E12E02918D19600823E82 /* ShowFolderMorePopUp.storyboard in Resources */,
 				29658D302910A20700DFA491 /* ProfileCollectionViewCell.xib in Resources */,
 				29658D322910A20700DFA491 /* FolderCollectionViewCell.xib in Resources */,
+				2964F61B2918E6F00088D867 /* ShareLink.storyboard in Resources */,
+				2964F6192918E66B0088D867 /* ShowLinkMorePopUp.storyboard in Resources */,
 				29658D272910A07700DFA491 /* Pretendard-SemiBold.otf in Resources */,
 				29658D202910A07700DFA491 /* Pretendard-Black.otf in Resources */,
 				29658D252910A07700DFA491 /* Pretendard-Thin.otf in Resources */,
@@ -502,6 +517,7 @@
 				105B96FE28FE567200E95B53 /* FriendsViewController.swift in Sources */,
 				29658D412910A21B00DFA491 /* EditLinkViewController.swift in Sources */,
 				105B96C028FE547500E95B53 /* AppDelegate.swift in Sources */,
+				2964F61F2918EA560088D867 /* ShareLinkViewController.swift in Sources */,
 				29658D332910A20700DFA491 /* CustomCollectionViewFlowLayout.swift in Sources */,
 				105B96C228FE547500E95B53 /* SceneDelegate.swift in Sources */,
 				298E42C52910ED25002EA69B /* ShareFolderTableViewCell.swift in Sources */,
