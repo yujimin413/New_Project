@@ -12,11 +12,18 @@ class LinkListViewController: UIViewController {
     // MARK: - Properties
     @IBOutlet weak var linkListTableView: UITableView!
     @IBOutlet weak var addLinkButton: UIButton!
+    @IBOutlet weak var backButton: UIBarButtonItem!
     
     // MARK: - LifeCycles
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
+    }
+    
+    //MARK: - Actions
+    
+    @IBAction func backButtonDidTap(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
     }
     
     // MARK: - Helpers

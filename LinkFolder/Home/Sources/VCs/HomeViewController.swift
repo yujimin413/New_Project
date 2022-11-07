@@ -7,12 +7,17 @@
 
 import UIKit
 
+protocol FolderCollectionViewCellDelegate {
+    func folderMoreButtonDidTap(name: UILabel, _ collectionViewCell: UICollectionViewCell)
+}
+
 class HomeViewController: UIViewController {
     // MARK: - Properties
     @IBOutlet weak var homeCollectionView: UICollectionView!
     @IBOutlet weak var addFolderButton: UIButton!
     
     let stickyIndexPath = IndexPath(row: 0, section: 0)
+    
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -24,6 +29,34 @@ class HomeViewController: UIViewController {
     // MARK: - Actions
     @IBAction func addFolderButtonTapped(_ sender: Any) {
         
+    }
+    
+    // 홈화면에서 선택한 폴더 내부로 이동
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let section = indexPath.section
+        if section == 1 {
+            
+            var id = indexPath.row
+            print(id)
+            print("번째 게시글 터치")
+            
+            let storyboard = UIStoryboard(name: "LinkList", bundle: nil)
+            let linkListVC = storyboard.instantiateViewController(withIdentifier: "LinkListVC") as! LinkListViewController
+            
+//            let backBarButtonItem = UIBarButtonItem(title: "dddd", style: .plain, target: self, action: nil)
+//            backBarButtonItem.tintColor = .black
+//            self.navigationItem.backBarButtonItem = backBarButtonItem
+//            self.navigationController?.navigationBar.backgroundColor = .white
+            
+            self.navigationController?.pushViewController(linkListVC, animated: true)
+            
+        }
+        
+        
+        
+        
+
     }
     
     // MARK: - Helpers
@@ -45,7 +78,7 @@ class HomeViewController: UIViewController {
                 bundle: nil),
             forCellWithReuseIdentifier: FolderCollectionViewCell.identifier)
     }
-    
+        
     func setFlowLayout() {
         let columnLayout = CustomCollectionViewFlowLayout(stickyIndexPath: stickyIndexPath)
         self.homeCollectionView.collectionViewLayout = columnLayout
@@ -87,6 +120,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
                 for: indexPath) as? FolderCollectionViewCell else {
                     fatalError("셀 타입 캐스팅 실패...")
             }
+            cell.delegate = self
             return cell
         }
     }
@@ -145,6 +179,22 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
         default:
             return interval
         }
+    }
+}
+
+extension HomeViewController: FolderCollectionViewCellDelegate {
+    func folderMoreButtonDidTap(name: UILabel, _ collectionViewCell: UICollectionViewCell) {
+        // 폴더 더보기 팝업
+        let section = homeCollectionView.indexPath(for: collectionViewCell)
+        print(section?.row, "번째 폴더 더보기 버튼 클릭")
+        
+        let storyboard = UIStoryboard.init(name:  "ShowFolderMorePopUp", bundle: nil)
+        let showFolderMorePopUpVC = storyboard.instantiateViewController(withIdentifier: "ShowFolderMorePopUpVC")
+        showFolderMorePopUpVC.modalPresentationStyle = .overCurrentContext
+        self.present(showFolderMorePopUpVC, animated: true, completion: nil)
+    
+        
+
     }
 }
 

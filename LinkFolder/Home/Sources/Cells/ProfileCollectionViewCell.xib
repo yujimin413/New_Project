@@ -24,6 +24,9 @@
                         </constraints>
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="plain" image="ProfileEditBtn"/>
+                        <connections>
+                            <action selector="backButtonDidTap:" destination="gTV-IL-0wX" eventType="touchUpInside" id="w9N-rt-TaU"/>
+                        </connections>
                     </button>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="Kdb-hD-ijU">
                         <rect key="frame" x="17" y="5" width="30" height="30"/>

@@ -22,5 +22,11 @@ class ProfileCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
 
     }
-
+    
+    // MARK: - Actions
+    @IBAction func backButtonDidTap(_ sender: Any) {
+        // 기존 프로필 이미지, 닉네임 전송 후 (API로 불러오던기?)
+        // 내 정보 수정 화면으로 이동
+    }
+    
 }
