@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--홈화면-폴더내부-->
+        <scene sceneID="jUs-gU-pRU">
+            <objects>
+                <viewController storyboardIdentifier="LinkListVC" title="홈화면-폴더내부" id="oqj-LC-rak" customClass="LinkListViewController" customModule="LinkFolder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o03-4r-BAH">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="AIP-R9-PDT">
+                                <rect key="frame" x="0.0" y="99" width="393" height="670"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmv-Th-PH6">
+                                <rect key="frame" x="309" y="700" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="0Ff-V0-5u9"/>
+                                    <constraint firstAttribute="width" constant="60" id="gBd-UI-ZHa"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="AddBtn"/>
+                                <connections>
+                                    <action selector="addLinkButtonDidTap:" destination="oqj-LC-rak" eventType="touchUpInside" id="fFu-Nh-5wB"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nXP-wG-OGn">
+                                <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="0ZH-Gf-Oou"/>
+                                    <constraint firstAttribute="width" constant="393" id="Fbm-Jx-yDy"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="폴더명" id="9vB-OW-7TT">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="BackBtn" style="plain" id="3l8-C8-6kh">
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="backButtonDidTap:" destination="oqj-LC-rak" id="1vy-AE-xf7"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Pjk-ma-KU9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nXP-wG-OGn" firstAttribute="top" secondItem="Pjk-ma-KU9" secondAttribute="top" id="3sa-v4-Hw7"/>
+                            <constraint firstItem="AIP-R9-PDT" firstAttribute="leading" secondItem="Pjk-ma-KU9" secondAttribute="leading" id="5zu-lq-OqV"/>
+                            <constraint firstItem="AIP-R9-PDT" firstAttribute="top" secondItem="Pjk-ma-KU9" secondAttribute="top" constant="40" id="DF1-YB-Atd"/>
+                            <constraint firstItem="Pjk-ma-KU9" firstAttribute="trailing" secondItem="AIP-R9-PDT" secondAttribute="trailing" id="Epc-mL-eqz"/>
+                            <constraint firstItem="nXP-wG-OGn" firstAttribute="trailing" secondItem="Pjk-ma-KU9" secondAttribute="trailing" id="Ytf-C2-kha"/>
+                            <constraint firstItem="Pjk-ma-KU9" firstAttribute="trailing" secondItem="vmv-Th-PH6" secondAttribute="trailing" constant="24" id="Ywk-Xe-l6s"/>
+                            <constraint firstItem="nXP-wG-OGn" firstAttribute="leading" secondItem="Pjk-ma-KU9" secondAttribute="leading" id="pDH-v6-qRx"/>
+                            <constraint firstAttribute="bottom" secondItem="vmv-Th-PH6" secondAttribute="bottom" constant="92" id="veg-CJ-xQU"/>
+                            <constraint firstItem="Pjk-ma-KU9" firstAttribute="bottom" secondItem="AIP-R9-PDT" secondAttribute="bottom" id="xJ1-h1-Dz0"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="zOv-Sn-26q"/>
+                    <navigationItem key="navigationItem" title="오픈소스" id="5x1-DE-YIw">
+                        <barButtonItem key="leftBarButtonItem" image="BackBtn" id="uwn-54-G91"/>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="addLinkButton" destination="vmv-Th-PH6" id="VWl-pg-NPb"/>
+                        <outlet property="backButton" destination="3l8-C8-6kh" id="fKq-n5-Fke"/>
+                        <outlet property="linkListTableView" destination="AIP-R9-PDT" id="qw6-dG-6Ew"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VXx-aL-G3Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1840" y="-2.1327014218009479"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AddBtn" width="68" height="68"/>
+        <image name="BackBtn" width="20" height="20"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

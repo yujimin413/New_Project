@@ -17,4 +17,15 @@ class EditLinkViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    // MARK: - Actions
+    @IBAction func backButtonDidTap(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func editButtonDidTap(_ sender: Any) {
+        // 링크 수정 API 호출
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 }

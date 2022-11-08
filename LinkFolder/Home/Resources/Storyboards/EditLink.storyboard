@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--홈화면-링크수정-->
+        <scene sceneID="ohu-lk-pje">
+            <objects>
+                <viewController storyboardIdentifier="EditLinkVC" title="홈화면-링크수정" id="sBc-a1-bfs" customClass="EditLinkViewController" customModule="LinkFolder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7WW-ek-52R">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CB8-J8-mAN">
+                                <rect key="frame" x="39.666666666666657" y="761" width="314" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="6OO-5u-cSA"/>
+                                    <constraint firstAttribute="width" constant="314" id="71Y-Hh-Gi0"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="EditDoneBtn"/>
+                                <connections>
+                                    <action selector="editButtonDidTap:" destination="sBc-a1-bfs" eventType="touchUpInside" id="0Zn-rc-x4q"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="깃 사용법" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ScT-Vm-WSc">
+                                <rect key="frame" x="51.666666666666657" y="159" width="290" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="86X-8w-z4O"/>
+                                    <constraint firstAttribute="width" constant="290" id="HMI-r4-EL8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="www.github.com" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="la2-kL-7zZ">
+                                <rect key="frame" x="51.666666666666657" y="235" width="290" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="cWa-T8-ee9"/>
+                                    <constraint firstAttribute="width" constant="290" id="mw3-ne-bUz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="링크 이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJZ-fm-Grn">
+                                <rect key="frame" x="50" y="138" width="53" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="OOO-Hf-Ziz"/>
+                                    <constraint firstAttribute="width" constant="53" id="lPX-Mi-x4D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="링크 주소" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iz0-Yr-geS">
+                                <rect key="frame" x="50" y="214" width="53" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="QDh-Dw-aA2"/>
+                                    <constraint firstAttribute="width" constant="53" id="ynb-pI-RIA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="czb-Vs-ysC">
+                                <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                                <items>
+                                    <navigationItem title="링크 수정" id="YRR-Si-7qo">
+                                        <barButtonItem key="leftBarButtonItem" image="BackBtn" id="LSF-fd-Go9">
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="backButtonDidTap:" destination="sBc-a1-bfs" id="x5x-2c-ZiW"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XeQ-mG-MiK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="czb-Vs-ysC" firstAttribute="leading" secondItem="XeQ-mG-MiK" secondAttribute="leading" id="3F2-Nc-Bpk"/>
+                            <constraint firstItem="Iz0-Yr-geS" firstAttribute="leading" secondItem="XeQ-mG-MiK" secondAttribute="leading" constant="50" id="6c1-v6-JPE"/>
+                            <constraint firstItem="XeQ-mG-MiK" firstAttribute="bottom" secondItem="CB8-J8-mAN" secondAttribute="bottom" constant="13" id="9CD-Bm-NUd"/>
+                            <constraint firstItem="HJZ-fm-Grn" firstAttribute="leading" secondItem="XeQ-mG-MiK" secondAttribute="leading" constant="50" id="CCN-8K-hf7"/>
+                            <constraint firstItem="ScT-Vm-WSc" firstAttribute="centerX" secondItem="7WW-ek-52R" secondAttribute="centerX" id="JXJ-EH-UVW"/>
+                            <constraint firstItem="ScT-Vm-WSc" firstAttribute="top" secondItem="HJZ-fm-Grn" secondAttribute="bottom" constant="4" id="Kf4-je-6R0"/>
+                            <constraint firstItem="CB8-J8-mAN" firstAttribute="centerX" secondItem="7WW-ek-52R" secondAttribute="centerX" id="MaI-Yy-l0X"/>
+                            <constraint firstItem="la2-kL-7zZ" firstAttribute="centerX" secondItem="7WW-ek-52R" secondAttribute="centerX" id="Q3s-G7-8mm"/>
+                            <constraint firstItem="Iz0-Yr-geS" firstAttribute="top" secondItem="ScT-Vm-WSc" secondAttribute="bottom" constant="21" id="U4I-MX-dGf"/>
+                            <constraint firstItem="czb-Vs-ysC" firstAttribute="trailing" secondItem="XeQ-mG-MiK" secondAttribute="trailing" id="YGg-Lm-sOB"/>
+                            <constraint firstItem="HJZ-fm-Grn" firstAttribute="top" secondItem="XeQ-mG-MiK" secondAttribute="top" constant="79" id="e9r-F5-tQL"/>
+                            <constraint firstItem="czb-Vs-ysC" firstAttribute="top" secondItem="XeQ-mG-MiK" secondAttribute="top" id="jb1-di-9LE"/>
+                            <constraint firstItem="la2-kL-7zZ" firstAttribute="top" secondItem="Iz0-Yr-geS" secondAttribute="bottom" constant="4" id="tGj-o8-GnI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="오픈소스" id="fn5-FK-Uao">
+                        <barButtonItem key="leftBarButtonItem" image="BackBtn" id="5XL-Mk-pXD"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="editButton" destination="CB8-J8-mAN" id="PLg-k6-ykm"/>
+                        <outlet property="linkAddressTextField" destination="la2-kL-7zZ" id="fEe-xZ-vQt"/>
+                        <outlet property="linkNameTextField" destination="ScT-Vm-WSc" id="eHR-Kd-Yoa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="srY-2J-eLm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4326" y="-3"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackBtn" width="20" height="20"/>
+        <image name="EditDoneBtn" width="290" height="44"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
