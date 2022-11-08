@@ -48,13 +48,12 @@ class HomeViewController: UIViewController {
             
             let storyboard = UIStoryboard(name: "LinkList", bundle: nil)
             let linkListVC = storyboard.instantiateViewController(withIdentifier: "LinkListVC") as! LinkListViewController
-            
-//            let backBarButtonItem = UIBarButtonItem(title: "dddd", style: .plain, target: self, action: nil)
-//            backBarButtonItem.tintColor = .black
-//            self.navigationItem.backBarButtonItem = backBarButtonItem
-//            self.navigationController?.navigationBar.backgroundColor = .white
-            
             self.navigationController?.pushViewController(linkListVC, animated: true)
+            
+//            let storyboard = UIStoryboard.init(name: "LinkList", bundle: nil)
+//            let linkListVC = storyboard.instantiateViewController(withIdentifier: "LinkListVC")
+//            linkListVC.modalPresentationStyle = .overFullScreen
+//            self.present(linkListVC, animated: true, completion: nil)
             
         }
         
