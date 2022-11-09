@@ -8,14 +8,7 @@ target 'LinkFolder' do
   # Pods for LinkFolder
     pod 'RxSwift', '6.5.0'
     pod 'RxCocoa', '6.5.0'
+    pod 'Alamofire'
 
-  target 'LinkFolderTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'LinkFolderUITests' do
-    # Pods for testing
-  end
 
 end
