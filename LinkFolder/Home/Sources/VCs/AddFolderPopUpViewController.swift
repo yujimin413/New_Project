@@ -29,6 +29,7 @@ class AddFolderPopUpViewController: UIViewController {
     }
     
     @IBAction func addButtonTapped(_ sender: Any) {
-        // 폴더 추가
+        // 폴더 추가 API 호출
+        self.dismiss(animated: true, completion: nil)
     }
 }

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xFX-j8-mcM">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--홈화면기본-->
+        <scene sceneID="8PT-m6-e0I">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" title="홈화면기본" id="kAJ-Yv-6dX" customClass="HomeViewController" customModule="LinkFolder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vmt-UE-MYx" customClass="ButtonComponent" customModule="LinkFolder" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gad-9o-BsC">
+                                <rect key="frame" x="0.0" y="47" width="390" height="714"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7Tj-xj-slF">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ad5-SG-nsw">
+                                <rect key="frame" x="306" y="692" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="fBE-LZ-ZvF"/>
+                                    <constraint firstAttribute="height" constant="60" id="ha2-DG-EBG"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="AddBtn"/>
+                                <connections>
+                                    <action selector="addFolderButtonTapped:" destination="kAJ-Yv-6dX" eventType="touchUpInside" id="dJ2-hY-Yni"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1ZD-JN-GUy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gad-9o-BsC" firstAttribute="leading" secondItem="1ZD-JN-GUy" secondAttribute="leading" id="Egc-xt-hmn"/>
+                            <constraint firstAttribute="bottom" secondItem="Ad5-SG-nsw" secondAttribute="bottom" constant="92" id="KeM-mU-UyP"/>
+                            <constraint firstItem="gad-9o-BsC" firstAttribute="top" secondItem="1ZD-JN-GUy" secondAttribute="top" id="MOv-DP-s2e"/>
+                            <constraint firstItem="gad-9o-BsC" firstAttribute="trailing" secondItem="1ZD-JN-GUy" secondAttribute="trailing" id="Net-u8-2yG"/>
+                            <constraint firstItem="gad-9o-BsC" firstAttribute="bottom" secondItem="1ZD-JN-GUy" secondAttribute="bottom" id="efX-L1-cbi"/>
+                            <constraint firstItem="1ZD-JN-GUy" firstAttribute="trailing" secondItem="Ad5-SG-nsw" secondAttribute="trailing" constant="24" id="ptY-We-lHT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="XSu-rV-n0K"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="addFolderButton" destination="Ad5-SG-nsw" id="P9D-FA-Qxu"/>
+                        <outlet property="homeCollectionView" destination="gad-9o-BsC" id="hps-Su-OpS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NnW-JB-5dn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2047.6923076923076" y="-675.35545023696682"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gBu-tA-HGJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="xFX-j8-mcM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0EG-gc-vPb">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kAJ-Yv-6dX" kind="relationship" relationship="rootViewController" id="Bhg-Xd-4Fd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5qX-gJ-Afy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1118.4615384615383" y="-675.35545023696682"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="Vmt-UE-MYx">
+            <size key="intrinsicContentSize" width="30" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="AddBtn" width="68" height="68"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

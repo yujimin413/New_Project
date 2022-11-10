@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Pretendard-Medium.otf">
+            <string>Pretendard-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--홈화면기본-+버튼팝업-->
+        <scene sceneID="KgB-m1-Wlv">
+            <objects>
+                <viewController storyboardIdentifier="ChangeFolderNamePopUpVC" title="홈화면기본-+버튼팝업" modalPresentationStyle="overFullScreen" id="8iZ-zY-9xf" customClass="ChangeFolderNamePopUpViewController" customModule="LinkFolder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xhe-no-BnD">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTb-Th-HkS">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="backButtonDidTap:" destination="8iZ-zY-9xf" eventType="touchUpInside" id="1O7-NL-mjK"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AddFolderPopUp" translatesAutoresizingMaskIntoConstraints="NO" id="FXd-A8-UfP">
+                                <rect key="frame" x="60" y="346" width="273" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="fA5-zn-Phx"/>
+                                    <constraint firstAttribute="width" constant="273" id="lCV-gL-jAO"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="기존이름" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="noS-E8-jrZ">
+                                <rect key="frame" x="83" y="405" width="223" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="폴더명 변경하기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tx6-uV-kze">
+                                <rect key="frame" x="96.666666666666686" y="368" width="200" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="8jq-Um-bTA"/>
+                                    <constraint firstAttribute="width" constant="200" id="yyt-o1-WCj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="15"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFH-QA-IiK">
+                                <rect key="frame" x="111" y="449" width="54" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="취소">
+                                    <fontDescription key="titleFontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="cancelButtonDidTap:" destination="8iZ-zY-9xf" eventType="touchUpInside" id="fpv-6P-aiq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Rd-Nz-hys">
+                                <rect key="frame" x="227" y="449" width="54" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="완료">
+                                    <fontDescription key="titleFontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="doneButtonDidTap:" destination="8iZ-zY-9xf" eventType="touchUpInside" id="sxX-cz-l5T"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ASs-Ck-tFK"/>
+                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                        <constraints>
+                            <constraint firstItem="FXd-A8-UfP" firstAttribute="top" secondItem="Tx6-uV-kze" secondAttribute="bottom" constant="-40" id="1EV-Ux-bUm"/>
+                            <constraint firstItem="FXd-A8-UfP" firstAttribute="centerY" secondItem="Xhe-no-BnD" secondAttribute="centerY" id="DQP-4z-88U"/>
+                            <constraint firstItem="ASs-Ck-tFK" firstAttribute="bottom" secondItem="jTb-Th-HkS" secondAttribute="bottom" id="OFi-Wo-aeH"/>
+                            <constraint firstItem="FXd-A8-UfP" firstAttribute="centerX" secondItem="Xhe-no-BnD" secondAttribute="centerX" id="PGT-MR-H7T"/>
+                            <constraint firstItem="jTb-Th-HkS" firstAttribute="trailing" secondItem="ASs-Ck-tFK" secondAttribute="trailing" id="XZj-zS-fkQ"/>
+                            <constraint firstItem="Tx6-uV-kze" firstAttribute="centerX" secondItem="Xhe-no-BnD" secondAttribute="centerX" id="XgQ-CR-9tn"/>
+                            <constraint firstItem="jTb-Th-HkS" firstAttribute="leading" secondItem="ASs-Ck-tFK" secondAttribute="leading" id="tPv-tr-V23"/>
+                            <constraint firstItem="jTb-Th-HkS" firstAttribute="top" secondItem="ASs-Ck-tFK" secondAttribute="top" id="voV-VG-O6A"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="jTb-Th-HkS" id="rag-pK-087"/>
+                        <outlet property="cancelButton" destination="cFH-QA-IiK" id="JGs-N7-tXg"/>
+                        <outlet property="doneButton" destination="4Rd-Nz-hys" id="aY3-XV-9u2"/>
+                        <outlet property="folderNameTextField" destination="noS-E8-jrZ" id="nNj-zo-YDp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y1C-68-1a9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2606.1538461538462" y="-675.35545023696682"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AddFolderPopUp" width="273" height="160"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

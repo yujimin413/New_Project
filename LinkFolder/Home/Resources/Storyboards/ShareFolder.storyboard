@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--홈화면-링크공유(친구검색)-->
+        <scene sceneID="gpw-5C-dzf">
+            <objects>
+                <viewController storyboardIdentifier="ShareFolderVC" title="홈화면-링크공유(친구검색)" id="ahq-OJ-jMk" customClass="ShareFolderViewController" customModule="LinkFolder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zgf-In-uZZ" customClass="ButtonComponent" customModule="LinkFolder" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="eK8-2Q-XFn">
+                                <rect key="frame" x="0.0" y="158" width="393" height="611"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SearchBar" translatesAutoresizingMaskIntoConstraints="NO" id="BzU-Cd-252">
+                                <rect key="frame" x="0.0" y="118" width="393" height="25"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yct-Xt-boW">
+                                <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                                <items>
+                                    <navigationItem title="폴더 공유하기" id="Bwl-Jf-UuO">
+                                        <barButtonItem key="leftBarButtonItem" image="BackBtn" changesSelectionAsPrimaryAction="YES" id="Wis-IR-RPG">
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="backButtonDidTap:" destination="ahq-OJ-jMk" id="ZzP-Vk-OQP"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lfF-4X-8ov"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lfF-4X-8ov" firstAttribute="trailing" secondItem="yct-Xt-boW" secondAttribute="trailing" id="Le4-Ru-c02"/>
+                            <constraint firstItem="yct-Xt-boW" firstAttribute="top" secondItem="lfF-4X-8ov" secondAttribute="top" id="NH2-hK-HQ9"/>
+                            <constraint firstItem="eK8-2Q-XFn" firstAttribute="leading" secondItem="lfF-4X-8ov" secondAttribute="leading" id="QxP-Si-YUL"/>
+                            <constraint firstItem="BzU-Cd-252" firstAttribute="leading" secondItem="lfF-4X-8ov" secondAttribute="leading" id="Rgv-SI-FMS"/>
+                            <constraint firstItem="lfF-4X-8ov" firstAttribute="bottom" secondItem="eK8-2Q-XFn" secondAttribute="bottom" id="X4i-vM-sVl"/>
+                            <constraint firstItem="lfF-4X-8ov" firstAttribute="trailing" secondItem="BzU-Cd-252" secondAttribute="trailing" id="YtN-dz-bUw"/>
+                            <constraint firstItem="eK8-2Q-XFn" firstAttribute="top" secondItem="BzU-Cd-252" secondAttribute="bottom" constant="15" id="awd-Ya-cjR"/>
+                            <constraint firstItem="BzU-Cd-252" firstAttribute="top" secondItem="yct-Xt-boW" secondAttribute="bottom" constant="15" id="qDN-mk-YYp"/>
+                            <constraint firstItem="yct-Xt-boW" firstAttribute="leading" secondItem="zgf-In-uZZ" secondAttribute="leading" id="ugP-fG-mIY"/>
+                            <constraint firstItem="lfF-4X-8ov" firstAttribute="trailing" secondItem="eK8-2Q-XFn" secondAttribute="trailing" id="xRs-sU-IcO"/>
+                            <constraint firstItem="eK8-2Q-XFn" firstAttribute="top" secondItem="BzU-Cd-252" secondAttribute="bottom" constant="15" id="zld-2Z-Cs1"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Kt8-8s-Q9D"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="backButton" destination="Wis-IR-RPG" id="8bS-a1-kX2"/>
+                        <outlet property="shareFolderTableView" destination="eK8-2Q-XFn" id="vV0-FQ-Y7M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jCz-Ar-9Gi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1838.9312977099237" y="-676.05633802816908"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="zgf-In-uZZ">
+            <size key="intrinsicContentSize" width="30" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="BackBtn" width="20" height="20"/>
+        <image name="SearchBar" width="364" height="25"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
