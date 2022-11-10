@@ -13,10 +13,15 @@ class ShareLinkViewController: UIViewController {
     
     @IBOutlet weak var shareLinkTableView: UITableView!
     
+    private var searchController: UISearchController = {
+            return UISearchController(searchResultsController: nil)
+        }()
+    
     // MARK: - LifeCycles
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
+        
 
     }
 
@@ -53,5 +58,49 @@ extension ShareLinkViewController: UITableViewDelegate, UITableViewDataSource {
             return UITableViewCell()
         }
         return cell
+    }
+}
+
+extension ShareLinkViewController {
+    private func setupSearchBar() {
+        searchController.delegate = self
+        searchController.searchBar.delegate = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.hidesNavigationBarDuringPresentation = false
+
+        searchController.searchBar.barStyle = .default
+        searchController.searchBar.placeholder = "검색 창"
+
+        searchController.searchBar.translatesAutoresizingMaskIntoConstraints = true
+//        searchController.searchBar.frame = searchBarContainerView.bounds
+        searchController.searchBar.autoresizingMask = [.flexibleWidth]
+//        searchBarContainerView.addSubview(searchController.searchBar)
+        definesPresentationContext = true
+    }
+}
+
+extension ShareLinkViewController: UISearchControllerDelegate {
+    func willPresentSearchController(_ searchController: UISearchController) {
+        print(#function, "updateQueriesSuggestions")
+    }
+
+    func willDismissSearchController(_ searchController: UISearchController) {
+        print(#function, "updateQueriesSuggestions")
+    }
+
+    func didDismissSearchController(_ searchController: UISearchController) {
+        print(#function, "updateQueriesSuggestions")
+    }
+}
+
+extension ShareLinkViewController: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        guard let searchText = searchBar.text, !searchText.isEmpty else { return }
+        searchController.isActive = false
+        print(searchText)
+    }
+
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        print("cancel")
     }
 }
