@@ -191,10 +191,5 @@ class SignupViewController: UIViewController {
         }
     }
     
-    @IBAction func singupButtonDidTap(_ sender: Any) {
-        let input = SignupInput(id: idTextField.text!, password: passwordTextField.text!, nickname: nicknameTextField.text!, profileImageUrl: nil)
-        SignupRepository().signup(input)
-    }
     
 }
-

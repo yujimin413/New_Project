@@ -36,9 +36,6 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="singupButtonDidTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Wzm-ja-naA"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0uV-P3-Wut">
                                 <rect key="frame" x="120.66666666666669" y="97" width="134" height="124"/>
