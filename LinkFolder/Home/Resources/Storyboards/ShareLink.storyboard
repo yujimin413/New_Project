@@ -17,12 +17,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="GWx-Pq-WPZ">
-                                <rect key="frame" x="0.0" y="158" width="393" height="611"/>
+                                <rect key="frame" x="0.0" y="159" width="393" height="610"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SearchBar" translatesAutoresizingMaskIntoConstraints="NO" id="36a-wb-oAu">
-                                <rect key="frame" x="0.0" y="118" width="393" height="25"/>
-                            </imageView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mPF-R0-0O4">
                                 <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                                 <items>
@@ -36,18 +33,24 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="V0a-jX-sxi">
+                                <rect key="frame" x="0.0" y="103" width="393" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Pah-OG-MCq" id="AVh-VO-GXm"/>
+                                </connections>
+                            </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gNq-uK-Jxe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="V0a-jX-sxi" firstAttribute="leading" secondItem="gNq-uK-Jxe" secondAttribute="leading" id="3cj-jQ-ssI"/>
                             <constraint firstItem="gNq-uK-Jxe" firstAttribute="bottom" secondItem="GWx-Pq-WPZ" secondAttribute="bottom" id="64X-F4-vhZ"/>
                             <constraint firstItem="GWx-Pq-WPZ" firstAttribute="leading" secondItem="gNq-uK-Jxe" secondAttribute="leading" id="6Aj-Nw-1fw"/>
+                            <constraint firstItem="V0a-jX-sxi" firstAttribute="top" secondItem="mPF-R0-0O4" secondAttribute="bottom" id="82c-Db-K3h"/>
                             <constraint firstItem="mPF-R0-0O4" firstAttribute="top" secondItem="gNq-uK-Jxe" secondAttribute="top" id="Lam-2E-J7Z"/>
-                            <constraint firstItem="GWx-Pq-WPZ" firstAttribute="top" secondItem="36a-wb-oAu" secondAttribute="bottom" constant="15" id="OB6-Mt-F1i"/>
-                            <constraint firstItem="36a-wb-oAu" firstAttribute="leading" secondItem="gNq-uK-Jxe" secondAttribute="leading" id="Zag-wx-OOE"/>
-                            <constraint firstItem="gNq-uK-Jxe" firstAttribute="trailing" secondItem="36a-wb-oAu" secondAttribute="trailing" id="fV2-ge-qqN"/>
-                            <constraint firstItem="GWx-Pq-WPZ" firstAttribute="top" secondItem="36a-wb-oAu" secondAttribute="bottom" constant="15" id="flL-PD-h4k"/>
-                            <constraint firstItem="36a-wb-oAu" firstAttribute="top" secondItem="mPF-R0-0O4" secondAttribute="bottom" constant="15" id="i3w-Lo-HOq"/>
+                            <constraint firstItem="GWx-Pq-WPZ" firstAttribute="top" secondItem="V0a-jX-sxi" secondAttribute="bottom" id="QDf-LS-fW3"/>
+                            <constraint firstItem="V0a-jX-sxi" firstAttribute="trailing" secondItem="gNq-uK-Jxe" secondAttribute="trailing" id="hPO-bN-obQ"/>
                             <constraint firstItem="gNq-uK-Jxe" firstAttribute="trailing" secondItem="GWx-Pq-WPZ" secondAttribute="trailing" id="lYJ-Ui-BsE"/>
                             <constraint firstItem="gNq-uK-Jxe" firstAttribute="trailing" secondItem="mPF-R0-0O4" secondAttribute="trailing" id="loA-Aa-foq"/>
                             <constraint firstItem="mPF-R0-0O4" firstAttribute="leading" secondItem="6r0-vV-Ms7" secondAttribute="leading" id="rVL-yJ-sdV"/>
@@ -72,7 +75,6 @@
     </designables>
     <resources>
         <image name="BackBtn" width="20" height="20"/>
-        <image name="SearchBar" width="364" height="25"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

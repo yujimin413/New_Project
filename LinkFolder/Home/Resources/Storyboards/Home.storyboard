@@ -51,6 +51,9 @@
                             <constraint firstItem="1ZD-JN-GUy" firstAttribute="trailing" secondItem="Ad5-SG-nsw" secondAttribute="trailing" constant="24" id="ptY-We-lHT"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="HomeBtn" selectedImage="HomeBtn" id="YP3-dh-FAf">
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="XSu-rV-n0K"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -89,6 +92,7 @@
     </designables>
     <resources>
         <image name="AddBtn" width="68" height="68"/>
+        <image name="HomeBtn" width="40" height="40"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

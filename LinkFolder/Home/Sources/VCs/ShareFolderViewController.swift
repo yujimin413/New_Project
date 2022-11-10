@@ -13,6 +13,10 @@ class ShareFolderViewController: UIViewController {
     @IBOutlet weak var shareFolderTableView: UITableView!
     @IBOutlet weak var backButton: UIBarButtonItem!
     
+    private var searchController: UISearchController = {
+            return UISearchController(searchResultsController: nil)
+        }()
+    
     // MARK: - LifeCycles
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,5 +53,31 @@ extension ShareFolderViewController: UITableViewDelegate, UITableViewDataSource 
             return UITableViewCell()
         }
         return cell
+    }
+}
+
+extension ShareFolderViewController: UISearchControllerDelegate {
+    func willPresentSearchController(_ searchController: UISearchController) {
+        print(#function, "updateQueriesSuggestions")
+    }
+
+    func willDismissSearchController(_ searchController: UISearchController) {
+        print(#function, "updateQueriesSuggestions")
+    }
+
+    func didDismissSearchController(_ searchController: UISearchController) {
+        print(#function, "updateQueriesSuggestions")
+    }
+}
+
+extension ShareFolderViewController: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        guard let searchText = searchBar.text, !searchText.isEmpty else { return }
+        searchController.isActive = false
+        print(searchText)
+    }
+
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        print("cancel")
     }
 }

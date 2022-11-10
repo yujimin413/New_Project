@@ -17,12 +17,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="eK8-2Q-XFn">
-                                <rect key="frame" x="0.0" y="158" width="393" height="611"/>
+                                <rect key="frame" x="0.0" y="159" width="393" height="610"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SearchBar" translatesAutoresizingMaskIntoConstraints="NO" id="BzU-Cd-252">
-                                <rect key="frame" x="0.0" y="118" width="393" height="25"/>
-                            </imageView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yct-Xt-boW">
                                 <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                                 <items>
@@ -36,21 +33,27 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="OMW-Yr-PlF">
+                                <rect key="frame" x="0.0" y="103" width="393" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="ahq-OJ-jMk" id="02f-CY-TjO"/>
+                                </connections>
+                            </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lfF-4X-8ov"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="OMW-Yr-PlF" firstAttribute="leading" secondItem="lfF-4X-8ov" secondAttribute="leading" id="4u2-rC-O2E"/>
+                            <constraint firstItem="OMW-Yr-PlF" firstAttribute="top" secondItem="yct-Xt-boW" secondAttribute="bottom" id="8Xy-WR-JN5"/>
+                            <constraint firstItem="OMW-Yr-PlF" firstAttribute="trailing" secondItem="lfF-4X-8ov" secondAttribute="trailing" id="ADv-Jc-lFR"/>
                             <constraint firstItem="lfF-4X-8ov" firstAttribute="trailing" secondItem="yct-Xt-boW" secondAttribute="trailing" id="Le4-Ru-c02"/>
                             <constraint firstItem="yct-Xt-boW" firstAttribute="top" secondItem="lfF-4X-8ov" secondAttribute="top" id="NH2-hK-HQ9"/>
                             <constraint firstItem="eK8-2Q-XFn" firstAttribute="leading" secondItem="lfF-4X-8ov" secondAttribute="leading" id="QxP-Si-YUL"/>
-                            <constraint firstItem="BzU-Cd-252" firstAttribute="leading" secondItem="lfF-4X-8ov" secondAttribute="leading" id="Rgv-SI-FMS"/>
+                            <constraint firstItem="eK8-2Q-XFn" firstAttribute="top" secondItem="OMW-Yr-PlF" secondAttribute="bottom" id="Rr4-EE-cKw"/>
                             <constraint firstItem="lfF-4X-8ov" firstAttribute="bottom" secondItem="eK8-2Q-XFn" secondAttribute="bottom" id="X4i-vM-sVl"/>
-                            <constraint firstItem="lfF-4X-8ov" firstAttribute="trailing" secondItem="BzU-Cd-252" secondAttribute="trailing" id="YtN-dz-bUw"/>
-                            <constraint firstItem="eK8-2Q-XFn" firstAttribute="top" secondItem="BzU-Cd-252" secondAttribute="bottom" constant="15" id="awd-Ya-cjR"/>
-                            <constraint firstItem="BzU-Cd-252" firstAttribute="top" secondItem="yct-Xt-boW" secondAttribute="bottom" constant="15" id="qDN-mk-YYp"/>
                             <constraint firstItem="yct-Xt-boW" firstAttribute="leading" secondItem="zgf-In-uZZ" secondAttribute="leading" id="ugP-fG-mIY"/>
                             <constraint firstItem="lfF-4X-8ov" firstAttribute="trailing" secondItem="eK8-2Q-XFn" secondAttribute="trailing" id="xRs-sU-IcO"/>
-                            <constraint firstItem="eK8-2Q-XFn" firstAttribute="top" secondItem="BzU-Cd-252" secondAttribute="bottom" constant="15" id="zld-2Z-Cs1"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="Kt8-8s-Q9D"/>
@@ -72,7 +75,6 @@
     </designables>
     <resources>
         <image name="BackBtn" width="20" height="20"/>
-        <image name="SearchBar" width="364" height="25"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
