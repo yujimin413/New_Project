@@ -25,14 +25,6 @@
 		105B971528FE62DE00E95B53 /* TextFieldComponent.xib in Resources */ = {isa = PBXBuildFile; fileRef = 105B971428FE62DE00E95B53 /* TextFieldComponent.xib */; };
 		105B971A28FE7BCD00E95B53 /* ButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B971928FE7BCD00E95B53 /* ButtonComponent.swift */; };
 		105B971C28FE7BDD00E95B53 /* ButtonComponent.xib in Resources */ = {isa = PBXBuildFile; fileRef = 105B971B28FE7BDD00E95B53 /* ButtonComponent.xib */; };
-		10E67B88291A2B970018ACF3 /* SignupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E67B87291A2B970018ACF3 /* SignupModel.swift */; };
-		10E67B8A291A2BA70018ACF3 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E67B89291A2BA70018ACF3 /* LoginModel.swift */; };
-		10E67B8C291A2E3E0018ACF3 /* SignupRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E67B8B291A2E3E0018ACF3 /* SignupRepository.swift */; };
-		10E67B8E291A2E510018ACF3 /* LoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E67B8D291A2E510018ACF3 /* LoginRepository.swift */; };
-		10E67B91291A30CD0018ACF3 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E67B90291A30CD0018ACF3 /* Const.swift */; };
-		291097632910E1FE00FAA8AB /* AddFolderPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291097622910E1FE00FAA8AB /* AddFolderPopUpViewController.swift */; };
-		291CC3382911275C004592E4 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 291CC3362911275C004592E4 /* Home.storyboard */; };
-		291CC3392911275C004592E4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291CC3372911275C004592E4 /* HomeViewController.swift */; };
 		290E12E02918D19600823E82 /* ShowFolderMorePopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290E12DF2918D19600823E82 /* ShowFolderMorePopUp.storyboard */; };
 		290E12E22918D7FE00823E82 /* ChangeFolderNamePopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290E12E12918D7FE00823E82 /* ChangeFolderNamePopUp.storyboard */; };
 		290E12E42918DCC700823E82 /* AddLink.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290E12E32918DCC700823E82 /* AddLink.storyboard */; };
@@ -96,20 +88,6 @@
 		105B971428FE62DE00E95B53 /* TextFieldComponent.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldComponent.xib; sourceTree = "<group>"; };
 		105B971928FE7BCD00E95B53 /* ButtonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonComponent.swift; sourceTree = "<group>"; };
 		105B971B28FE7BDD00E95B53 /* ButtonComponent.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonComponent.xib; sourceTree = "<group>"; };
-		10E67B6A291813B10018ACF3 /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
-		10E67B6B291813B20018ACF3 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
-		10E67B6C291813B20018ACF3 /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
-		10E67B6D291813B20018ACF3 /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.otf"; sourceTree = "<group>"; };
-		10E67B6E291813B20018ACF3 /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
-		10E67B6F291813B20018ACF3 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
-		10E67B70291813B20018ACF3 /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
-		10E67B71291813B20018ACF3 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
-		10E67B72291813B20018ACF3 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
-		10E67B87291A2B970018ACF3 /* SignupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupModel.swift; sourceTree = "<group>"; };
-		10E67B89291A2BA70018ACF3 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
-		10E67B8B291A2E3E0018ACF3 /* SignupRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupRepository.swift; sourceTree = "<group>"; };
-		10E67B8D291A2E510018ACF3 /* LoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepository.swift; sourceTree = "<group>"; };
-		10E67B90291A30CD0018ACF3 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		1D2B43758504AC387214F311 /* Pods-LinkFolder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkFolder.release.xcconfig"; path = "Target Support Files/Pods-LinkFolder/Pods-LinkFolder.release.xcconfig"; sourceTree = "<group>"; };
 		290E12DF2918D19600823E82 /* ShowFolderMorePopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShowFolderMorePopUp.storyboard; sourceTree = "<group>"; };
 		290E12E12918D7FE00823E82 /* ChangeFolderNamePopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChangeFolderNamePopUp.storyboard; sourceTree = "<group>"; };
@@ -173,7 +151,6 @@
 		105B96B328FE547500E95B53 = {
 			isa = PBXGroup;
 			children = (
-				10E67B8F291A309B0018ACF3 /* Consts */,
 				29658D152910A07700DFA491 /* Fonts */,
 				105B970D28FE5ECF00E95B53 /* Components */,
 				105B96BE28FE547500E95B53 /* LinkFolder */,
@@ -194,8 +171,6 @@
 		105B96BE28FE547500E95B53 /* LinkFolder */ = {
 			isa = PBXGroup;
 			children = (
-				10E67B86291A2AD70018ACF3 /* Models */,
-				10E67B85291A2AC10018ACF3 /* APIServices */,
 				105B96F228FE550B00E95B53 /* OnBoarding */,
 				105B96EF28FE54A200E95B53 /* Home */,
 				105B96F328FE555200E95B53 /* Friends */,
@@ -260,20 +235,6 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		10E67B85291A2AC10018ACF3 /* APIServices */ = {
-			isa = PBXGroup;
-			children = (
-				10E67B8B291A2E3E0018ACF3 /* SignupRepository.swift */,
-				10E67B8D291A2E510018ACF3 /* LoginRepository.swift */,
-			);
-			path = APIServices;
-			sourceTree = "<group>";
-		};
-		10E67B86291A2AD70018ACF3 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				10E67B87291A2B970018ACF3 /* SignupModel.swift */,
-				10E67B89291A2BA70018ACF3 /* LoginModel.swift */,
 		293F11D429179DB100052456 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -317,12 +278,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		10E67B8F291A309B0018ACF3 /* Consts */ = {
-			isa = PBXGroup;
-			children = (
-				10E67B90291A30CD0018ACF3 /* Const.swift */,
-			);
-			path = Consts;
 		293F11D929179DEF00052456 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -350,15 +305,15 @@
 		29658D152910A07700DFA491 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				10E67B6E291813B20018ACF3 /* Pretendard-Black.otf */,
-				10E67B72291813B20018ACF3 /* Pretendard-Bold.otf */,
-				10E67B6A291813B10018ACF3 /* Pretendard-ExtraBold.otf */,
-				10E67B6C291813B20018ACF3 /* Pretendard-ExtraLight.otf */,
-				10E67B6D291813B20018ACF3 /* Pretendard-Light.otf */,
-				10E67B6F291813B20018ACF3 /* Pretendard-Medium.otf */,
-				10E67B71291813B20018ACF3 /* Pretendard-Regular.otf */,
-				10E67B6B291813B20018ACF3 /* Pretendard-SemiBold.otf */,
-				10E67B70291813B20018ACF3 /* Pretendard-Thin.otf */,
+				29658D162910A07700DFA491 /* Pretendard-Regular.otf */,
+				29658D172910A07700DFA491 /* Pretendard-Black.otf */,
+				29658D182910A07700DFA491 /* Pretendard-Medium.otf */,
+				29658D192910A07700DFA491 /* Pretendard-Light.otf */,
+				29658D1A2910A07700DFA491 /* Pretendard-ExtraBold.otf */,
+				29658D1B2910A07700DFA491 /* Pretendard-Bold.otf */,
+				29658D1C2910A07700DFA491 /* Pretendard-Thin.otf */,
+				29658D1D2910A07700DFA491 /* Pretendard-ExtraLight.otf */,
+				29658D1E2910A07700DFA491 /* Pretendard-SemiBold.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -471,6 +426,7 @@
 				29658D342910A20700DFA491 /* LinkListTableViewCell.xib in Resources */,
 				293F11DC29179E6900052456 /* ShareFolder.storyboard in Resources */,
 				105B96CC28FE547600E95B53 /* LaunchScreen.storyboard in Resources */,
+				29658D242910A07700DFA491 /* Pretendard-Bold.otf in Resources */,
 				105B96FC28FE565D00E95B53 /* Friends.storyboard in Resources */,
 				105B970A28FE578700E95B53 /* Notice.storyboard in Resources */,
 				290E12E62918DCE200823E82 /* EditLink.storyboard in Resources */,
@@ -481,8 +437,6 @@
 				105B96C928FE547600E95B53 /* Assets.xcassets in Resources */,
 				105B971C28FE7BDD00E95B53 /* ButtonComponent.xib in Resources */,
 				105B96C728FE547500E95B53 /* Main.storyboard in Resources */,
-				29658D302910A20700DFA491 /* ProfileCollectionViewCell.xib in Resources */,
-				29658D322910A20700DFA491 /* FolderCollectionViewCell.xib in Resources */,
 				29658D1F2910A07700DFA491 /* Pretendard-Regular.otf in Resources */,
 				290E12E02918D19600823E82 /* ShowFolderMorePopUp.storyboard in Resources */,
 				29658D302910A20700DFA491 /* ProfileCollectionViewCell.xib in Resources */,
@@ -494,6 +448,7 @@
 				29658D252910A07700DFA491 /* Pretendard-Thin.otf in Resources */,
 				298E42C62910ED25002EA69B /* ShareFolderTableViewCell.xib in Resources */,
 				291CC3382911275C004592E4 /* Home.storyboard in Resources */,
+				29658D212910A07700DFA491 /* Pretendard-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,21 +511,16 @@
 				105B96C428FE547500E95B53 /* ViewController.swift in Sources */,
 				298E42CF2910F68F002EA69B /* ChangeFolderNameViewController.swift in Sources */,
 				29658D352910A20700DFA491 /* LinkListTableViewCell.swift in Sources */,
-				10E67B8A291A2BA70018ACF3 /* LoginModel.swift in Sources */,
 				29658D422910A21B00DFA491 /* ShareFolderViewController.swift in Sources */,
-				10E67B88291A2B970018ACF3 /* SignupModel.swift in Sources */,
-				10E67B91291A30CD0018ACF3 /* Const.swift in Sources */,
 				298E42CD2910F62B002EA69B /* ShowFolderMorePopUpViewController.swift in Sources */,
 				29658D3F2910A21B00DFA491 /* AddLinkViewController.swift in Sources */,
 				105B96FE28FE567200E95B53 /* FriendsViewController.swift in Sources */,
 				29658D412910A21B00DFA491 /* EditLinkViewController.swift in Sources */,
-				10E67B8E291A2E510018ACF3 /* LoginRepository.swift in Sources */,
 				105B96C028FE547500E95B53 /* AppDelegate.swift in Sources */,
 				2964F61F2918EA560088D867 /* ShareLinkViewController.swift in Sources */,
 				29658D332910A20700DFA491 /* CustomCollectionViewFlowLayout.swift in Sources */,
 				105B96C228FE547500E95B53 /* SceneDelegate.swift in Sources */,
 				298E42C52910ED25002EA69B /* ShareFolderTableViewCell.swift in Sources */,
-				10E67B8C291A2E3E0018ACF3 /* SignupRepository.swift in Sources */,
 				29658D362910A20700DFA491 /* FolderCollectionViewCell.swift in Sources */,
 				105B970828FE577B00E95B53 /* NoticeViewController.swift in Sources */,
 				105B971128FE61D900E95B53 /* TextFieldComponent.swift in Sources */,
