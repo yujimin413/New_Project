@@ -26,4 +26,9 @@ class FolderCollectionViewCell: UICollectionViewCell {
         self.delegate?.folderMoreButtonDidTap(name: folderNameLabel, self)
     
     }
+    
+    public func setupFolderData(_ folderName: String?) {
+        guard let folderName = folderName else { return }
+        folderNameLabel.text = folderName
+    }
 }

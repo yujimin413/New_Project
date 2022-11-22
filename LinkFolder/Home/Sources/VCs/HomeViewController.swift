@@ -7,16 +7,24 @@
 
 import UIKit
 
+protocol HomeReloadDelegate {
+    func setupFolderData()
+}
+
 protocol FolderCollectionViewCellDelegate {
     func folderMoreButtonDidTap(name: UILabel, _ collectionViewCell: UICollectionViewCell)
 }
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, HomeReloadDelegate {
     // MARK: - Properties
     @IBOutlet weak var homeCollectionView: UICollectionView!
     @IBOutlet weak var addFolderButton: UIButton!
     
     let stickyIndexPath = IndexPath(row: 0, section: 0)
+    
+    var folderData: [contents]? {
+        didSet { self.homeCollectionView.reloadData()}
+    }
     
     
     // MARK: - Lifecycle
@@ -24,6 +32,16 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         setupCollectionView()
         setFlowLayout()
+        setupFolderData()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        FoldersListRepository().getFoldersList(self)
+    }
+    
+    // 폴더 리스트 불러오기
+    func setupFolderData() {
+        FoldersListRepository().getFoldersList(self)
     }
     
     // MARK: - Actions
@@ -49,11 +67,6 @@ class HomeViewController: UIViewController {
             let storyboard = UIStoryboard(name: "LinkList", bundle: nil)
             let linkListVC = storyboard.instantiateViewController(withIdentifier: "LinkListVC") as! LinkListViewController
             self.navigationController?.pushViewController(linkListVC, animated: true)
-            
-//            let storyboard = UIStoryboard.init(name: "LinkList", bundle: nil)
-//            let linkListVC = storyboard.instantiateViewController(withIdentifier: "LinkListVC")
-//            linkListVC.modalPresentationStyle = .overFullScreen
-//            self.present(linkListVC, animated: true, completion: nil)
             
         }
     }
@@ -95,7 +108,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         case 0:
             return 1
         default:
-            return 30
+            return folderData?.count ?? 0
         }
     }
 
@@ -120,6 +133,13 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
                     fatalError("셀 타입 캐스팅 실패...")
             }
             cell.delegate = self
+            
+            let itemIndex = indexPath.item
+            if let cellData = self.folderData {
+                // 폴더 데이터 있는 경우, 폴더 이름 전달
+                cell.setupFolderData(cellData[itemIndex].folderName)
+            }
+            
             return cell
         }
     }
@@ -194,6 +214,13 @@ extension HomeViewController: FolderCollectionViewCellDelegate {
     
         
 
+    }
+}
+
+// MARK: - 폴더 목록 가져오기 API 통신 메소드
+extension HomeViewController {
+    func successFeedAPI(_ result: FoldersListModel) {
+        self.folderData = result.result
     }
 }
 

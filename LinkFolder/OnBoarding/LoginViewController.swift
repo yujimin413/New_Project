@@ -45,8 +45,10 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginButtonDidTap(_ sender: Any) {
         let input = LoginInput(id: idTextField.text!, password: passwordTextField.text!)
-        LoginRepository().login(input)
-        loginIsSucceed()
+        LoginRepository().login(input) {    // 로그인 이후 폴더리스트 불러오도록.. 순서 꼬여서 completion handler 사용
+            self.loginIsSucceed()
+        }
+        
     }
     
     func loginIsSucceed(){
@@ -57,7 +59,6 @@ class LoginViewController: UIViewController {
 //        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
 //        let vc = storyboard.instantiateViewController(withIdentifier: "Main") as! UITabBarController
 //        self.view.window?.windowScene?.keyWindow?.rootViewController = vc
-
     }
     
     
