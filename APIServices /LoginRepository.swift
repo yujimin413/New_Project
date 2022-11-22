@@ -18,6 +18,7 @@ class LoginRepository{
                 debugPrint(response)
                 if result.isSuccess{
                     print(#function)
+                    UserDefaults.standard.setValue(result.result.jwtToken, forKey: "jwtToken")
                 }
 
             case .failure:

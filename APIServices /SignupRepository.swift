@@ -15,9 +15,9 @@ class SignupRepository{
             response in
             switch response.result {
             case .success:
-                
                 print("회원가입 성공")
                 debugPrint(response)
+                
 //                UserDefaults.standard.setValue(result.jwtToken, forKey: "jwtToken")
             
             case .failure:
