@@ -46,7 +46,7 @@ class LoginViewController: UIViewController {
     @IBAction func loginButtonDidTap(_ sender: Any) {
         let input = LoginInput(id: idTextField.text!, password: passwordTextField.text!)
         LoginRepository().login(input)
-//        loginIsSucceed()
+        loginIsSucceed()
     }
     
     func loginIsSucceed(){
