@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNv-9r-cbe" customClass="ButtonComponent" customModule="LinkFolder" customModuleProvider="target">
-                                <rect key="frame" x="50" y="585" width="275" height="44"/>
+                                <rect key="frame" x="50" y="586.33333333333337" width="275" height="44"/>
                                 <color key="backgroundColor" name="Gray4"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="thV-Er-Qu3"/>
@@ -36,6 +36,9 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="singupButtonDidTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="RSf-st-t9A"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0uV-P3-Wut">
                                 <rect key="frame" x="120.66666666666669" y="97" width="134" height="124"/>
@@ -43,10 +46,10 @@
                                 <buttonConfiguration key="configuration" style="plain" image="ProfileImageEdit"/>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="gkX-wk-Suq">
-                                <rect key="frame" x="50" y="251" width="275" height="264"/>
+                                <rect key="frame" x="50" y="250.99999999999997" width="275" height="265.33333333333326"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Lcn-vc-9kG">
-                                        <rect key="frame" x="0.0" y="0.0" width="275" height="54"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="54.333333333333336"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="아이디 입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="usu-UO-bgP" customClass="TextFieldComponent" customModule="LinkFolder" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="275" height="34"/>
@@ -54,7 +57,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6~20자의 영문 혹은 영문과 숫자를 조합" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IEj-Rv-UdW">
-                                                <rect key="frame" x="0.0" y="40" width="275" height="14"/>
+                                                <rect key="frame" x="0.0" y="40" width="275" height="14.333333333333336"/>
                                                 <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
                                                 <color key="textColor" name="GrayText"/>
                                                 <nil key="highlightedColor"/>
@@ -62,7 +65,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="fdm-YM-eK8">
-                                        <rect key="frame" x="0.0" y="70" width="275" height="54"/>
+                                        <rect key="frame" x="0.0" y="70.333333333333314" width="275" height="54.333333333333343"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="닉네임 입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bLh-62-op8" customClass="TextFieldComponent" customModule="LinkFolder" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="275" height="34"/>
@@ -70,7 +73,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1~20자 한글, 영문, 숫자 입력 가능" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGe-f6-jQK">
-                                                <rect key="frame" x="0.0" y="40" width="275" height="14"/>
+                                                <rect key="frame" x="0.0" y="40" width="275" height="14.333333333333336"/>
                                                 <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
                                                 <color key="textColor" name="GrayText"/>
                                                 <nil key="highlightedColor"/>
@@ -78,7 +81,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="dU2-WI-u0S">
-                                        <rect key="frame" x="0.0" y="140" width="275" height="54"/>
+                                        <rect key="frame" x="0.0" y="140.66666666666669" width="275" height="54.333333333333343"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호 입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O4B-w7-v60" customClass="TextFieldComponent" customModule="LinkFolder" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="275" height="34"/>
@@ -86,7 +89,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8~20자의 영문, 숫자, 특수문자를 조합" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FVQ-sD-xou">
-                                                <rect key="frame" x="0.0" y="40" width="275" height="14"/>
+                                                <rect key="frame" x="0.0" y="40" width="275" height="14.333333333333336"/>
                                                 <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
                                                 <color key="textColor" name="GrayText"/>
                                                 <nil key="highlightedColor"/>
@@ -94,7 +97,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="2Bq-h1-w7F">
-                                        <rect key="frame" x="0.0" y="210" width="275" height="54"/>
+                                        <rect key="frame" x="0.0" y="211" width="275" height="54.333333333333314"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호 재입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sSa-zw-Fm6" customClass="TextFieldComponent" customModule="LinkFolder" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="275" height="34"/>
@@ -102,7 +105,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPO-gT-n4A">
-                                                <rect key="frame" x="0.0" y="40" width="275" height="14"/>
+                                                <rect key="frame" x="0.0" y="40" width="275" height="14.333333333333336"/>
                                                 <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="12"/>
                                                 <color key="textColor" name="GrayText"/>
                                                 <nil key="highlightedColor"/>

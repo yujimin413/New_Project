@@ -35,14 +35,30 @@ class LoginViewController: UIViewController {
     }
     
     
-    
-    
     @IBAction func SignupButtonDidTap(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Signup", bundle: nil)
         let secondVC = storyboard.instantiateViewController(identifier: "SignupViewController")
         secondVC.navigationController?.navigationBar.barTintColor = .black
+        secondVC.modalPresentationStyle = .fullScreen
         show(secondVC, sender: self)
     }
     
+    @IBAction func loginButtonDidTap(_ sender: Any) {
+        let input = LoginInput(id: idTextField.text!, password: passwordTextField.text!)
+        LoginRepository().login(input)
+//        loginIsSucceed()
+    }
+    
+    func loginIsSucceed(){
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "Main") as! UITabBarController
+        self.view.window?.windowScene?.keyWindow?.rootViewController = vc
+//
+//        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+//        let vc = storyboard.instantiateViewController(withIdentifier: "Main") as! UITabBarController
+//        self.view.window?.windowScene?.keyWindow?.rootViewController = vc
 
+    }
+    
+    
 }
