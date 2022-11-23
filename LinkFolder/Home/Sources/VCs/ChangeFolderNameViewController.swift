@@ -15,9 +15,14 @@ class ChangeFolderNamePopUpViewController: UIViewController {
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var doneButton: UIButton!
     
+    var folderIndex: Int!
+    var folderName: String = ""
+    
     // MARK: - LifeCycles
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        folderNameTextField.text = folderName
     }
     
     // MARK: - Actions
@@ -31,6 +36,13 @@ class ChangeFolderNamePopUpViewController: UIViewController {
     
     @IBAction func doneButtonDidTap(_ sender: Any) {
         // 폴더명 변경 API 호출
-        self.dismiss(animated: true, completion: nil)
+        let input = FolderNameModifyInput(updateFolderName: folderNameTextField.text, folderIdx: self.folderIndex)
+        self.doneButtonTapped(input: input) {
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
+    
+    func doneButtonTapped(input: FolderNameModifyInput, completion: @escaping() -> Void) {
+        FolderNameModifyRepository().modifyFolderName(input, completion)
     }
 }

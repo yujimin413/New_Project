@@ -15,6 +15,8 @@ class FolderCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var folderMoreButton: UIButton!
     @IBOutlet weak var folderNameLabel: UILabel!
     
+    var folderIndex: Int!
+    
     var delegate: FolderCollectionViewCellDelegate?
     // MARK: - LifeCycles
     override func awakeFromNib() {
@@ -25,5 +27,11 @@ class FolderCollectionViewCell: UICollectionViewCell {
     @IBAction func folderMoreButtonDidTap(_ sender: Any) {
         self.delegate?.folderMoreButtonDidTap(name: folderNameLabel, self)
     
+    }
+    
+    public func setupFolderData(_ folderName: String?, _ folderIndex: Int?) {
+        guard let folderName = folderName else { return }
+        folderNameLabel.text = folderName
+        self.folderIndex = folderIndex
     }
 }

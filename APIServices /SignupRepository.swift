@@ -16,13 +16,13 @@ class SignupRepository{
             switch response.result {
             case .success:
                 print("회원가입 성공")
-                debugPrint(response)
+//                debugPrint(response)
                 
 //                UserDefaults.standard.setValue(result.jwtToken, forKey: "jwtToken")
             
             case .failure:
                 print("회원가입 실패")
-                debugPrint(response)
+//                debugPrint(response)
             }
         }
     }

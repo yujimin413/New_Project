@@ -9,21 +9,22 @@ import Foundation
 import Alamofire
 
 class LoginRepository{
-    func login(_ parameter: LoginInput){
+    func login(_ parameter: LoginInput, _ completion: @escaping () -> Void) {
         AF.request(Const.baseUrl+Const.loginUrl, method: .post, parameters: parameter, encoder: JSONParameterEncoder.default).responseDecodable(of: LoginModel.self){
             response in
             switch response.result {
             case .success(let result):
                 print("로그인 성공")
-                debugPrint(response)
+//                debugPrint(response)
                 if result.isSuccess{
-                    print(#function)
+//                    print(#function)
                     UserDefaults.standard.setValue(result.result.jwtToken, forKey: "jwtToken")
+                    completion()
                 }
 
             case .failure:
                 print("로그인 실패")
-                debugPrint(response)
+//                debugPrint(response)
             }
         }
     }

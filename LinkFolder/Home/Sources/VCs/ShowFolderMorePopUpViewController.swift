@@ -13,6 +13,9 @@ class ShowFolderMorePopUpViewController: UIViewController {
     @IBOutlet weak var changeFolderNameButton: UIButton!
     @IBOutlet weak var deleteFolderButton: UIButton!
     
+    var folderIndex: Int!
+    var folderName: String!
+    
     // MARK: - LifeCycles
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,8 +37,13 @@ class ShowFolderMorePopUpViewController: UIViewController {
     @IBAction func changeFolderNameButtonDidTap(_ sender: Any) {
         
         let storyboard = UIStoryboard.init(name: "ChangeFolderNamePopUp", bundle: nil)
-        let changeFolderNamePopUpVC = storyboard.instantiateViewController(withIdentifier: "ChangeFolderNamePopUpVC")
+        let changeFolderNamePopUpVC = storyboard.instantiateViewController(withIdentifier: "ChangeFolderNamePopUpVC") as! ChangeFolderNamePopUpViewController
         changeFolderNamePopUpVC.modalPresentationStyle = .overCurrentContext
+        
+        // 폴더 인덱스 전달
+        changeFolderNamePopUpVC.folderIndex = self.folderIndex
+        changeFolderNamePopUpVC.folderName = self.folderName
+        
         
         // 현재 더보기 팝업뷰 내리고 폴더명 변경 팝업뷰 띄우기
         guard let pvc = self.presentingViewController else { return }
@@ -58,12 +66,12 @@ class ShowFolderMorePopUpViewController: UIViewController {
         let ok = UIAlertAction(title: "네", style: .destructive) {
             (action) in
             print("폴더 삭제 api 호출")
-//            MyprojectDataManager().deleteMyPost(self, projectId)
-//            self.myProjectListReload()
+            FolderDeleteRepository().deleteFolder(self.folderIndex)
+            
+
             self.dismiss(animated: true, completion: nil)
         }
-//                MyprojectDataManager().deleteMyPost(self, projectId)
-//                setupData()
+
         let cancel = UIAlertAction(title: "아니오", style: .cancel) {
             (action) in
             print("폴더 삭제 안 함")
@@ -73,9 +81,7 @@ class ShowFolderMorePopUpViewController: UIViewController {
         alert.addAction(cancel)
 
         present(alert, animated: true)
-        
-        // 폴더 삭제 API 호출
-//        self.dismiss(animated: true, completion: nil)
+
     }
     
 }
