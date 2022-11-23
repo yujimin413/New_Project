@@ -12,6 +12,8 @@
 		102A3688292D12A10062D730 /* SignupRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102A3682292D112C0062D730 /* SignupRepository.swift */; };
 		102A3689292D12A60062D730 /* SignupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102A3685292D11350062D730 /* SignupModel.swift */; };
 		102A368A292D12AB0062D730 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102A3686292D11350062D730 /* LoginModel.swift */; };
+		102A368D292D99D80062D730 /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102A368C292D99D80062D730 /* ProfileEditViewController.swift */; };
+		102A368F292D9A020062D730 /* ProfileEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 102A368E292D9A020062D730 /* ProfileEdit.storyboard */; };
 		105B96C028FE547500E95B53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B96BF28FE547500E95B53 /* AppDelegate.swift */; };
 		105B96C228FE547500E95B53 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B96C128FE547500E95B53 /* SceneDelegate.swift */; };
 		105B96C428FE547500E95B53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B96C328FE547500E95B53 /* ViewController.swift */; };
@@ -78,6 +80,8 @@
 		102A3683292D112C0062D730 /* LoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepository.swift; sourceTree = "<group>"; };
 		102A3685292D11350062D730 /* SignupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupModel.swift; sourceTree = "<group>"; };
 		102A3686292D11350062D730 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		102A368C292D99D80062D730 /* ProfileEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
+		102A368E292D9A020062D730 /* ProfileEdit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileEdit.storyboard; sourceTree = "<group>"; };
 		105B96BC28FE547500E95B53 /* LinkFolder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkFolder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		105B96BF28FE547500E95B53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		105B96C128FE547500E95B53 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -180,9 +184,19 @@
 			path = "Models ";
 			sourceTree = "<group>";
 		};
+		102A368B292D99BC0062D730 /* ProfileEdit */ = {
+			isa = PBXGroup;
+			children = (
+				102A368C292D99D80062D730 /* ProfileEditViewController.swift */,
+				102A368E292D9A020062D730 /* ProfileEdit.storyboard */,
+			);
+			path = ProfileEdit;
+			sourceTree = "<group>";
+		};
 		105B96B328FE547500E95B53 = {
 			isa = PBXGroup;
 			children = (
+				102A368B292D99BC0062D730 /* ProfileEdit */,
 				102A367A292D0D890062D730 /* Consts */,
 				29658D152910A07700DFA491 /* Fonts */,
 				105B970D28FE5ECF00E95B53 /* Components */,
@@ -477,6 +491,7 @@
 				29658D272910A07700DFA491 /* Pretendard-SemiBold.otf in Resources */,
 				29658D202910A07700DFA491 /* Pretendard-Black.otf in Resources */,
 				29658D252910A07700DFA491 /* Pretendard-Thin.otf in Resources */,
+				102A368F292D9A020062D730 /* ProfileEdit.storyboard in Resources */,
 				298E42C62910ED25002EA69B /* ShareFolderTableViewCell.xib in Resources */,
 				291CC3382911275C004592E4 /* Home.storyboard in Resources */,
 				29658D212910A07700DFA491 /* Pretendard-Medium.otf in Resources */,
@@ -548,6 +563,7 @@
 				298E42CD2910F62B002EA69B /* ShowFolderMorePopUpViewController.swift in Sources */,
 				29658D3F2910A21B00DFA491 /* AddLinkViewController.swift in Sources */,
 				105B96FE28FE567200E95B53 /* FriendsViewController.swift in Sources */,
+				102A368D292D99D80062D730 /* ProfileEditViewController.swift in Sources */,
 				29658D412910A21B00DFA491 /* EditLinkViewController.swift in Sources */,
 				105B96C028FE547500E95B53 /* AppDelegate.swift in Sources */,
 				102A367C292D0D9D0062D730 /* Consts.swift in Sources */,
