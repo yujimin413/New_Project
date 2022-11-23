@@ -41,6 +41,10 @@
 		29350E51292D1CB100E8D04A /* FoldersListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29350E50292D1CB100E8D04A /* FoldersListRepository.swift */; };
 		29350E53292D362700E8D04A /* AddFolderRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29350E52292D362700E8D04A /* AddFolderRepository.swift */; };
 		29350E55292D36AB00E8D04A /* AddFolderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29350E54292D36AB00E8D04A /* AddFolderModel.swift */; };
+		29350E57292D4BF900E8D04A /* FolderNameModifyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29350E56292D4BF900E8D04A /* FolderNameModifyModel.swift */; };
+		29350E59292D4C8100E8D04A /* FolderNameModifyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29350E58292D4C8100E8D04A /* FolderNameModifyRepository.swift */; };
+		29350E5B292D5FB500E8D04A /* FolderDeleteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29350E5A292D5FB500E8D04A /* FolderDeleteModel.swift */; };
+		29350E5D292D604000E8D04A /* FolderDeleteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29350E5C292D604000E8D04A /* FolderDeleteRepository.swift */; };
 		293F11DC29179E6900052456 /* ShareFolder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 293F11DB29179E6900052456 /* ShareFolder.storyboard */; };
 		293F11DE29179EC700052456 /* LinkList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 293F11DD29179EC700052456 /* LinkList.storyboard */; };
 		2964F6192918E66B0088D867 /* ShowLinkMorePopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2964F6182918E66B0088D867 /* ShowLinkMorePopUp.storyboard */; };
@@ -114,6 +118,10 @@
 		29350E50292D1CB100E8D04A /* FoldersListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldersListRepository.swift; sourceTree = "<group>"; };
 		29350E52292D362700E8D04A /* AddFolderRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFolderRepository.swift; sourceTree = "<group>"; };
 		29350E54292D36AB00E8D04A /* AddFolderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFolderModel.swift; sourceTree = "<group>"; };
+		29350E56292D4BF900E8D04A /* FolderNameModifyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderNameModifyModel.swift; sourceTree = "<group>"; };
+		29350E58292D4C8100E8D04A /* FolderNameModifyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderNameModifyRepository.swift; sourceTree = "<group>"; };
+		29350E5A292D5FB500E8D04A /* FolderDeleteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderDeleteModel.swift; sourceTree = "<group>"; };
+		29350E5C292D604000E8D04A /* FolderDeleteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderDeleteRepository.swift; sourceTree = "<group>"; };
 		293F11DB29179E6900052456 /* ShareFolder.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShareFolder.storyboard; sourceTree = "<group>"; };
 		293F11DD29179EC700052456 /* LinkList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LinkList.storyboard; sourceTree = "<group>"; };
 		2964F6182918E66B0088D867 /* ShowLinkMorePopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShowLinkMorePopUp.storyboard; sourceTree = "<group>"; };
@@ -283,6 +291,8 @@
 			children = (
 				29350E4E292D1C7C00E8D04A /* FoldersListModel.swift */,
 				29350E54292D36AB00E8D04A /* AddFolderModel.swift */,
+				29350E56292D4BF900E8D04A /* FolderNameModifyModel.swift */,
+				29350E5A292D5FB500E8D04A /* FolderDeleteModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -292,6 +302,8 @@
 			children = (
 				29350E50292D1CB100E8D04A /* FoldersListRepository.swift */,
 				29350E52292D362700E8D04A /* AddFolderRepository.swift */,
+				29350E58292D4C8100E8D04A /* FolderNameModifyRepository.swift */,
+				29350E5C292D604000E8D04A /* FolderDeleteRepository.swift */,
 			);
 			path = APIServices;
 			sourceTree = "<group>";
@@ -546,6 +558,8 @@
 			files = (
 				291097632910E1FE00FAA8AB /* AddFolderPopUpViewController.swift in Sources */,
 				102A3687292D129D0062D730 /* LoginRepository.swift in Sources */,
+				29350E5D292D604000E8D04A /* FolderDeleteRepository.swift in Sources */,
+				29350E59292D4C8100E8D04A /* FolderNameModifyRepository.swift in Sources */,
 				105B970628FE572400E95B53 /* SignupViewController.swift in Sources */,
 				105B971A28FE7BCD00E95B53 /* ButtonComponent.swift in Sources */,
 				105B970228FE56F600E95B53 /* LoginViewController.swift in Sources */,
@@ -553,12 +567,14 @@
 				29658D312910A20700DFA491 /* ProfileCollectionViewCell.swift in Sources */,
 				291CC3392911275C004592E4 /* HomeViewController.swift in Sources */,
 				298E42C82910F27B002EA69B /* LinkListViewController.swift in Sources */,
+				29350E5B292D5FB500E8D04A /* FolderDeleteModel.swift in Sources */,
 				105B96C428FE547500E95B53 /* ViewController.swift in Sources */,
 				298E42CF2910F68F002EA69B /* ChangeFolderNameViewController.swift in Sources */,
 				29658D352910A20700DFA491 /* LinkListTableViewCell.swift in Sources */,
 				29658D422910A21B00DFA491 /* ShareFolderViewController.swift in Sources */,
 				29350E51292D1CB100E8D04A /* FoldersListRepository.swift in Sources */,
 				298E42CD2910F62B002EA69B /* ShowFolderMorePopUpViewController.swift in Sources */,
+				29350E57292D4BF900E8D04A /* FolderNameModifyModel.swift in Sources */,
 				29658D3F2910A21B00DFA491 /* AddLinkViewController.swift in Sources */,
 				105B96FE28FE567200E95B53 /* FriendsViewController.swift in Sources */,
 				29658D412910A21B00DFA491 /* EditLinkViewController.swift in Sources */,

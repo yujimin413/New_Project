@@ -15,4 +15,6 @@ struct Const {
     // /folders
     static let foldersUrl = "/folders"
     static let addFolderUrl = "/folders/create"
+    static let modifyFolderNameUrl = "/folders/modify"
+    static let deleteFolderUrl = "/folders/delete/"
 }

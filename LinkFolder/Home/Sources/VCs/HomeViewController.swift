@@ -26,6 +26,9 @@ class HomeViewController: UIViewController, HomeReloadDelegate {
         didSet { self.homeCollectionView.reloadData()}
     }
     
+    var selectedFolderIndex: Int?
+    var selectedFolderName: String?
+    
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -137,7 +140,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             let itemIndex = indexPath.item
             if let cellData = self.folderData {
                 // 폴더 데이터 있는 경우, 폴더 이름 전달
-                cell.setupFolderData(cellData[itemIndex].folderName)
+                cell.setupFolderData(cellData[itemIndex].folderName, cellData[itemIndex].folderIdx)
             }
             
             return cell
@@ -207,11 +210,21 @@ extension HomeViewController: FolderCollectionViewCellDelegate {
         let section = homeCollectionView.indexPath(for: collectionViewCell)
         print(section?.row, "번째 폴더 더보기 버튼 클릭")
         
+        //ㅠㅠㅠㅠㅠㅠ드디어 (폴더 인덱스 접근)
+        let cellData = folderData![section!.row]
+        selectedFolderIndex = cellData.folderIdx
+        selectedFolderName = cellData.folderName
+        
         let storyboard = UIStoryboard.init(name:  "ShowFolderMorePopUp", bundle: nil)
-        let showFolderMorePopUpVC = storyboard.instantiateViewController(withIdentifier: "ShowFolderMorePopUpVC")
+        let showFolderMorePopUpVC = storyboard.instantiateViewController(withIdentifier: "ShowFolderMorePopUpVC") as! ShowFolderMorePopUpViewController
         showFolderMorePopUpVC.modalPresentationStyle = .overCurrentContext
+        
+        // folderIdx 전달
+        showFolderMorePopUpVC.folderIndex = selectedFolderIndex
+        showFolderMorePopUpVC.folderName = selectedFolderName
+        
         self.present(showFolderMorePopUpVC, animated: true, completion: nil)
-    
+
         
 
     }

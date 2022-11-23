@@ -25,7 +25,6 @@ class FoldersListRepository {
                 print("폴더리스트 불러오기 성공")
                 debugPrint(response)
                 if result.isSuccess!{
-//                    print(#function)
                      viewController.successFeedAPI(result)
                 }
 
