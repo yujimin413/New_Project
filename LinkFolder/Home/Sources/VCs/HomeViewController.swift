@@ -24,7 +24,7 @@ class HomeViewController: UIViewController, HomeReloadDelegate {
     
     let stickyIndexPath = IndexPath(row: 0, section: 0)
     
-    var folderData: [contents]? {
+    var folderData: [folderInfo]? {
         didSet { self.homeCollectionView.reloadData()}
     }
     
@@ -86,10 +86,20 @@ class HomeViewController: UIViewController, HomeReloadDelegate {
             
             var id = indexPath.row
             print(id)
-            print("번째 게시글 터치")
+            print("번째 폴더 내부로 이동")
+            
+            // 선택된 폴더 정보(인덱스, 이름)
+            let cellData = folderData![id]
+            selectedFolderIndex = cellData.folderIdx
+            selectedFolderName = cellData.folderName
             
             let storyboard = UIStoryboard(name: "LinkList", bundle: nil)
             let linkListVC = storyboard.instantiateViewController(withIdentifier: "LinkListVC") as! LinkListViewController
+            
+            linkListVC.folderIdx = selectedFolderIndex
+            linkListVC.folderName = selectedFolderName
+//            linkListVC.
+            
             self.navigationController?.pushViewController(linkListVC, animated: true)
             
         }

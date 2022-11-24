@@ -13,10 +13,10 @@ struct FolderNameModifyInput: Encodable {
 }
 
 struct FolderNameModifyModel: Decodable {
-    var isSuccess: Bool?
-    var code: Int?
-    var message: String?
-    var result: FolderNameModifyResult
+    var isSuccess: Bool
+    var code: Int
+    var message: String
+    var result: FolderNameModifyResult?
 }
 
 struct FolderNameModifyResult: Decodable {

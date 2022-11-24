@@ -26,7 +26,7 @@ class AddFolderRepository {
             case .success(let result):
                 print("폴더 생성 성공")
                 debugPrint(response)
-                if result.isSuccess!{
+                if result.isSuccess{
 //                    self.delegate?.setupFolderData()
                     completion()
                 }

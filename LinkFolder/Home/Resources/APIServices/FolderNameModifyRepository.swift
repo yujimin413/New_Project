@@ -25,7 +25,7 @@ class FolderNameModifyRepository {
             case .success(let result):
                 print("폴더 이름 수정 성공")
                 debugPrint(response)
-                if result.isSuccess!{
+                if result.isSuccess{
 //                    self.delegate?.setupFolderData()
                     completion()
                 }

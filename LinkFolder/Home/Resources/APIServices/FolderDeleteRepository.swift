@@ -28,7 +28,7 @@ class FolderDeleteRepository {
             case .success(let result):
                 print("폴더 삭제 성공")
                 debugPrint(response)
-                if result.isSuccess!{
+                if result.isSuccess{
 //                    print(#function)
 //                     viewController.successFeedAPI(result)
                 }
