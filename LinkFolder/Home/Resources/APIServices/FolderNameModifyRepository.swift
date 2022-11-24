@@ -9,6 +9,9 @@ import Foundation
 import Alamofire
 
 class FolderNameModifyRepository {
+    
+//    var delegate : HomeReloadDelegate?
+    
     func modifyFolderName(_ parameter: FolderNameModifyInput, _  completion: @escaping () -> Void){
         
         let jwtToken = UserDefaults.standard.string(forKey: "jwtToken")
