@@ -20,6 +20,8 @@ class HomeViewController: UIViewController, HomeReloadDelegate {
     @IBOutlet weak var homeCollectionView: UICollectionView!
     @IBOutlet weak var addFolderButton: UIButton!
     
+    let refreshControl = UIRefreshControl()
+    
     let stickyIndexPath = IndexPath(row: 0, section: 0)
     
     var folderData: [contents]? {
@@ -36,6 +38,7 @@ class HomeViewController: UIViewController, HomeReloadDelegate {
         setupCollectionView()
         setFlowLayout()
         setupFolderData()
+        initRefreshControl()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -44,10 +47,28 @@ class HomeViewController: UIViewController, HomeReloadDelegate {
     
     // 폴더 리스트 불러오기
     func setupFolderData() {
+        print("폴더 리스트 불러오기")
         FoldersListRepository().getFoldersList(self)
     }
     
     // MARK: - Actions
+    
+    func initRefreshControl(){
+        homeCollectionView.refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(refreshTableView(refreshControl:)), for: .valueChanged)
+        homeCollectionView.refreshControl = refreshControl
+    }
+    
+    @objc func refreshTableView(refreshControl:
+    UIRefreshControl){
+        print("새로고침!")
+        
+        DispatchQueue.main.asyncAfter(deadline: .now()){
+            FoldersListRepository().getFoldersList(self)
+            refreshControl.endRefreshing()
+        }
+    }
+    
     @IBAction func addFolderButtonTapped(_ sender: Any) {
         // 링크 폴더 추가 팝업뷰
         let storyboard = UIStoryboard.init(name: "AddLinkFolder", bundle: nil)
