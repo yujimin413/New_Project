@@ -23,11 +23,11 @@ class AddFolderPopUpViewController: UIViewController {
     
     // MARK: - Actions
     @IBAction func backButtonTapped(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        self.dismiss(animated: false, completion: nil)
     }
     
     @IBAction func cancelButtonTapped(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        self.dismiss(animated: false, completion: nil)
     }
     
     @IBAction func addButtonTapped(_ sender: Any) {
@@ -35,7 +35,7 @@ class AddFolderPopUpViewController: UIViewController {
         let input = AddFolderInput(folderName: folderNameTextField.text!)
         self.addButtonTapped(input: input) {
             self.delegate?.setupFolderData()
-            self.dismiss(animated: true, completion: nil)
+            self.dismiss(animated: false, completion: nil)
         }
 //        AddFolderRepository().addFolder(HomeViewController, inpput) {
 //            self.dismiss(animated: true, completion: nil)

@@ -39,5 +39,7 @@ struct Const {
     // /links
     static let linksUrl = "/links/"
     static let addLinkUrl = "/links/create"
+    static let modifyLinkUrl = "/links/modify"
+    static let deleteLinkUrl = "/links/delete/"
     
 }
