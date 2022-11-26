@@ -72,6 +72,7 @@
                     <connections>
                         <outlet property="addLinkButton" destination="vmv-Th-PH6" id="VWl-pg-NPb"/>
                         <outlet property="backButton" destination="3l8-C8-6kh" id="fKq-n5-Fke"/>
+                        <outlet property="folderNavigationBar" destination="nXP-wG-OGn" id="FnG-py-1Eq"/>
                         <outlet property="linkListTableView" destination="AIP-R9-PDT" id="qw6-dG-6Ew"/>
                     </connections>
                 </viewController>

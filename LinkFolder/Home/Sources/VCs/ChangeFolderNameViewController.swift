@@ -18,6 +18,8 @@ class ChangeFolderNamePopUpViewController: UIViewController {
     var folderIndex: Int!
     var folderName: String = ""
     
+    var delegate: HomeReloadDelegate?
+    
     // MARK: - LifeCycles
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +40,7 @@ class ChangeFolderNamePopUpViewController: UIViewController {
         // 폴더명 변경 API 호출
         let input = FolderNameModifyInput(updateFolderName: folderNameTextField.text, folderIdx: self.folderIndex)
         self.doneButtonTapped(input: input) {
+            self.delegate?.setupFolderData()
             self.dismiss(animated: true, completion: nil)
         }
     }

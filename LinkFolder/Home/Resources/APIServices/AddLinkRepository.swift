@@ -1,18 +1,16 @@
 //
-//  AddFolderRepository.swift
+//  AddLinkRepository.swift
 //  LinkFolder
 //
-//  Created by 유지민 on 2022/11/23.
+//  Created by 유지민 on 2022/11/26.
 //
 
 import Foundation
 import Alamofire
 
-class AddFolderRepository {
+class AddLinkRepository {
     
-//    var delegate: HomeReloadDelegate?
-    
-    func addFolder(_ parameter: AddFolderInput, _  completion: @escaping () -> Void){
+    func addLink(_ parameter: AddLinkInput, _  completion: @escaping () -> Void){
         
         let jwtToken = UserDefaults.standard.string(forKey: "jwtToken")
         
@@ -20,24 +18,21 @@ class AddFolderRepository {
             "LF-ACCESS-TOKEN" : jwtToken!
         ]
         
-        AF.request(Const.baseUrl+Const.addFolderUrl, method: .post, parameters: parameter, encoder: JSONParameterEncoder.default, headers: header).responseDecodable(of: AddFolderModel.self){
+        AF.request(Const.baseUrl+Const.addLinkUrl, method: .post, parameters: parameter, encoder: JSONParameterEncoder.default, headers: header).responseDecodable(of: AddFolderModel.self){
             response in
             switch response.result {
             case .success(let result):
-                print("폴더 생성 성공")
+                print("링크 생성 성공")
                 debugPrint(response)
                 if result.isSuccess{
-//                    self.delegate?.setupFolderData()
                     completion()
                 }
                 
 
             case .failure:
-                print("폴더 생성 실패")
+                print("링크 생성 실패")
                 debugPrint(response)
             }
         }
     }
 }
-
-

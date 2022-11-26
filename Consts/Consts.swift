@@ -36,5 +36,8 @@ struct Const {
     static let modifyFolderNameUrl = "/folders/modify"
     static let deleteFolderUrl = "/folders/delete/"
     
+    // /links
+    static let linksUrl = "/links/"
+    static let addLinkUrl = "/links/create"
     
 }

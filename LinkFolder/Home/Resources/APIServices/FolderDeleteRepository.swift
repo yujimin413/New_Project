@@ -10,7 +10,7 @@ import Alamofire
 
 class FolderDeleteRepository {
     
-    func deleteFolder(_ folderIndex: Int){
+    func deleteFolder(_ folderIndex: Int, _  completion: @escaping () -> Void){
         
         let jwtToken = UserDefaults.standard.string(forKey: "jwtToken")
         
@@ -28,9 +28,10 @@ class FolderDeleteRepository {
             case .success(let result):
                 print("폴더 삭제 성공")
                 debugPrint(response)
-                if result.isSuccess!{
+                if result.isSuccess{
 //                    print(#function)
 //                     viewController.successFeedAPI(result)
+                    completion()
                 }
 
             case .failure:

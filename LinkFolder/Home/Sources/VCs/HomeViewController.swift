@@ -21,6 +21,9 @@ class HomeViewController: UIViewController, HomeReloadDelegate, ProfileCollectio
         let storyboard = UIStoryboard(name: "ProfileEdit", bundle: nil)
         let secondVC = storyboard.instantiateViewController(identifier: "ProfileEditViewController") as ProfileEditViewController
 //        secondVC.nicknameTextFeild.text =
+        
+        secondVC.delegate = self
+        
         secondVC.modalPresentationStyle = .fullScreen
         self.present(secondVC, animated: false)
     }
@@ -34,7 +37,7 @@ class HomeViewController: UIViewController, HomeReloadDelegate, ProfileCollectio
     
     let stickyIndexPath = IndexPath(row: 0, section: 0)
     
-    var folderData: [contents]? {
+    var folderData: [folderInfo]? {
         didSet { self.homeCollectionView.reloadData()
             print("didset호출됨")
         }
@@ -54,11 +57,11 @@ class HomeViewController: UIViewController, HomeReloadDelegate, ProfileCollectio
         initRefreshControl()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        print(#function)
-        FoldersListRepository().getFoldersList(self)
-        homeCollectionView.reloadData()
-    }
+//    override func viewWillAppear(_ animated: Bool) {
+//        print(#function)
+//        FoldersListRepository().getFoldersList(self)
+//        homeCollectionView.reloadData()
+//    }
     
     // 폴더 리스트 불러오기
     func setupFolderData() {
@@ -87,7 +90,8 @@ class HomeViewController: UIViewController, HomeReloadDelegate, ProfileCollectio
     @IBAction func addFolderButtonTapped(_ sender: Any) {
         // 링크 폴더 추가 팝업뷰
         let storyboard = UIStoryboard.init(name: "AddLinkFolder", bundle: nil)
-        let addFolderPopUpVC = storyboard.instantiateViewController(withIdentifier: "AddFolderPopUpVC")
+        let addFolderPopUpVC = storyboard.instantiateViewController(withIdentifier: "AddFolderPopUpVC") as! AddFolderPopUpViewController
+        addFolderPopUpVC.delegate = self
         addFolderPopUpVC.modalPresentationStyle = .overCurrentContext
         self.present(addFolderPopUpVC, animated: true, completion: nil)
         
@@ -101,10 +105,19 @@ class HomeViewController: UIViewController, HomeReloadDelegate, ProfileCollectio
             
             var id = indexPath.row
             print(id)
-            print("번째 게시글 터치")
+            print("번째 폴더 내부로 이동")
+            
+            // 선택된 폴더 정보(인덱스, 이름)
+            let cellData = folderData![id]
+            selectedFolderIndex = cellData.folderIdx
+            selectedFolderName = cellData.folderName
             
             let storyboard = UIStoryboard(name: "LinkList", bundle: nil)
             let linkListVC = storyboard.instantiateViewController(withIdentifier: "LinkListVC") as! LinkListViewController
+            
+            linkListVC.folderIdx = selectedFolderIndex
+            linkListVC.folderName = selectedFolderName
+            
             self.navigationController?.pushViewController(linkListVC, animated: true)
             
         }
@@ -255,6 +268,9 @@ extension HomeViewController: FolderCollectionViewCellDelegate {
         
         let storyboard = UIStoryboard.init(name:  "ShowFolderMorePopUp", bundle: nil)
         let showFolderMorePopUpVC = storyboard.instantiateViewController(withIdentifier: "ShowFolderMorePopUpVC") as! ShowFolderMorePopUpViewController
+        
+        showFolderMorePopUpVC.delegate = self
+        
         showFolderMorePopUpVC.modalPresentationStyle = .overCurrentContext
         
         // folderIdx 전달

@@ -18,6 +18,8 @@ class LinkListTableViewCell: UITableViewCell {
     
     var delegate: LinkListTableViewCellDelegate?
     
+    var linkIndex: Int!
+    
     //MARK: - LifeCycles
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -26,6 +28,7 @@ class LinkListTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+//        print("선택된 행 인덱스")
 
         // Configure the view for the selected state
     }
@@ -33,5 +36,12 @@ class LinkListTableViewCell: UITableViewCell {
     // MARK: - Actions
     @IBAction func linkMoreButtonDidTap(_ sender: Any) {
         self.delegate?.linkMoreButtonDidTap(name: linkNameLabel, url: linkUrlLabel, self)
+    }
+    
+    public func setupLinkData(_ linkUrl: String?, _ linkIdx: Int?, _ linkAlias: String?) {
+        guard let linkAlias = linkAlias else { return }
+        linkUrlLabel.text = linkUrl
+        linkNameLabel.text = linkAlias
+        self.linkIndex = linkIdx
     }
 }
