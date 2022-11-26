@@ -15,7 +15,17 @@ protocol FolderCollectionViewCellDelegate {
     func folderMoreButtonDidTap(name: UILabel, _ collectionViewCell: UICollectionViewCell)
 }
 
-class HomeViewController: UIViewController, HomeReloadDelegate {
+class HomeViewController: UIViewController, HomeReloadDelegate, ProfileCollectionViewCellDelegate {
+    func profileEditButtonDidTap() {
+        print(#function)
+        let storyboard = UIStoryboard(name: "ProfileEdit", bundle: nil)
+        let secondVC = storyboard.instantiateViewController(identifier: "ProfileEditViewController") as ProfileEditViewController
+//        secondVC.nicknameTextFeild.text =
+        secondVC.modalPresentationStyle = .fullScreen
+        self.present(secondVC, animated: false)
+    }
+    
+
     // MARK: - Properties
     @IBOutlet weak var homeCollectionView: UICollectionView!
     @IBOutlet weak var addFolderButton: UIButton!
@@ -25,8 +35,11 @@ class HomeViewController: UIViewController, HomeReloadDelegate {
     let stickyIndexPath = IndexPath(row: 0, section: 0)
     
     var folderData: [contents]? {
-        didSet { self.homeCollectionView.reloadData()}
+        didSet { self.homeCollectionView.reloadData()
+            print("didset호출됨")
+        }
     }
+    
     
     var selectedFolderIndex: Int?
     var selectedFolderName: String?
@@ -42,7 +55,9 @@ class HomeViewController: UIViewController, HomeReloadDelegate {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        print(#function)
         FoldersListRepository().getFoldersList(self)
+        homeCollectionView.reloadData()
     }
     
     // 폴더 리스트 불러오기
@@ -148,6 +163,8 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
                     fatalError("셀 타입 캐스팅 실패...")
             }
             cell.index = indexPath.row
+            cell.nicknameLabel.text = Const.nickname
+            cell.cellDelegate = self
             return cell
 
         default:

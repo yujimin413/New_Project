@@ -20,7 +20,7 @@
         <!--Profile Edit View Controller-->
         <scene sceneID="Tsy-Yq-fmp">
             <objects>
-                <viewController storyboardIdentifier="ProfileEditViewController" id="6AS-a6-u7G" customClass="ProfileEditViewController" customModule="LinkFolder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileEditViewController" hidesBottomBarWhenPushed="YES" id="6AS-a6-u7G" customClass="ProfileEditViewController" customModule="LinkFolder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hqd-i8-zYg">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,7 +40,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="singupButtonDidTap:" destination="6AS-a6-u7G" eventType="touchUpInside" id="voI-mq-m72"/>
+                                    <action selector="profilieEditButtonDidTap:" destination="6AS-a6-u7G" eventType="touchUpInside" id="TrN-3S-KDN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mwa-GM-bSA">
@@ -73,11 +73,40 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aWi-6M-gTC">
+                                <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eF5-qz-MgA">
+                                        <rect key="frame" x="0.0" y="5" width="44" height="34"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="BackBtn"/>
+                                        <connections>
+                                            <action selector="backButtonDidTap:" destination="6AS-a6-u7G" eventType="touchUpInside" id="wH9-mw-BqR"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내 정보 수정" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="onY-cm-YUt">
+                                        <rect key="frame" x="154" y="11.999999999999998" width="82.333333333333314" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="3Xr-04-6bi"/>
+                                    <constraint firstItem="eF5-qz-MgA" firstAttribute="centerY" secondItem="aWi-6M-gTC" secondAttribute="centerY" id="3fl-Ol-nAI"/>
+                                    <constraint firstItem="eF5-qz-MgA" firstAttribute="leading" secondItem="aWi-6M-gTC" secondAttribute="leading" id="Zua-Ep-WXd"/>
+                                    <constraint firstItem="onY-cm-YUt" firstAttribute="centerX" secondItem="aWi-6M-gTC" secondAttribute="centerX" id="jx1-nX-e5x"/>
+                                    <constraint firstItem="onY-cm-YUt" firstAttribute="centerY" secondItem="aWi-6M-gTC" secondAttribute="centerY" id="l2q-sw-as9"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OJz-DM-4lv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="aWi-6M-gTC" firstAttribute="trailing" secondItem="OJz-DM-4lv" secondAttribute="trailing" id="5NO-PY-V3j"/>
                             <constraint firstItem="qpX-RC-krK" firstAttribute="top" secondItem="5Qo-f1-UoL" secondAttribute="bottom" constant="4" id="8ta-tH-wWt"/>
+                            <constraint firstItem="aWi-6M-gTC" firstAttribute="leading" secondItem="OJz-DM-4lv" secondAttribute="leading" id="Iiy-fE-rp2"/>
                             <constraint firstItem="OJz-DM-4lv" firstAttribute="trailing" secondItem="ucm-HT-iVk" secondAttribute="trailing" constant="50" id="Qbg-z1-Cwy"/>
                             <constraint firstItem="5Qo-f1-UoL" firstAttribute="leading" secondItem="qpX-RC-krK" secondAttribute="leading" id="SCG-bo-3yA"/>
                             <constraint firstItem="Mwa-GM-bSA" firstAttribute="top" secondItem="OJz-DM-4lv" secondAttribute="top" constant="50" id="cvP-RY-oM6"/>
@@ -86,48 +115,20 @@
                             <constraint firstItem="AjN-6Z-Wx8" firstAttribute="leading" secondItem="OJz-DM-4lv" secondAttribute="leading" constant="50" id="kZe-ei-G4i"/>
                             <constraint firstItem="OJz-DM-4lv" firstAttribute="bottom" secondItem="AjN-6Z-Wx8" secondAttribute="bottom" constant="13" id="lmM-70-eJD"/>
                             <constraint firstItem="OJz-DM-4lv" firstAttribute="trailing" secondItem="AjN-6Z-Wx8" secondAttribute="trailing" constant="50" id="orI-RQ-R6R"/>
+                            <constraint firstItem="aWi-6M-gTC" firstAttribute="top" secondItem="OJz-DM-4lv" secondAttribute="top" id="rLu-I3-Gqs"/>
                             <constraint firstItem="Mwa-GM-bSA" firstAttribute="centerX" secondItem="OJz-DM-4lv" secondAttribute="centerX" id="yX0-lV-Usm"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="editButton" destination="AjN-6Z-Wx8" id="l4m-wR-aPI"/>
                         <outlet property="nicknameLabel" destination="iql-lv-bxk" id="p0L-AP-agp"/>
                         <outlet property="nicknameTextFeild" destination="qpX-RC-krK" id="mf9-MU-ix5"/>
-                        <outlet property="profileImageButton" destination="Mwa-GM-bSA" id="xzQ-4g-Pir"/>
-                        <outlet property="signupButton" destination="AjN-6Z-Wx8" id="WdB-ih-WnD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uBO-TB-cBe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="qzb-J3-DZ8" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="6" y="-2"/>
-        </scene>
-        <!--홈화면기본-더보기팝업-->
-        <scene sceneID="Cbl-cT-jtj">
-            <objects>
-                <viewController storyboardIdentifier="ShowFolderMorePopUpVC" title="홈화면기본-더보기팝업" modalPresentationStyle="overFullScreen" id="bpc-lZ-MaB" customClass="ShowFolderMorePopUpViewController" customModule="LinkFolder" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="RRl-2u-eEJ">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xdm-hQ-kSq">
-                                <rect key="frame" x="0.0" y="47" width="390" height="763"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain"/>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="xBd-kP-e3X"/>
-                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
-                        <constraints>
-                            <constraint firstItem="xBd-kP-e3X" firstAttribute="trailing" secondItem="Xdm-hQ-kSq" secondAttribute="trailing" id="1YR-OM-myn"/>
-                            <constraint firstItem="xBd-kP-e3X" firstAttribute="bottom" secondItem="Xdm-hQ-kSq" secondAttribute="bottom" id="Z6m-R0-v8x"/>
-                            <constraint firstItem="Xdm-hQ-kSq" firstAttribute="top" secondItem="xBd-kP-e3X" secondAttribute="top" id="lV6-XK-UB7"/>
-                            <constraint firstItem="Xdm-hQ-kSq" firstAttribute="leading" secondItem="xBd-kP-e3X" secondAttribute="leading" id="m9f-t0-Bks"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FwL-Yf-Ya3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="810.76923076923072" y="-2.1327014218009479"/>
+            <point key="canvasLocation" x="4.615384615384615" y="-2.1327014218009479"/>
         </scene>
     </scenes>
     <designables>
@@ -136,6 +137,7 @@
         </designable>
     </designables>
     <resources>
+        <image name="BackBtn" width="20" height="20"/>
         <image name="ProfileImageEdit" width="110" height="110"/>
         <namedColor name="Gray4">
             <color red="0.65490196078431373" green="0.66274509803921566" blue="0.6705882352941176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -143,9 +145,6 @@
         <namedColor name="GrayText">
             <color red="0.4823529411764706" green="0.4823529411764706" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="secondaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
