@@ -40,6 +40,7 @@ class LoginViewController: UIViewController {
         let secondVC = storyboard.instantiateViewController(identifier: "SignupViewController")
         secondVC.navigationController?.navigationBar.barTintColor = .black
         secondVC.modalPresentationStyle = .fullScreen
+//        self.navigationController?.pushViewController(secondVC, animated: false)
         show(secondVC, sender: self)
     }
     
@@ -47,6 +48,7 @@ class LoginViewController: UIViewController {
         let input = LoginInput(id: idTextField.text!, password: passwordTextField.text!)
         LoginRepository().login(input) {    // 로그인 이후 폴더리스트 불러오도록.. 순서 꼬여서 completion handler 사용
             self.loginIsSucceed()
+            
         }
         
     }
