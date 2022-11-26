@@ -12,10 +12,10 @@ struct AddFolderInput: Encodable {
 }
 
 struct AddFolderModel: Decodable {
-    var isSuccess: Bool?
-    var code: Int?
-    var message: String?
-    var result: AddFolderResult
+    var isSuccess: Bool
+    var code: Int
+    var message: String
+    var result: AddFolderResult?
 }
 
 struct AddFolderResult: Decodable {

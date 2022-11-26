@@ -16,6 +16,10 @@ class ShowFolderMorePopUpViewController: UIViewController {
     var folderIndex: Int!
     var folderName: String!
     
+    var delegate: HomeReloadDelegate?
+    
+    var homeVC: UIViewController?
+    
     // MARK: - LifeCycles
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +43,7 @@ class ShowFolderMorePopUpViewController: UIViewController {
         let storyboard = UIStoryboard.init(name: "ChangeFolderNamePopUp", bundle: nil)
         let changeFolderNamePopUpVC = storyboard.instantiateViewController(withIdentifier: "ChangeFolderNamePopUpVC") as! ChangeFolderNamePopUpViewController
         changeFolderNamePopUpVC.modalPresentationStyle = .overCurrentContext
+        changeFolderNamePopUpVC.delegate = self.delegate
         
         // 폴더 인덱스 전달
         changeFolderNamePopUpVC.folderIndex = self.folderIndex
@@ -66,10 +71,10 @@ class ShowFolderMorePopUpViewController: UIViewController {
         let ok = UIAlertAction(title: "네", style: .destructive) {
             (action) in
             print("폴더 삭제 api 호출")
-            FolderDeleteRepository().deleteFolder(self.folderIndex)
-            
-
-            self.dismiss(animated: true, completion: nil)
+            self.deleteFolderButtonTapped(input: self.folderIndex) {
+                self.delegate?.setupFolderData()
+                self.dismiss(animated: true, completion: nil)
+            }
         }
 
         let cancel = UIAlertAction(title: "아니오", style: .cancel) {
@@ -82,6 +87,10 @@ class ShowFolderMorePopUpViewController: UIViewController {
 
         present(alert, animated: true)
 
+    }
+    
+    func deleteFolderButtonTapped(input: Int, completion: @escaping () -> Void) {
+        FolderDeleteRepository().deleteFolder(self.folderIndex, completion)
     }
     
 }

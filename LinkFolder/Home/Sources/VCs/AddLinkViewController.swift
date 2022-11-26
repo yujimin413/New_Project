@@ -13,6 +13,9 @@ class AddLinkViewController: UIViewController {
     @IBOutlet weak var linkAddressTextField: UITextField!
     @IBOutlet weak var saveButton: UIButton!
     
+    var delegete: LinkReloadDelegate?
+    var folderIdx: Int!
+    
     // MARK: - LifeCycles
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +28,14 @@ class AddLinkViewController: UIViewController {
     
     @IBAction func saveButtonDidTap(_ sender: Any) {
         // 링크 추가 API 호출
-        self.dismiss(animated: true, completion: nil)
+        let input = AddLinkInput(linkUrl: linkAddressTextField.text, folderIdx: self.folderIdx, linkAlias: linkNameTextField.text)
+        self.addButtonTapped(input: input) {
+            self.delegete?.setupLinkData()
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
+    
+    func addButtonTapped(input: AddLinkInput, completion: @escaping () -> Void) {
+        AddLinkRepository().addLink(input, completion)
     }
 }

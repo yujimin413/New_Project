@@ -14,7 +14,7 @@ class AddFolderPopUpViewController: UIViewController {
     @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var folderNameTextField: UITextField!
     
-//    var delegete: HomeReloadDelegate?
+    var delegate: HomeReloadDelegate?
     
     // MARK: - LifeCycle
     override func viewDidLoad() {
@@ -34,7 +34,7 @@ class AddFolderPopUpViewController: UIViewController {
         // 폴더 추가 API 호출
         let input = AddFolderInput(folderName: folderNameTextField.text!)
         self.addButtonTapped(input: input) {
-//            self.delegete?.setupFolderData()
+            self.delegate?.setupFolderData()
             self.dismiss(animated: true, completion: nil)
         }
 //        AddFolderRepository().addFolder(HomeViewController, inpput) {

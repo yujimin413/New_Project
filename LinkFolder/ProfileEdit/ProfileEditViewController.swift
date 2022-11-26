@@ -13,6 +13,8 @@ class ProfileEditViewController: UIViewController {
     @IBOutlet weak var nicknameLabel: UILabel!
     @IBOutlet weak var editButton: ButtonComponent!
     
+    var delegate: HomeReloadDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setNavigationBar()
@@ -85,6 +87,7 @@ class ProfileEditViewController: UIViewController {
         let input = EditProfileInput(nickname: nicknameTextFeild.text!, profileImageUrl: nil)
         ProfileEditRepository().editProfile(input){
             Const.nickname = input.nickname
+            self.delegate?.setupFolderData()
         }
         self.dismiss(animated: true)
     }

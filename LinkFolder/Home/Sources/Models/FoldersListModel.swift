@@ -8,13 +8,13 @@
 import Foundation
 
 struct FoldersListModel: Decodable {
-    var isSuccess: Bool?
-    var code: Int?
-    var message: String?
-    var result: [contents]?
+    var isSuccess: Bool
+    var code: Int
+    var message: String
+    var result: [folderInfo]?
 }
 
-struct contents: Decodable {
+struct folderInfo: Decodable {
     var folderIdx: Int?
     var folderName: String?
 }
