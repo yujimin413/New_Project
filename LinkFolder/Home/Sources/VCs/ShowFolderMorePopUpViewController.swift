@@ -18,7 +18,7 @@ class ShowFolderMorePopUpViewController: UIViewController {
     
     var delegate: HomeReloadDelegate?
     
-    var homeVC: UIViewController?
+//    var homeVC: UIViewController?
     
     // MARK: - LifeCycles
     override func viewDidLoad() {
@@ -27,7 +27,7 @@ class ShowFolderMorePopUpViewController: UIViewController {
     
     // MARK: - Actions
     @IBAction func backButtonDidTap(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        self.dismiss(animated: false, completion: nil)
     }
     
     @IBAction func shareFolderButtonDidTap(_ sender: Any) {
@@ -53,8 +53,8 @@ class ShowFolderMorePopUpViewController: UIViewController {
         // 현재 더보기 팝업뷰 내리고 폴더명 변경 팝업뷰 띄우기
         guard let pvc = self.presentingViewController else { return }
         
-        self.dismiss(animated: true) {
-          pvc.present(changeFolderNamePopUpVC, animated: true, completion: nil)
+        self.dismiss(animated: false) {
+          pvc.present(changeFolderNamePopUpVC, animated: false, completion: nil)
         }
         
         // 폴더명 변경 팝업 띄우기
@@ -73,7 +73,7 @@ class ShowFolderMorePopUpViewController: UIViewController {
             print("폴더 삭제 api 호출")
             self.deleteFolderButtonTapped(input: self.folderIndex) {
                 self.delegate?.setupFolderData()
-                self.dismiss(animated: true, completion: nil)
+                self.dismiss(animated: false, completion: nil)
             }
         }
 

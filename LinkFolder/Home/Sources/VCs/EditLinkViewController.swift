@@ -13,9 +13,18 @@ class EditLinkViewController: UIViewController {
     @IBOutlet weak var linkAddressTextField: UITextField!
     @IBOutlet weak var editButton: UIButton!
     
+    var delegate: LinkReloadDelegate?
+    
+    var linkUrl: String = ""
+    var linkIdx: Int?
+    var linkAlias: String = ""
+    
     // MARK: - LifeCycles
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        linkNameTextField.text = linkAlias
+        linkAddressTextField.text = linkUrl
     }
     
     // MARK: - Actions
@@ -25,7 +34,17 @@ class EditLinkViewController: UIViewController {
     
     @IBAction func editButtonDidTap(_ sender: Any) {
         // 링크 수정 API 호출
-        self.dismiss(animated: true, completion: nil)
+        let input = LinkModifyInput(updateLinkUrl: linkAddressTextField.text, linkIdx: self.linkIdx, updateLinkAlias: linkNameTextField.text)
+        self.editButtonTapped(input: input) {
+            self.delegate?.setupLinkData()
+            self.dismiss(animated: true, completion: nil)
+            
+        }
+        
+    }
+    
+    func editButtonTapped(input: LinkModifyInput, completion: @escaping() -> Void) {
+        LinkModifyRepository().modifyLink(input, completion)
     }
     
 }
