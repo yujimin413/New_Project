@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="FriendsTableViewCell" selectionStyle="default" indentationWidth="10" rowHeight="93" id="KGk-i7-Jjw" userLabel="Friends Table View Cell" customClass="FriendsTableViewCell" customModule="LinkFolder">
+            <rect key="frame" x="0.0" y="0.0" width="439" height="93"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="439" height="93"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PGB-2p-0n1" customClass="ProfileImageComponent" customModule="LinkFolder" customModuleProvider="target">
+                        <rect key="frame" x="13" y="26.666666666666671" width="40" height="40"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="Hcj-9f-m0J"/>
+                            <constraint firstAttribute="height" constant="40" id="dkJ-ew-AoQ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T7U-T8-bPL" customClass="ButtonComponent" customModule="LinkFolder" customModuleProvider="target">
+                        <rect key="frame" x="356.33333333333331" y="32.333333333333336" width="65.666666666666686" height="28.333333333333336"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="수락하기">
+                            <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
+                        </buttonConfiguration>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="friendsButtonDidTap:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="xPR-WL-tMU"/>
+                        </connections>
+                    </button>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dFm-5l-GqD">
+                        <rect key="frame" x="62.999999999999993" y="33.333333333333336" width="114.33333333333331" height="26.333333333333336"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="닉네임최대열글자열글자" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MWZ-he-axv">
+                                <rect key="frame" x="0.0" y="0.0" width="114.33333333333333" height="14.333333333333334"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="닉네임최대열글자열글자" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIr-td-g99">
+                                <rect key="frame" x="0.0" y="14.333333333333329" width="114.33333333333333" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" name="GrayText"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dFm-5l-GqD" firstAttribute="leading" secondItem="PGB-2p-0n1" secondAttribute="trailing" constant="10" id="Aii-qv-T6W"/>
+                    <constraint firstAttribute="trailing" secondItem="T7U-T8-bPL" secondAttribute="trailing" constant="17" id="HS5-eL-su5"/>
+                    <constraint firstItem="T7U-T8-bPL" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="SDh-vR-2kz"/>
+                    <constraint firstItem="PGB-2p-0n1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="bLp-Up-OyN"/>
+                    <constraint firstItem="dFm-5l-GqD" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="leq-Yw-Cc7"/>
+                    <constraint firstItem="PGB-2p-0n1" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="yRp-gD-9gC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="idLabel" destination="GIr-td-g99" id="JTz-8i-Jym"/>
+                <outlet property="nicknameLabel" destination="MWZ-he-axv" id="1Fl-tY-2oW"/>
+                <outlet property="profileImageVIew" destination="PGB-2p-0n1" id="5w4-aS-Dlp"/>
+            </connections>
+            <point key="canvasLocation" x="28.46153846153846" y="15.995260663507109"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="T7U-T8-bPL">
+            <size key="intrinsicContentSize" width="65.666666666666671" height="28.333333333333332"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="GrayText">
+            <color red="0.4823529411764706" green="0.4823529411764706" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

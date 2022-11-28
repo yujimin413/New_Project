@@ -11,6 +11,7 @@ import UIKit
 @IBDesignable
 class ButtonComponent: UIButton {
 
+
     @IBInspectable //inspector 패널에서 사용될 수 있도록 설정
     var  cornerRadius : CGFloat = 0 {
         didSet{

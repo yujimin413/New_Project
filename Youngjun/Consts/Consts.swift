@@ -28,6 +28,9 @@ struct Const {
     static var profileUrl  = "url"
     
     
+    //Notice
+    static let getNoticeUrl = "/alerts"
+     
     
 
     // /folders
