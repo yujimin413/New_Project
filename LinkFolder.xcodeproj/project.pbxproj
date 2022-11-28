@@ -16,6 +16,16 @@
 		102A368F292D9A020062D730 /* ProfileEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 102A368E292D9A020062D730 /* ProfileEdit.storyboard */; };
 		1046F97A2931C94C00053A0C /* ProfileEditRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1046F9792931C94C00053A0C /* ProfileEditRepository.swift */; };
 		1046F97D2931CD5A00053A0C /* ProfileCollectionViewCellDelegate .swift in Sources */ = {isa = PBXBuildFile; fileRef = 1046F97C2931CD5A00053A0C /* ProfileCollectionViewCellDelegate .swift */; };
+		1050B1BC29349FC3004003FC /* NoticeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1050B1BA29349FC3004003FC /* NoticeTableViewCell.swift */; };
+		1050B1BD29349FC3004003FC /* NoticeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1050B1BB29349FC3004003FC /* NoticeTableViewCell.xib */; };
+		1050B1BF2934A1CC004003FC /* ProfileImageComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1050B1BE2934A1CC004003FC /* ProfileImageComponent.swift */; };
+		1050B1C22934A84D004003FC /* FriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1050B1C02934A84D004003FC /* FriendsTableViewCell.swift */; };
+		1050B1C52934AE72004003FC /* FriendsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1050B1C42934A889004003FC /* FriendsTableViewCell.xib */; };
+		1050B1C72934B351004003FC /* FriendsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1050B1C62934B351004003FC /* FriendsModel.swift */; };
+		1050B1C92934B35C004003FC /* NoticeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1050B1C82934B35C004003FC /* NoticeModel.swift */; };
+		1050B1CB2934B36A004003FC /* FriendsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1050B1CA2934B36A004003FC /* FriendsRepository.swift */; };
+		1050B1CD2934B37F004003FC /* NoticeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1050B1CC2934B37F004003FC /* NoticeRepository.swift */; };
+		1050B1CF2934B9DF004003FC /* TapbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1050B1CE2934B9DF004003FC /* TapbarController.swift */; };
 		105B96C028FE547500E95B53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B96BF28FE547500E95B53 /* AppDelegate.swift */; };
 		105B96C228FE547500E95B53 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B96C128FE547500E95B53 /* SceneDelegate.swift */; };
 		105B96C428FE547500E95B53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B96C328FE547500E95B53 /* ViewController.swift */; };
@@ -103,6 +113,16 @@
 		102A368E292D9A020062D730 /* ProfileEdit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileEdit.storyboard; sourceTree = "<group>"; };
 		1046F9792931C94C00053A0C /* ProfileEditRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditRepository.swift; sourceTree = "<group>"; };
 		1046F97C2931CD5A00053A0C /* ProfileCollectionViewCellDelegate .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileCollectionViewCellDelegate .swift"; sourceTree = "<group>"; };
+		1050B1BA29349FC3004003FC /* NoticeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeTableViewCell.swift; sourceTree = "<group>"; };
+		1050B1BB29349FC3004003FC /* NoticeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoticeTableViewCell.xib; sourceTree = "<group>"; };
+		1050B1BE2934A1CC004003FC /* ProfileImageComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageComponent.swift; sourceTree = "<group>"; };
+		1050B1C02934A84D004003FC /* FriendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewCell.swift; sourceTree = "<group>"; };
+		1050B1C42934A889004003FC /* FriendsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendsTableViewCell.xib; sourceTree = "<group>"; };
+		1050B1C62934B351004003FC /* FriendsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsModel.swift; sourceTree = "<group>"; };
+		1050B1C82934B35C004003FC /* NoticeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeModel.swift; sourceTree = "<group>"; };
+		1050B1CA2934B36A004003FC /* FriendsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsRepository.swift; sourceTree = "<group>"; };
+		1050B1CC2934B37F004003FC /* NoticeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeRepository.swift; sourceTree = "<group>"; };
+		1050B1CE2934B9DF004003FC /* TapbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapbarController.swift; sourceTree = "<group>"; };
 		105B96BC28FE547500E95B53 /* LinkFolder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkFolder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		105B96BF28FE547500E95B53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		105B96C128FE547500E95B53 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -210,6 +230,8 @@
 				102A3682292D112C0062D730 /* SignupRepository.swift */,
 				102A3683292D112C0062D730 /* LoginRepository.swift */,
 				1046F9792931C94C00053A0C /* ProfileEditRepository.swift */,
+				1050B1CA2934B36A004003FC /* FriendsRepository.swift */,
+				1050B1CC2934B37F004003FC /* NoticeRepository.swift */,
 			);
 			path = "APIServices ";
 			sourceTree = "<group>";
@@ -220,6 +242,8 @@
 				102A3685292D11350062D730 /* SignupModel.swift */,
 				102A3686292D11350062D730 /* LoginModel.swift */,
 				108944F129320AEC008991B2 /* EditProfileModel.swift */,
+				1050B1C62934B351004003FC /* FriendsModel.swift */,
+				1050B1C82934B35C004003FC /* NoticeModel.swift */,
 			);
 			path = "Models ";
 			sourceTree = "<group>";
@@ -241,7 +265,7 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		105B96B328FE547500E95B53 = {
+		1050B1B929349DB0004003FC /* Youngjun */ = {
 			isa = PBXGroup;
 			children = (
 				1046F97B2931CD3100053A0C /* Protocols */,
@@ -250,6 +274,14 @@
 				105B970D28FE5ECF00E95B53 /* Components */,
 				102A3681292D112C0062D730 /* APIServices  */,
 				102A3684292D11350062D730 /* Models  */,
+			);
+			path = Youngjun;
+			sourceTree = "<group>";
+		};
+		105B96B328FE547500E95B53 = {
+			isa = PBXGroup;
+			children = (
+				1050B1B929349DB0004003FC /* Youngjun */,
 				105B96BE28FE547500E95B53 /* LinkFolder */,
 				105B96BD28FE547500E95B53 /* Products */,
 				2CDB23B06B33250966777F83 /* Pods */,
@@ -298,6 +330,8 @@
 			children = (
 				105B970928FE578700E95B53 /* Notice.storyboard */,
 				105B970728FE577B00E95B53 /* NoticeViewController.swift */,
+				1050B1BA29349FC3004003FC /* NoticeTableViewCell.swift */,
+				1050B1BB29349FC3004003FC /* NoticeTableViewCell.xib */,
 			);
 			path = Notice;
 			sourceTree = "<group>";
@@ -318,6 +352,8 @@
 			children = (
 				105B96FB28FE565D00E95B53 /* Friends.storyboard */,
 				105B96FD28FE567200E95B53 /* FriendsViewController.swift */,
+				1050B1C02934A84D004003FC /* FriendsTableViewCell.swift */,
+				1050B1C42934A889004003FC /* FriendsTableViewCell.xib */,
 			);
 			path = Friends;
 			sourceTree = "<group>";
@@ -329,6 +365,8 @@
 				105B971428FE62DE00E95B53 /* TextFieldComponent.xib */,
 				105B971928FE7BCD00E95B53 /* ButtonComponent.swift */,
 				105B971B28FE7BDD00E95B53 /* ButtonComponent.xib */,
+				1050B1BE2934A1CC004003FC /* ProfileImageComponent.swift */,
+				1050B1CE2934B9DF004003FC /* TapbarController.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -533,6 +571,7 @@
 				29658D232910A07700DFA491 /* Pretendard-ExtraBold.otf in Resources */,
 				293F11DE29179EC700052456 /* LinkList.storyboard in Resources */,
 				29658D222910A07700DFA491 /* Pretendard-Light.otf in Resources */,
+				1050B1C52934AE72004003FC /* FriendsTableViewCell.xib in Resources */,
 				29658D342910A20700DFA491 /* LinkListTableViewCell.xib in Resources */,
 				293F11DC29179E6900052456 /* ShareFolder.storyboard in Resources */,
 				105B96CC28FE547600E95B53 /* LaunchScreen.storyboard in Resources */,
@@ -558,6 +597,7 @@
 				29658D252910A07700DFA491 /* Pretendard-Thin.otf in Resources */,
 				102A368F292D9A020062D730 /* ProfileEdit.storyboard in Resources */,
 				298E42C62910ED25002EA69B /* ShareFolderTableViewCell.xib in Resources */,
+				1050B1BD29349FC3004003FC /* NoticeTableViewCell.xib in Resources */,
 				291CC3382911275C004592E4 /* Home.storyboard in Resources */,
 				29658D212910A07700DFA491 /* Pretendard-Medium.otf in Resources */,
 			);
@@ -613,18 +653,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				291097632910E1FE00FAA8AB /* AddFolderPopUpViewController.swift in Sources */,
+				1050B1CF2934B9DF004003FC /* TapbarController.swift in Sources */,
 				102A3687292D129D0062D730 /* LoginRepository.swift in Sources */,
 				1046F97A2931C94C00053A0C /* ProfileEditRepository.swift in Sources */,
+				1050B1C22934A84D004003FC /* FriendsTableViewCell.swift in Sources */,
 				29350E5D292D604000E8D04A /* FolderDeleteRepository.swift in Sources */,
 				29350E59292D4C8100E8D04A /* FolderNameModifyRepository.swift in Sources */,
 				105B970628FE572400E95B53 /* SignupViewController.swift in Sources */,
+				1050B1CD2934B37F004003FC /* NoticeRepository.swift in Sources */,
 				1046F97D2931CD5A00053A0C /* ProfileCollectionViewCellDelegate .swift in Sources */,
 				105B971A28FE7BCD00E95B53 /* ButtonComponent.swift in Sources */,
 				105B970228FE56F600E95B53 /* LoginViewController.swift in Sources */,
 				102A3688292D12A10062D730 /* SignupRepository.swift in Sources */,
+				1050B1C72934B351004003FC /* FriendsModel.swift in Sources */,
 				29658D312910A20700DFA491 /* ProfileCollectionViewCell.swift in Sources */,
 				291CC3392911275C004592E4 /* HomeViewController.swift in Sources */,
 				298E42C82910F27B002EA69B /* LinkListViewController.swift in Sources */,
+				1050B1C92934B35C004003FC /* NoticeModel.swift in Sources */,
 				29350E5B292D5FB500E8D04A /* FolderDeleteModel.swift in Sources */,
 				105B96C428FE547500E95B53 /* ViewController.swift in Sources */,
 				298E42CF2910F68F002EA69B /* ChangeFolderNameViewController.swift in Sources */,
@@ -636,6 +681,7 @@
 				29350E7729324D0800E8D04A /* LinkDeleteRepository.swift in Sources */,
 				298E42CD2910F62B002EA69B /* ShowFolderMorePopUpViewController.swift in Sources */,
 				29350E57292D4BF900E8D04A /* FolderNameModifyModel.swift in Sources */,
+				1050B1BF2934A1CC004003FC /* ProfileImageComponent.swift in Sources */,
 				29350E6F293240A700E8D04A /* LinkModifyModel.swift in Sources */,
 				29350E67293239AF00E8D04A /* AddLinkRepository.swift in Sources */,
 				29658D3F2910A21B00DFA491 /* AddLinkViewController.swift in Sources */,
@@ -651,6 +697,7 @@
 				29658D332910A20700DFA491 /* CustomCollectionViewFlowLayout.swift in Sources */,
 				105B96C228FE547500E95B53 /* SceneDelegate.swift in Sources */,
 				102A368A292D12AB0062D730 /* LoginModel.swift in Sources */,
+				1050B1BC29349FC3004003FC /* NoticeTableViewCell.swift in Sources */,
 				29350E53292D362700E8D04A /* AddFolderRepository.swift in Sources */,
 				298E42C52910ED25002EA69B /* ShareFolderTableViewCell.swift in Sources */,
 				29350E6D29323A0E00E8D04A /* AddLinkModel.swift in Sources */,
@@ -658,6 +705,7 @@
 				29658D362910A20700DFA491 /* FolderCollectionViewCell.swift in Sources */,
 				105B970828FE577B00E95B53 /* NoticeViewController.swift in Sources */,
 				105B971128FE61D900E95B53 /* TextFieldComponent.swift in Sources */,
+				1050B1CB2934B36A004003FC /* FriendsRepository.swift in Sources */,
 				29CBFCBB291166DC003B0D3F /* ShowLinkMorePopUpViewController.swift in Sources */,
 				108944F229320AEC008991B2 /* EditProfileModel.swift in Sources */,
 				29350E55292D36AB00E8D04A /* AddFolderModel.swift in Sources */,

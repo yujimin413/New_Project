@@ -36,10 +36,10 @@
             </objects>
             <point key="canvasLocation" x="1353" y="466"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tap Bar Controller-->
         <scene sceneID="bAw-sg-vb3">
             <objects>
-                <tabBarController storyboardIdentifier="Main" automaticallyAdjustsScrollViewInsets="NO" id="gxI-in-jCG" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="Main" automaticallyAdjustsScrollViewInsets="NO" id="gxI-in-jCG" customClass="TapBarController" customModule="LinkFolder" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CLC-w7-18f">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
