@@ -24,7 +24,7 @@ class LinkListViewController: UIViewController, LinkReloadDelegate {
     @IBOutlet weak var folderNavigationBar: UINavigationBar!
     
     var folderIdx: Int?
-    var folderName: String?
+    var folderName: String = ""
     
     var linkData: [linkInfo]? {
         didSet { self.linkListTableView.reloadData()}
@@ -108,9 +108,20 @@ extension LinkListViewController: LinkListTableViewCellDelegate {
         print(section?.row, "번째 링크 더보기 버튼 클릭")
         
         let storyboard = UIStoryboard.init(name: "ShowLinkMorePopUp", bundle: nil)
-        let showLinkMorePopUpVC = storyboard.instantiateViewController(withIdentifier: "ShowLinkMorePopUpVC")
+        let showLinkMorePopUpVC = storyboard.instantiateViewController(withIdentifier: "ShowLinkMorePopUpVC") as! ShowLinkMorePopUpViewController
         showLinkMorePopUpVC.modalPresentationStyle = .overCurrentContext
-        self.present(showLinkMorePopUpVC, animated: true, completion: nil)
+        
+//        print(self.linkData?[section!.row].linkUrl)
+        
+        showLinkMorePopUpVC.delegate = self
+        
+        // 현재 링크 정보(linkUrl, linkIdx, linkAlias) 넘겨주기
+        showLinkMorePopUpVC.linkUrl = (self.linkData?[section!.row].linkUrl)!
+        showLinkMorePopUpVC.linkIdx = self.linkData?[section!.row].linkIdx
+        showLinkMorePopUpVC.linkAlias = (self.linkData?[section!.row].linkAlias)!
+        
+        
+        self.present(showLinkMorePopUpVC, animated: false, completion: nil)
     
         
 

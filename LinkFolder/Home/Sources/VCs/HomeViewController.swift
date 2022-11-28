@@ -93,7 +93,7 @@ class HomeViewController: UIViewController, HomeReloadDelegate, ProfileCollectio
         let addFolderPopUpVC = storyboard.instantiateViewController(withIdentifier: "AddFolderPopUpVC") as! AddFolderPopUpViewController
         addFolderPopUpVC.delegate = self
         addFolderPopUpVC.modalPresentationStyle = .overCurrentContext
-        self.present(addFolderPopUpVC, animated: true, completion: nil)
+        self.present(addFolderPopUpVC, animated: false, completion: nil)
         
     }
     
@@ -116,7 +116,7 @@ class HomeViewController: UIViewController, HomeReloadDelegate, ProfileCollectio
             let linkListVC = storyboard.instantiateViewController(withIdentifier: "LinkListVC") as! LinkListViewController
             
             linkListVC.folderIdx = selectedFolderIndex
-            linkListVC.folderName = selectedFolderName
+            linkListVC.folderName = selectedFolderName!
             
             self.navigationController?.pushViewController(linkListVC, animated: true)
             
@@ -277,7 +277,7 @@ extension HomeViewController: FolderCollectionViewCellDelegate {
         showFolderMorePopUpVC.folderIndex = selectedFolderIndex
         showFolderMorePopUpVC.folderName = selectedFolderName
         
-        self.present(showFolderMorePopUpVC, animated: true, completion: nil)
+        self.present(showFolderMorePopUpVC, animated: false, completion: nil)
 
         
 
