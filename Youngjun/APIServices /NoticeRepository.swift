@@ -10,9 +10,9 @@ import Alamofire
 
 class NoticeRepository {
     
-    func getNoticersList(){
+    func getNoticeList(){
         
-        AF.request(Const.baseUrl+Const.getNoticeUrl, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: Const.header).responseDecodable(of: FoldersListModel.self){
+        AF.request(Const.baseUrl+Const.getNoticeUrl, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: Const.header).responseDecodable(of: NoticeModel.self){
             response in
             switch response.result {
             case .success(let result):

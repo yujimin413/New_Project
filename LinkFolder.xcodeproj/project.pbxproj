@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		102925DF2937238C00DC9201 /* Notice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 102925DE2937238C00DC9201 /* Notice.storyboard */; };
+		102925E129372A4F00DC9201 /* SearchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102925E029372A4F00DC9201 /* SearchRepository.swift */; };
+		102925E329372A5B00DC9201 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102925E229372A5B00DC9201 /* SearchModel.swift */; };
 		102A367C292D0D9D0062D730 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102A367B292D0D9D0062D730 /* Consts.swift */; };
 		102A3687292D129D0062D730 /* LoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102A3683292D112C0062D730 /* LoginRepository.swift */; };
 		102A3688292D12A10062D730 /* SignupRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102A3682292D112C0062D730 /* SignupRepository.swift */; };
@@ -39,7 +42,6 @@
 		105B970428FE570400E95B53 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 105B970328FE570400E95B53 /* Signup.storyboard */; };
 		105B970628FE572400E95B53 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B970528FE572400E95B53 /* SignupViewController.swift */; };
 		105B970828FE577B00E95B53 /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B970728FE577B00E95B53 /* NoticeViewController.swift */; };
-		105B970A28FE578700E95B53 /* Notice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 105B970928FE578700E95B53 /* Notice.storyboard */; };
 		105B971128FE61D900E95B53 /* TextFieldComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B971028FE61D900E95B53 /* TextFieldComponent.swift */; };
 		105B971528FE62DE00E95B53 /* TextFieldComponent.xib in Resources */ = {isa = PBXBuildFile; fileRef = 105B971428FE62DE00E95B53 /* TextFieldComponent.xib */; };
 		105B971A28FE7BCD00E95B53 /* ButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B971928FE7BCD00E95B53 /* ButtonComponent.swift */; };
@@ -104,6 +106,9 @@
 
 /* Begin PBXFileReference section */
 		0C675BD803A677F9DD770C2E /* Pods_LinkFolder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinkFolder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		102925DE2937238C00DC9201 /* Notice.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Notice.storyboard; path = ../../LinkFolder/Notice/Notice.storyboard; sourceTree = "<group>"; };
+		102925E029372A4F00DC9201 /* SearchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepository.swift; sourceTree = "<group>"; };
+		102925E229372A5B00DC9201 /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
 		102A367B292D0D9D0062D730 /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 		102A3682292D112C0062D730 /* SignupRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupRepository.swift; sourceTree = "<group>"; };
 		102A3683292D112C0062D730 /* LoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepository.swift; sourceTree = "<group>"; };
@@ -138,7 +143,6 @@
 		105B970328FE570400E95B53 /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
 		105B970528FE572400E95B53 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		105B970728FE577B00E95B53 /* NoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
-		105B970928FE578700E95B53 /* Notice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notice.storyboard; sourceTree = "<group>"; };
 		105B971028FE61D900E95B53 /* TextFieldComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldComponent.swift; sourceTree = "<group>"; };
 		105B971428FE62DE00E95B53 /* TextFieldComponent.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldComponent.xib; sourceTree = "<group>"; };
 		105B971928FE7BCD00E95B53 /* ButtonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonComponent.swift; sourceTree = "<group>"; };
@@ -232,6 +236,7 @@
 				1046F9792931C94C00053A0C /* ProfileEditRepository.swift */,
 				1050B1CA2934B36A004003FC /* FriendsRepository.swift */,
 				1050B1CC2934B37F004003FC /* NoticeRepository.swift */,
+				102925E029372A4F00DC9201 /* SearchRepository.swift */,
 			);
 			path = "APIServices ";
 			sourceTree = "<group>";
@@ -244,17 +249,9 @@
 				108944F129320AEC008991B2 /* EditProfileModel.swift */,
 				1050B1C62934B351004003FC /* FriendsModel.swift */,
 				1050B1C82934B35C004003FC /* NoticeModel.swift */,
+				102925E229372A5B00DC9201 /* SearchModel.swift */,
 			);
 			path = "Models ";
-			sourceTree = "<group>";
-		};
-		102A368B292D99BC0062D730 /* ProfileEdit */ = {
-			isa = PBXGroup;
-			children = (
-				102A368C292D99D80062D730 /* ProfileEditViewController.swift */,
-				102A368E292D9A020062D730 /* ProfileEdit.storyboard */,
-			);
-			path = ProfileEdit;
 			sourceTree = "<group>";
 		};
 		1046F97B2931CD3100053A0C /* Protocols */ = {
@@ -268,6 +265,9 @@
 		1050B1B929349DB0004003FC /* Youngjun */ = {
 			isa = PBXGroup;
 			children = (
+				10AB7B1F2937231C000D6F81 /* Cells */,
+				10AB7B1E293722ED000D6F81 /* Storyboards */,
+				10AB7B1D293722E0000D6F81 /* VCs */,
 				1046F97B2931CD3100053A0C /* Protocols */,
 				102A367A292D0D890062D730 /* Consts */,
 				29658D152910A07700DFA491 /* Fonts */,
@@ -300,11 +300,7 @@
 		105B96BE28FE547500E95B53 /* LinkFolder */ = {
 			isa = PBXGroup;
 			children = (
-				105B96F228FE550B00E95B53 /* OnBoarding */,
-				102A368B292D99BC0062D730 /* ProfileEdit */,
 				105B96EF28FE54A200E95B53 /* Home */,
-				105B96F328FE555200E95B53 /* Friends */,
-				105B96F028FE54AF00E95B53 /* Notice */,
 				105B96BF28FE547500E95B53 /* AppDelegate.swift */,
 				105B96C128FE547500E95B53 /* SceneDelegate.swift */,
 				105B96C328FE547500E95B53 /* ViewController.swift */,
@@ -325,39 +321,6 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		105B96F028FE54AF00E95B53 /* Notice */ = {
-			isa = PBXGroup;
-			children = (
-				105B970928FE578700E95B53 /* Notice.storyboard */,
-				105B970728FE577B00E95B53 /* NoticeViewController.swift */,
-				1050B1BA29349FC3004003FC /* NoticeTableViewCell.swift */,
-				1050B1BB29349FC3004003FC /* NoticeTableViewCell.xib */,
-			);
-			path = Notice;
-			sourceTree = "<group>";
-		};
-		105B96F228FE550B00E95B53 /* OnBoarding */ = {
-			isa = PBXGroup;
-			children = (
-				105B96FF28FE56E500E95B53 /* Login.storyboard */,
-				105B970128FE56F600E95B53 /* LoginViewController.swift */,
-				105B970328FE570400E95B53 /* Signup.storyboard */,
-				105B970528FE572400E95B53 /* SignupViewController.swift */,
-			);
-			path = OnBoarding;
-			sourceTree = "<group>";
-		};
-		105B96F328FE555200E95B53 /* Friends */ = {
-			isa = PBXGroup;
-			children = (
-				105B96FB28FE565D00E95B53 /* Friends.storyboard */,
-				105B96FD28FE567200E95B53 /* FriendsViewController.swift */,
-				1050B1C02934A84D004003FC /* FriendsTableViewCell.swift */,
-				1050B1C42934A889004003FC /* FriendsTableViewCell.xib */,
-			);
-			path = Friends;
-			sourceTree = "<group>";
-		};
 		105B970D28FE5ECF00E95B53 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -369,6 +332,41 @@
 				1050B1CE2934B9DF004003FC /* TapbarController.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		10AB7B1D293722E0000D6F81 /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				105B970728FE577B00E95B53 /* NoticeViewController.swift */,
+				105B970128FE56F600E95B53 /* LoginViewController.swift */,
+				105B970528FE572400E95B53 /* SignupViewController.swift */,
+				102A368C292D99D80062D730 /* ProfileEditViewController.swift */,
+				105B96FD28FE567200E95B53 /* FriendsViewController.swift */,
+			);
+			path = VCs;
+			sourceTree = "<group>";
+		};
+		10AB7B1E293722ED000D6F81 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				102925DE2937238C00DC9201 /* Notice.storyboard */,
+				102A368E292D9A020062D730 /* ProfileEdit.storyboard */,
+				105B970328FE570400E95B53 /* Signup.storyboard */,
+				105B96FF28FE56E500E95B53 /* Login.storyboard */,
+				105B96FB28FE565D00E95B53 /* Friends.storyboard */,
+				1050B1C42934A889004003FC /* FriendsTableViewCell.xib */,
+				1050B1BB29349FC3004003FC /* NoticeTableViewCell.xib */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		10AB7B1F2937231C000D6F81 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1050B1C02934A84D004003FC /* FriendsTableViewCell.swift */,
+				1050B1BA29349FC3004003FC /* NoticeTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		29350E4C292D1C6000E8D04A /* Models */ = {
@@ -567,6 +565,7 @@
 			files = (
 				290E12E42918DCC700823E82 /* AddLink.storyboard in Resources */,
 				29658D262910A07700DFA491 /* Pretendard-ExtraLight.otf in Resources */,
+				102925DF2937238C00DC9201 /* Notice.storyboard in Resources */,
 				2964F6212918EC500088D867 /* AddLinkFolder.storyboard in Resources */,
 				29658D232910A07700DFA491 /* Pretendard-ExtraBold.otf in Resources */,
 				293F11DE29179EC700052456 /* LinkList.storyboard in Resources */,
@@ -577,7 +576,6 @@
 				105B96CC28FE547600E95B53 /* LaunchScreen.storyboard in Resources */,
 				29658D242910A07700DFA491 /* Pretendard-Bold.otf in Resources */,
 				105B96FC28FE565D00E95B53 /* Friends.storyboard in Resources */,
-				105B970A28FE578700E95B53 /* Notice.storyboard in Resources */,
 				290E12E62918DCE200823E82 /* EditLink.storyboard in Resources */,
 				105B970428FE570400E95B53 /* Signup.storyboard in Resources */,
 				105B970028FE56E500E95B53 /* Login.storyboard in Resources */,
@@ -655,6 +653,7 @@
 				291097632910E1FE00FAA8AB /* AddFolderPopUpViewController.swift in Sources */,
 				1050B1CF2934B9DF004003FC /* TapbarController.swift in Sources */,
 				102A3687292D129D0062D730 /* LoginRepository.swift in Sources */,
+				102925E329372A5B00DC9201 /* SearchModel.swift in Sources */,
 				1046F97A2931C94C00053A0C /* ProfileEditRepository.swift in Sources */,
 				1050B1C22934A84D004003FC /* FriendsTableViewCell.swift in Sources */,
 				29350E5D292D604000E8D04A /* FolderDeleteRepository.swift in Sources */,
@@ -687,6 +686,7 @@
 				29658D3F2910A21B00DFA491 /* AddLinkViewController.swift in Sources */,
 				105B96FE28FE567200E95B53 /* FriendsViewController.swift in Sources */,
 				102A368D292D99D80062D730 /* ProfileEditViewController.swift in Sources */,
+				102925E129372A4F00DC9201 /* SearchRepository.swift in Sources */,
 				29658D412910A21B00DFA491 /* EditLinkViewController.swift in Sources */,
 				105B96C028FE547500E95B53 /* AppDelegate.swift in Sources */,
 				102A367C292D0D9D0062D730 /* Consts.swift in Sources */,

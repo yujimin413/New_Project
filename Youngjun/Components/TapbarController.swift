@@ -12,7 +12,7 @@ class TapBarController: UITabBarController{
     
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         if item.tag == 2{
-            NoticeRepository().getNoticersList()
+            NoticeRepository().getNoticeList()
         }
     }
     
