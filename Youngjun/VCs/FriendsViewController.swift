@@ -10,6 +10,8 @@ import UIKit
 class FriendsViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -18,7 +20,6 @@ class FriendsViewController: UIViewController {
         tableView.delegate = self
 
     }
-    
 }
 
 extension FriendsViewController: UITableViewDelegate, UITableViewDataSource{
@@ -31,8 +32,4 @@ extension FriendsViewController: UITableViewDelegate, UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: "FriendsTableViewCell", for: indexPath) as! FriendsTableViewCell
         return cell
     }
-    
-
-
-    
 }
