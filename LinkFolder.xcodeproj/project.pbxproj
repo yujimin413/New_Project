@@ -83,8 +83,8 @@
 		29636AD8293C387100E4D043 /* LinkCopyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29636AD7293C387100E4D043 /* LinkCopyRepository.swift */; };
 		29636ADA293C387D00E4D043 /* FolderCopyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29636AD9293C387D00E4D043 /* FolderCopyRepository.swift */; };
 		29636ADC293C399400E4D043 /* FolderCopyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29636ADB293C399400E4D043 /* FolderCopyModel.swift */; };
-		29636ADE293C47AB00E4D043 /* ShareFolderAlertSendRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29636ADD293C47AB00E4D043 /* ShareFolderAlertSendRepository.swift */; };
-		29636AE0293C48D400E4D043 /* ShareFolderAlertSendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29636ADF293C48D400E4D043 /* ShareFolderAlertSendModel.swift */; };
+		29636ADE293C47AB00E4D043 /* ShareAlertSendRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29636ADD293C47AB00E4D043 /* ShareAlertSendRepository.swift */; };
+		29636AE0293C48D400E4D043 /* ShareAlertSendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29636ADF293C48D400E4D043 /* ShareAlertSendModel.swift */; };
 		2964F6192918E66B0088D867 /* ShowLinkMorePopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2964F6182918E66B0088D867 /* ShowLinkMorePopUp.storyboard */; };
 		2964F61B2918E6F00088D867 /* ShareLink.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2964F61A2918E6F00088D867 /* ShareLink.storyboard */; };
 		2964F61F2918EA560088D867 /* ShareLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2964F61E2918EA560088D867 /* ShareLinkViewController.swift */; };
@@ -224,8 +224,8 @@
 		29636AD7293C387100E4D043 /* LinkCopyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkCopyRepository.swift; sourceTree = "<group>"; };
 		29636AD9293C387D00E4D043 /* FolderCopyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderCopyRepository.swift; sourceTree = "<group>"; };
 		29636ADB293C399400E4D043 /* FolderCopyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderCopyModel.swift; sourceTree = "<group>"; };
-		29636ADD293C47AB00E4D043 /* ShareFolderAlertSendRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareFolderAlertSendRepository.swift; sourceTree = "<group>"; };
-		29636ADF293C48D400E4D043 /* ShareFolderAlertSendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareFolderAlertSendModel.swift; sourceTree = "<group>"; };
+		29636ADD293C47AB00E4D043 /* ShareAlertSendRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareAlertSendRepository.swift; sourceTree = "<group>"; };
+		29636ADF293C48D400E4D043 /* ShareAlertSendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareAlertSendModel.swift; sourceTree = "<group>"; };
 		2964F6182918E66B0088D867 /* ShowLinkMorePopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShowLinkMorePopUp.storyboard; sourceTree = "<group>"; };
 		2964F61A2918E6F00088D867 /* ShareLink.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShareLink.storyboard; sourceTree = "<group>"; };
 		2964F61E2918EA560088D867 /* ShareLinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareLinkViewController.swift; sourceTree = "<group>"; };
@@ -456,7 +456,7 @@
 				29350E6E293240A700E8D04A /* LinkModifyModel.swift */,
 				29350E7429324CCD00E8D04A /* LinkDeleteModel.swift */,
 				29636ADB293C399400E4D043 /* FolderCopyModel.swift */,
-				29636ADF293C48D400E4D043 /* ShareFolderAlertSendModel.swift */,
+				29636ADF293C48D400E4D043 /* ShareAlertSendModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -474,7 +474,7 @@
 				29350E7629324D0800E8D04A /* LinkDeleteRepository.swift */,
 				29636AD7293C387100E4D043 /* LinkCopyRepository.swift */,
 				29636AD9293C387D00E4D043 /* FolderCopyRepository.swift */,
-				29636ADD293C47AB00E4D043 /* ShareFolderAlertSendRepository.swift */,
+				29636ADD293C47AB00E4D043 /* ShareAlertSendRepository.swift */,
 			);
 			path = APIServices;
 			sourceTree = "<group>";
@@ -767,7 +767,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				291097632910E1FE00FAA8AB /* AddFolderPopUpViewController.swift in Sources */,
-				29636AE0293C48D400E4D043 /* ShareFolderAlertSendModel.swift in Sources */,
+				29636AE0293C48D400E4D043 /* ShareAlertSendModel.swift in Sources */,
 				1050B1CF2934B9DF004003FC /* TapbarController.swift in Sources */,
 				102A3687292D129D0062D730 /* LoginRepository.swift in Sources */,
 				102925E329372A5B00DC9201 /* SearchModel.swift in Sources */,
@@ -819,7 +819,7 @@
 				102A368A292D12AB0062D730 /* LoginModel.swift in Sources */,
 				1050B1BC29349FC3004003FC /* NoticeTableViewCell.swift in Sources */,
 				29350E53292D362700E8D04A /* AddFolderRepository.swift in Sources */,
-				29636ADE293C47AB00E4D043 /* ShareFolderAlertSendRepository.swift in Sources */,
+				29636ADE293C47AB00E4D043 /* ShareAlertSendRepository.swift in Sources */,
 				298E42C52910ED25002EA69B /* ShareFolderTableViewCell.swift in Sources */,
 				29350E6D29323A0E00E8D04A /* AddLinkModel.swift in Sources */,
 				29350E4F292D1C7C00E8D04A /* FoldersListModel.swift in Sources */,
