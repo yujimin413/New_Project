@@ -41,6 +41,7 @@ class FriendsViewController: UIViewController, UITextFieldDelegate {
                 data in
                 vc.nicknameLabel.text = data.nickname
                 vc.idLabel.text = data.id
+                vc.userIdx = data.userIdx
                 
             }
 

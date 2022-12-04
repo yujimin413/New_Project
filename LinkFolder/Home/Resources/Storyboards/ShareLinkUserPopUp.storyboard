@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Share Link User Pop Up View Controller-->
+        <scene sceneID="j8w-4s-l3i">
+            <objects>
+                <viewController storyboardIdentifier="shareLinkUserPopUpVC" id="Bqm-2w-gDr" customClass="ShareLinkUserPopUpViewController" customModule="LinkFolder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Aik-KE-kfw">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCt-O7-bBO">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="backButtonDidTap:" destination="Bqm-2w-gDr" eventType="touchUpInside" id="CI6-AR-cmX"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="feM-Pa-ClR">
+                                <rect key="frame" x="76.666666666666686" y="326" width="240" height="200"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="94G-Z3-g2L">
+                                        <rect key="frame" x="48.333333333333329" y="86" width="143" height="32.333333333333343"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="닉네임최대열글자열글자" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTh-Om-eaM">
+                                                <rect key="frame" x="0.0" y="0.0" width="143" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="닉네임최대열글자열글자" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Bt-0R-Zf0">
+                                                <rect key="frame" x="0.0" y="18" width="143" height="14.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" name="GrayText"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DefaultProfile" translatesAutoresizingMaskIntoConstraints="NO" id="YNx-Xf-odx" customClass="ProfileImageComponent" customModule="LinkFolder" customModuleProvider="target">
+                                        <rect key="frame" x="90" y="18" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFg-I5-dqe" customClass="ButtonComponent" customModule="LinkFolder" customModuleProvider="target">
+                                        <rect key="frame" x="69.999999999999986" y="153.66666666666669" width="100.00000000000001" height="28.333333333333343"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="oM4-GS-LgL"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="링크 공유하기">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="shareLinkButtonDidTap:" destination="Bqm-2w-gDr" eventType="touchUpInside" id="tbK-fJ-JvT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="7Jq-yL-cxN"/>
+                                    <constraint firstItem="fFg-I5-dqe" firstAttribute="centerX" secondItem="feM-Pa-ClR" secondAttribute="centerX" id="7df-dg-Kxx"/>
+                                    <constraint firstItem="94G-Z3-g2L" firstAttribute="top" secondItem="feM-Pa-ClR" secondAttribute="top" constant="86" id="8tf-co-7xe"/>
+                                    <constraint firstItem="94G-Z3-g2L" firstAttribute="centerX" secondItem="feM-Pa-ClR" secondAttribute="centerX" id="DRR-ad-bX4"/>
+                                    <constraint firstAttribute="width" constant="240" id="WeN-ID-Wau"/>
+                                    <constraint firstAttribute="bottom" secondItem="fFg-I5-dqe" secondAttribute="bottom" constant="18" id="lrv-85-gOD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9QU-SU-t8h"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hCt-O7-bBO" firstAttribute="top" secondItem="Aik-KE-kfw" secondAttribute="top" id="7vh-sN-Nbj"/>
+                            <constraint firstAttribute="bottom" secondItem="hCt-O7-bBO" secondAttribute="bottom" id="NsE-78-0lv"/>
+                            <constraint firstItem="9QU-SU-t8h" firstAttribute="trailing" secondItem="hCt-O7-bBO" secondAttribute="trailing" id="Ogc-d4-J5A"/>
+                            <constraint firstItem="feM-Pa-ClR" firstAttribute="centerX" secondItem="hCt-O7-bBO" secondAttribute="centerX" id="YNH-pS-waL"/>
+                            <constraint firstItem="hCt-O7-bBO" firstAttribute="leading" secondItem="9QU-SU-t8h" secondAttribute="leading" id="egW-Fi-qbH"/>
+                            <constraint firstItem="feM-Pa-ClR" firstAttribute="centerY" secondItem="hCt-O7-bBO" secondAttribute="centerY" id="mAG-cC-yWz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="popUpView" destination="feM-Pa-ClR" id="2b8-EX-VaA"/>
+                        <outlet property="profileImageView" destination="YNx-Xf-odx" id="nWj-d8-mOa"/>
+                        <outlet property="shareLinkButton" destination="fFg-I5-dqe" id="Aax-Ca-mv1"/>
+                        <outlet property="userIdTextLabel" destination="6Bt-0R-Zf0" id="yji-Kn-aAM"/>
+                        <outlet property="userNicknameTextLabel" destination="NTh-Om-eaM" id="DbZ-YL-351"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U4B-5B-Cc4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="51" y="-101"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="YNx-Xf-odx">
+            <size key="intrinsicContentSize" width="131" height="125"/>
+        </designable>
+        <designable name="fFg-I5-dqe">
+            <size key="intrinsicContentSize" width="89.666666666666671" height="28.333333333333332"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="DefaultProfile" width="131" height="125"/>
+        <namedColor name="GrayText">
+            <color red="0.4823529411764706" green="0.4823529411764706" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
