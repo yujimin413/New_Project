@@ -11,21 +11,26 @@ import Alamofire
 struct Const {
     
     static let jwtToken = UserDefaults.standard.string(forKey: "jwtToken")
+    static let userIdx = UserDefaults.standard.string(forKey: "userIdx")
     
     static let header: HTTPHeaders = [
         "LF-ACCESS-TOKEN" : jwtToken!
     ]
     
     
-    
     static let baseUrl =  "https://linkfolder.shop"
-    static let singupUrl =  "/users/create"
+    static let singupUrl =  "/users/create/"
     static let loginUrl = "/users/login"
     static let editProfileUrl = "/users/modify"
     
 
     static var nickname  = "닉네임"
     static var profileUrl  = "url"
+    
+    static var searchIdUrl = "/users/id?search="
+    static var acceptFriendUrl = "/friends/create"
+    
+    
     
     
     //Notice
