@@ -53,6 +53,8 @@
 		10901433293C7AE500958096 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10901431293C7AE500958096 /* MainInterface.storyboard */; };
 		10901437293C7AE500958096 /* LinkFolderShareExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1090142D293C7AE500958096 /* LinkFolderShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		10901441293C816D00958096 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10901431293C7AE500958096 /* MainInterface.storyboard */; };
+		290D43F8293C805A004E2D30 /* ShareUserPopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290D43F7293C805A004E2D30 /* ShareUserPopUp.storyboard */; };
+		290DA77E293C776F00A952CC /* ShareUserPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290DA77D293C776F00A952CC /* ShareUserPopUpViewController.swift */; };
 		290E12E02918D19600823E82 /* ShowFolderMorePopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290E12DF2918D19600823E82 /* ShowFolderMorePopUp.storyboard */; };
 		290E12E22918D7FE00823E82 /* ChangeFolderNamePopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290E12E12918D7FE00823E82 /* ChangeFolderNamePopUp.storyboard */; };
 		290E12E42918DCC700823E82 /* AddLink.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290E12E32918DCC700823E82 /* AddLink.storyboard */; };
@@ -81,8 +83,8 @@
 		29636AD8293C387100E4D043 /* LinkCopyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29636AD7293C387100E4D043 /* LinkCopyRepository.swift */; };
 		29636ADA293C387D00E4D043 /* FolderCopyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29636AD9293C387D00E4D043 /* FolderCopyRepository.swift */; };
 		29636ADC293C399400E4D043 /* FolderCopyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29636ADB293C399400E4D043 /* FolderCopyModel.swift */; };
-		29636ADE293C47AB00E4D043 /* AlertSendRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29636ADD293C47AB00E4D043 /* AlertSendRepository.swift */; };
-		29636AE0293C48D400E4D043 /* AlertSendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29636ADF293C48D400E4D043 /* AlertSendModel.swift */; };
+		29636ADE293C47AB00E4D043 /* ShareFolderAlertSendRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29636ADD293C47AB00E4D043 /* ShareFolderAlertSendRepository.swift */; };
+		29636AE0293C48D400E4D043 /* ShareFolderAlertSendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29636ADF293C48D400E4D043 /* ShareFolderAlertSendModel.swift */; };
 		2964F6192918E66B0088D867 /* ShowLinkMorePopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2964F6182918E66B0088D867 /* ShowLinkMorePopUp.storyboard */; };
 		2964F61B2918E6F00088D867 /* ShareLink.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2964F61A2918E6F00088D867 /* ShareLink.storyboard */; };
 		2964F61F2918EA560088D867 /* ShareLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2964F61E2918EA560088D867 /* ShareLinkViewController.swift */; };
@@ -192,6 +194,8 @@
 		1090143C293C7C8400958096 /* LinkFolder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LinkFolder.entitlements; sourceTree = "<group>"; };
 		1090143D293C7CCE00958096 /* LinkFolderShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LinkFolderShareExtension.entitlements; sourceTree = "<group>"; };
 		1D2B43758504AC387214F311 /* Pods-LinkFolder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkFolder.release.xcconfig"; path = "Target Support Files/Pods-LinkFolder/Pods-LinkFolder.release.xcconfig"; sourceTree = "<group>"; };
+		290D43F7293C805A004E2D30 /* ShareUserPopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShareUserPopUp.storyboard; sourceTree = "<group>"; };
+		290DA77D293C776F00A952CC /* ShareUserPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareUserPopUpViewController.swift; sourceTree = "<group>"; };
 		290E12DF2918D19600823E82 /* ShowFolderMorePopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShowFolderMorePopUp.storyboard; sourceTree = "<group>"; };
 		290E12E12918D7FE00823E82 /* ChangeFolderNamePopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChangeFolderNamePopUp.storyboard; sourceTree = "<group>"; };
 		290E12E32918DCC700823E82 /* AddLink.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddLink.storyboard; sourceTree = "<group>"; };
@@ -220,8 +224,8 @@
 		29636AD7293C387100E4D043 /* LinkCopyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkCopyRepository.swift; sourceTree = "<group>"; };
 		29636AD9293C387D00E4D043 /* FolderCopyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderCopyRepository.swift; sourceTree = "<group>"; };
 		29636ADB293C399400E4D043 /* FolderCopyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderCopyModel.swift; sourceTree = "<group>"; };
-		29636ADD293C47AB00E4D043 /* AlertSendRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertSendRepository.swift; sourceTree = "<group>"; };
-		29636ADF293C48D400E4D043 /* AlertSendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertSendModel.swift; sourceTree = "<group>"; };
+		29636ADD293C47AB00E4D043 /* ShareFolderAlertSendRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareFolderAlertSendRepository.swift; sourceTree = "<group>"; };
+		29636ADF293C48D400E4D043 /* ShareFolderAlertSendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareFolderAlertSendModel.swift; sourceTree = "<group>"; };
 		2964F6182918E66B0088D867 /* ShowLinkMorePopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShowLinkMorePopUp.storyboard; sourceTree = "<group>"; };
 		2964F61A2918E6F00088D867 /* ShareLink.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShareLink.storyboard; sourceTree = "<group>"; };
 		2964F61E2918EA560088D867 /* ShareLinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareLinkViewController.swift; sourceTree = "<group>"; };
@@ -452,7 +456,7 @@
 				29350E6E293240A700E8D04A /* LinkModifyModel.swift */,
 				29350E7429324CCD00E8D04A /* LinkDeleteModel.swift */,
 				29636ADB293C399400E4D043 /* FolderCopyModel.swift */,
-				29636ADF293C48D400E4D043 /* AlertSendModel.swift */,
+				29636ADF293C48D400E4D043 /* ShareFolderAlertSendModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -470,7 +474,7 @@
 				29350E7629324D0800E8D04A /* LinkDeleteRepository.swift */,
 				29636AD7293C387100E4D043 /* LinkCopyRepository.swift */,
 				29636AD9293C387D00E4D043 /* FolderCopyRepository.swift */,
-				29636ADD293C47AB00E4D043 /* AlertSendRepository.swift */,
+				29636ADD293C47AB00E4D043 /* ShareFolderAlertSendRepository.swift */,
 			);
 			path = APIServices;
 			sourceTree = "<group>";
@@ -507,6 +511,7 @@
 				298E42C72910F27B002EA69B /* LinkListViewController.swift */,
 				29658D3B2910A21A00DFA491 /* ShareFolderViewController.swift */,
 				298E42CC2910F62B002EA69B /* ShowFolderMorePopUpViewController.swift */,
+				290DA77D293C776F00A952CC /* ShareUserPopUpViewController.swift */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -524,6 +529,7 @@
 				2964F6182918E66B0088D867 /* ShowLinkMorePopUp.storyboard */,
 				2964F61A2918E6F00088D867 /* ShareLink.storyboard */,
 				2964F6202918EC500088D867 /* AddLinkFolder.storyboard */,
+				290D43F7293C805A004E2D30 /* ShareUserPopUp.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -668,6 +674,7 @@
 				2964F6212918EC500088D867 /* AddLinkFolder.storyboard in Resources */,
 				29658D232910A07700DFA491 /* Pretendard-ExtraBold.otf in Resources */,
 				293F11DE29179EC700052456 /* LinkList.storyboard in Resources */,
+				290D43F8293C805A004E2D30 /* ShareUserPopUp.storyboard in Resources */,
 				29658D222910A07700DFA491 /* Pretendard-Light.otf in Resources */,
 				1050B1C52934AE72004003FC /* FriendsTableViewCell.xib in Resources */,
 				29658D342910A20700DFA491 /* LinkListTableViewCell.xib in Resources */,
@@ -760,7 +767,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				291097632910E1FE00FAA8AB /* AddFolderPopUpViewController.swift in Sources */,
-				29636AE0293C48D400E4D043 /* AlertSendModel.swift in Sources */,
+				29636AE0293C48D400E4D043 /* ShareFolderAlertSendModel.swift in Sources */,
 				1050B1CF2934B9DF004003FC /* TapbarController.swift in Sources */,
 				102A3687292D129D0062D730 /* LoginRepository.swift in Sources */,
 				102925E329372A5B00DC9201 /* SearchModel.swift in Sources */,
@@ -812,7 +819,7 @@
 				102A368A292D12AB0062D730 /* LoginModel.swift in Sources */,
 				1050B1BC29349FC3004003FC /* NoticeTableViewCell.swift in Sources */,
 				29350E53292D362700E8D04A /* AddFolderRepository.swift in Sources */,
-				29636ADE293C47AB00E4D043 /* AlertSendRepository.swift in Sources */,
+				29636ADE293C47AB00E4D043 /* ShareFolderAlertSendRepository.swift in Sources */,
 				298E42C52910ED25002EA69B /* ShareFolderTableViewCell.swift in Sources */,
 				29350E6D29323A0E00E8D04A /* AddLinkModel.swift in Sources */,
 				29350E4F292D1C7C00E8D04A /* FoldersListModel.swift in Sources */,
@@ -823,6 +830,7 @@
 				29636AD8293C387100E4D043 /* LinkCopyRepository.swift in Sources */,
 				29CBFCBB291166DC003B0D3F /* ShowLinkMorePopUpViewController.swift in Sources */,
 				108944F229320AEC008991B2 /* EditProfileModel.swift in Sources */,
+				290DA77E293C776F00A952CC /* ShareUserPopUpViewController.swift in Sources */,
 				29350E55292D36AB00E8D04A /* AddFolderModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -997,7 +1005,7 @@
 				CODE_SIGN_ENTITLEMENTS = LinkFolder/LinkFolder.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6UJYJPDXP4;
+				DEVELOPMENT_TEAM = FL466Y6686;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LinkFolder/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1028,7 +1036,7 @@
 				CODE_SIGN_ENTITLEMENTS = LinkFolder/LinkFolder.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6UJYJPDXP4;
+				DEVELOPMENT_TEAM = FL466Y6686;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LinkFolder/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1055,7 +1063,7 @@
 				CODE_SIGN_ENTITLEMENTS = LinkFolderShareExtension/LinkFolderShareExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6UJYJPDXP4;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LinkFolderShareExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = LinkFolderShareExtension;
@@ -1082,7 +1090,7 @@
 				CODE_SIGN_ENTITLEMENTS = LinkFolderShareExtension/LinkFolderShareExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6UJYJPDXP4;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LinkFolderShareExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = LinkFolderShareExtension;
