@@ -34,5 +34,6 @@ struct GetFriendsModel: Codable {
 struct GetFriendsResult: Codable {
     let userIdx: Int
     let nickname: String
+    let id: String
     let profileImageURL: String?
 }

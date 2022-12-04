@@ -12,7 +12,6 @@ class NoticeTableViewCell: UITableViewCell {
     @IBOutlet weak var profileImageView: ProfileImageComponent!
     @IBOutlet weak var noticeLabel: UILabel!
     
-    @IBOutlet weak var acceptButton: ButtonComponent!
     @IBOutlet weak var noticeButton: ButtonComponent!
     
     var alertIndex: Int!

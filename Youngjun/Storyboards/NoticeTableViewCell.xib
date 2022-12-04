@@ -29,8 +29,8 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </imageView>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIb-pA-fan" customClass="ButtonComponent" customModule="LinkFolder" customModuleProvider="target">
-                        <rect key="frame" x="285" y="32" width="66" height="29"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T7U-T8-bPL" customClass="ButtonComponent" customModule="LinkFolder" customModuleProvider="target">
+                        <rect key="frame" x="356" y="32" width="66" height="29"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <state key="normal" title="Button"/>
@@ -43,30 +43,13 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                         <connections>
-                            <action selector="acceptButtonDIdTap:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="7nT-De-ASY"/>
-                        </connections>
-                    </button>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T7U-T8-bPL" customClass="ButtonComponent" customModule="LinkFolder" customModuleProvider="target">
-                        <rect key="frame" x="356" y="32" width="66" height="29"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="plain" title="거절하기">
-                            <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
-                        </buttonConfiguration>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                <real key="value" value="5"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
-                        <connections>
                             <action selector="noticeButtonDidTap:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="PX1-mJ-5V6"/>
                         </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="친구요청수락한친구님이 친구를 요청했습니다." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MWZ-he-axv">
-                        <rect key="frame" x="63" y="32.333333333333336" width="184" height="28.666666666666664"/>
+                        <rect key="frame" x="63" y="39.333333333333336" width="250" height="14.333333333333336"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="184" id="X0H-vG-BLa"/>
+                            <constraint firstAttribute="width" constant="250" id="X0H-vG-BLa"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
@@ -76,17 +59,14 @@
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="T7U-T8-bPL" secondAttribute="trailing" constant="17" id="HS5-eL-su5"/>
                     <constraint firstItem="MWZ-he-axv" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Oo5-e8-lmU"/>
-                    <constraint firstItem="wIb-pA-fan" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="S1N-sD-mwR"/>
                     <constraint firstItem="T7U-T8-bPL" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="SDh-vR-2kz"/>
                     <constraint firstItem="PGB-2p-0n1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="bLp-Up-OyN"/>
                     <constraint firstItem="MWZ-he-axv" firstAttribute="leading" secondItem="PGB-2p-0n1" secondAttribute="trailing" constant="10" id="e7Q-MI-05g"/>
-                    <constraint firstItem="T7U-T8-bPL" firstAttribute="leading" secondItem="wIb-pA-fan" secondAttribute="trailing" constant="5" id="hMa-qk-Axy"/>
                     <constraint firstItem="PGB-2p-0n1" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="yRp-gD-9gC"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="acceptButton" destination="wIb-pA-fan" id="saR-0z-m97"/>
                 <outlet property="noticeButton" destination="T7U-T8-bPL" id="UnU-wc-yox"/>
                 <outlet property="noticeLabel" destination="MWZ-he-axv" id="6pO-zJ-nf8"/>
                 <outlet property="profileImageView" destination="PGB-2p-0n1" id="bhZ-E9-bBV"/>
@@ -99,9 +79,6 @@
             <size key="intrinsicContentSize" width="131" height="125"/>
         </designable>
         <designable name="T7U-T8-bPL">
-            <size key="intrinsicContentSize" width="65.666666666666671" height="28.333333333333332"/>
-        </designable>
-        <designable name="wIb-pA-fan">
             <size key="intrinsicContentSize" width="65.666666666666671" height="28.333333333333332"/>
         </designable>
     </designables>
