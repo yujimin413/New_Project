@@ -59,14 +59,19 @@ class ShareFolderViewController: UIViewController, UITextFieldDelegate {
     // 검색창에 친구 검색한 후 엔터 입력시
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == self.searchTextField {
-            let popupStoryboard = UIStoryboard(name: "ShareUserPopUp", bundle: nil)
-            let vc = popupStoryboard.instantiateViewController(withIdentifier: "shareUserPopUpVC") as! ShareUserPopUpViewController
+            let popupStoryboard = UIStoryboard(name: "ShareFolderUserPopUp", bundle: nil)
+            let vc = popupStoryboard.instantiateViewController(withIdentifier: "shareFolderUserPopUpVC") as! ShareFolderUserPopUpViewController
             
             SearchRepository().searchUserById(searchTextField.text!){
                 data in
                 vc.userNicknameTextLabel.text = data.nickname
                 vc.userIdTextLabel.text = data.id
                 
+                vc.userIdx = data.userIdx
+                vc.folderIdx = self.folderIdx
+                vc.folderName = self.folderName
+                
+          
             }
 
             vc.modalPresentationStyle = .fullScreen
@@ -110,7 +115,7 @@ extension ShareFolderViewController: ShareFolderTableViewCellDelegate {
         
         // 알림 생성 API 호출
         // (폴더 공유 alertType : 1)
-        let input = ShareAlertSendInput(alertText: "[\(Const.userNickname ?? " ")]님이 <\(self.folderName)>폴더를 공유하고 싶어 합니다.", alertType: 1, receiveUserIdx: (FriendsList?[section!.row].userIdx)!, folderIdx: self.folderIdx, linkIdx: 0)
+        let input = ShareAlertSendInput(alertText: "[\(Const.userNickname ?? " ")]님이 [\(self.folderName)]폴더를 공유하고 싶어 합니다.", alertType: 1, receiveUserIdx: (FriendsList?[section!.row].userIdx)!, folderIdx: self.folderIdx, linkIdx: 0)
         self.shareFolder(input: input) {
             // 공유 완료시 alert
             let alert = UIAlertController(title: "알림", message: "[\((self.FriendsList?[section!.row].nickname)!)]님에게 폴더 공유 완료", preferredStyle: .alert)
@@ -120,43 +125,21 @@ extension ShareFolderViewController: ShareFolderTableViewCellDelegate {
             }
 
             alert.addAction(done)
-
-            self.present(alert, animated: true)
+            
+//            guard let pvc = self.presentingViewController else { return }
+//            self.dismiss(animated: false) {
+//                pvc.present(alert, animated: false, completion: nil)
+//            }
+            
+            self.present(alert, animated: false, completion: nil)
             
         }
     }
     
     func shareFolder(input: ShareAlertSendInput, completion: @escaping() -> Void) {
-        ShareAlertSendRepository().sendShareFolderAlert(input, completion)
+        ShareAlertSendRepository().sendShareAlert(input, completion)
     }
 }
-
-// MARK: - 검색창 extension
-//extension ShareFolderViewController: UISearchControllerDelegate {
-//    func willPresentSearchController(_ searchController: UISearchController) {
-//        print(#function, "updateQueriesSuggestions")
-//    }
-//
-//    func willDismissSearchController(_ searchController: UISearchController) {
-//        print(#function, "updateQueriesSuggestions")
-//    }
-//
-//    func didDismissSearchController(_ searchController: UISearchController) {
-//        print(#function, "updateQueriesSuggestions")
-//    }
-//}
-//
-//extension ShareFolderViewController: UISearchBarDelegate {
-//    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-//        guard let searchText = searchBar.text, !searchText.isEmpty else { return }
-//        searchController.isActive = false
-//        print(searchText)
-//    }
-//
-//    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-//        print("cancel")
-//    }
-//}
 
 extension ShareFolderViewController{
     func successGetFriendsAPI(_ result: GetFriendsModel){

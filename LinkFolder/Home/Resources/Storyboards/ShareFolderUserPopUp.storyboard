@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Share User Pop Up View Controller-->
+        <!--Share Folder User Pop Up View Controller-->
         <scene sceneID="W0T-dz-Tz9">
             <objects>
-                <viewController storyboardIdentifier="shareUserPopUpVC" id="Gui-LR-fXQ" customClass="ShareUserPopUpViewController" customModule="LinkFolder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="shareFolderUserPopUpVC" id="Gui-LR-fXQ" customClass="ShareFolderUserPopUpViewController" customModule="LinkFolder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="l2n-XD-TmW">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,6 +71,9 @@
                                                 <real key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="shareFolderButtonDidTap:" destination="Gui-LR-fXQ" eventType="touchUpInside" id="OXl-py-W6i"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
