@@ -110,7 +110,7 @@ extension ShareFolderViewController: ShareFolderTableViewCellDelegate {
         
         // 알림 생성 API 호출
         // (폴더 공유 alertType : 1)
-        let input = ShareFolderAlertSendInput(alertText: "[\(Const.userNickname ?? " ")]님이 <\(self.folderName)>폴더를 공유하고 싶어 합니다.", alertType: 1, receiveUserIdx: (FriendsList?[section!.row].userIdx)!, folderIdx: self.folderIdx, linkIdx: 0)
+        let input = ShareAlertSendInput(alertText: "[\(Const.userNickname ?? " ")]님이 <\(self.folderName)>폴더를 공유하고 싶어 합니다.", alertType: 1, receiveUserIdx: (FriendsList?[section!.row].userIdx)!, folderIdx: self.folderIdx, linkIdx: 0)
         self.shareFolder(input: input) {
             // 공유 완료시 alert
             let alert = UIAlertController(title: "알림", message: "[\((self.FriendsList?[section!.row].nickname)!)]님에게 폴더 공유 완료", preferredStyle: .alert)
@@ -126,8 +126,8 @@ extension ShareFolderViewController: ShareFolderTableViewCellDelegate {
         }
     }
     
-    func shareFolder(input: ShareFolderAlertSendInput, completion: @escaping() -> Void) {
-        ShareFolderAlertSendRepository().sendShareFolderAlert(input, completion)
+    func shareFolder(input: ShareAlertSendInput, completion: @escaping() -> Void) {
+        ShareAlertSendRepository().sendShareFolderAlert(input, completion)
     }
 }
 

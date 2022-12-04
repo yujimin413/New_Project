@@ -7,18 +7,18 @@
 
 import Foundation
 
-struct ShareFolderAlertSendInput: Encodable {
+struct ShareAlertSendInput: Encodable {
     let alertText: String
     let alertType, receiveUserIdx, folderIdx, linkIdx: Int
 }
 
-struct ShareFolderAlertSendModel: Decodable {
+struct ShareAlertSendModel: Decodable {
     var isSuccess: Bool
     var code: Int
     var message: String
-    var result: ShareFolderAlertSendResult?
+    var result: ShareAlertSendResult?
 }
 
-struct ShareFolderAlertSendResult: Decodable {
+struct ShareAlertSendResult: Decodable {
     var alertIdx: Int?
 }

@@ -8,10 +8,10 @@
 import Foundation
 import Alamofire
 
-class ShareFolderAlertSendRepository {
-    func sendShareFolderAlert(_ parameter: ShareFolderAlertSendInput, _  completion: @escaping () -> Void){
+class ShareAlertSendRepository {
+    func sendShareFolderAlert(_ parameter: ShareAlertSendInput, _  completion: @escaping () -> Void){
 
-        AF.request(Const.baseUrl+Const.createAlertsUrl, method: .post, parameters: parameter, encoder: JSONParameterEncoder.default, headers: Const.header).responseDecodable(of: ShareFolderAlertSendModel.self){
+        AF.request(Const.baseUrl+Const.createAlertsUrl, method: .post, parameters: parameter, encoder: JSONParameterEncoder.default, headers: Const.header).responseDecodable(of: ShareAlertSendModel.self){
             response in
             switch response.result {
             case .success(let result):
