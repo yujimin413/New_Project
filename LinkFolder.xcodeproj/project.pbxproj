@@ -72,6 +72,11 @@
 		29350E7729324D0800E8D04A /* LinkDeleteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29350E7629324D0800E8D04A /* LinkDeleteRepository.swift */; };
 		293F11DC29179E6900052456 /* ShareFolder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 293F11DB29179E6900052456 /* ShareFolder.storyboard */; };
 		293F11DE29179EC700052456 /* LinkList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 293F11DD29179EC700052456 /* LinkList.storyboard */; };
+		29636AD8293C387100E4D043 /* LinkCopyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29636AD7293C387100E4D043 /* LinkCopyRepository.swift */; };
+		29636ADA293C387D00E4D043 /* FolderCopyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29636AD9293C387D00E4D043 /* FolderCopyRepository.swift */; };
+		29636ADC293C399400E4D043 /* FolderCopyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29636ADB293C399400E4D043 /* FolderCopyModel.swift */; };
+		29636ADE293C47AB00E4D043 /* AlertSendRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29636ADD293C47AB00E4D043 /* AlertSendRepository.swift */; };
+		29636AE0293C48D400E4D043 /* AlertSendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29636ADF293C48D400E4D043 /* AlertSendModel.swift */; };
 		2964F6192918E66B0088D867 /* ShowLinkMorePopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2964F6182918E66B0088D867 /* ShowLinkMorePopUp.storyboard */; };
 		2964F61B2918E6F00088D867 /* ShareLink.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2964F61A2918E6F00088D867 /* ShareLink.storyboard */; };
 		2964F61F2918EA560088D867 /* ShareLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2964F61E2918EA560088D867 /* ShareLinkViewController.swift */; };
@@ -174,6 +179,11 @@
 		29350E7629324D0800E8D04A /* LinkDeleteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkDeleteRepository.swift; sourceTree = "<group>"; };
 		293F11DB29179E6900052456 /* ShareFolder.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShareFolder.storyboard; sourceTree = "<group>"; };
 		293F11DD29179EC700052456 /* LinkList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LinkList.storyboard; sourceTree = "<group>"; };
+		29636AD7293C387100E4D043 /* LinkCopyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkCopyRepository.swift; sourceTree = "<group>"; };
+		29636AD9293C387D00E4D043 /* FolderCopyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderCopyRepository.swift; sourceTree = "<group>"; };
+		29636ADB293C399400E4D043 /* FolderCopyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderCopyModel.swift; sourceTree = "<group>"; };
+		29636ADD293C47AB00E4D043 /* AlertSendRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertSendRepository.swift; sourceTree = "<group>"; };
+		29636ADF293C48D400E4D043 /* AlertSendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertSendModel.swift; sourceTree = "<group>"; };
 		2964F6182918E66B0088D867 /* ShowLinkMorePopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShowLinkMorePopUp.storyboard; sourceTree = "<group>"; };
 		2964F61A2918E6F00088D867 /* ShareLink.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShareLink.storyboard; sourceTree = "<group>"; };
 		2964F61E2918EA560088D867 /* ShareLinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareLinkViewController.swift; sourceTree = "<group>"; };
@@ -380,6 +390,8 @@
 				29350E6C29323A0E00E8D04A /* AddLinkModel.swift */,
 				29350E6E293240A700E8D04A /* LinkModifyModel.swift */,
 				29350E7429324CCD00E8D04A /* LinkDeleteModel.swift */,
+				29636ADB293C399400E4D043 /* FolderCopyModel.swift */,
+				29636ADF293C48D400E4D043 /* AlertSendModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -395,6 +407,9 @@
 				29350E68293239E800E8D04A /* LinkListRepository.swift */,
 				29350E702932410400E8D04A /* LinkModifyRepository.swift */,
 				29350E7629324D0800E8D04A /* LinkDeleteRepository.swift */,
+				29636AD7293C387100E4D043 /* LinkCopyRepository.swift */,
+				29636AD9293C387D00E4D043 /* FolderCopyRepository.swift */,
+				29636ADD293C47AB00E4D043 /* AlertSendRepository.swift */,
 			);
 			path = APIServices;
 			sourceTree = "<group>";
@@ -651,6 +666,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				291097632910E1FE00FAA8AB /* AddFolderPopUpViewController.swift in Sources */,
+				29636AE0293C48D400E4D043 /* AlertSendModel.swift in Sources */,
 				1050B1CF2934B9DF004003FC /* TapbarController.swift in Sources */,
 				102A3687292D129D0062D730 /* LoginRepository.swift in Sources */,
 				102925E329372A5B00DC9201 /* SearchModel.swift in Sources */,
@@ -670,6 +686,7 @@
 				298E42C82910F27B002EA69B /* LinkListViewController.swift in Sources */,
 				1050B1C92934B35C004003FC /* NoticeModel.swift in Sources */,
 				29350E5B292D5FB500E8D04A /* FolderDeleteModel.swift in Sources */,
+				29636ADA293C387D00E4D043 /* FolderCopyRepository.swift in Sources */,
 				105B96C428FE547500E95B53 /* ViewController.swift in Sources */,
 				298E42CF2910F68F002EA69B /* ChangeFolderNameViewController.swift in Sources */,
 				29658D352910A20700DFA491 /* LinkListTableViewCell.swift in Sources */,
@@ -690,6 +707,7 @@
 				29658D412910A21B00DFA491 /* EditLinkViewController.swift in Sources */,
 				105B96C028FE547500E95B53 /* AppDelegate.swift in Sources */,
 				102A367C292D0D9D0062D730 /* Consts.swift in Sources */,
+				29636ADC293C399400E4D043 /* FolderCopyModel.swift in Sources */,
 				102A3689292D12A60062D730 /* SignupModel.swift in Sources */,
 				29350E6B29323A0100E8D04A /* LinkListModel.swift in Sources */,
 				2964F61F2918EA560088D867 /* ShareLinkViewController.swift in Sources */,
@@ -699,6 +717,7 @@
 				102A368A292D12AB0062D730 /* LoginModel.swift in Sources */,
 				1050B1BC29349FC3004003FC /* NoticeTableViewCell.swift in Sources */,
 				29350E53292D362700E8D04A /* AddFolderRepository.swift in Sources */,
+				29636ADE293C47AB00E4D043 /* AlertSendRepository.swift in Sources */,
 				298E42C52910ED25002EA69B /* ShareFolderTableViewCell.swift in Sources */,
 				29350E6D29323A0E00E8D04A /* AddLinkModel.swift in Sources */,
 				29350E4F292D1C7C00E8D04A /* FoldersListModel.swift in Sources */,
@@ -706,6 +725,7 @@
 				105B970828FE577B00E95B53 /* NoticeViewController.swift in Sources */,
 				105B971128FE61D900E95B53 /* TextFieldComponent.swift in Sources */,
 				1050B1CB2934B36A004003FC /* FriendsRepository.swift in Sources */,
+				29636AD8293C387100E4D043 /* LinkCopyRepository.swift in Sources */,
 				29CBFCBB291166DC003B0D3F /* ShowLinkMorePopUpViewController.swift in Sources */,
 				108944F229320AEC008991B2 /* EditProfileModel.swift in Sources */,
 				29350E55292D36AB00E8D04A /* AddFolderModel.swift in Sources */,

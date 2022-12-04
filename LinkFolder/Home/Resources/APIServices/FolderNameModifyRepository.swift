@@ -14,13 +14,7 @@ class FolderNameModifyRepository {
     
     func modifyFolderName(_ parameter: FolderNameModifyInput, _  completion: @escaping () -> Void){
         
-        let jwtToken = UserDefaults.standard.string(forKey: "jwtToken")
-        
-        let header: HTTPHeaders = [
-            "LF-ACCESS-TOKEN" : jwtToken!
-        ]
-        
-        AF.request(Const.baseUrl+Const.modifyFolderNameUrl, method: .patch, parameters: parameter, encoder: JSONParameterEncoder.default, headers: header).responseDecodable(of: FolderNameModifyModel.self){ response in
+        AF.request(Const.baseUrl+Const.modifyFolderNameUrl, method: .patch, parameters: parameter, encoder: JSONParameterEncoder.default, headers: Const.header).responseDecodable(of: FolderNameModifyModel.self){ response in
             switch response.result {
             case .success(let result):
                 print("폴더 이름 수정 성공")

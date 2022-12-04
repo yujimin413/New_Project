@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "수정하기 3.png",
+      "filename" : "수정하기 2.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "수정하기 2.png",
+      "filename" : "수정하기.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "수정하기.png",
+      "filename" : "수정하기 3.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

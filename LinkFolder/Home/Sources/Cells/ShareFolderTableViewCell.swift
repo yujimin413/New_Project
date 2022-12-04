@@ -17,6 +17,8 @@ class ShareFolderTableViewCell: UITableViewCell {
     @IBOutlet weak var nicknameTextField: UILabel!
     @IBOutlet weak var button: UIButton!
     
+    var delegate: ShareFolderTableViewCellDelegate?
+    
     //MARK: - LifeCycles
     override func awakeFromNib() {
         super.awakeFromNib()

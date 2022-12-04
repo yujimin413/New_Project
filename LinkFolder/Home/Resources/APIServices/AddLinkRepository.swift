@@ -11,14 +11,9 @@ import Alamofire
 class AddLinkRepository {
     
     func addLink(_ parameter: AddLinkInput, _  completion: @escaping () -> Void){
+
         
-        let jwtToken = UserDefaults.standard.string(forKey: "jwtToken")
-        
-        let header: HTTPHeaders = [
-            "LF-ACCESS-TOKEN" : jwtToken!
-        ]
-        
-        AF.request(Const.baseUrl+Const.addLinkUrl, method: .post, parameters: parameter, encoder: JSONParameterEncoder.default, headers: header).responseDecodable(of: AddFolderModel.self){
+        AF.request(Const.baseUrl+Const.addLinkUrl, method: .post, parameters: parameter, encoder: JSONParameterEncoder.default, headers: Const.header).responseDecodable(of: AddFolderModel.self){
             response in
             switch response.result {
             case .success(let result):

@@ -11,14 +11,8 @@ import Alamofire
 class FoldersListRepository {
     
     func getFoldersList(_ viewController: HomeViewController){
-        
-        let jwtToken = UserDefaults.standard.string(forKey: "jwtToken")
-        
-        let header: HTTPHeaders = [
-            "LF-ACCESS-TOKEN" : jwtToken!
-        ]
-        
-        AF.request(Const.baseUrl+Const.foldersUrl, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: header).responseDecodable(of: FoldersListModel.self){
+   
+        AF.request(Const.baseUrl+Const.foldersUrl, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: Const.header).responseDecodable(of: FoldersListModel.self){
             response in
             switch response.result {
             case .success(let result):
