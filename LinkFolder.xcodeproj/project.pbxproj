@@ -49,6 +49,10 @@
 		105B971A28FE7BCD00E95B53 /* ButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B971928FE7BCD00E95B53 /* ButtonComponent.swift */; };
 		105B971C28FE7BDD00E95B53 /* ButtonComponent.xib in Resources */ = {isa = PBXBuildFile; fileRef = 105B971B28FE7BDD00E95B53 /* ButtonComponent.xib */; };
 		108944F229320AEC008991B2 /* EditProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108944F129320AEC008991B2 /* EditProfileModel.swift */; };
+		10901430293C7AE500958096 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1090142F293C7AE500958096 /* ShareViewController.swift */; };
+		10901433293C7AE500958096 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10901431293C7AE500958096 /* MainInterface.storyboard */; };
+		10901437293C7AE500958096 /* LinkFolderShareExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1090142D293C7AE500958096 /* LinkFolderShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		10901441293C816D00958096 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10901431293C7AE500958096 /* MainInterface.storyboard */; };
 		290E12E02918D19600823E82 /* ShowFolderMorePopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290E12DF2918D19600823E82 /* ShowFolderMorePopUp.storyboard */; };
 		290E12E22918D7FE00823E82 /* ChangeFolderNamePopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290E12E12918D7FE00823E82 /* ChangeFolderNamePopUp.storyboard */; };
 		290E12E42918DCC700823E82 /* AddLink.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290E12E32918DCC700823E82 /* AddLink.storyboard */; };
@@ -111,6 +115,30 @@
 		CD42DFE210AA47613B2510A1 /* Pods_LinkFolder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C675BD803A677F9DD770C2E /* Pods_LinkFolder.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		10901435293C7AE500958096 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 105B96B428FE547500E95B53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1090142C293C7AE500958096;
+			remoteInfo = LinkFolderShareExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		10901438293C7AE500958096 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				10901437293C7AE500958096 /* LinkFolderShareExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0C675BD803A677F9DD770C2E /* Pods_LinkFolder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinkFolder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		102925DE2937238C00DC9201 /* Notice.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Notice.storyboard; path = ../../LinkFolder/Notice/Notice.storyboard; sourceTree = "<group>"; };
@@ -157,6 +185,12 @@
 		105B971928FE7BCD00E95B53 /* ButtonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonComponent.swift; sourceTree = "<group>"; };
 		105B971B28FE7BDD00E95B53 /* ButtonComponent.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonComponent.xib; sourceTree = "<group>"; };
 		108944F129320AEC008991B2 /* EditProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileModel.swift; sourceTree = "<group>"; };
+		1090142D293C7AE500958096 /* LinkFolderShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LinkFolderShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1090142F293C7AE500958096 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		10901432293C7AE500958096 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		10901434293C7AE500958096 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1090143C293C7C8400958096 /* LinkFolder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LinkFolder.entitlements; sourceTree = "<group>"; };
+		1090143D293C7CCE00958096 /* LinkFolderShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LinkFolderShareExtension.entitlements; sourceTree = "<group>"; };
 		1D2B43758504AC387214F311 /* Pods-LinkFolder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkFolder.release.xcconfig"; path = "Target Support Files/Pods-LinkFolder/Pods-LinkFolder.release.xcconfig"; sourceTree = "<group>"; };
 		290E12DF2918D19600823E82 /* ShowFolderMorePopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShowFolderMorePopUp.storyboard; sourceTree = "<group>"; };
 		290E12E12918D7FE00823E82 /* ChangeFolderNamePopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChangeFolderNamePopUp.storyboard; sourceTree = "<group>"; };
@@ -231,6 +265,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1090142A293C7AE500958096 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -297,6 +338,7 @@
 			children = (
 				1050B1B929349DB0004003FC /* Youngjun */,
 				105B96BE28FE547500E95B53 /* LinkFolder */,
+				1090142E293C7AE500958096 /* LinkFolderShareExtension */,
 				105B96BD28FE547500E95B53 /* Products */,
 				2CDB23B06B33250966777F83 /* Pods */,
 				3CE8C84A226844BCE9ED2A3D /* Frameworks */,
@@ -307,6 +349,7 @@
 			isa = PBXGroup;
 			children = (
 				105B96BC28FE547500E95B53 /* LinkFolder.app */,
+				1090142D293C7AE500958096 /* LinkFolderShareExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -314,6 +357,7 @@
 		105B96BE28FE547500E95B53 /* LinkFolder */ = {
 			isa = PBXGroup;
 			children = (
+				1090143C293C7C8400958096 /* LinkFolder.entitlements */,
 				105B96EF28FE54A200E95B53 /* Home */,
 				105B96BF28FE547500E95B53 /* AppDelegate.swift */,
 				105B96C128FE547500E95B53 /* SceneDelegate.swift */,
@@ -346,6 +390,17 @@
 				1050B1CE2934B9DF004003FC /* TapbarController.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		1090142E293C7AE500958096 /* LinkFolderShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				1090143D293C7CCE00958096 /* LinkFolderShareExtension.entitlements */,
+				1090142F293C7AE500958096 /* ShareViewController.swift */,
+				10901431293C7AE500958096 /* MainInterface.storyboard */,
+				10901434293C7AE500958096 /* Info.plist */,
+			);
+			path = LinkFolderShareExtension;
 			sourceTree = "<group>";
 		};
 		10AB7B1D293722E0000D6F81 /* VCs */ = {
@@ -536,15 +591,34 @@
 				105B96B928FE547500E95B53 /* Frameworks */,
 				105B96BA28FE547500E95B53 /* Resources */,
 				DE52732541D5458911F3212B /* [CP] Embed Pods Frameworks */,
+				10901438293C7AE500958096 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				10901436293C7AE500958096 /* PBXTargetDependency */,
 			);
 			name = LinkFolder;
 			productName = LinkFolder;
 			productReference = 105B96BC28FE547500E95B53 /* LinkFolder.app */;
 			productType = "com.apple.product-type.application";
+		};
+		1090142C293C7AE500958096 /* LinkFolderShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1090143B293C7AE500958096 /* Build configuration list for PBXNativeTarget "LinkFolderShareExtension" */;
+			buildPhases = (
+				10901429293C7AE500958096 /* Sources */,
+				1090142A293C7AE500958096 /* Frameworks */,
+				1090142B293C7AE500958096 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LinkFolderShareExtension;
+			productName = LinkFolderShareExtension;
+			productReference = 1090142D293C7AE500958096 /* LinkFolderShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -553,11 +627,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1400;
+				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					105B96BB28FE547500E95B53 = {
 						CreatedOnToolsVersion = 14.0;
+					};
+					1090142C293C7AE500958096 = {
+						CreatedOnToolsVersion = 14.1;
 					};
 				};
 			};
@@ -575,6 +652,7 @@
 			projectRoot = "";
 			targets = (
 				105B96BB28FE547500E95B53 /* LinkFolder */,
+				1090142C293C7AE500958096 /* LinkFolderShareExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -613,6 +691,7 @@
 				2964F6192918E66B0088D867 /* ShowLinkMorePopUp.storyboard in Resources */,
 				29658D272910A07700DFA491 /* Pretendard-SemiBold.otf in Resources */,
 				29658D202910A07700DFA491 /* Pretendard-Black.otf in Resources */,
+				10901441293C816D00958096 /* MainInterface.storyboard in Resources */,
 				29658D252910A07700DFA491 /* Pretendard-Thin.otf in Resources */,
 				102925E52938469100DC9201 /* UserPopUp.storyboard in Resources */,
 				102A368F292D9A020062D730 /* ProfileEdit.storyboard in Resources */,
@@ -620,6 +699,14 @@
 				1050B1BD29349FC3004003FC /* NoticeTableViewCell.xib in Resources */,
 				291CC3382911275C004592E4 /* Home.storyboard in Resources */,
 				29658D212910A07700DFA491 /* Pretendard-Medium.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1090142B293C7AE500958096 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10901433293C7AE500958096 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -740,7 +827,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		10901429293C7AE500958096 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10901430293C7AE500958096 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		10901436293C7AE500958096 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1090142C293C7AE500958096 /* LinkFolderShareExtension */;
+			targetProxy = 10901435293C7AE500958096 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		105B96C528FE547500E95B53 /* Main.storyboard */ = {
@@ -757,6 +860,14 @@
 				105B96CB28FE547600E95B53 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		10901431293C7AE500958096 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10901432293C7AE500958096 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -880,11 +991,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5AC481525C8AD0FD9F6F64FA /* Pods-LinkFolder.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LinkFolder/LinkFolder.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FL466Y6686;
+				DEVELOPMENT_TEAM = 6UJYJPDXP4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LinkFolder/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -909,11 +1022,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1D2B43758504AC387214F311 /* Pods-LinkFolder.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LinkFolder/LinkFolder.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FL466Y6686;
+				DEVELOPMENT_TEAM = 6UJYJPDXP4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LinkFolder/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -928,6 +1043,60 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = linkfolder.LinkFolder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		10901439293C7AE500958096 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LinkFolderShareExtension/LinkFolderShareExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6UJYJPDXP4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LinkFolderShareExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LinkFolderShareExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = linkfolder.LinkFolder.LinkFolderShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1090143A293C7AE500958096 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LinkFolderShareExtension/LinkFolderShareExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6UJYJPDXP4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LinkFolderShareExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LinkFolderShareExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = linkfolder.LinkFolder.LinkFolderShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -951,6 +1120,15 @@
 			buildConfigurations = (
 				105B96E728FE547600E95B53 /* Debug */,
 				105B96E828FE547600E95B53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1090143B293C7AE500958096 /* Build configuration list for PBXNativeTarget "LinkFolderShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10901439293C7AE500958096 /* Debug */,
+				1090143A293C7AE500958096 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
