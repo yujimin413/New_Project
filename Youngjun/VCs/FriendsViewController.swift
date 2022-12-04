@@ -68,7 +68,7 @@ extension FriendsViewController: UITableViewDelegate, UITableViewDataSource{
         if let cellData = self.FriendsList {
             cell.setupData(profileImage: cellData[itemIndex].profileImageURL ,
                            nickname: cellData[itemIndex].nickname,
-                           id: cellData[itemIndex].nickname,
+                           id: cellData[itemIndex].id,
                            userIdx: cellData[itemIndex].userIdx)
         }
         return cell
