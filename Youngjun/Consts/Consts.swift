@@ -44,11 +44,15 @@ struct Const {
     static let addFolderUrl = "/folders/create"
     static let modifyFolderNameUrl = "/folders/modify"
     static let deleteFolderUrl = "/folders/delete/"
+    static let copyFolderUrl = "/folders/copy"
     
     // /links
     static let linksUrl = "/links/"
     static let addLinkUrl = "/links/create"
     static let modifyLinkUrl = "/links/modify"
     static let deleteLinkUrl = "/links/delete/"
+    
+    // /alerts
+    static let createAlertsUrl = "/alerts/create"
     
 }
