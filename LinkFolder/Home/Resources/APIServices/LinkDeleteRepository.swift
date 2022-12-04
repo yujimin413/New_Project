@@ -11,18 +11,13 @@ import Alamofire
 class LinkDeleteRepository {
     
     func deleteLink(_ folderIndex: Int, _  completion: @escaping () -> Void){
-        
-        let jwtToken = UserDefaults.standard.string(forKey: "jwtToken")
-        
-        let header: HTTPHeaders = [
-            "LF-ACCESS-TOKEN" : jwtToken!
-        ]
+
         
         AF.request(Const.baseUrl+Const.deleteLinkUrl+"\(folderIndex)",
                    method: .delete,
                    parameters: nil,
                    encoding: JSONEncoding.default,
-                   headers: header)
+                   headers: Const.header)
         .responseDecodable(of: FolderDeleteModel.self){ response in
             switch response.result {
             case .success(let result):

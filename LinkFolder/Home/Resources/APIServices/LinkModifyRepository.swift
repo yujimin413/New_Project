@@ -12,13 +12,8 @@ class LinkModifyRepository {
     
     func modifyLink(_ parameter: LinkModifyInput, _  completion: @escaping () -> Void){
         
-        let jwtToken = UserDefaults.standard.string(forKey: "jwtToken")
         
-        let header: HTTPHeaders = [
-            "LF-ACCESS-TOKEN" : jwtToken!
-        ]
-        
-        AF.request(Const.baseUrl+Const.modifyLinkUrl, method: .patch, parameters: parameter, encoder: JSONParameterEncoder.default, headers: header).responseDecodable(of: LinkModifyModel.self){ response in
+        AF.request(Const.baseUrl+Const.modifyLinkUrl, method: .patch, parameters: parameter, encoder: JSONParameterEncoder.default, headers: Const.header).responseDecodable(of: LinkModifyModel.self){ response in
             switch response.result {
             case .success(let result):
                 print("링크 수정 성공")
