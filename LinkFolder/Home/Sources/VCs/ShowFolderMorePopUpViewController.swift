@@ -32,9 +32,18 @@ class ShowFolderMorePopUpViewController: UIViewController {
     
     @IBAction func shareFolderButtonDidTap(_ sender: Any) {
         let storyboard = UIStoryboard.init(name: "ShareFolder", bundle: nil)
-        let shareFolderVC = storyboard.instantiateViewController(withIdentifier: "ShareFolderVC")
+        let shareFolderVC = storyboard.instantiateViewController(withIdentifier: "ShareFolderVC") as! ShareFolderViewController
+        
+        shareFolderVC.folderIdx = self.folderIndex
+        shareFolderVC.folderName = self.folderName
+        
         shareFolderVC.modalPresentationStyle = .overFullScreen
-        self.present(shareFolderVC, animated: true, completion: nil)
+        
+        guard let pvc = self.presentingViewController else { return }
+        
+        self.dismiss(animated: false) {
+          pvc.present(shareFolderVC, animated: false, completion: nil)
+        }
         
     }
     

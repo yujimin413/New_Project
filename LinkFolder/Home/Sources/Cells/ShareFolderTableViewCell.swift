@@ -27,6 +27,11 @@ class ShareFolderTableViewCell: UITableViewCell {
         // Initialization code
     }
 
+    @IBAction func shareFolderButtonDidTap(_ sender: Any) {
+        print("폴더 공유 버튼 클릭")
+        self.delegate?.shareFolderButtonDidTap(receiveUserIdx: userIdx, self)
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }

@@ -8,7 +8,7 @@
 import UIKit
 
 protocol ShareFolderTableViewCellDelegate {
-    func shareFolderButtonDidTap(name: UILabel, url: UILabel, _ tableViewCell: UITableViewCell)
+    func shareFolderButtonDidTap(receiveUserIdx: Int, _ tableViewCell: UITableViewCell)
 }
 
 class ShareFolderViewController: UIViewController, UITextFieldDelegate {
@@ -17,6 +17,9 @@ class ShareFolderViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var shareFolderTableView: UITableView!
     @IBOutlet weak var backButton: UIBarButtonItem!
     @IBOutlet weak var searchTextField: UITextField!
+    
+    var folderIdx: Int!
+    var folderName: String = ""
     
     var FriendsList: [GetFriendsResult]?{
         didSet{
@@ -84,14 +87,14 @@ extension ShareFolderViewController: UITableViewDelegate, UITableViewDataSource 
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ShareFolderTableViewCell.identifier, for: indexPath) as? ShareFolderTableViewCell else {
             return UITableViewCell()
         }
-        
+        cell.delegate = self
         let itemIndex = indexPath.item
         
         //일단 닉네임 넣었슴
         if let cellData = self.FriendsList {
             cell.setupData(profileImage: cellData[itemIndex].profileImageURL ,
                            nickname: cellData[itemIndex].nickname,
-                           id: cellData[itemIndex].nickname,
+                           id: cellData[itemIndex].id,
                            userIdx: cellData[itemIndex].userIdx)
         }
         
@@ -100,29 +103,31 @@ extension ShareFolderViewController: UITableViewDelegate, UITableViewDataSource 
 }
 
 extension ShareFolderViewController: ShareFolderTableViewCellDelegate {
-    func shareFolderButtonDidTap(name: UILabel, url: UILabel, _ tableViewCell: UITableViewCell) {
+    func shareFolderButtonDidTap(receiveUserIdx: Int, _ tableViewCell: UITableViewCell) {
         // 친구 리스트에서 공유하기 버튼 클릭 (검색x)
         let section = shareFolderTableView.indexPath(for: tableViewCell)
         print(section?.row, "번째 친구에게 폴더 공유하기 버튼 클릭")
         
-//        let storyboard = UIStoryboard.init(name: "ShowLinkMorePopUp", bundle: nil)
-//        let showLinkMorePopUpVC = storyboard.instantiateViewController(withIdentifier: "ShowLinkMorePopUpVC") as! ShowLinkMorePopUpViewController
-//        showLinkMorePopUpVC.modalPresentationStyle = .overCurrentContext
-        
-//        print(self.linkData?[section!.row].linkUrl)
-        
-//        showLinkMorePopUpVC.delegate = self
-//
-//        // 현재 링크 정보(linkUrl, linkIdx, linkAlias) 넘겨주기
-//        showLinkMorePopUpVC.linkUrl = (self.linkData?[section!.row].linkUrl)!
-//        showLinkMorePopUpVC.linkIdx = self.linkData?[section!.row].linkIdx
-//        showLinkMorePopUpVC.linkAlias = (self.linkData?[section!.row].linkAlias)!
-        
-        
-//        self.present(showLinkMorePopUpVC, animated: false, completion: nil)
-    
-        
+        // 알림 생성 API 호출
+        // (폴더 공유 alertType : 1)
+        let input = ShareFolderAlertSendInput(alertText: "[\(Const.userNickname ?? " ")]님이 <\(self.folderName)>폴더를 공유하고 싶어 합니다.", alertType: 1, receiveUserIdx: (FriendsList?[section!.row].userIdx)!, folderIdx: self.folderIdx, linkIdx: 0)
+        self.shareFolder(input: input) {
+            // 공유 완료시 alert
+            let alert = UIAlertController(title: "알림", message: "[\((self.FriendsList?[section!.row].nickname)!)]님에게 폴더 공유 완료", preferredStyle: .alert)
+            let done = UIAlertAction(title: "닫기", style: .cancel) {
+                (action) in
+//                    self.dismiss(animated: false, completion: nil)
+            }
 
+            alert.addAction(done)
+
+            self.present(alert, animated: true)
+            
+        }
+    }
+    
+    func shareFolder(input: ShareFolderAlertSendInput, completion: @escaping() -> Void) {
+        ShareFolderAlertSendRepository().sendShareFolderAlert(input, completion)
     }
 }
 

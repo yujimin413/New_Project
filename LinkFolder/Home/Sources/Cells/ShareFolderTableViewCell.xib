@@ -58,6 +58,9 @@
                         </constraints>
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="plain" image="ShareBtn"/>
+                        <connections>
+                            <action selector="shareFolderButtonDidTap:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="PzF-49-CfZ"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>
