@@ -13,7 +13,7 @@ class FriendsTableViewCell: UITableViewCell {
     @IBOutlet weak var profileImageVIew: ProfileImageComponent!
     @IBOutlet weak var nicknameLabel: UILabel!
     @IBOutlet weak var idLabel: UILabel!
-    
+    var userIdx: Int!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,6 +25,13 @@ class FriendsTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    public func setupData(profileImage: String?, nickname: String, id: String, userIdx: Int){
+        self.nicknameLabel.text = nickname
+        self.idLabel.text = id
+        self.userIdx = userIdx
+    }
+    
     
     
     @IBAction func friendsButtonDidTap(_ sender: Any) {

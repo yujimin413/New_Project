@@ -92,6 +92,7 @@
                     <tabBarItem key="tabBarItem" tag="1" title="" image="FriendsBtn" selectedImage="FriendsBtn" id="Df3-XM-gpm"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="searchTextField" destination="m2E-wz-Ucr" id="qqb-RW-0sY"/>
                         <outlet property="tableView" destination="G5k-pf-Vc0" id="WlV-6L-SkE"/>
                     </connections>
                 </viewController>

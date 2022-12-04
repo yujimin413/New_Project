@@ -20,4 +20,9 @@ struct NoticeResult: Codable {
     let alertText: String
     let alertType, sendUserIdx, receiveUserIdx, folderIdx: Int
     let linkIdx: Int
+    let nickname: String
+    let profileImageUrl: String?
+    let folderName: String?
+    let linkName: String?
+    
 }
