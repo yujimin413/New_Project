@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -64,7 +64,7 @@
                         </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="친구요청수락한친구님이 친구를 요청했습니다." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MWZ-he-axv">
-                        <rect key="frame" x="74" y="32.333333333333336" width="184" height="28.666666666666664"/>
+                        <rect key="frame" x="63" y="32.333333333333336" width="184" height="28.666666666666664"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="184" id="X0H-vG-BLa"/>
                         </constraints>
@@ -79,7 +79,7 @@
                     <constraint firstItem="wIb-pA-fan" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="S1N-sD-mwR"/>
                     <constraint firstItem="T7U-T8-bPL" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="SDh-vR-2kz"/>
                     <constraint firstItem="PGB-2p-0n1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="bLp-Up-OyN"/>
-                    <constraint firstItem="MWZ-he-axv" firstAttribute="leading" secondItem="PGB-2p-0n1" secondAttribute="trailing" constant="21" id="e7Q-MI-05g"/>
+                    <constraint firstItem="MWZ-he-axv" firstAttribute="leading" secondItem="PGB-2p-0n1" secondAttribute="trailing" constant="10" id="e7Q-MI-05g"/>
                     <constraint firstItem="T7U-T8-bPL" firstAttribute="leading" secondItem="wIb-pA-fan" secondAttribute="trailing" constant="5" id="hMa-qk-Axy"/>
                     <constraint firstItem="PGB-2p-0n1" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="yRp-gD-9gC"/>
                 </constraints>

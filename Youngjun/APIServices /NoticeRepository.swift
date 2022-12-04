@@ -10,7 +10,7 @@ import Alamofire
 
 class NoticeRepository {
     
-    func getNoticeList(){
+    func getNoticeList(viewcontroller: NoticeViewController){
         
         AF.request(Const.baseUrl+Const.getNoticeUrl, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: Const.header).responseDecodable(of: NoticeModel.self){
             response in
@@ -20,6 +20,7 @@ class NoticeRepository {
                 debugPrint(response)
                 if result.isSuccess{
                 }
+                viewcontroller.successNoticeAPI(result)
 
             case .failure:
                 print("알림 목록 가져오기 실패")

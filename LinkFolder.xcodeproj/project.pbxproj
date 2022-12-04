@@ -10,6 +10,8 @@
 		102925DF2937238C00DC9201 /* Notice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 102925DE2937238C00DC9201 /* Notice.storyboard */; };
 		102925E129372A4F00DC9201 /* SearchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102925E029372A4F00DC9201 /* SearchRepository.swift */; };
 		102925E329372A5B00DC9201 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102925E229372A5B00DC9201 /* SearchModel.swift */; };
+		102925E52938469100DC9201 /* UserPopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 102925E42938469100DC9201 /* UserPopUp.storyboard */; };
+		102925E72938515A00DC9201 /* UserPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102925E62938515A00DC9201 /* UserPopUpViewController.swift */; };
 		102A367C292D0D9D0062D730 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102A367B292D0D9D0062D730 /* Consts.swift */; };
 		102A3687292D129D0062D730 /* LoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102A3683292D112C0062D730 /* LoginRepository.swift */; };
 		102A3688292D12A10062D730 /* SignupRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102A3682292D112C0062D730 /* SignupRepository.swift */; };
@@ -114,6 +116,8 @@
 		102925DE2937238C00DC9201 /* Notice.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Notice.storyboard; path = ../../LinkFolder/Notice/Notice.storyboard; sourceTree = "<group>"; };
 		102925E029372A4F00DC9201 /* SearchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepository.swift; sourceTree = "<group>"; };
 		102925E229372A5B00DC9201 /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
+		102925E42938469100DC9201 /* UserPopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserPopUp.storyboard; sourceTree = "<group>"; };
+		102925E62938515A00DC9201 /* UserPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPopUpViewController.swift; sourceTree = "<group>"; };
 		102A367B292D0D9D0062D730 /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 		102A3682292D112C0062D730 /* SignupRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupRepository.swift; sourceTree = "<group>"; };
 		102A3683292D112C0062D730 /* LoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepository.swift; sourceTree = "<group>"; };
@@ -348,10 +352,11 @@
 			isa = PBXGroup;
 			children = (
 				105B970728FE577B00E95B53 /* NoticeViewController.swift */,
-				105B970128FE56F600E95B53 /* LoginViewController.swift */,
 				105B970528FE572400E95B53 /* SignupViewController.swift */,
+				105B970128FE56F600E95B53 /* LoginViewController.swift */,
 				102A368C292D99D80062D730 /* ProfileEditViewController.swift */,
 				105B96FD28FE567200E95B53 /* FriendsViewController.swift */,
+				102925E62938515A00DC9201 /* UserPopUpViewController.swift */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -366,6 +371,7 @@
 				105B96FB28FE565D00E95B53 /* Friends.storyboard */,
 				1050B1C42934A889004003FC /* FriendsTableViewCell.xib */,
 				1050B1BB29349FC3004003FC /* NoticeTableViewCell.xib */,
+				102925E42938469100DC9201 /* UserPopUp.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -608,6 +614,7 @@
 				29658D272910A07700DFA491 /* Pretendard-SemiBold.otf in Resources */,
 				29658D202910A07700DFA491 /* Pretendard-Black.otf in Resources */,
 				29658D252910A07700DFA491 /* Pretendard-Thin.otf in Resources */,
+				102925E52938469100DC9201 /* UserPopUp.storyboard in Resources */,
 				102A368F292D9A020062D730 /* ProfileEdit.storyboard in Resources */,
 				298E42C62910ED25002EA69B /* ShareFolderTableViewCell.xib in Resources */,
 				1050B1BD29349FC3004003FC /* NoticeTableViewCell.xib in Resources */,
@@ -693,6 +700,7 @@
 				29350E712932410400E8D04A /* LinkModifyRepository.swift in Sources */,
 				29350E7529324CCD00E8D04A /* LinkDeleteModel.swift in Sources */,
 				29658D422910A21B00DFA491 /* ShareFolderViewController.swift in Sources */,
+				102925E72938515A00DC9201 /* UserPopUpViewController.swift in Sources */,
 				29350E51292D1CB100E8D04A /* FoldersListRepository.swift in Sources */,
 				29350E7729324D0800E8D04A /* LinkDeleteRepository.swift in Sources */,
 				298E42CD2910F62B002EA69B /* ShowFolderMorePopUpViewController.swift in Sources */,
