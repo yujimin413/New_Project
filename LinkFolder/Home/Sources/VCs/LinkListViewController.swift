@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SafariServices
 
 protocol LinkReloadDelegate {
     func setupLinkData()
@@ -79,6 +80,7 @@ extension LinkListViewController: UITableViewDelegate, UITableViewDataSource {
         return linkData?.count ?? 0
     }
     
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: LinkListTableViewCell.identifier, for: indexPath) as? LinkListTableViewCell else {
             return UITableViewCell()
@@ -92,13 +94,15 @@ extension LinkListViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    // 선택된 행 인덱스 확인
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        print("선택된 행 인덱스 :  ")
-//        print(indexPath)
-//        print(indexPath.row)
-//        print(indexPath.item)
-//    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let itemIndex = indexPath.row
+        print(linkData![itemIndex].linkUrl!)
+        let linkUrl = NSURL(string: linkData![itemIndex].linkUrl!)
+        let linkSafariView: SFSafariViewController = SFSafariViewController(url: linkUrl! as URL)
+        self.present(linkSafariView, animated: true, completion: nil)
+    }
+    
 }
 
 extension LinkListViewController: LinkListTableViewCellDelegate {
