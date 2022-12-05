@@ -7,10 +7,15 @@
 
 import UIKit
 import Social
+import Alamofire
 
 class ShareViewController: UIViewController{
-
+    
+    
     override func viewDidLoad() {
-        
+        print(Const.jwtToken)
+    }
+    @IBAction func testButtonDidTap(_ sender: Any) {
+        FoldersListRepository().getFoldersList(self)
     }
 }

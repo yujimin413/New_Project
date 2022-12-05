@@ -3,7 +3,6 @@
 
 target 'LinkFolder' do
   # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
 
   # Pods for LinkFolder
     pod 'RxSwift', '6.5.0'
@@ -11,5 +10,12 @@ target 'LinkFolder' do
     pod 'Alamofire'
 
     
+
+end
+
+target 'LinkFolderShareExtension' do
+
+    pod 'Alamofire'
+   
 
 end
