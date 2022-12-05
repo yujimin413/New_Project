@@ -10,7 +10,8 @@ import Alamofire
 
 struct Const {
     
-    static let jwtToken = UserDefaults.standard.string(forKey: "jwtToken")
+    static let savedata =  UserDefaults.init(suiteName: "group.linkfolder.Linkfolder.Share")
+    static let jwtToken = savedata!.string(forKey: "jwtToken")
     static let userIdx = UserDefaults.standard.string(forKey: "userIdx")
     static var userNickname = UserDefaults.standard.string(forKey: "userNickname")
     
@@ -59,3 +60,5 @@ struct Const {
     static let createAlertsUrl = "/alerts/create"
     
 }
+
+
