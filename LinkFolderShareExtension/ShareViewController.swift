@@ -95,6 +95,16 @@ class ShareViewController: UIViewController, HomeReloadDelegate {
             selectedFolderIndex = cellData.folderIdx
             selectedFolderName = cellData.folderName
             
+            // 링크 추가 팝업뷰
+            let storyboard = UIStoryboard.init(name: "AddLink", bundle: nil)
+            let addLinkVC = storyboard.instantiateViewController(withIdentifier: "AddLinkVC") as! AddLinkViewController
+            
+            addLinkVC.folderIdx = selectedFolderIndex
+//            addLinkVC.delegete = self
+            
+    //        addLinkVC.modalPresentationStyle = .overCurrentContext
+            self.present(addLinkVC, animated: true, completion: nil)
+            
 //            let input = LinkCopyInput(folderIdx: selectedFolderIndex, linkIdx: self.linkIdx, senderUserIdx: self.senderUserIdx)
 //
 //            self.copyLink(input: input){
