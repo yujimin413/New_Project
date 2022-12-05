@@ -90,11 +90,6 @@
             <point key="canvasLocation" x="2649.6183206106871" y="-676.05633802816908"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="6r0-vV-Ms7">
-            <size key="intrinsicContentSize" width="30" height="34"/>
-        </designable>
-    </designables>
     <resources>
         <image name="BackBtn" width="20" height="20"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>

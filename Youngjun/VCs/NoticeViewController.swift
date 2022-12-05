@@ -10,6 +10,8 @@ import UIKit
 class NoticeViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    let refreshControl = UIRefreshControl()
+
     
     var NoticeList: [NoticeResult]?{
         didSet{
@@ -24,8 +26,24 @@ class NoticeViewController: UIViewController {
         tableView.register(UINib(nibName: "NoticeTableViewCell", bundle: nil), forCellReuseIdentifier: "NoticeTableViewCell")
         tableView.delegate = self
         tableView.dataSource = self
+        initRefreshControl()
         NoticeRepository().getNoticeList(viewcontroller: self)
     }
+    
+    func initRefreshControl(){
+        tableView.refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(refreshTableView(refreshControl:)), for: .valueChanged)
+        tableView.refreshControl = refreshControl
+    }
+    
+    @objc func refreshTableView(refreshControl:
+    UIRefreshControl){
+        DispatchQueue.main.asyncAfter(deadline: .now()){
+            NoticeRepository().getNoticeList(viewcontroller: self)
+            refreshControl.endRefreshing()
+        }
+    }
+    
     
 }
 
