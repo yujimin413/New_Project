@@ -112,6 +112,7 @@ extension ShareFolderViewController: ShareFolderTableViewCellDelegate {
         // 친구 리스트에서 공유하기 버튼 클릭 (검색x)
         let section = shareFolderTableView.indexPath(for: tableViewCell)
         print(section?.row, "번째 친구에게 폴더 공유하기 버튼 클릭")
+        print("보내는사람닉네임 \(Const.userNickname)")
         
         // 알림 생성 API 호출
         // (폴더 공유 alertType : 1)

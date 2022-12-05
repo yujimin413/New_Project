@@ -25,7 +25,7 @@ struct Const {
     static let editProfileUrl = "/users/modify"
     
 
-    static var nickname  = "닉네임"
+//    static var nickname  = "닉네임"
     static var profileUrl  = "url"
     
     static var searchIdUrl = "/users/id?search="

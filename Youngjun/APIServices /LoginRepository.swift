@@ -18,10 +18,12 @@ class LoginRepository{
 //                debugPrint(response)
                 if result.isSuccess{
 //                    print(#function)
-                    Const.nickname = result.result.nickname
+                    Const.userNickname = result.result.nickname
                     UserDefaults.standard.setValue(result.result.jwtToken, forKey: "jwtToken")
                     UserDefaults.standard.setValue(result.result.userIdx, forKey: "userIdx")
                     completion()
+                    
+                    print("로그인닉네임 \(Const.userNickname)")
                 }
 
             case .failure:
