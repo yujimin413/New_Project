@@ -33,30 +33,18 @@ class NoticeTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setNoticeLabel(){
+    public func setupdata(dataSet: NoticeResult){
+        self.noticeLabel.text = dataSet.alertText
+        
         if self.alertType == 0{
-            self.noticeLabel.text = nickname+"님이 친구를 요청했습니다"
+//            self.noticeLabel.text = nickname+"님이 친구를 요청했습니다"
         }
         else if self.alertType == 1{
-            self.noticeLabel.text = nickname+"님이 " + folderName+" 폴더공유를 요청했습니다."
+//            self.noticeLabel.text = nickname+"님이 " + folderName+" 폴더공유를 요청했습니다."
         }
         else if self.alertType == 2{
-            self.noticeLabel.text = nickname+"님이 " + linkName + " 링크공유를 요청했습니다."
+//            self.noticeLabel.text = nickname+"님이 " + linkName + " 링크공유를 요청했습니다."
         }
-    }
-    
-    
-    public func setupdata(dataSet: NoticeResult){
-        nickname = dataSet.nickname
-        alertType = dataSet.alertType
-        if self.alertType == 1{
-            self.folderName = dataSet.folderName
-        }
-        else if self.alertType == 2{
-            self.linkName = dataSet.linkName
-        }
-
-        setNoticeLabel()
     }
 
     

@@ -12,6 +12,7 @@ struct Const {
     
     static let jwtToken = UserDefaults.standard.string(forKey: "jwtToken")
     static let userIdx = UserDefaults.standard.string(forKey: "userIdx")
+    static var userNickname = UserDefaults.standard.string(forKey: "userNickname")
     
     static let header: HTTPHeaders = [
         "LF-ACCESS-TOKEN" : jwtToken!

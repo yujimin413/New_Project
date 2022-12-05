@@ -19,6 +19,7 @@ class SignupRepository{
 //                debugPrint(response)
                 
 //                UserDefaults.standard.setValue(result.jwtToken, forKey: "jwtToken")
+                UserDefaults.standard.setValue(parameter.nickname, forKey: "userNickname")
             
             case .failure:
                 print("회원가입 실패")

@@ -58,9 +58,19 @@ class ShowLinkMorePopUpViewController: UIViewController {
     
     @IBAction func shareLinkButtonDidTap(_ sender: Any) {
         let storyboard = UIStoryboard.init(name: "ShareLink", bundle: nil)
-        let shareLinkVC = storyboard.instantiateViewController(withIdentifier: "ShareLinkVC")
+        let shareLinkVC = storyboard.instantiateViewController(withIdentifier: "ShareLinkVC") as! ShareLinkViewController
+        
+        shareLinkVC.linkIdx = self.linkIdx
+        shareLinkVC.linkAlias = self.linkAlias
+        
+        
         shareLinkVC.modalPresentationStyle = .overFullScreen
-        self.present(shareLinkVC, animated: false, completion: nil)
+        
+        guard let pvc = self.presentingViewController else { return }
+        
+        self.dismiss(animated: false) {
+          pvc.present(shareLinkVC, animated: false, completion: nil)
+        }
         
     }
     
