@@ -19,7 +19,7 @@ class ProfileEditViewController: UIViewController {
         super.viewDidLoad()
         setNavigationBar()
         self.nicknameTextFeild.addTarget(self, action: #selector(textFieldDidChanged), for: .editingChanged)
-        self.nicknameTextFeild.text = Const.nickname
+        self.nicknameTextFeild.text = Const.userNickname
 
     }
 
@@ -86,7 +86,7 @@ class ProfileEditViewController: UIViewController {
     @IBAction func profilieEditButtonDidTap(_ sender: Any) {
         let input = EditProfileInput(nickname: nicknameTextFeild.text!, profileImageUrl: nil)
         ProfileEditRepository().editProfile(input){
-            Const.nickname = input.nickname
+//            Const.nickname = input.nickname
             Const.userNickname = input.nickname // 위해 해놨넹.. 그치만 또 할게
             print("닉네임 수정 성공 \(input.nickname)-> \(Const.userNickname)")
             self.delegate?.setupFolderData()

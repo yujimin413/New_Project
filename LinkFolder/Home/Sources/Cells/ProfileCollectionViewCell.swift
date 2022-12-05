@@ -21,7 +21,7 @@ class ProfileCollectionViewCell: UICollectionViewCell {
     // MARK: - LifeCycles
     override func awakeFromNib() {
         super.awakeFromNib()
-        nicknameLabel.text = Const.nickname
+        nicknameLabel.text = Const.userNickname
     }
     
     

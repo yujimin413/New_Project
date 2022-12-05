@@ -176,7 +176,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
                     fatalError("셀 타입 캐스팅 실패...")
             }
             cell.index = indexPath.row
-            cell.nicknameLabel.text = Const.nickname
+            cell.nicknameLabel.text = Const.userNickname
             cell.cellDelegate = self
             return cell
 
