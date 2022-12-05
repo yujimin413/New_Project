@@ -10,10 +10,12 @@ import Social
 import Alamofire
 
 class ShareViewController: UIViewController{
-    
+    let appGroupId = "group.linkfolder.Linkfolder.Share"
+
     
     override func viewDidLoad() {
         print(Const.jwtToken)
+
     }
     @IBAction func testButtonDidTap(_ sender: Any) {
         FoldersListRepository().getFoldersList(self)

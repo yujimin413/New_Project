@@ -26,6 +26,7 @@ class SignupViewController: UIViewController {
         super.viewDidLoad()
         setNavigationBar()
         addTargetToTF()
+        UserDefaults.init(suiteName: "group.linkfolder.Linkfolder.Share")
         passwordConfirmLabel.isHidden = true
     }
     

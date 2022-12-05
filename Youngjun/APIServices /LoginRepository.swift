@@ -19,7 +19,7 @@ class LoginRepository{
                 if result.isSuccess{
 //                    print(#function)
                     Const.userNickname = result.result.nickname
-                    UserDefaults.standard.setValue(result.result.jwtToken, forKey: "jwtToken")
+                    Const.savedata!.setValue(result.result.jwtToken, forKey: "jwtToken")
                     UserDefaults.standard.setValue(result.result.userIdx, forKey: "userIdx")
                     completion()
                     
