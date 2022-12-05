@@ -15,6 +15,11 @@ class FriendsViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchTextField: UITextField!
+    let refreshControl = UIRefreshControl()
+    
+    
+
+    
     
     var FriendsList: [GetFriendsResult]?{
         didSet{
@@ -30,7 +35,23 @@ class FriendsViewController: UIViewController, UITextFieldDelegate {
         tableView.delegate = self
         searchTextField.delegate = self
         FriendsRepository().getFriendsList(viewcontroller: self)
+        initRefreshControl()
     }
+    
+    func initRefreshControl(){
+        tableView.refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(refreshTableView(refreshControl:)), for: .valueChanged)
+        tableView.refreshControl = refreshControl
+    }
+    
+    @objc func refreshTableView(refreshControl:
+    UIRefreshControl){
+        DispatchQueue.main.asyncAfter(deadline: .now()){
+            FriendsRepository().getFriendsList(viewcontroller: self)
+            refreshControl.endRefreshing()
+        }
+    }
+    
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == self.searchTextField {

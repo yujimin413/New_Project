@@ -65,4 +65,41 @@ class FriendsRepository{
             }
         }
     }
+    
+    func acceptFriendAlert(sendUserIdx: Int){
+        AF.request(Const.baseUrl+"/friends/create/"+"\(sendUserIdx)", method: .post, parameters: nil, encoding: JSONEncoding.default, headers: Const.header).responseDecodable(of: AddFriendModel.self){
+            response in
+            switch response.result {
+            case .success(let result):
+                print("친구 수락 성공")
+                debugPrint(response)
+                if result.isSuccess{
+                }
+                
+            case .failure:
+                print("친구 수락 실패")
+                debugPrint(response)
+            }
+        }
+    }
+    
+    func deleteFriend(deleteUserIdx: Int){
+        AF.request(Const.baseUrl+"/friends/delete/"+"\(deleteUserIdx)", method: .delete, parameters: nil, encoding: JSONEncoding.default, headers: Const.header).responseDecodable(of: DeleteFriendModel.self){
+            response in
+            switch response.result {
+            case .success(let result):
+                print("친구 삭제 성공")
+                debugPrint(response)
+                if result.isSuccess{
+                }
+                
+            case .failure:
+                print("친구 삭제 실패")
+                debugPrint(response)
+            }
+        }
+    }
+    
+    
+    
 }
