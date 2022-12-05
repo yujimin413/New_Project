@@ -11,6 +11,7 @@ import Alamofire
 class FoldersListRepository {
     
     func getFoldersList(_ viewController: ShareViewController){
+   
         AF.request(Const.baseUrl+Const.foldersUrl, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: Const.header).responseDecodable(of: FoldersListModel.self){
             response in
             switch response.result {
@@ -18,7 +19,7 @@ class FoldersListRepository {
                 print("폴더리스트 불러오기 성공")
                 debugPrint(response)
                 if result.isSuccess{
-                     
+                     viewController.successFeedAPI(result)
                 }
 
             case .failure:
@@ -27,6 +28,5 @@ class FoldersListRepository {
             }
         }
     }
-    
 }
 

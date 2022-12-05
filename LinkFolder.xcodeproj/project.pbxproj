@@ -88,6 +88,7 @@
 		29350E7729324D0800E8D04A /* LinkDeleteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29350E7629324D0800E8D04A /* LinkDeleteRepository.swift */; };
 		293F11DC29179E6900052456 /* ShareFolder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 293F11DB29179E6900052456 /* ShareFolder.storyboard */; };
 		293F11DE29179EC700052456 /* LinkList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 293F11DD29179EC700052456 /* LinkList.storyboard */; };
+		2947E0A4293E71F8002F7116 /* AddFolderRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2947E0A3293E71F8002F7116 /* AddFolderRepository.swift */; };
 		2951A07B293DC63E005072D9 /* NoticeDeleteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2951A07A293DC63E005072D9 /* NoticeDeleteRepository.swift */; };
 		2951A07E293DC6CF005072D9 /* AlertDeleteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2951A07D293DC6CF005072D9 /* AlertDeleteModel.swift */; };
 		29636AD8293C387100E4D043 /* LinkCopyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29636AD7293C387100E4D043 /* LinkCopyRepository.swift */; };
@@ -124,6 +125,14 @@
 		298E42CD2910F62B002EA69B /* ShowFolderMorePopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298E42CC2910F62B002EA69B /* ShowFolderMorePopUpViewController.swift */; };
 		298E42CF2910F68F002EA69B /* ChangeFolderNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298E42CE2910F68F002EA69B /* ChangeFolderNameViewController.swift */; };
 		29CBFCBB291166DC003B0D3F /* ShowLinkMorePopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CBFCBA291166DC003B0D3F /* ShowLinkMorePopUpViewController.swift */; };
+		29E4287C293E72670046040F /* AddFolderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E4287B293E72670046040F /* AddFolderModel.swift */; };
+		29E4287F293E728F0046040F /* FolderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E4287D293E728F0046040F /* FolderCollectionViewCell.swift */; };
+		29E42880293E728F0046040F /* FolderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29E4287E293E728F0046040F /* FolderCollectionViewCell.xib */; };
+		29E42882293E73030046040F /* AddFolderPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E42881293E73030046040F /* AddFolderPopUpViewController.swift */; };
+		29E42885293E74110046040F /* AddLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E42884293E74110046040F /* AddLinkViewController.swift */; };
+		29E42887293E74770046040F /* AddLinkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E42886293E74770046040F /* AddLinkModel.swift */; };
+		29E42889293E74AC0046040F /* AddLinkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E42888293E74AC0046040F /* AddLinkRepository.swift */; };
+		29E4288B293E75400046040F /* AddLink.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29E4288A293E75400046040F /* AddLink.storyboard */; };
 		3F1D4AB69DC3272FB141108B /* libPods-LinkFolder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B29EE49EC0AD6046B5B53C /* libPods-LinkFolder.a */; };
 		FB95931324422734746AA2E9 /* libPods-LinkFolderShareExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7ADCEA4E07B2FED88F714A0 /* libPods-LinkFolderShareExtension.a */; };
 /* End PBXBuildFile section */
@@ -239,6 +248,7 @@
 		29350E7629324D0800E8D04A /* LinkDeleteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkDeleteRepository.swift; sourceTree = "<group>"; };
 		293F11DB29179E6900052456 /* ShareFolder.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShareFolder.storyboard; sourceTree = "<group>"; };
 		293F11DD29179EC700052456 /* LinkList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LinkList.storyboard; sourceTree = "<group>"; };
+		2947E0A3293E71F8002F7116 /* AddFolderRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFolderRepository.swift; sourceTree = "<group>"; };
 		2951A07A293DC63E005072D9 /* NoticeDeleteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeDeleteRepository.swift; sourceTree = "<group>"; };
 		2951A07D293DC6CF005072D9 /* AlertDeleteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDeleteModel.swift; sourceTree = "<group>"; };
 		29636AD7293C387100E4D043 /* LinkCopyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkCopyRepository.swift; sourceTree = "<group>"; };
@@ -275,6 +285,14 @@
 		298E42CC2910F62B002EA69B /* ShowFolderMorePopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowFolderMorePopUpViewController.swift; sourceTree = "<group>"; };
 		298E42CE2910F68F002EA69B /* ChangeFolderNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeFolderNameViewController.swift; sourceTree = "<group>"; };
 		29CBFCBA291166DC003B0D3F /* ShowLinkMorePopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowLinkMorePopUpViewController.swift; sourceTree = "<group>"; };
+		29E4287B293E72670046040F /* AddFolderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFolderModel.swift; sourceTree = "<group>"; };
+		29E4287D293E728F0046040F /* FolderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderCollectionViewCell.swift; sourceTree = "<group>"; };
+		29E4287E293E728F0046040F /* FolderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FolderCollectionViewCell.xib; sourceTree = "<group>"; };
+		29E42881293E73030046040F /* AddFolderPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFolderPopUpViewController.swift; sourceTree = "<group>"; };
+		29E42884293E74110046040F /* AddLinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLinkViewController.swift; sourceTree = "<group>"; };
+		29E42886293E74770046040F /* AddLinkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLinkModel.swift; sourceTree = "<group>"; };
+		29E42888293E74AC0046040F /* AddLinkRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLinkRepository.swift; sourceTree = "<group>"; };
+		29E4288A293E75400046040F /* AddLink.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddLink.storyboard; sourceTree = "<group>"; };
 		5A7DA9320ACA1AD904764689 /* Pods_LinkFolder_LinkFolderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinkFolder_LinkFolderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AC481525C8AD0FD9F6F64FA /* Pods-LinkFolder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkFolder.debug.xcconfig"; path = "Target Support Files/Pods-LinkFolder/Pods-LinkFolder.debug.xcconfig"; sourceTree = "<group>"; };
 		A624F824F79FF8951F8B816C /* Pods_LinkFolderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinkFolderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -425,6 +443,15 @@
 			isa = PBXGroup;
 			children = (
 				1090144F293E3E0200958096 /* Consts.swift */,
+				29E42886293E74770046040F /* AddLinkModel.swift */,
+				2947E0A3293E71F8002F7116 /* AddFolderRepository.swift */,
+				29E42888293E74AC0046040F /* AddLinkRepository.swift */,
+				29E4288A293E75400046040F /* AddLink.storyboard */,
+				29E4287B293E72670046040F /* AddFolderModel.swift */,
+				29E42884293E74110046040F /* AddLinkViewController.swift */,
+				29E4287D293E728F0046040F /* FolderCollectionViewCell.swift */,
+				29E42881293E73030046040F /* AddFolderPopUpViewController.swift */,
+				29E4287E293E728F0046040F /* FolderCollectionViewCell.xib */,
 				1090144D293E3DD200958096 /* FoldersListRepository.swift */,
 				1090144B293E3CED00958096 /* FoldersListModel.swift */,
 				1090143D293C7CCE00958096 /* LinkFolderShareExtension.entitlements */,
@@ -753,6 +780,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29E42880293E728F0046040F /* FolderCollectionViewCell.xib in Resources */,
+				29E4288B293E75400046040F /* AddLink.storyboard in Resources */,
 				10901433293C7AE500958096 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -890,9 +919,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				10901430293C7AE500958096 /* ShareViewController.swift in Sources */,
+				29E42882293E73030046040F /* AddFolderPopUpViewController.swift in Sources */,
+				2947E0A4293E71F8002F7116 /* AddFolderRepository.swift in Sources */,
+				29E42885293E74110046040F /* AddLinkViewController.swift in Sources */,
 				10901450293E3E0200958096 /* Consts.swift in Sources */,
+				29E4287F293E728F0046040F /* FolderCollectionViewCell.swift in Sources */,
 				1090144C293E3CEE00958096 /* FoldersListModel.swift in Sources */,
+				29E42887293E74770046040F /* AddLinkModel.swift in Sources */,
+				29E42889293E74AC0046040F /* AddLinkRepository.swift in Sources */,
 				1090144E293E3DD300958096 /* FoldersListRepository.swift in Sources */,
+				29E4287C293E72670046040F /* AddFolderModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
