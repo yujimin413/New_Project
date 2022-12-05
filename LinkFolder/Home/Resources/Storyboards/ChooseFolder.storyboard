@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Pretendard-SemiBold.otf">
+            <string>Pretendard-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Choose Folder View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="ChooseFolderVC" id="Y6W-OH-hqX" customClass="ChooseFolderViewController" customModule="LinkFolder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lcp-at-G7w">
+                                <rect key="frame" x="0.0" y="99" width="393" height="669"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hBV-qS-zBg">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RXy-Z8-VeM">
+                                <rect key="frame" x="285" y="734" width="92" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="EXD-yz-LdZ"/>
+                                    <constraint firstAttribute="width" constant="92" id="oDj-j0-Woy"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="AddBtn"/>
+                                <connections>
+                                    <action selector="addFolderButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="uig-W4-9Uu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="공유 받은 링크를 저장할 폴더를 선택하세요." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDN-a3-8as">
+                                <rect key="frame" x="0.0" y="59" width="393" height="40"/>
+                                <color key="backgroundColor" name="GrayPopUp"/>
+                                <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="lcp-at-G7w" secondAttribute="bottom" constant="50" id="0PJ-MD-OIa"/>
+                            <constraint firstItem="cDN-a3-8as" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="3yo-6p-xeU"/>
+                            <constraint firstItem="lcp-at-G7w" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="7CA-ms-sHb"/>
+                            <constraint firstItem="lcp-at-G7w" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="40" id="7DX-Vd-cFG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="cDN-a3-8as" secondAttribute="trailing" id="7TY-U8-R9h"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="lcp-at-G7w" secondAttribute="trailing" id="JAu-p9-VkU"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="RXy-Z8-VeM" secondAttribute="trailing" constant="16" id="RVa-oV-GCQ"/>
+                            <constraint firstItem="cDN-a3-8as" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Xix-GO-8jb"/>
+                            <constraint firstItem="lcp-at-G7w" firstAttribute="top" secondItem="cDN-a3-8as" secondAttribute="bottom" id="arT-MB-5BE"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="RXy-Z8-VeM" secondAttribute="bottom" constant="2" id="sHl-GW-G5a"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="homeCollectionView" destination="lcp-at-G7w" id="Onp-mH-Wwm"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="6" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AddBtn" width="68" height="68"/>
+        <namedColor name="GrayPopUp">
+            <color red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

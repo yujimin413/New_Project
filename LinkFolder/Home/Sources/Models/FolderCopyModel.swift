@@ -8,7 +8,7 @@
 import Foundation
 
 struct FolderCopyInput: Encodable {
-    var foldrIdx: Int
+    var folderIdx: Int
     var sendUserIdx: Int
 }
 

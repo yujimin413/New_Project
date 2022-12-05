@@ -7,7 +7,46 @@
 
 import UIKit
 
-class NoticeViewController: UIViewController {
+protocol NoticeViewCellDelegate {
+    func presentChooseFolderView(linkIdx: Int, senderUserIdx: Int, alertIdx: Int)
+}
+
+protocol NoticeDeleteAlertDelegate {
+    func noticeDeleteAlert()
+    
+}
+
+class NoticeViewController: UIViewController, NoticeViewCellDelegate, NoticeDeleteAlertDelegate {
+    
+    func noticeDeleteAlert() {
+        // 링크 사본 생성 완료시 alert
+        print("왜안되냐")
+        let alert = UIAlertController(title: "알림", message: "폴더 사본이 생성되었습니다.", preferredStyle: .alert)
+        let done = UIAlertAction(title: "닫기", style: .cancel) {
+            (action) in
+        }
+
+        alert.addAction(done)
+        
+//        guard let pvc = self.presentingViewController else { return }
+//        self.dismiss(animated: false) {
+//            pvc.present(alert, animated: true, completion: nil)
+//        }
+
+    }
+    
+    
+    func presentChooseFolderView(linkIdx: Int, senderUserIdx: Int, alertIdx: Int) {
+        let storyboard = UIStoryboard.init(name: "ChooseFolder", bundle: nil)
+        let chooseFolderVC = storyboard.instantiateViewController(withIdentifier: "ChooseFolderVC") as! ChooseFolderViewController
+
+        chooseFolderVC.linkIdx = linkIdx
+        chooseFolderVC.senderUserIdx = senderUserIdx
+        chooseFolderVC.alertIdx = alertIdx
+        
+        self.present(chooseFolderVC, animated: true, completion: nil)
+    }
+    
 
     @IBOutlet weak var tableView: UITableView!
     let refreshControl = UIRefreshControl()
@@ -55,6 +94,9 @@ extension NoticeViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NoticeTableViewCell", for: indexPath) as! NoticeTableViewCell
+        
+        cell.delegate = self
+        cell.alertdelegate = self
         
         let itemIndex = indexPath.item
         if let cellData = self.NoticeList{
