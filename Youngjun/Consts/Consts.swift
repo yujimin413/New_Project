@@ -37,6 +37,7 @@ struct Const {
     //Notice
     static let getNoticeUrl = "/alerts"
     static let getFriendsUrl = "/friends"
+    static let deleteNoticeUrl = "/alerts/delete/"
      
     
 

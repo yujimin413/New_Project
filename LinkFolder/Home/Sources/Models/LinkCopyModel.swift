@@ -8,9 +8,9 @@
 import Foundation
 
 struct LinkCopyInput: Encodable {
-    var foldrIdx: Int
+    var folderIdx: Int
     var linkIdx: Int
-    var sendUserIdx: Int
+    var senderUserIdx: Int
 }
 
 struct LinkCopyModel: Decodable {

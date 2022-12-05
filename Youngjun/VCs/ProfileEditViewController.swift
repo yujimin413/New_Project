@@ -88,6 +88,7 @@ class ProfileEditViewController: UIViewController {
         ProfileEditRepository().editProfile(input){
             Const.nickname = input.nickname
             Const.userNickname = input.nickname // 위해 해놨넹.. 그치만 또 할게
+            print("닉네임 수정 성공 \(input.nickname)-> \(Const.userNickname)")
             self.delegate?.setupFolderData()
         }
         self.dismiss(animated: true)
