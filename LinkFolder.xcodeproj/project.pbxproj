@@ -124,6 +124,7 @@
 		298E42C82910F27B002EA69B /* LinkListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298E42C72910F27B002EA69B /* LinkListViewController.swift */; };
 		298E42CD2910F62B002EA69B /* ShowFolderMorePopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298E42CC2910F62B002EA69B /* ShowFolderMorePopUpViewController.swift */; };
 		298E42CF2910F68F002EA69B /* ChangeFolderNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298E42CE2910F68F002EA69B /* ChangeFolderNameViewController.swift */; };
+		29AEC4D3293EC8990049BAEC /* AddLinkFolder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29AEC4D2293EC8990049BAEC /* AddLinkFolder.storyboard */; };
 		29CBFCBB291166DC003B0D3F /* ShowLinkMorePopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CBFCBA291166DC003B0D3F /* ShowLinkMorePopUpViewController.swift */; };
 		29E4287C293E72670046040F /* AddFolderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E4287B293E72670046040F /* AddFolderModel.swift */; };
 		29E4287F293E728F0046040F /* FolderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E4287D293E728F0046040F /* FolderCollectionViewCell.swift */; };
@@ -284,6 +285,7 @@
 		298E42C72910F27B002EA69B /* LinkListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkListViewController.swift; sourceTree = "<group>"; };
 		298E42CC2910F62B002EA69B /* ShowFolderMorePopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowFolderMorePopUpViewController.swift; sourceTree = "<group>"; };
 		298E42CE2910F68F002EA69B /* ChangeFolderNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeFolderNameViewController.swift; sourceTree = "<group>"; };
+		29AEC4D2293EC8990049BAEC /* AddLinkFolder.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddLinkFolder.storyboard; sourceTree = "<group>"; };
 		29CBFCBA291166DC003B0D3F /* ShowLinkMorePopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowLinkMorePopUpViewController.swift; sourceTree = "<group>"; };
 		29E4287B293E72670046040F /* AddFolderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFolderModel.swift; sourceTree = "<group>"; };
 		29E4287D293E728F0046040F /* FolderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -447,6 +449,7 @@
 				2947E0A3293E71F8002F7116 /* AddFolderRepository.swift */,
 				29E42888293E74AC0046040F /* AddLinkRepository.swift */,
 				29E4288A293E75400046040F /* AddLink.storyboard */,
+				29AEC4D2293EC8990049BAEC /* AddLinkFolder.storyboard */,
 				29E4287B293E72670046040F /* AddFolderModel.swift */,
 				29E42884293E74110046040F /* AddLinkViewController.swift */,
 				29E4287D293E728F0046040F /* FolderCollectionViewCell.swift */,
@@ -782,6 +785,7 @@
 			files = (
 				29E42880293E728F0046040F /* FolderCollectionViewCell.xib in Resources */,
 				29E4288B293E75400046040F /* AddLink.storyboard in Resources */,
+				29AEC4D3293EC8990049BAEC /* AddLinkFolder.storyboard in Resources */,
 				10901433293C7AE500958096 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

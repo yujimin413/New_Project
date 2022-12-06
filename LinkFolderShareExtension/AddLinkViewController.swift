@@ -14,10 +14,13 @@ class AddLinkViewController: UIViewController {
     @IBOutlet weak var saveButton: UIButton!
     
     var folderIdx: Int!
+    var url: String = ""
     
     // MARK: - LifeCycles
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        linkAddressTextField.text = url
     }
     
     // MARK: - Actions
@@ -30,6 +33,19 @@ class AddLinkViewController: UIViewController {
         let input = AddLinkInput(linkUrl: linkAddressTextField.text, folderIdx: self.folderIdx, linkAlias: linkNameTextField.text)
         self.addButtonTapped(input: input) {
             self.dismiss(animated: true, completion: nil)
+//            super.dismiss(animated: true, completion: nil)
+            
+//            self.presentingViewController?.dismiss(animated: true, completion: nil)
+
+//            var initialPresentingViewController = self.presentingViewController
+//            while let previousPresentingViewController = self.presentingViewController?.presentingViewController { initialPresentingViewController = previousPresentingViewController }
+//            if let snapshot = self.view.snapshotView(afterScreenUpdates: true) { initialPresentingViewController?.presentedViewController?.view.addSubview(snapshot)
+//
+//            }
+//            initialPresentingViewController?.dismiss(animated: true)
+
+
+
         }
     }
     
