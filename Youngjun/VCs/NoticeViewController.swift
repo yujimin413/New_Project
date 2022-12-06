@@ -16,7 +16,23 @@ protocol NoticeDeleteAlertDelegate {
     
 }
 
-class NoticeViewController: UIViewController, NoticeViewCellDelegate, NoticeDeleteAlertDelegate {
+protocol FriendNoticeDelegate {
+    func friendnoticeDeleteAlert()
+    
+}
+
+class NoticeViewController: UIViewController, NoticeViewCellDelegate, NoticeDeleteAlertDelegate, FriendNoticeDelegate {
+    
+    func friendnoticeDeleteAlert() {
+        // 친구 요청 수락 완료시 alert
+        let alert = UIAlertController(title: "알림", message: "친구 요청 수락이 완료 되었습니다.", preferredStyle: .alert)
+        let done = UIAlertAction(title: "닫기", style: .cancel) {
+            (action) in
+        }
+
+        alert.addAction(done)
+
+    }
     
     func noticeDeleteAlert() {
         // 링크 사본 생성 완료시 alert

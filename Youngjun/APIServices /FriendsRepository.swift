@@ -66,7 +66,7 @@ class FriendsRepository{
         }
     }
     
-    func acceptFriendAlert(sendUserIdx: Int){
+    func acceptFriendAlert(sendUserIdx: Int, _  completion: @escaping () -> Void){
         AF.request(Const.baseUrl+"/friends/create/"+"\(sendUserIdx)", method: .post, parameters: nil, encoding: JSONEncoding.default, headers: Const.header).responseDecodable(of: AddFriendModel.self){
             response in
             switch response.result {
@@ -74,6 +74,7 @@ class FriendsRepository{
                 print("친구 수락 성공")
                 debugPrint(response)
                 if result.isSuccess{
+                    completion()
                 }
                 
             case .failure:

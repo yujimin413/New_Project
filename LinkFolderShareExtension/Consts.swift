@@ -10,7 +10,7 @@ import Alamofire
 
 struct Const {
     
-    static let savedata =  UserDefaults.init(suiteName: "group.linkfolder.Linkfolder.Share")
+    static let savedata =  UserDefaults.init(suiteName: "group.open.Linkfolder.Share")
     static let jwtToken = savedata!.string(forKey: "jwtToken")
     static let header: HTTPHeaders = [
         "LF-ACCESS-TOKEN" : jwtToken!

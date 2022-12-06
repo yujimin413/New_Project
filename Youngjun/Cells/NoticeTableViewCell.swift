@@ -18,6 +18,7 @@ class NoticeTableViewCell: UITableViewCell {
     
     var delegate: NoticeViewCellDelegate?
     var alertdelegate: NoticeDeleteAlertDelegate?
+    var friendAlertdelegate: FriendNoticeDelegate?
     
     var alertIndex: Int!
     var alertType: Int!
@@ -70,7 +71,14 @@ class NoticeTableViewCell: UITableViewCell {
         
         switch alertType{
         case 0:
-            FriendsRepository().acceptFriendAlert(sendUserIdx: self.sendUserIdx)
+            self.acceptFriend(sendUserIdx: self.sendUserIdx) {
+                // 알림 삭제 api 호출 및 알림목록 reload
+                self.deleteAlert(alertIdx: self.alertIndex){
+                    // alert 띄우기
+                    self.friendAlertdelegate?.friendnoticeDeleteAlert()
+                }
+            }
+            
             
         case 1:
             let input = FolderCopyInput(folderIdx: self.folderIdx, sendUserIdx: self.sendUserIdx)
@@ -103,6 +111,11 @@ class NoticeTableViewCell: UITableViewCell {
     
     func deleteAlert(alertIdx: Int, completion: @escaping() -> Void) {
         NoticeDeleteRepository().deleteNotice(alertIdx, completion)
+    }
+    
+    func acceptFriend(sendUserIdx: Int, completion: @escaping() -> Void) {
+        
+        FriendsRepository().acceptFriendAlert(sendUserIdx: self.sendUserIdx, completion)
     }
     
 }
