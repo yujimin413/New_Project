@@ -19,6 +19,7 @@ class AddLinkViewController: UIViewController {
     // MARK: - LifeCycles
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideKeyboard()
         linkAddressTextField.text = url
     }
     

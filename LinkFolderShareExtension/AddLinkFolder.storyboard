@@ -83,6 +83,7 @@
                     </view>
                     <connections>
                         <outlet property="addButton" destination="VgP-Q9-b3Y" id="9sM-FJ-ZZi"/>
+                        <outlet property="bgView" destination="cN1-bJ-vFs" id="qWy-Fw-omw"/>
                         <outlet property="cancelButton" destination="GLc-q4-VAh" id="tVQ-Jh-ZyY"/>
                         <outlet property="folderNameTextField" destination="hPB-yw-MRD" id="S3I-FC-hN5"/>
                     </connections>

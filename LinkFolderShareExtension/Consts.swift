@@ -10,7 +10,7 @@ import Alamofire
 
 struct Const {
     
-    static let savedata =  UserDefaults.init(suiteName: "group.linkfolder.Linkfolder.Share")
+    static let savedata =  UserDefaults.init(suiteName: "group.makeus.linkfolder")
     static let jwtToken = savedata!.string(forKey: "jwtToken")
     static let header: HTTPHeaders = [
         "LF-ACCESS-TOKEN" : jwtToken!
@@ -59,3 +59,13 @@ struct Const {
 }
 
 
+extension UIViewController {
+    func hideKeyboard() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self,
+            action: #selector(UIViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}

@@ -14,11 +14,15 @@ class AddFolderPopUpViewController: UIViewController {
     @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var folderNameTextField: UITextField!
     
+    @IBOutlet weak var bgView: UIView!
     var delegate: HomeReloadDelegate?
     
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideKeyboard()
+
+        bgView.layer.cornerRadius = 14
     }
     
     // MARK: - Actions
