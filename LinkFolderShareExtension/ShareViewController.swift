@@ -56,6 +56,8 @@ class ShareViewController: UIViewController, HomeReloadDelegate {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideKeyboard()
+
         addFolderButton.imageView?.image = UIImage(named: "addFolder")
         let extensionItems = extensionContext?.inputItems as! [NSExtensionItem]
         for items in extensionItems {
