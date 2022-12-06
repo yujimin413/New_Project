@@ -42,6 +42,19 @@
 
 > ## 2. 상세 매뉴얼<br/>
 ### 설치방법
+> iOS 13.0 이상의 iOS 기기를 준비합니다.
+> 
+> App Store에서 Test Flight 앱을 다운로드 받습니다.
+> 
+> 외부테스터 등록을 위해 관리자에게 본인의 이메일을 주소를 보냅니다. (yujimin413@gmail.com)
+> 
+> 초대 메일 > View in TestFlight 버튼을 클릭합니다.
+> 
+> 리딤코드를 복사합니다.
+> 
+> TestFlight앱 > Redeem(교환) 버튼을 클릭 > 리딤코드 입력 > Redeem 버튼을 클릭합니다.
+> 
+> 초대받은 앱 옆에 install 버튼을 클릭하여 앱을 다운로드 받습니다.
 
 <br/><br/><br/><br/><br/>
 
@@ -49,15 +62,15 @@
 ![RPReplay_Final1670321331](https://user-images.githubusercontent.com/84549242/205883647-0d0bf3f6-023d-497e-9d4f-69d1c996f497.gif)
 <br/>
 1. [**로그인화면**]에서 아이디, 비밀번호로 로그인을 합니다.<br/>
-  -	만약 회원이 아니라면, 아이디, 비밀번호, 닉네임, 프로필 이미지로 회원가입을 진행합니다.<br/><br/><br/>
+  -	만약 회원이 아니라면, 아이디, 비밀번호, 닉네임, 프로필 이미지로 회원가입을 진행합니다.<br/><br/><br/><br/>
   
 ![home](https://user-images.githubusercontent.com/84549242/205910401-d5be6248-2a11-45ba-a5e7-9f36ba2546ce.gif)
 <br/>
-2. [**홈탭**]은 로그인 시 보여지는 기본 화면입니다. 폴더, 친구, 알림, 프로필 수정 기능을 이용할 수 있습니다.<br/><br/><br/>
+2. [**홈탭**]은 로그인 시 보여지는 기본 화면입니다. 폴더, 친구, 알림, 프로필 수정 기능을 이용할 수 있습니다.<br/><br/><br/><br/>
 
 ![profileEdit](https://user-images.githubusercontent.com/84549242/205885371-cff47174-6007-4889-ab43-b15b74baffbd.gif)
 <br/>
-3. [**홈탭**]에서 [**내 정보 수정하기**] 버튼을 클릭하면 닉네임 및 프로필 사진을 수정할 수 있습니다.<br/><br/><br/>
+3. [**홈탭**]에서 [**내 정보 수정하기**] 버튼을 클릭하면 닉네임 및 프로필 사진을 수정할 수 있습니다.<br/><br/><br/><br/>
 
 
 ![folderList](https://user-images.githubusercontent.com/84549242/205898450-d6e618c4-acdf-429a-9a19-f8deb991323a.gif)
@@ -65,7 +78,7 @@
 4. [**홈탭**]에서는 링크 폴더 목록이 나타납니다.<br/>
   - 폴더 추가 버튼을 클릭하여 새로운 폴더를 추가할 수 있습니다.<br/>
   - 각 폴더의 더보기 버튼을 클릭하여 폴더명 변경, 폴더 공유, 폴더 삭제 작업을 수행할 수 있습니다.<br/>
-  - 폴더 공유 방법에는 두 가지가 있습니다. 친구 목록에서 친구에게 공유하거나, 아이디 검색을 통해 친구, 친구가 아닌 사용자 모두에게 폴더를 공유할 수 있습니다.<br/><br/><br/>
+  - 폴더 공유 방법에는 두 가지가 있습니다. 친구 목록에서 친구에게 공유하거나, 아이디 검색을 통해 친구, 친구가 아닌 사용자 모두에게 폴더를 공유할 수 있습니다.<br/><br/><br/><br/>
 
 ![linkList](https://user-images.githubusercontent.com/84549242/205909442-f78c7d67-ab59-4e52-9678-1daf088a3460.gif)
 <br/>
@@ -73,19 +86,19 @@
   - 링크 추가 버튼을 클릭하여 링크 주소를 수동으로 입력하여 생성할 수 있습니다.<br/>
   - 각 링크의 더보기 버튼을 클릭하여 링크 수정, 링크 공유, 링크 삭제 작업을 수행할 수 있습니다.<br/>
   - 링크 공유 방식도 폴더 공유와 마찬가지로 친구 목록에서 친구에게 공유하거나, 아이디 검색을 통해 친구, 친구가 아닌 사용자 모두에게 링크를 공유할 수 있습니다.<br/>
-  - 링크를 클릭하면 링크 주소에 해당하는 웹 브라우저로 이동합니다.<br/><br/><br/>
+  - 링크를 클릭하면 링크 주소에 해당하는 웹 브라우저로 이동합니다.<br/><br/><br/><br/>
 
 
 ![friends](https://user-images.githubusercontent.com/84549242/205900651-68bde570-7b26-4815-aea0-1cdee2353668.gif)
 <br/>
 6. [**친구목록탭**]을 누르면, 친구 목록이 나타납니다.<br/>
-  - 친구 끊기 및 사용자 검색을 통한 친구 추가 요청을 할 수 있습니다.<br/><br/><br/>
+  - 친구 끊기 및 사용자 검색을 통한 친구 추가 요청을 할 수 있습니다.<br/><br/><br/><br/>
 
 ![alert](https://user-images.githubusercontent.com/84549242/205900964-969688aa-d7ee-445b-96f4-d01f6f84b29a.gif)
 <br/>
 6. [**알림탭**]을 누르면 알림 목록이 나타납니다. <br/>
   - 다른 사용자가 전송한 친구 요청 알림, 폴더 공유 요청 알림, 링크 공유 요청 알림을 확인 및 수락할 수 있습니다. <br/>
-  - 링크 공유 요청 알림을 수락할 경우, 링크를 전달 받을 폴더는 생성/선택 합니다. <br/><br/><br/>
+  - 링크 공유 요청 알림을 수락할 경우, 링크를 전달 받을 폴더는 생성/선택 합니다. <br/><br/><br/><br/>
 
 ![Screen Recording 2022-12-06 at 9 05 55 PM](https://user-images.githubusercontent.com/84549242/205908696-744b9f1b-57ea-4faa-8c95-e99880b376a2.gif)
 <br/>
@@ -97,4 +110,14 @@
 <br/><br/><br/><br/><br/>
   
 > ## 3. 프로젝트 개발 참고서적 및 사이트 URL<br/>
+### Client
+> share extension <br/>
+> [https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/Share.html] 
+> [https://hururuek-chapchap.tistory.com/159]
+> 
+>
+> safari webview <br/>
+> [https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller]
+
+### Server
 
