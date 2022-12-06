@@ -33,7 +33,7 @@ class ShareViewController: UIViewController, HomeReloadDelegate {
     
     // MARK: - Properties
     @IBOutlet weak var homeCollectionView: UICollectionView!
-    
+    @IBOutlet weak var addFolderButton: UIButton!
     
     var folderData: [folderInfo]? {
         didSet { self.homeCollectionView.reloadData()
@@ -56,7 +56,7 @@ class ShareViewController: UIViewController, HomeReloadDelegate {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        addFolderButton.imageView?.image = UIImage(named: "addFolder")
         let extensionItems = extensionContext?.inputItems as! [NSExtensionItem]
         for items in extensionItems {
            if let itemProviders = items.attachments {

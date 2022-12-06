@@ -17,10 +17,10 @@ class SearchRepository {
             case .success(let result):
                 print("검색결과 가져오기 성공")
                 debugPrint(response)
-
-                completion(result.result!)
                 if result.isSuccess{
+                    completion(result.result!)
                 }
+
                 
             case .failure:
                 print("검색결과 가져오기 실패")

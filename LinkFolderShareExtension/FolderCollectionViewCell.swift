@@ -19,7 +19,8 @@ class FolderCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        folderButton.image = UIImage(named: "Folder")
+        folderButton.backgroundColor = .clear
     }
 
     
