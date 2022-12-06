@@ -59,6 +59,7 @@
 		10901450293E3E0200958096 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1090144F293E3E0200958096 /* Consts.swift */; };
 		10901454293F102200958096 /* Folder.png in Resources */ = {isa = PBXBuildFile; fileRef = 10901453293F102200958096 /* Folder.png */; };
 		10901456293F10B400958096 /* addFolder.png in Resources */ = {isa = PBXBuildFile; fileRef = 10901455293F10B400958096 /* addFolder.png */; };
+		1090145A293F35AD00958096 /*  ViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10901459293F35AC00958096 /*  ViewComponent.swift */; };
 		290D43F8293C805A004E2D30 /* ShareFolderUserPopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290D43F7293C805A004E2D30 /* ShareFolderUserPopUp.storyboard */; };
 		290D43FC293CC38C004E2D30 /* ShareLinkUserPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D43FB293CC38C004E2D30 /* ShareLinkUserPopUpViewController.swift */; };
 		290D43FE293CC3C5004E2D30 /* ShareLinkUserPopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290D43FD293CC3C5004E2D30 /* ShareLinkUserPopUp.storyboard */; };
@@ -221,6 +222,7 @@
 		1090144F293E3E0200958096 /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 		10901453293F102200958096 /* Folder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Folder.png; sourceTree = "<group>"; };
 		10901455293F10B400958096 /* addFolder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addFolder.png; sourceTree = "<group>"; };
+		10901459293F35AC00958096 /*  ViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " ViewComponent.swift"; sourceTree = "<group>"; };
 		1D2B43758504AC387214F311 /* Pods-LinkFolder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkFolder.release.xcconfig"; path = "Target Support Files/Pods-LinkFolder/Pods-LinkFolder.release.xcconfig"; sourceTree = "<group>"; };
 		290D43F7293C805A004E2D30 /* ShareFolderUserPopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShareFolderUserPopUp.storyboard; sourceTree = "<group>"; };
 		290D43FB293CC38C004E2D30 /* ShareLinkUserPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareLinkUserPopUpViewController.swift; sourceTree = "<group>"; };
@@ -438,6 +440,7 @@
 				105B971028FE61D900E95B53 /* TextFieldComponent.swift */,
 				105B971428FE62DE00E95B53 /* TextFieldComponent.xib */,
 				105B971928FE7BCD00E95B53 /* ButtonComponent.swift */,
+				10901459293F35AC00958096 /*  ViewComponent.swift */,
 				105B971B28FE7BDD00E95B53 /* ButtonComponent.xib */,
 				1050B1BE2934A1CC004003FC /* ProfileImageComponent.swift */,
 				1050B1CE2934B9DF004003FC /* TapbarController.swift */,
@@ -859,6 +862,7 @@
 				1050B1CF2934B9DF004003FC /* TapbarController.swift in Sources */,
 				102A3687292D129D0062D730 /* LoginRepository.swift in Sources */,
 				102925E329372A5B00DC9201 /* SearchModel.swift in Sources */,
+				1090145A293F35AD00958096 /*  ViewComponent.swift in Sources */,
 				1046F97A2931C94C00053A0C /* ProfileEditRepository.swift in Sources */,
 				1050B1C22934A84D004003FC /* FriendsTableViewCell.swift in Sources */,
 				29350E5D292D604000E8D04A /* FolderDeleteRepository.swift in Sources */,
@@ -1106,7 +1110,7 @@
 				CODE_SIGN_ENTITLEMENTS = LinkFolder/LinkFolder.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FL466Y6686;
+				DEVELOPMENT_TEAM = 6UJYJPDXP4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LinkFolder/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1119,7 +1123,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = linkfolder.LinkFolder;
+				PRODUCT_BUNDLE_IDENTIFIER = com.openn.LinkFolder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1150,7 +1154,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = linkfolder.LinkFolder;
+				PRODUCT_BUNDLE_IDENTIFIER = com.openn.LinkFolder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1165,7 +1169,7 @@
 				CODE_SIGN_ENTITLEMENTS = LinkFolderShareExtension/LinkFolderShareExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 6UJYJPDXP4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LinkFolderShareExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = LinkFolderShareExtension;
@@ -1177,7 +1181,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = linkfolder.LinkFolder.LinkFolderShareExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.openn.LinkFolder.LinkFolderShareExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1205,7 +1209,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = linkfolder.LinkFolder.LinkFolderShareExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.openn.LinkFolder.LinkFolderShareExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;

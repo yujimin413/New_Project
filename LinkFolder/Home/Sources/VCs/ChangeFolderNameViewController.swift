@@ -10,6 +10,7 @@ import UIKit
 class ChangeFolderNamePopUpViewController: UIViewController {
     // MARK: - Properties
     
+    @IBOutlet weak var popUpBgView: UIView!
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var folderNameTextField: UITextField!
     @IBOutlet weak var cancelButton: UIButton!
@@ -23,7 +24,8 @@ class ChangeFolderNamePopUpViewController: UIViewController {
     // MARK: - LifeCycles
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        hideKeyboard()
+        self.popUpBgView.layer.cornerRadius = 14
         folderNameTextField.text = folderName
     }
     

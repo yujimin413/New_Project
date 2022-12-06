@@ -19,6 +19,7 @@ class AddFolderPopUpViewController: UIViewController {
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideKeyboard()
     }
     
     // MARK: - Actions

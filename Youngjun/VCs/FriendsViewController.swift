@@ -36,6 +36,7 @@ class FriendsViewController: UIViewController, UITextFieldDelegate {
         searchTextField.delegate = self
         FriendsRepository().getFriendsList(viewcontroller: self)
         initRefreshControl()
+        hideKeyboard()
     }
     
     func initRefreshControl(){

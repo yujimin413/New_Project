@@ -22,7 +22,7 @@ class EditLinkViewController: UIViewController {
     // MARK: - LifeCycles
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        hideKeyboard()
         linkNameTextField.text = linkAlias
         linkAddressTextField.text = linkUrl
     }

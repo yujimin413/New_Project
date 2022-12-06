@@ -85,7 +85,6 @@
                         <outlet property="addButton" destination="VgP-Q9-b3Y" id="9sM-FJ-ZZi"/>
                         <outlet property="cancelButton" destination="GLc-q4-VAh" id="tVQ-Jh-ZyY"/>
                         <outlet property="folderNameTextField" destination="hPB-yw-MRD" id="S3I-FC-hN5"/>
-                        <outlet property="popUpBgView" destination="cN1-bJ-vFs" id="hu1-dx-e0e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CKh-DM-Lk2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

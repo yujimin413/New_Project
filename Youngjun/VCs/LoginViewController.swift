@@ -18,6 +18,7 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideKeyboard()
         self.idTextField.addTarget(self, action: #selector(textFieldDidChanged), for: .editingChanged)
         self.passwordTextField.addTarget(self, action: #selector(textFieldDidChanged), for: .editingChanged)
     }

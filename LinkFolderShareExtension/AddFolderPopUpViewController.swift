@@ -12,7 +12,6 @@ class AddFolderPopUpViewController: UIViewController {
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var addButton: UIButton!
-    @IBOutlet weak var popUpBgView: UIView!
     @IBOutlet weak var folderNameTextField: UITextField!
     
     var delegate: HomeReloadDelegate?
@@ -20,7 +19,6 @@ class AddFolderPopUpViewController: UIViewController {
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.popUpBgView.layer.cornerRadius = 14
     }
     
     // MARK: - Actions
