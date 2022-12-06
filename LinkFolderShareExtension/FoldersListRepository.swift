@@ -17,14 +17,14 @@ class FoldersListRepository {
             switch response.result {
             case .success(let result):
                 print("폴더리스트 불러오기 성공")
-                debugPrint(response)
+//                debugPrint(response)
                 if result.isSuccess{
                      viewController.successFeedAPI(result)
                 }
 
             case .failure:
                 print("폴더리스트 불러오기 실패")
-                debugPrint(response)
+//                debugPrint(response)
             }
         }
     }

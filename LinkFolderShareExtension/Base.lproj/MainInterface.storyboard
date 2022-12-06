@@ -17,7 +17,7 @@
         <!--Share View Controller-->
         <scene sceneID="HAp-RW-tY7">
             <objects>
-                <viewController storyboardIdentifier="ShareVC" id="hTH-H0-xdE" customClass="ShareViewController" customModule="LinkFolderShareExtension" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ShareVC" id="hTH-H0-xdE" customClass="ShareViewController" customModule="LinkFolder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fvw-B0-0YR">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -35,6 +35,7 @@
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcR-3n-W6u">
                                 <rect key="frame" x="285" y="734" width="92" height="82"/>
+                                <color key="backgroundColor" red="0.66274509800000003" green="0.69019607839999997" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="82" id="EKh-AQ-Ink"/>
                                     <constraint firstAttribute="width" constant="92" id="VLB-Ah-xdE"/>

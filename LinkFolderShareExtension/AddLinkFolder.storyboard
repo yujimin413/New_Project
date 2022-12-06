@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Pretendard-Medium.otf">
+            <string>Pretendard-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--홈화면기본-+버튼팝업-->
+        <scene sceneID="Mmx-Ga-qL4">
+            <objects>
+                <viewController storyboardIdentifier="AddFolderPopUpVC" title="홈화면기본-+버튼팝업" modalPresentationStyle="overFullScreen" id="dnY-8g-2tf" customClass="AddFolderPopUpViewController" customModule="LinkFolderShareExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="viX-yx-K1O">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="itR-kR-NuG">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="dnY-8g-2tf" eventType="touchUpInside" id="fDK-Rl-d2Z"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AddFolderPopUp" translatesAutoresizingMaskIntoConstraints="NO" id="z8Q-cv-swZ">
+                                <rect key="frame" x="60" y="346" width="273" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="VJr-fN-LWp"/>
+                                    <constraint firstAttribute="width" constant="273" id="eD0-5m-CIm"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="링크폴더 이름" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hPB-yw-MRD">
+                                <rect key="frame" x="83" y="405" width="223" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="새로운 링크폴더 추가하기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ykW-7d-2SN">
+                                <rect key="frame" x="96.666666666666686" y="368" width="200" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="CWG-7V-eWg"/>
+                                    <constraint firstAttribute="width" constant="200" id="Gym-en-tif"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="15"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GLc-q4-VAh">
+                                <rect key="frame" x="111" y="449" width="54" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="취소">
+                                    <fontDescription key="titleFontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="cancelButtonTapped:" destination="dnY-8g-2tf" eventType="touchUpInside" id="YOy-J2-uFl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VgP-Q9-b3Y">
+                                <rect key="frame" x="227" y="449" width="54" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="추가">
+                                    <fontDescription key="titleFontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="addButtonTapped:" destination="dnY-8g-2tf" eventType="touchUpInside" id="YFI-tD-KkT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wqI-r9-1DC"/>
+                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                        <constraints>
+                            <constraint firstItem="wqI-r9-1DC" firstAttribute="bottom" secondItem="itR-kR-NuG" secondAttribute="bottom" id="1e4-Ph-En5"/>
+                            <constraint firstItem="itR-kR-NuG" firstAttribute="leading" secondItem="wqI-r9-1DC" secondAttribute="leading" id="7iw-me-15G"/>
+                            <constraint firstItem="itR-kR-NuG" firstAttribute="trailing" secondItem="wqI-r9-1DC" secondAttribute="trailing" id="DVK-Uw-5Pi"/>
+                            <constraint firstItem="z8Q-cv-swZ" firstAttribute="centerX" secondItem="viX-yx-K1O" secondAttribute="centerX" id="G8U-Bp-s72"/>
+                            <constraint firstItem="itR-kR-NuG" firstAttribute="top" secondItem="wqI-r9-1DC" secondAttribute="top" id="OEv-0Z-peW"/>
+                            <constraint firstItem="z8Q-cv-swZ" firstAttribute="top" secondItem="ykW-7d-2SN" secondAttribute="bottom" constant="-40" id="VsT-7P-mad"/>
+                            <constraint firstItem="ykW-7d-2SN" firstAttribute="centerX" secondItem="viX-yx-K1O" secondAttribute="centerX" id="Yof-jW-40m"/>
+                            <constraint firstItem="z8Q-cv-swZ" firstAttribute="centerY" secondItem="viX-yx-K1O" secondAttribute="centerY" id="rtI-R2-xFy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="VgP-Q9-b3Y" id="9sM-FJ-ZZi"/>
+                        <outlet property="backButton" destination="itR-kR-NuG" id="Rhs-1O-Tpk"/>
+                        <outlet property="cancelButton" destination="GLc-q4-VAh" id="tVQ-Jh-ZyY"/>
+                        <outlet property="folderNameTextField" destination="hPB-yw-MRD" id="S3I-FC-hN5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CKh-DM-Lk2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1026.1538461538462" y="-675.35545023696682"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AddFolderPopUp" width="273" height="160"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

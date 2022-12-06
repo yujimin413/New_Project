@@ -8,6 +8,7 @@
 import UIKit
 import Social
 import Alamofire
+import MobileCoreServices
 
 //class ShareViewController: UIViewController{
 //    let appGroupId = "group.linkfolder.Linkfolder.Share"
@@ -48,11 +49,34 @@ class ShareViewController: UIViewController, HomeReloadDelegate {
     var senderUserIdx: Int!
     var alertIdx: Int!
     
+    var url: String = ""
+    
     
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let extensionItems = extensionContext?.inputItems as! [NSExtensionItem]
+        for items in extensionItems {
+           if let itemProviders = items.attachments {
+               for item_provider in itemProviders {
+                   if item_provider.hasItemConformingToTypeIdentifier(kUTTypeURL as String) {
+                       item_provider.loadItem(forTypeIdentifier: kUTTypeURL as String, options: nil) { (data, error) in
+                           print("url : \(data)")
+                           if let str = data as? URL {
+                               self.url = "\(str)"
+                               print("url ::: \(self.url)")
+                           }
+                       }
+                           
+                    
+                   }
+               }
+           }
+           
+        }
+        
         setupCollectionView()
         setupFolderData()
     }
@@ -100,6 +124,8 @@ class ShareViewController: UIViewController, HomeReloadDelegate {
             let addLinkVC = storyboard.instantiateViewController(withIdentifier: "AddLinkVC") as! AddLinkViewController
             
             addLinkVC.folderIdx = selectedFolderIndex
+            addLinkVC.url = self.url
+//            addLinkVC.linkAddressTextField.text = self.url
 //            addLinkVC.delegete = self
             
     //        addLinkVC.modalPresentationStyle = .overCurrentContext
