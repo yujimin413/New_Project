@@ -12,6 +12,8 @@ class ShowFolderMorePopUpViewController: UIViewController {
     @IBOutlet weak var shareFolderButton: UIButton!
     @IBOutlet weak var changeFolderNameButton: UIButton!
     @IBOutlet weak var deleteFolderButton: UIButton!
+    @IBOutlet weak var popUpBgView: UIView!
+    
     
     var folderIndex: Int!
     var folderName: String!
@@ -23,6 +25,7 @@ class ShowFolderMorePopUpViewController: UIViewController {
     // MARK: - LifeCycles
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.popUpBgView.layer.cornerRadius = 14
     }
     
     // MARK: - Actions

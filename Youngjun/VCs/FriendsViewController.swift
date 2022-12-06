@@ -60,6 +60,8 @@ class FriendsViewController: UIViewController, UITextFieldDelegate {
             
             SearchRepository().searchUserById(searchTextField.text!){
                 data in
+                vc.friendAddButton.isHidden = false
+                vc.idLabel.isHidden = false
                 vc.nicknameLabel.text = data.nickname
                 vc.idLabel.text = data.id
                 vc.userIdx = data.userIdx

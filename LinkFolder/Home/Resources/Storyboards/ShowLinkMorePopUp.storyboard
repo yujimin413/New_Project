@@ -25,72 +25,84 @@
                                     <action selector="backButtonDidTap:" destination="TOw-bg-WkH" eventType="touchUpInside" id="kEN-au-ED4"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AddFolderPopUp" translatesAutoresizingMaskIntoConstraints="NO" id="UW7-1m-n4V">
-                                <rect key="frame" x="60" y="346" width="273" height="160"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c7M-mS-TVY">
+                                <rect key="frame" x="60.666666666666657" y="356" width="272" height="165"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEM-eA-4ph">
+                                        <rect key="frame" x="92.333333333333343" y="121" width="87" height="32"/>
+                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="링크 삭제">
+                                            <fontDescription key="titleFontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="deleteLinkButtonDidTap:" destination="TOw-bg-WkH" eventType="touchUpInside" id="mpO-lb-cTM"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" id="YoP-aB-FJr">
+                                        <rect key="frame" x="16" y="112" width="240" height="1"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <viewLayoutGuide key="safeArea" id="Uff-Xy-Qlz"/>
+                                        <color key="backgroundColor" name="Gray4"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIz-Dw-IIR">
+                                        <rect key="frame" x="92.333333333333343" y="65.333333333333314" width="87" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="링크 공유">
+                                            <fontDescription key="titleFontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="shareLinkButtonDidTap:" destination="TOw-bg-WkH" eventType="touchUpInside" id="plg-xq-tci"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRh-4y-l3h">
+                                        <rect key="frame" x="92.333333333333343" y="15" width="87" height="41"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="링크 수정">
+                                            <fontDescription key="titleFontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="editLinkButtonDidTap:" destination="TOw-bg-WkH" eventType="touchUpInside" id="Wm9-SX-b2H"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" id="zfs-cI-VNc">
+                                        <rect key="frame" x="16" y="59" width="240" height="1"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <viewLayoutGuide key="safeArea" id="po1-9K-PU1"/>
+                                        <color key="backgroundColor" name="Gray4"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="GrayPopUp"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="273" id="JU0-Y2-n5u"/>
-                                    <constraint firstAttribute="height" constant="160" id="dRV-6y-ij6"/>
+                                    <constraint firstAttribute="width" constant="272" id="0kP-x4-2kS"/>
+                                    <constraint firstItem="DRh-4y-l3h" firstAttribute="centerX" secondItem="c7M-mS-TVY" secondAttribute="centerX" id="6z1-xj-g8O"/>
+                                    <constraint firstItem="zfs-cI-VNc" firstAttribute="top" secondItem="DRh-4y-l3h" secondAttribute="bottom" constant="3" id="ABz-hT-hgw"/>
+                                    <constraint firstAttribute="height" constant="165" id="DBA-A4-DIt"/>
+                                    <constraint firstItem="sIz-Dw-IIR" firstAttribute="centerY" secondItem="c7M-mS-TVY" secondAttribute="centerY" id="Sf0-6c-QWI"/>
+                                    <constraint firstItem="uEM-eA-4ph" firstAttribute="top" secondItem="YoP-aB-FJr" secondAttribute="bottom" constant="8" id="ckC-9L-Py1"/>
+                                    <constraint firstItem="sIz-Dw-IIR" firstAttribute="centerX" secondItem="c7M-mS-TVY" secondAttribute="centerX" id="f6b-JN-G4i"/>
+                                    <constraint firstAttribute="bottom" secondItem="uEM-eA-4ph" secondAttribute="bottom" constant="12" id="pa1-FZ-bQn"/>
+                                    <constraint firstItem="uEM-eA-4ph" firstAttribute="centerX" secondItem="c7M-mS-TVY" secondAttribute="centerX" id="z1k-PL-aJv"/>
+                                    <constraint firstItem="DRh-4y-l3h" firstAttribute="top" secondItem="c7M-mS-TVY" secondAttribute="top" constant="15" id="zTc-GK-Pkk"/>
                                 </constraints>
-                            </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qE5-Zm-boP">
-                                <rect key="frame" x="75" y="400" width="240" height="1"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="Gray4"/>
                             </view>
-                            <view contentMode="scaleToFill" id="YoP-aB-FJr">
-                                <rect key="frame" x="75" y="444" width="240" height="1"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <viewLayoutGuide key="safeArea" id="Uff-Xy-Qlz"/>
-                                <color key="backgroundColor" name="Gray4"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIz-Dw-IIR">
-                                <rect key="frame" x="129" y="357" width="135" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="링크 공유">
-                                    <fontDescription key="titleFontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="shareLinkButtonDidTap:" destination="TOw-bg-WkH" eventType="touchUpInside" id="plg-xq-tci"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEM-eA-4ph">
-                                <rect key="frame" x="120" y="453" width="150" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemRedColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="링크 삭제">
-                                    <fontDescription key="titleFontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="deleteLinkButtonDidTap:" destination="TOw-bg-WkH" eventType="touchUpInside" id="mpO-lb-cTM"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRh-4y-l3h">
-                                <rect key="frame" x="132" y="407" width="129" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="링크 수정">
-                                    <fontDescription key="titleFontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="editLinkButtonDidTap:" destination="TOw-bg-WkH" eventType="touchUpInside" id="Wm9-SX-b2H"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SLy-Cg-q9j"/>
                         <color key="backgroundColor" systemColor="secondaryLabelColor"/>
                         <constraints>
                             <constraint firstItem="SLy-Cg-q9j" firstAttribute="bottom" secondItem="bAb-nR-irs" secondAttribute="bottom" id="6J1-xP-Zo1"/>
                             <constraint firstItem="bAb-nR-irs" firstAttribute="leading" secondItem="SLy-Cg-q9j" secondAttribute="leading" id="CK0-n0-VzR"/>
-                            <constraint firstItem="UW7-1m-n4V" firstAttribute="centerX" secondItem="vTq-Hc-5rU" secondAttribute="centerX" id="NKS-j3-TGn"/>
+                            <constraint firstItem="YoP-aB-FJr" firstAttribute="centerX" secondItem="bAb-nR-irs" secondAttribute="centerX" id="EJJ-fd-QB3"/>
+                            <constraint firstItem="c7M-mS-TVY" firstAttribute="centerY" secondItem="bAb-nR-irs" secondAttribute="centerY" id="HOE-Cd-w6I"/>
+                            <constraint firstItem="c7M-mS-TVY" firstAttribute="centerX" secondItem="bAb-nR-irs" secondAttribute="centerX" id="T90-wF-AcA"/>
+                            <constraint firstItem="zfs-cI-VNc" firstAttribute="centerX" secondItem="bAb-nR-irs" secondAttribute="centerX" id="Trc-bL-bKa"/>
                             <constraint firstItem="bAb-nR-irs" firstAttribute="trailing" secondItem="SLy-Cg-q9j" secondAttribute="trailing" id="Xls-lR-Fo8"/>
                             <constraint firstItem="bAb-nR-irs" firstAttribute="top" secondItem="SLy-Cg-q9j" secondAttribute="top" id="aXw-dW-h39"/>
-                            <constraint firstItem="UW7-1m-n4V" firstAttribute="centerY" secondItem="vTq-Hc-5rU" secondAttribute="centerY" id="oKQ-9v-NXE"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="backButton" destination="bAb-nR-irs" id="JnY-zK-0Q4"/>
+                        <outlet property="bgView" destination="c7M-mS-TVY" id="2xC-9e-PyN"/>
                         <outlet property="deleteLinkButton" destination="uEM-eA-4ph" id="Ntv-0N-1LJ"/>
                         <outlet property="editLinkButton" destination="DRh-4y-l3h" id="S5c-za-BT8"/>
                         <outlet property="shareLinkButton" destination="sIz-Dw-IIR" id="kHn-JL-rLl"/>
@@ -98,13 +110,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1az-th-qwH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2816.9230769230767" y="-2.1327014218009479"/>
+            <point key="canvasLocation" x="2816.030534351145" y="-2.8169014084507045"/>
         </scene>
     </scenes>
     <resources>
-        <image name="AddFolderPopUp" width="273" height="160"/>
         <namedColor name="Gray4">
             <color red="0.65490196078431373" green="0.66274509803921566" blue="0.6705882352941176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GrayPopUp">
+            <color red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>

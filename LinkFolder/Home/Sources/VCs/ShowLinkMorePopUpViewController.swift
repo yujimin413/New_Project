@@ -13,6 +13,8 @@ class ShowLinkMorePopUpViewController: UIViewController {
     @IBOutlet weak var editLinkButton: UIButton!
     @IBOutlet weak var shareLinkButton: UIButton!
     @IBOutlet weak var deleteLinkButton: UIButton!
+    @IBOutlet weak var bgView: UIView!
+    
     
     var delegate: LinkReloadDelegate?
     
@@ -23,7 +25,7 @@ class ShowLinkMorePopUpViewController: UIViewController {
     // MARK: - LifeCycles
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.bgView.layer.cornerRadius = 14
 //        print(linkUrl)
 //        print(linkIdx)
 //        print(linkAlias)

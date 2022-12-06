@@ -25,85 +25,103 @@
                                     <action selector="backButtonDidTap:" destination="QZM-PS-Xpr" eventType="touchUpInside" id="XC2-1A-xxq"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AddFolderPopUp" translatesAutoresizingMaskIntoConstraints="NO" id="dky-F2-Ma4">
-                                <rect key="frame" x="60" y="346" width="273" height="160"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5CU-cN-lxl">
+                                <rect key="frame" x="60.666666666666657" y="356" width="272" height="165"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hz2-Iv-cwl">
+                                        <rect key="frame" x="92.333333333333343" y="65.666666666666686" width="87" height="34"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="폴더 공유">
+                                            <fontDescription key="titleFontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="shareFolderButtonDidTap:" destination="QZM-PS-Xpr" eventType="touchUpInside" id="9cN-Ak-De6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtr-40-cQb">
+                                        <rect key="frame" x="84.666666666666686" y="19" width="102.33333333333331" height="34"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="폴더명 변경">
+                                            <fontDescription key="titleFontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="changeFolderNameButtonDidTap:" destination="QZM-PS-Xpr" eventType="touchUpInside" id="ShK-L2-Pvw"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mDB-eV-IK7">
+                                        <rect key="frame" x="16" y="107" width="240" height="1"/>
+                                        <color key="backgroundColor" name="Gray4"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="7gy-xw-Pcy"/>
+                                            <constraint firstAttribute="width" constant="240" id="ciY-s6-XYs"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ct-fr-CAk">
+                                        <rect key="frame" x="16" y="62" width="240" height="1"/>
+                                        <color key="backgroundColor" name="Gray4"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="5fc-ca-bHv"/>
+                                            <constraint firstAttribute="height" constant="1" id="Vxq-QY-E9G"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hA3-X6-Yo5">
+                                        <rect key="frame" x="92.333333333333343" y="117" width="87" height="34"/>
+                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="폴더 삭제">
+                                            <fontDescription key="titleFontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="deleteFolderButtonDidTap:" destination="QZM-PS-Xpr" eventType="touchUpInside" id="dyr-5F-pxL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="GrayPopUp"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="160" id="Gvp-d4-6dn"/>
-                                    <constraint firstAttribute="width" constant="273" id="e2X-Em-ZrA"/>
+                                    <constraint firstItem="mDB-eV-IK7" firstAttribute="centerX" secondItem="5CU-cN-lxl" secondAttribute="centerX" id="9jq-xU-9re"/>
+                                    <constraint firstAttribute="height" constant="165" id="Ad0-OB-V9y"/>
+                                    <constraint firstItem="vtr-40-cQb" firstAttribute="top" secondItem="5CU-cN-lxl" secondAttribute="top" constant="19" id="BTM-Ew-4B2"/>
+                                    <constraint firstItem="hz2-Iv-cwl" firstAttribute="centerX" secondItem="5CU-cN-lxl" secondAttribute="centerX" id="C40-NA-1z8"/>
+                                    <constraint firstItem="vtr-40-cQb" firstAttribute="centerX" secondItem="5CU-cN-lxl" secondAttribute="centerX" id="DiL-WV-Ww0"/>
+                                    <constraint firstAttribute="bottom" secondItem="hA3-X6-Yo5" secondAttribute="bottom" constant="14" id="RGj-PU-J3c"/>
+                                    <constraint firstItem="hA3-X6-Yo5" firstAttribute="centerX" secondItem="5CU-cN-lxl" secondAttribute="centerX" id="akh-zA-5PB"/>
+                                    <constraint firstItem="hA3-X6-Yo5" firstAttribute="top" secondItem="mDB-eV-IK7" secondAttribute="bottom" constant="9" id="bra-3n-sve"/>
+                                    <constraint firstItem="hz2-Iv-cwl" firstAttribute="centerY" secondItem="5CU-cN-lxl" secondAttribute="centerY" id="lC6-6v-AxC"/>
+                                    <constraint firstAttribute="width" constant="272" id="uYM-VQ-iv0"/>
+                                    <constraint firstItem="5ct-fr-CAk" firstAttribute="top" secondItem="vtr-40-cQb" secondAttribute="bottom" constant="9" id="uvK-cd-RuL"/>
+                                    <constraint firstItem="5ct-fr-CAk" firstAttribute="centerX" secondItem="5CU-cN-lxl" secondAttribute="centerX" id="wQA-s3-kBY"/>
                                 </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hz2-Iv-cwl">
-                                <rect key="frame" x="133" y="357" width="124" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="폴더 공유">
-                                    <fontDescription key="titleFontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="shareFolderButtonDidTap:" destination="QZM-PS-Xpr" eventType="touchUpInside" id="9cN-Ak-De6"/>
-                                </connections>
-                            </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mDB-eV-IK7">
-                                <rect key="frame" x="75" y="400" width="240" height="1"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="Gray4"/>
                             </view>
-                            <view contentMode="scaleToFill" id="pVq-iw-cGN">
-                                <rect key="frame" x="75" y="444" width="240" height="1"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <viewLayoutGuide key="safeArea" id="Rku-aV-SHn"/>
-                                <color key="backgroundColor" name="Gray4"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtr-40-cQb">
-                                <rect key="frame" x="116" y="405" width="158" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="폴더명 변경">
-                                    <fontDescription key="titleFontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="changeFolderNameButtonDidTap:" destination="QZM-PS-Xpr" eventType="touchUpInside" id="ShK-L2-Pvw"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hA3-X6-Yo5">
-                                <rect key="frame" x="116" y="453" width="160" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemRedColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="폴더 삭제">
-                                    <fontDescription key="titleFontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="deleteFolderButtonDidTap:" destination="QZM-PS-Xpr" eventType="touchUpInside" id="dyr-5F-pxL"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="H2U-xH-tPN"/>
                         <color key="backgroundColor" systemColor="secondaryLabelColor"/>
                         <constraints>
-                            <constraint firstItem="dky-F2-Ma4" firstAttribute="centerY" secondItem="55c-lh-5nU" secondAttribute="centerY" id="8Az-xW-xXJ"/>
-                            <constraint firstItem="C9y-Bc-kIL" firstAttribute="leading" secondItem="H2U-xH-tPN" secondAttribute="leading" id="R9l-6w-oLQ"/>
-                            <constraint firstItem="H2U-xH-tPN" firstAttribute="bottom" secondItem="C9y-Bc-kIL" secondAttribute="bottom" id="SVU-9M-XuJ"/>
-                            <constraint firstItem="dky-F2-Ma4" firstAttribute="centerX" secondItem="55c-lh-5nU" secondAttribute="centerX" id="TbL-32-n91"/>
-                            <constraint firstItem="C9y-Bc-kIL" firstAttribute="top" secondItem="H2U-xH-tPN" secondAttribute="top" id="bo2-lc-F4h"/>
-                            <constraint firstItem="C9y-Bc-kIL" firstAttribute="trailing" secondItem="H2U-xH-tPN" secondAttribute="trailing" id="upF-zo-ro3"/>
+                            <constraint firstItem="5CU-cN-lxl" firstAttribute="centerY" secondItem="H2U-xH-tPN" secondAttribute="centerY" id="ICB-ba-QE0"/>
+                            <constraint firstItem="5CU-cN-lxl" firstAttribute="centerX" secondItem="H2U-xH-tPN" secondAttribute="centerX" id="bW6-xF-Maf"/>
+                            <constraint firstItem="H2U-xH-tPN" firstAttribute="trailing" secondItem="C9y-Bc-kIL" secondAttribute="trailing" id="beb-qK-6IX"/>
+                            <constraint firstItem="H2U-xH-tPN" firstAttribute="bottom" secondItem="C9y-Bc-kIL" secondAttribute="bottom" id="fy8-jw-T8m"/>
+                            <constraint firstItem="C9y-Bc-kIL" firstAttribute="leading" secondItem="H2U-xH-tPN" secondAttribute="leading" id="jaU-cM-sUN"/>
+                            <constraint firstItem="C9y-Bc-kIL" firstAttribute="top" secondItem="H2U-xH-tPN" secondAttribute="top" id="qZk-xf-LfD"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="changeFolderNameButton" destination="vtr-40-cQb" id="9AF-Xb-qWH"/>
                         <outlet property="deleteFolderButton" destination="hA3-X6-Yo5" id="pfS-jB-Mbc"/>
+                        <outlet property="popUpBgView" destination="5CU-cN-lxl" id="LL3-QT-icD"/>
                         <outlet property="shareFolderButton" destination="hz2-Iv-cwl" id="Dhp-DR-4Gq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2K0-F5-Wmr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1846.1538461538462" y="-675.35545023696682"/>
+            <point key="canvasLocation" x="1845.0381679389311" y="-676.05633802816908"/>
         </scene>
     </scenes>
     <resources>
-        <image name="AddFolderPopUp" width="273" height="160"/>
         <namedColor name="Gray4">
             <color red="0.65490196078431373" green="0.66274509803921566" blue="0.6705882352941176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GrayPopUp">
+            <color red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>

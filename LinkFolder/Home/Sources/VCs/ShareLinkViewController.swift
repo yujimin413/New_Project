@@ -64,9 +64,10 @@ class ShareLinkViewController: UIViewController, UITextFieldDelegate {
             
             SearchRepository().searchUserById(searchTextField.text!){
                 data in
+                
+                
                 vc.userNicknameTextLabel.text = data.nickname
                 vc.userIdTextLabel.text = data.id
-                
                 vc.userIdx = data.userIdx
                 
                 vc.linkAlias = self.linkAlias

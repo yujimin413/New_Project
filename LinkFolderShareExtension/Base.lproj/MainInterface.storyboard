@@ -33,20 +33,21 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcR-3n-W6u">
-                                <rect key="frame" x="285" y="734" width="92" height="82"/>
-                                <color key="backgroundColor" red="0.66274509800000003" green="0.69019607839999997" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcR-3n-W6u">
+                                <rect key="frame" x="309" y="738" width="60" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="82" id="EKh-AQ-Ink"/>
-                                    <constraint firstAttribute="width" constant="92" id="VLB-Ah-xdE"/>
+                                    <constraint firstAttribute="height" constant="60" id="EKh-AQ-Ink"/>
+                                    <constraint firstAttribute="width" constant="60" id="VLB-Ah-xdE"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="AddBtn"/>
+                                <state key="normal" title="Button" image="addFolder.png">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration"/>
+                                </state>
                                 <connections>
                                     <action selector="addFolderButtonTapped:" destination="hTH-H0-xdE" eventType="touchUpInside" id="Ia3-3q-TkZ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="공유 받은 링크를 저장할 폴더를 선택하세요." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bC8-IZ-mmr">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="링크를 저장할 폴더를 선택하세요." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bC8-IZ-mmr">
                                 <rect key="frame" x="0.0" y="59" width="393" height="40"/>
                                 <color key="backgroundColor" name="GrayPopUp"/>
                                 <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
@@ -60,16 +61,17 @@
                             <constraint firstItem="bC8-IZ-mmr" firstAttribute="top" secondItem="QCI-gz-IFD" secondAttribute="top" id="1sh-J6-x8L"/>
                             <constraint firstItem="nm8-6M-UK8" firstAttribute="top" secondItem="QCI-gz-IFD" secondAttribute="top" constant="40" id="4Cq-gW-Dmr"/>
                             <constraint firstItem="QCI-gz-IFD" firstAttribute="trailing" secondItem="nm8-6M-UK8" secondAttribute="trailing" id="EVp-kr-1AZ"/>
-                            <constraint firstItem="QCI-gz-IFD" firstAttribute="bottom" secondItem="fcR-3n-W6u" secondAttribute="bottom" constant="2" id="HlG-lp-edR"/>
+                            <constraint firstItem="QCI-gz-IFD" firstAttribute="bottom" secondItem="fcR-3n-W6u" secondAttribute="bottom" constant="20" id="HlG-lp-edR"/>
                             <constraint firstItem="nm8-6M-UK8" firstAttribute="leading" secondItem="QCI-gz-IFD" secondAttribute="leading" id="Mzd-M1-ogt"/>
                             <constraint firstItem="bC8-IZ-mmr" firstAttribute="leading" secondItem="QCI-gz-IFD" secondAttribute="leading" id="Ogg-Ry-wdH"/>
                             <constraint firstItem="QCI-gz-IFD" firstAttribute="trailing" secondItem="bC8-IZ-mmr" secondAttribute="trailing" id="Tej-j2-FpA"/>
-                            <constraint firstItem="QCI-gz-IFD" firstAttribute="trailing" secondItem="fcR-3n-W6u" secondAttribute="trailing" constant="16" id="ckG-bC-uRK"/>
+                            <constraint firstItem="QCI-gz-IFD" firstAttribute="trailing" secondItem="fcR-3n-W6u" secondAttribute="trailing" constant="24" id="ckG-bC-uRK"/>
                             <constraint firstItem="QCI-gz-IFD" firstAttribute="bottom" secondItem="nm8-6M-UK8" secondAttribute="bottom" constant="50" id="lPC-Xa-u5P"/>
                             <constraint firstItem="nm8-6M-UK8" firstAttribute="top" secondItem="bC8-IZ-mmr" secondAttribute="bottom" id="m6x-pN-1R8"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addFolderButton" destination="fcR-3n-W6u" id="cxH-0Q-Htv"/>
                         <outlet property="homeCollectionView" destination="nm8-6M-UK8" id="RNO-ES-xhQ"/>
                     </connections>
                 </viewController>
@@ -79,7 +81,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="AddBtn" width="68" height="68"/>
+        <image name="addFolder.png" width="68" height="68"/>
         <namedColor name="GrayPopUp">
             <color red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

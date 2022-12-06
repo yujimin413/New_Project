@@ -19,6 +19,8 @@ class UserPopUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.friendAddButton.isHidden = true
+        self.idLabel.isHidden = true
         popUpBgView.layer.cornerRadius = 10
     }
     
