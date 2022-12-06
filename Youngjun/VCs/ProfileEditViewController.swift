@@ -18,6 +18,7 @@ class ProfileEditViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setNavigationBar()
+        hideKeyboard()
         self.nicknameTextFeild.addTarget(self, action: #selector(textFieldDidChanged), for: .editingChanged)
         self.nicknameTextFeild.text = Const.userNickname
 

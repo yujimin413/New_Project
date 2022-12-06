@@ -121,14 +121,14 @@ class SignupViewController: UIViewController {
             return false
         }
         
-        let pattern = "[A-Za-z0-9]{6,20}"
+        let pattern = "[A-Za-z0-9]{4,20}"
         let regex = try? NSRegularExpression(pattern: pattern)
         if let _ = regex?.firstMatch(in: id, options: [], range: NSRange(location: 0, length: id.count)) {
             idLabel.text = "사용가능한 아이디입니다"
             idLabel.textColor = UIColor(named: "GrayText")
                 return true
         }
-        idLabel.text = "6~20자의 영문 혹은 영문과 숫자를 조합"
+        idLabel.text = "4~20자의 영문 혹은 영문과 숫자를 조합"
         idLabel.textColor = .red
         
         return false
@@ -157,14 +157,14 @@ class SignupViewController: UIViewController {
             passwordLabel.textColor = UIColor(named: "GrayText")
             return false
         }
-        let pattern = "[A-Za-z0-9!_@$%^&+=]{8,20}"
+        let pattern = "[A-Za-z0-9!_@$%^&+=]{4,20}"
         let regex = try? NSRegularExpression(pattern: pattern)
         if let _ = regex?.firstMatch(in: password, options: [], range: NSRange(location: 0, length: password.count)) {
             passwordLabel.text = "사용가능한 비밀번호입니다"
             passwordLabel.textColor = UIColor(named: "GrayText")
                 return true
         }
-        passwordLabel.text = "8~20자의 영문, 숫자, 특수문자를 조합"
+        passwordLabel.text = "4~20자의 영문, 숫자, 특수문자 입력가능"
         passwordLabel.textColor = .red
         return false
     }
@@ -196,6 +196,12 @@ class SignupViewController: UIViewController {
     @IBAction func singupButtonDidTap(_ sender: Any) {
         let input = SignupInput(id: idTextField.text!, password: passwordTextField.text!, nickname: nicknameTextField.text!, profileImageUrl: nil)
         SignupRepository().signup(input)
+        
+        let storyboard = UIStoryboard(name: "Login", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: false)
+        
     }
     
 }
