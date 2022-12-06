@@ -50,7 +50,9 @@
 <br/>
 1. [**로그인화면**]에서 아이디, 비밀번호로 로그인을 합니다.<br/>
   -	만약 회원이 아니라면, 아이디, 비밀번호, 닉네임, 프로필 이미지로 회원가입을 진행합니다.<br/><br/><br/>
-
+  
+![home](https://user-images.githubusercontent.com/84549242/205910401-d5be6248-2a11-45ba-a5e7-9f36ba2546ce.gif)
+<br/>
 2. [**홈탭**]은 로그인 시 보여지는 기본 화면입니다. 폴더, 친구, 알림, 프로필 수정 기능을 이용할 수 있습니다.<br/><br/><br/>
 
 ![profileEdit](https://user-images.githubusercontent.com/84549242/205885371-cff47174-6007-4889-ab43-b15b74baffbd.gif)
