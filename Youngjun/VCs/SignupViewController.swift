@@ -25,6 +25,7 @@ class SignupViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setNavigationBar()
+        hideKeyboard()
         addTargetToTF()
         UserDefaults.init(suiteName: "group.linkfolder.Linkfolder.Share")
         passwordConfirmLabel.isHidden = true

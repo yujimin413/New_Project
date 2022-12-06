@@ -30,7 +30,7 @@ class ShareLinkViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
-        
+        hideKeyboard()
 
     }
 

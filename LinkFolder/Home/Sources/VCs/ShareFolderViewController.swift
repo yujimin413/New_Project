@@ -31,6 +31,7 @@ class ShareFolderViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
+        hideKeyboard()
     }
     
     // MARK: - Actions

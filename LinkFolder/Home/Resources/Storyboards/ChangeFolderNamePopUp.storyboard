@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -29,62 +30,65 @@
                                     <action selector="backButtonDidTap:" destination="8iZ-zY-9xf" eventType="touchUpInside" id="1O7-NL-mjK"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AddFolderPopUp" translatesAutoresizingMaskIntoConstraints="NO" id="FXd-A8-UfP">
-                                <rect key="frame" x="60" y="346" width="273" height="160"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gXT-iE-HpM">
+                                <rect key="frame" x="60" y="358.66666666666669" width="273" height="160.00000000000006"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="폴더명 변경하기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tx6-uV-kze">
+                                        <rect key="frame" x="89" y="22" width="95" height="18"/>
+                                        <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="15"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="기존이름" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="noS-E8-jrZ">
+                                        <rect key="frame" x="20" y="48" width="233" height="34"/>
+                                        <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFH-QA-IiK">
+                                        <rect key="frame" x="58" y="101" width="54" height="34"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="취소">
+                                            <fontDescription key="titleFontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="cancelButtonDidTap:" destination="8iZ-zY-9xf" eventType="touchUpInside" id="fpv-6P-aiq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Rd-Nz-hys">
+                                        <rect key="frame" x="161" y="101" width="54" height="34"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="완료">
+                                            <fontDescription key="titleFontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="doneButtonDidTap:" destination="8iZ-zY-9xf" eventType="touchUpInside" id="sxX-cz-l5T"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="GrayPopUp"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="160" id="fA5-zn-Phx"/>
-                                    <constraint firstAttribute="width" constant="273" id="lCV-gL-jAO"/>
+                                    <constraint firstItem="noS-E8-jrZ" firstAttribute="centerX" secondItem="gXT-iE-HpM" secondAttribute="centerX" id="4t7-WG-ajN"/>
+                                    <constraint firstItem="cFH-QA-IiK" firstAttribute="leading" secondItem="gXT-iE-HpM" secondAttribute="leading" constant="58" id="DDE-nf-Cn2"/>
+                                    <constraint firstAttribute="width" constant="273" id="ELP-ZC-YuG"/>
+                                    <constraint firstItem="4Rd-Nz-hys" firstAttribute="centerY" secondItem="cFH-QA-IiK" secondAttribute="centerY" id="O9A-X6-nHC"/>
+                                    <constraint firstAttribute="height" constant="160" id="UwD-ng-irU"/>
+                                    <constraint firstItem="noS-E8-jrZ" firstAttribute="leading" secondItem="gXT-iE-HpM" secondAttribute="leading" constant="20" id="YV3-GO-YzD"/>
+                                    <constraint firstItem="noS-E8-jrZ" firstAttribute="top" secondItem="Tx6-uV-kze" secondAttribute="bottom" constant="8" symbolic="YES" id="YjP-eL-g5i"/>
+                                    <constraint firstItem="Tx6-uV-kze" firstAttribute="top" secondItem="gXT-iE-HpM" secondAttribute="top" constant="22" id="ZGR-TX-3XS"/>
+                                    <constraint firstAttribute="trailing" secondItem="4Rd-Nz-hys" secondAttribute="trailing" constant="58" id="aEV-6j-ZZT"/>
+                                    <constraint firstItem="Tx6-uV-kze" firstAttribute="centerX" secondItem="gXT-iE-HpM" secondAttribute="centerX" id="fJQ-Sm-7he"/>
+                                    <constraint firstAttribute="bottom" secondItem="cFH-QA-IiK" secondAttribute="bottom" constant="25.000000000000057" id="mje-Qc-UnB"/>
                                 </constraints>
-                            </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="기존이름" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="noS-E8-jrZ">
-                                <rect key="frame" x="83" y="405" width="223" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="15"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="폴더명 변경하기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tx6-uV-kze">
-                                <rect key="frame" x="96.666666666666686" y="368" width="200" height="18"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="18" id="8jq-Um-bTA"/>
-                                    <constraint firstAttribute="width" constant="200" id="yyt-o1-WCj"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="15"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFH-QA-IiK">
-                                <rect key="frame" x="111" y="449" width="54" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="취소">
-                                    <fontDescription key="titleFontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="cancelButtonDidTap:" destination="8iZ-zY-9xf" eventType="touchUpInside" id="fpv-6P-aiq"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Rd-Nz-hys">
-                                <rect key="frame" x="227" y="449" width="54" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="완료">
-                                    <fontDescription key="titleFontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="17"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="doneButtonDidTap:" destination="8iZ-zY-9xf" eventType="touchUpInside" id="sxX-cz-l5T"/>
-                                </connections>
-                            </button>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ASs-Ck-tFK"/>
                         <color key="backgroundColor" systemColor="secondaryLabelColor"/>
                         <constraints>
-                            <constraint firstItem="FXd-A8-UfP" firstAttribute="top" secondItem="Tx6-uV-kze" secondAttribute="bottom" constant="-40" id="1EV-Ux-bUm"/>
-                            <constraint firstItem="FXd-A8-UfP" firstAttribute="centerY" secondItem="Xhe-no-BnD" secondAttribute="centerY" id="DQP-4z-88U"/>
                             <constraint firstItem="ASs-Ck-tFK" firstAttribute="bottom" secondItem="jTb-Th-HkS" secondAttribute="bottom" id="OFi-Wo-aeH"/>
-                            <constraint firstItem="FXd-A8-UfP" firstAttribute="centerX" secondItem="Xhe-no-BnD" secondAttribute="centerX" id="PGT-MR-H7T"/>
+                            <constraint firstItem="gXT-iE-HpM" firstAttribute="centerY" secondItem="jTb-Th-HkS" secondAttribute="centerY" id="Udq-MO-ff4"/>
                             <constraint firstItem="jTb-Th-HkS" firstAttribute="trailing" secondItem="ASs-Ck-tFK" secondAttribute="trailing" id="XZj-zS-fkQ"/>
-                            <constraint firstItem="Tx6-uV-kze" firstAttribute="centerX" secondItem="Xhe-no-BnD" secondAttribute="centerX" id="XgQ-CR-9tn"/>
+                            <constraint firstItem="gXT-iE-HpM" firstAttribute="centerX" secondItem="jTb-Th-HkS" secondAttribute="centerX" id="bbq-LI-nFv"/>
                             <constraint firstItem="jTb-Th-HkS" firstAttribute="leading" secondItem="ASs-Ck-tFK" secondAttribute="leading" id="tPv-tr-V23"/>
                             <constraint firstItem="jTb-Th-HkS" firstAttribute="top" secondItem="ASs-Ck-tFK" secondAttribute="top" id="voV-VG-O6A"/>
                         </constraints>
@@ -94,6 +98,7 @@
                         <outlet property="cancelButton" destination="cFH-QA-IiK" id="JGs-N7-tXg"/>
                         <outlet property="doneButton" destination="4Rd-Nz-hys" id="aY3-XV-9u2"/>
                         <outlet property="folderNameTextField" destination="noS-E8-jrZ" id="nNj-zo-YDp"/>
+                        <outlet property="popUpBgView" destination="gXT-iE-HpM" id="XOW-3e-i7n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y1C-68-1a9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -102,7 +107,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="AddFolderPopUp" width="273" height="160"/>
+        <namedColor name="GrayPopUp">
+            <color red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
