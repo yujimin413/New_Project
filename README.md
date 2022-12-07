@@ -123,4 +123,6 @@
 > [https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller]
 
 ### Server
+> S3 <br/>
+> [https://docs.aws.amazon.com/ko_kr/AmazonS3/latest/userguide/upload-objects.html]
 
