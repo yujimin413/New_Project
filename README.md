@@ -1,3 +1,6 @@
+![IMG_0786](https://user-images.githubusercontent.com/84549242/206087194-ea4b776e-84bf-4d39-a03c-5be6ce50d2f4.JPG)
+
+
 # LinkFolder
 쉽고 편한 **링크** **저장** 및 **공유** 서비스<br/><br/>
 
